@@ -1,0 +1,14 @@
+C:\Users\nofel\source\repos\taskL1\taskL1\bin\Debug\netcoreapp3.1\taskL1.exe
+C:\Users\nofel\source\repos\taskL1\taskL1\bin\Debug\netcoreapp3.1\taskL1.deps.json
+C:\Users\nofel\source\repos\taskL1\taskL1\bin\Debug\netcoreapp3.1\taskL1.runtimeconfig.json
+C:\Users\nofel\source\repos\taskL1\taskL1\bin\Debug\netcoreapp3.1\taskL1.runtimeconfig.dev.json
+C:\Users\nofel\source\repos\taskL1\taskL1\bin\Debug\netcoreapp3.1\taskL1.dll
+C:\Users\nofel\source\repos\taskL1\taskL1\bin\Debug\netcoreapp3.1\taskL1.pdb
+C:\Users\nofel\source\repos\taskL1\taskL1\obj\Debug\netcoreapp3.1\taskL1.csproj.AssemblyReference.cache
+C:\Users\nofel\source\repos\taskL1\taskL1\obj\Debug\netcoreapp3.1\taskL1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\source\repos\taskL1\taskL1\obj\Debug\netcoreapp3.1\taskL1.AssemblyInfoInputs.cache
+C:\Users\nofel\source\repos\taskL1\taskL1\obj\Debug\netcoreapp3.1\taskL1.AssemblyInfo.cs
+C:\Users\nofel\source\repos\taskL1\taskL1\obj\Debug\netcoreapp3.1\taskL1.csproj.CoreCompileInputs.cache
+C:\Users\nofel\source\repos\taskL1\taskL1\obj\Debug\netcoreapp3.1\taskL1.dll
+C:\Users\nofel\source\repos\taskL1\taskL1\obj\Debug\netcoreapp3.1\taskL1.pdb
+C:\Users\nofel\source\repos\taskL1\taskL1\obj\Debug\netcoreapp3.1\taskL1.genruntimeconfig.cache
