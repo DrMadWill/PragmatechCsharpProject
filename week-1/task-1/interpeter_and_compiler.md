@@ -1,6 +1,6 @@
 # Interpreter And Compiler Difference
 
-## Interpreter dillər
+-  Interpreter dillər
     - Pragramı sətir ardıcılığı ilə maşın koduna çevirər.
     - Bütün pragrami analiz elməz ancaq pragramin icra vaxti çox olar.
     - Error olana qədər olan bütün sətirlər işə salir.
@@ -8,7 +8,7 @@
     - Error onlan sətirdə pragram dayandığı üçün errorun səbəbini tapmaq asndır.Nisbətən.
     - Interpreter dildə yazılmış pragram başqa bir komputerdə rahatlıqla işləyə bilər sadəcə uyğun dilin həmin koputerdə olmalıdı.
 
-## Compiler  dillər
+- Compiler  dillər
 
     - Programin hamsini birdən maşın koduna çevirər.
     - Bütün programi anliz edər sonra çevrimə işləminə keçər məhs buna görə programin icra müddəti daha qısadır.
