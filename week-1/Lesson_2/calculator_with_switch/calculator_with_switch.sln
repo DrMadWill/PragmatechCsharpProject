@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculator_with_switch", "calculator_with_switch\calculator_with_switch.csproj", "{AC453F38-7BF0-4C12-9A50-3B0CBE003708}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC453F38-7BF0-4C12-9A50-3B0CBE003708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC453F38-7BF0-4C12-9A50-3B0CBE003708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC453F38-7BF0-4C12-9A50-3B0CBE003708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC453F38-7BF0-4C12-9A50-3B0CBE003708}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2926CCE2-630D-45DF-8B7F-3DA89295ED1C}
+	EndGlobalSection
+EndGlobal

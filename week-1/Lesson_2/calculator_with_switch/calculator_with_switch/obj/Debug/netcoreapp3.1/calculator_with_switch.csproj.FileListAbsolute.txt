@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\calculator_with_switch\calculator_with_switch\bin\Debug\netcoreapp3.1\calculator_with_switch.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\calculator_with_switch\calculator_with_switch\bin\Debug\netcoreapp3.1\calculator_with_switch.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\calculator_with_switch\calculator_with_switch\bin\Debug\netcoreapp3.1\calculator_with_switch.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\calculator_with_switch\calculator_with_switch\bin\Debug\netcoreapp3.1\calculator_with_switch.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\calculator_with_switch\calculator_with_switch\bin\Debug\netcoreapp3.1\calculator_with_switch.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\calculator_with_switch\calculator_with_switch\bin\Debug\netcoreapp3.1\calculator_with_switch.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\calculator_with_switch\calculator_with_switch\obj\Debug\netcoreapp3.1\calculator_with_switch.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\calculator_with_switch\calculator_with_switch\obj\Debug\netcoreapp3.1\calculator_with_switch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\calculator_with_switch\calculator_with_switch\obj\Debug\netcoreapp3.1\calculator_with_switch.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\calculator_with_switch\calculator_with_switch\obj\Debug\netcoreapp3.1\calculator_with_switch.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\calculator_with_switch\calculator_with_switch\obj\Debug\netcoreapp3.1\calculator_with_switch.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\calculator_with_switch\calculator_with_switch\obj\Debug\netcoreapp3.1\calculator_with_switch.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\calculator_with_switch\calculator_with_switch\obj\Debug\netcoreapp3.1\calculator_with_switch.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\calculator_with_switch\calculator_with_switch\obj\Debug\netcoreapp3.1\calculator_with_switch.genruntimeconfig.cache
