@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "palindirom_4_reqmli", "palindirom_4_reqmli\palindirom_4_reqmli.csproj", "{13875F90-A671-40BF-AC15-669A350EC7BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13875F90-A671-40BF-AC15-669A350EC7BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13875F90-A671-40BF-AC15-669A350EC7BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13875F90-A671-40BF-AC15-669A350EC7BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13875F90-A671-40BF-AC15-669A350EC7BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13017A5A-845D-4B5E-A461-A2C65A42B3A0}
+	EndGlobalSection
+EndGlobal

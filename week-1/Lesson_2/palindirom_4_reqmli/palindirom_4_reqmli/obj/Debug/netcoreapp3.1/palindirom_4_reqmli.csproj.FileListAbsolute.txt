@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\palindirom_4_reqmli\palindirom_4_reqmli\bin\Debug\netcoreapp3.1\palindirom_4_reqmli.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\palindirom_4_reqmli\palindirom_4_reqmli\bin\Debug\netcoreapp3.1\palindirom_4_reqmli.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\palindirom_4_reqmli\palindirom_4_reqmli\bin\Debug\netcoreapp3.1\palindirom_4_reqmli.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\palindirom_4_reqmli\palindirom_4_reqmli\bin\Debug\netcoreapp3.1\palindirom_4_reqmli.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\palindirom_4_reqmli\palindirom_4_reqmli\bin\Debug\netcoreapp3.1\palindirom_4_reqmli.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\palindirom_4_reqmli\palindirom_4_reqmli\bin\Debug\netcoreapp3.1\palindirom_4_reqmli.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\palindirom_4_reqmli\palindirom_4_reqmli\obj\Debug\netcoreapp3.1\palindirom_4_reqmli.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\palindirom_4_reqmli\palindirom_4_reqmli\obj\Debug\netcoreapp3.1\palindirom_4_reqmli.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\palindirom_4_reqmli\palindirom_4_reqmli\obj\Debug\netcoreapp3.1\palindirom_4_reqmli.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\palindirom_4_reqmli\palindirom_4_reqmli\obj\Debug\netcoreapp3.1\palindirom_4_reqmli.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\palindirom_4_reqmli\palindirom_4_reqmli\obj\Debug\netcoreapp3.1\palindirom_4_reqmli.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\palindirom_4_reqmli\palindirom_4_reqmli\obj\Debug\netcoreapp3.1\palindirom_4_reqmli.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\palindirom_4_reqmli\palindirom_4_reqmli\obj\Debug\netcoreapp3.1\palindirom_4_reqmli.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\palindirom_4_reqmli\palindirom_4_reqmli\obj\Debug\netcoreapp3.1\palindirom_4_reqmli.genruntimeconfig.cache
