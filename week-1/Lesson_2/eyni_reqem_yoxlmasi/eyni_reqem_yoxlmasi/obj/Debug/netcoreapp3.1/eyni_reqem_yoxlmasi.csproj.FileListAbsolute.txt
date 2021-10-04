@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\eyni_reqem_yoxlmasi\eyni_reqem_yoxlmasi\bin\Debug\netcoreapp3.1\eyni_reqem_yoxlmasi.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\eyni_reqem_yoxlmasi\eyni_reqem_yoxlmasi\bin\Debug\netcoreapp3.1\eyni_reqem_yoxlmasi.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\eyni_reqem_yoxlmasi\eyni_reqem_yoxlmasi\bin\Debug\netcoreapp3.1\eyni_reqem_yoxlmasi.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\eyni_reqem_yoxlmasi\eyni_reqem_yoxlmasi\bin\Debug\netcoreapp3.1\eyni_reqem_yoxlmasi.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\eyni_reqem_yoxlmasi\eyni_reqem_yoxlmasi\bin\Debug\netcoreapp3.1\eyni_reqem_yoxlmasi.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\eyni_reqem_yoxlmasi\eyni_reqem_yoxlmasi\bin\Debug\netcoreapp3.1\eyni_reqem_yoxlmasi.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\eyni_reqem_yoxlmasi\eyni_reqem_yoxlmasi\obj\Debug\netcoreapp3.1\eyni_reqem_yoxlmasi.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\eyni_reqem_yoxlmasi\eyni_reqem_yoxlmasi\obj\Debug\netcoreapp3.1\eyni_reqem_yoxlmasi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\eyni_reqem_yoxlmasi\eyni_reqem_yoxlmasi\obj\Debug\netcoreapp3.1\eyni_reqem_yoxlmasi.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\eyni_reqem_yoxlmasi\eyni_reqem_yoxlmasi\obj\Debug\netcoreapp3.1\eyni_reqem_yoxlmasi.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\eyni_reqem_yoxlmasi\eyni_reqem_yoxlmasi\obj\Debug\netcoreapp3.1\eyni_reqem_yoxlmasi.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\eyni_reqem_yoxlmasi\eyni_reqem_yoxlmasi\obj\Debug\netcoreapp3.1\eyni_reqem_yoxlmasi.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\eyni_reqem_yoxlmasi\eyni_reqem_yoxlmasi\obj\Debug\netcoreapp3.1\eyni_reqem_yoxlmasi.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\eyni_reqem_yoxlmasi\eyni_reqem_yoxlmasi\obj\Debug\netcoreapp3.1\eyni_reqem_yoxlmasi.genruntimeconfig.cache
