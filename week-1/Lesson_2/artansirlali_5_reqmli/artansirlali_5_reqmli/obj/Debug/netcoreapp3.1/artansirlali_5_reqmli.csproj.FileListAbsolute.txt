@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\artansirlali_5_reqmli\artansirlali_5_reqmli\bin\Debug\netcoreapp3.1\artansirlali_5_reqmli.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\artansirlali_5_reqmli\artansirlali_5_reqmli\bin\Debug\netcoreapp3.1\artansirlali_5_reqmli.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\artansirlali_5_reqmli\artansirlali_5_reqmli\bin\Debug\netcoreapp3.1\artansirlali_5_reqmli.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\artansirlali_5_reqmli\artansirlali_5_reqmli\bin\Debug\netcoreapp3.1\artansirlali_5_reqmli.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\artansirlali_5_reqmli\artansirlali_5_reqmli\bin\Debug\netcoreapp3.1\artansirlali_5_reqmli.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\artansirlali_5_reqmli\artansirlali_5_reqmli\bin\Debug\netcoreapp3.1\artansirlali_5_reqmli.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\artansirlali_5_reqmli\artansirlali_5_reqmli\obj\Debug\netcoreapp3.1\artansirlali_5_reqmli.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\artansirlali_5_reqmli\artansirlali_5_reqmli\obj\Debug\netcoreapp3.1\artansirlali_5_reqmli.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\artansirlali_5_reqmli\artansirlali_5_reqmli\obj\Debug\netcoreapp3.1\artansirlali_5_reqmli.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\artansirlali_5_reqmli\artansirlali_5_reqmli\obj\Debug\netcoreapp3.1\artansirlali_5_reqmli.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\artansirlali_5_reqmli\artansirlali_5_reqmli\obj\Debug\netcoreapp3.1\artansirlali_5_reqmli.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\artansirlali_5_reqmli\artansirlali_5_reqmli\obj\Debug\netcoreapp3.1\artansirlali_5_reqmli.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\artansirlali_5_reqmli\artansirlali_5_reqmli\obj\Debug\netcoreapp3.1\artansirlali_5_reqmli.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\artansirlali_5_reqmli\artansirlali_5_reqmli\obj\Debug\netcoreapp3.1\artansirlali_5_reqmli.genruntimeconfig.cache
