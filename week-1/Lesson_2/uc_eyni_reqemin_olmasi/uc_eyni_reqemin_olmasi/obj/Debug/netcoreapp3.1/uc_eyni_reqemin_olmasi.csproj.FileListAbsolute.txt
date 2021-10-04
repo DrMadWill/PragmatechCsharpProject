@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\uc_eyni_reqemin_olmasi\uc_eyni_reqemin_olmasi\bin\Debug\netcoreapp3.1\uc_eyni_reqemin_olmasi.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\uc_eyni_reqemin_olmasi\uc_eyni_reqemin_olmasi\bin\Debug\netcoreapp3.1\uc_eyni_reqemin_olmasi.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\uc_eyni_reqemin_olmasi\uc_eyni_reqemin_olmasi\bin\Debug\netcoreapp3.1\uc_eyni_reqemin_olmasi.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\uc_eyni_reqemin_olmasi\uc_eyni_reqemin_olmasi\bin\Debug\netcoreapp3.1\uc_eyni_reqemin_olmasi.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\uc_eyni_reqemin_olmasi\uc_eyni_reqemin_olmasi\bin\Debug\netcoreapp3.1\uc_eyni_reqemin_olmasi.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\uc_eyni_reqemin_olmasi\uc_eyni_reqemin_olmasi\bin\Debug\netcoreapp3.1\uc_eyni_reqemin_olmasi.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\uc_eyni_reqemin_olmasi\uc_eyni_reqemin_olmasi\obj\Debug\netcoreapp3.1\uc_eyni_reqemin_olmasi.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\uc_eyni_reqemin_olmasi\uc_eyni_reqemin_olmasi\obj\Debug\netcoreapp3.1\uc_eyni_reqemin_olmasi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\uc_eyni_reqemin_olmasi\uc_eyni_reqemin_olmasi\obj\Debug\netcoreapp3.1\uc_eyni_reqemin_olmasi.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\uc_eyni_reqemin_olmasi\uc_eyni_reqemin_olmasi\obj\Debug\netcoreapp3.1\uc_eyni_reqemin_olmasi.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\uc_eyni_reqemin_olmasi\uc_eyni_reqemin_olmasi\obj\Debug\netcoreapp3.1\uc_eyni_reqemin_olmasi.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\uc_eyni_reqemin_olmasi\uc_eyni_reqemin_olmasi\obj\Debug\netcoreapp3.1\uc_eyni_reqemin_olmasi.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\uc_eyni_reqemin_olmasi\uc_eyni_reqemin_olmasi\obj\Debug\netcoreapp3.1\uc_eyni_reqemin_olmasi.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week-1\Lesson_2\uc_eyni_reqemin_olmasi\uc_eyni_reqemin_olmasi\obj\Debug\netcoreapp3.1\uc_eyni_reqemin_olmasi.genruntimeconfig.cache

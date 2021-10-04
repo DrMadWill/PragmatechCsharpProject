@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "uc_eyni_reqemin_olmasi/1.0.0": {
+        "runtime": {
+          "uc_eyni_reqemin_olmasi.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "uc_eyni_reqemin_olmasi/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
