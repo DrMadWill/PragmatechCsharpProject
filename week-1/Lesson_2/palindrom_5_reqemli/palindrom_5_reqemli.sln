@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "palindrom_5_reqemli", "palindrom_5_reqemli\palindrom_5_reqemli.csproj", "{AB5F6275-5ADF-443F-B948-78FB6AC2B863}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB5F6275-5ADF-443F-B948-78FB6AC2B863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB5F6275-5ADF-443F-B948-78FB6AC2B863}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB5F6275-5ADF-443F-B948-78FB6AC2B863}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB5F6275-5ADF-443F-B948-78FB6AC2B863}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7987BDAF-7B49-4D85-A261-7D67B6DB0E3A}
+	EndGlobalSection
+EndGlobal
