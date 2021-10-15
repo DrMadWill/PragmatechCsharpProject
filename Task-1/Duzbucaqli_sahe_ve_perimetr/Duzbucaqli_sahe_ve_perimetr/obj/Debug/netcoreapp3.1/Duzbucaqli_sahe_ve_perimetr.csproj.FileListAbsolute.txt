@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\Duzbucaqli_sahe_ve_perimetr\Duzbucaqli_sahe_ve_perimetr\bin\Debug\netcoreapp3.1\Duzbucaqli_sahe_ve_perimetr.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\Duzbucaqli_sahe_ve_perimetr\Duzbucaqli_sahe_ve_perimetr\bin\Debug\netcoreapp3.1\Duzbucaqli_sahe_ve_perimetr.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\Duzbucaqli_sahe_ve_perimetr\Duzbucaqli_sahe_ve_perimetr\bin\Debug\netcoreapp3.1\Duzbucaqli_sahe_ve_perimetr.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\Duzbucaqli_sahe_ve_perimetr\Duzbucaqli_sahe_ve_perimetr\bin\Debug\netcoreapp3.1\Duzbucaqli_sahe_ve_perimetr.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\Duzbucaqli_sahe_ve_perimetr\Duzbucaqli_sahe_ve_perimetr\bin\Debug\netcoreapp3.1\Duzbucaqli_sahe_ve_perimetr.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\Duzbucaqli_sahe_ve_perimetr\Duzbucaqli_sahe_ve_perimetr\bin\Debug\netcoreapp3.1\Duzbucaqli_sahe_ve_perimetr.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\Duzbucaqli_sahe_ve_perimetr\Duzbucaqli_sahe_ve_perimetr\obj\Debug\netcoreapp3.1\Duzbucaqli_sahe_ve_perimetr.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\Duzbucaqli_sahe_ve_perimetr\Duzbucaqli_sahe_ve_perimetr\obj\Debug\netcoreapp3.1\Duzbucaqli_sahe_ve_perimetr.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\Duzbucaqli_sahe_ve_perimetr\Duzbucaqli_sahe_ve_perimetr\obj\Debug\netcoreapp3.1\Duzbucaqli_sahe_ve_perimetr.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\Duzbucaqli_sahe_ve_perimetr\Duzbucaqli_sahe_ve_perimetr\obj\Debug\netcoreapp3.1\Duzbucaqli_sahe_ve_perimetr.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\Duzbucaqli_sahe_ve_perimetr\Duzbucaqli_sahe_ve_perimetr\obj\Debug\netcoreapp3.1\Duzbucaqli_sahe_ve_perimetr.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\Duzbucaqli_sahe_ve_perimetr\Duzbucaqli_sahe_ve_perimetr\obj\Debug\netcoreapp3.1\Duzbucaqli_sahe_ve_perimetr.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\Duzbucaqli_sahe_ve_perimetr\Duzbucaqli_sahe_ve_perimetr\obj\Debug\netcoreapp3.1\Duzbucaqli_sahe_ve_perimetr.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\Duzbucaqli_sahe_ve_perimetr\Duzbucaqli_sahe_ve_perimetr\obj\Debug\netcoreapp3.1\Duzbucaqli_sahe_ve_perimetr.genruntimeconfig.cache

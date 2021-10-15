@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\task_5\task_5\bin\Debug\netcoreapp3.1\task_5.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\task_5\task_5\bin\Debug\netcoreapp3.1\task_5.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\task_5\task_5\bin\Debug\netcoreapp3.1\task_5.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\task_5\task_5\bin\Debug\netcoreapp3.1\task_5.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\task_5\task_5\bin\Debug\netcoreapp3.1\task_5.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\task_5\task_5\bin\Debug\netcoreapp3.1\task_5.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\task_5\task_5\obj\Debug\netcoreapp3.1\task_5.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\task_5\task_5\obj\Debug\netcoreapp3.1\task_5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\task_5\task_5\obj\Debug\netcoreapp3.1\task_5.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\task_5\task_5\obj\Debug\netcoreapp3.1\task_5.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\task_5\task_5\obj\Debug\netcoreapp3.1\task_5.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\task_5\task_5\obj\Debug\netcoreapp3.1\task_5.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\task_5\task_5\obj\Debug\netcoreapp3.1\task_5.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\task_5\task_5\obj\Debug\netcoreapp3.1\task_5.genruntimeconfig.cache

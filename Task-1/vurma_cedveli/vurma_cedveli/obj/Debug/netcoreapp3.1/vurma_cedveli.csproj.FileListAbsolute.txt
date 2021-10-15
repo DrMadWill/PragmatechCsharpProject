@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\vurma_cedveli\vurma_cedveli\bin\Debug\netcoreapp3.1\vurma_cedveli.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\vurma_cedveli\vurma_cedveli\bin\Debug\netcoreapp3.1\vurma_cedveli.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\vurma_cedveli\vurma_cedveli\bin\Debug\netcoreapp3.1\vurma_cedveli.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\vurma_cedveli\vurma_cedveli\bin\Debug\netcoreapp3.1\vurma_cedveli.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\vurma_cedveli\vurma_cedveli\bin\Debug\netcoreapp3.1\vurma_cedveli.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\vurma_cedveli\vurma_cedveli\bin\Debug\netcoreapp3.1\vurma_cedveli.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\vurma_cedveli\vurma_cedveli\obj\Debug\netcoreapp3.1\vurma_cedveli.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\vurma_cedveli\vurma_cedveli\obj\Debug\netcoreapp3.1\vurma_cedveli.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\vurma_cedveli\vurma_cedveli\obj\Debug\netcoreapp3.1\vurma_cedveli.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\vurma_cedveli\vurma_cedveli\obj\Debug\netcoreapp3.1\vurma_cedveli.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\vurma_cedveli\vurma_cedveli\obj\Debug\netcoreapp3.1\vurma_cedveli.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\vurma_cedveli\vurma_cedveli\obj\Debug\netcoreapp3.1\vurma_cedveli.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\vurma_cedveli\vurma_cedveli\obj\Debug\netcoreapp3.1\vurma_cedveli.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\vurma_cedveli\vurma_cedveli\obj\Debug\netcoreapp3.1\vurma_cedveli.genruntimeconfig.cache

@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\5_ededin_edediortasi\5_ededin_edediortasi\bin\Debug\netcoreapp3.1\5_ededin_edediortasi.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\5_ededin_edediortasi\5_ededin_edediortasi\bin\Debug\netcoreapp3.1\5_ededin_edediortasi.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\5_ededin_edediortasi\5_ededin_edediortasi\bin\Debug\netcoreapp3.1\5_ededin_edediortasi.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\5_ededin_edediortasi\5_ededin_edediortasi\bin\Debug\netcoreapp3.1\5_ededin_edediortasi.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\5_ededin_edediortasi\5_ededin_edediortasi\bin\Debug\netcoreapp3.1\5_ededin_edediortasi.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\5_ededin_edediortasi\5_ededin_edediortasi\bin\Debug\netcoreapp3.1\5_ededin_edediortasi.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\5_ededin_edediortasi\5_ededin_edediortasi\obj\Debug\netcoreapp3.1\5_ededin_edediortasi.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\5_ededin_edediortasi\5_ededin_edediortasi\obj\Debug\netcoreapp3.1\5_ededin_edediortasi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\5_ededin_edediortasi\5_ededin_edediortasi\obj\Debug\netcoreapp3.1\5_ededin_edediortasi.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\5_ededin_edediortasi\5_ededin_edediortasi\obj\Debug\netcoreapp3.1\5_ededin_edediortasi.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\5_ededin_edediortasi\5_ededin_edediortasi\obj\Debug\netcoreapp3.1\5_ededin_edediortasi.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\5_ededin_edediortasi\5_ededin_edediortasi\obj\Debug\netcoreapp3.1\5_ededin_edediortasi.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\5_ededin_edediortasi\5_ededin_edediortasi\obj\Debug\netcoreapp3.1\5_ededin_edediortasi.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\Task-1\5_ededin_edediortasi\5_ededin_edediortasi\obj\Debug\netcoreapp3.1\5_ededin_edediortasi.genruntimeconfig.cache
