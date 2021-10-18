@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text;
 
 namespace task_2_Reverse_algoritm
 {
@@ -11,15 +10,16 @@ namespace task_2_Reverse_algoritm
             Console.Write("Text : ");
             string texts = Console.ReadLine();
              
-            string outline;
-            int texts_length = texts.Length - 1;
+            string outline="";
+            
 
             for (int i = 0; i < texts.Length; i++)
             {
-                outline =Convert.ToString(texts[texts_length - i]);
-                Console.Write(outline);
+                outline +=Convert.ToString(texts[texts.Length -1- i]);
                 
             }
+
+            Console.WriteLine($"Resault : >> {outline}");
 
             
             
