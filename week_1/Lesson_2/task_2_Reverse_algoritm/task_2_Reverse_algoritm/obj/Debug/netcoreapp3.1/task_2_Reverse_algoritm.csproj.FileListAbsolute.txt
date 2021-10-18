@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_1\Lesson_2\task_2_Reverse_algoritm\task_2_Reverse_algoritm\bin\Debug\netcoreapp3.1\task_2_Reverse_algoritm.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_1\Lesson_2\task_2_Reverse_algoritm\task_2_Reverse_algoritm\bin\Debug\netcoreapp3.1\task_2_Reverse_algoritm.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_1\Lesson_2\task_2_Reverse_algoritm\task_2_Reverse_algoritm\bin\Debug\netcoreapp3.1\task_2_Reverse_algoritm.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_1\Lesson_2\task_2_Reverse_algoritm\task_2_Reverse_algoritm\bin\Debug\netcoreapp3.1\task_2_Reverse_algoritm.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_1\Lesson_2\task_2_Reverse_algoritm\task_2_Reverse_algoritm\bin\Debug\netcoreapp3.1\task_2_Reverse_algoritm.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_1\Lesson_2\task_2_Reverse_algoritm\task_2_Reverse_algoritm\bin\Debug\netcoreapp3.1\task_2_Reverse_algoritm.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_1\Lesson_2\task_2_Reverse_algoritm\task_2_Reverse_algoritm\obj\Debug\netcoreapp3.1\task_2_Reverse_algoritm.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_1\Lesson_2\task_2_Reverse_algoritm\task_2_Reverse_algoritm\obj\Debug\netcoreapp3.1\task_2_Reverse_algoritm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_1\Lesson_2\task_2_Reverse_algoritm\task_2_Reverse_algoritm\obj\Debug\netcoreapp3.1\task_2_Reverse_algoritm.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_1\Lesson_2\task_2_Reverse_algoritm\task_2_Reverse_algoritm\obj\Debug\netcoreapp3.1\task_2_Reverse_algoritm.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_1\Lesson_2\task_2_Reverse_algoritm\task_2_Reverse_algoritm\obj\Debug\netcoreapp3.1\task_2_Reverse_algoritm.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_1\Lesson_2\task_2_Reverse_algoritm\task_2_Reverse_algoritm\obj\Debug\netcoreapp3.1\task_2_Reverse_algoritm.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_1\Lesson_2\task_2_Reverse_algoritm\task_2_Reverse_algoritm\obj\Debug\netcoreapp3.1\task_2_Reverse_algoritm.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_1\Lesson_2\task_2_Reverse_algoritm\task_2_Reverse_algoritm\obj\Debug\netcoreapp3.1\task_2_Reverse_algoritm.genruntimeconfig.cache
