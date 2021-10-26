@@ -81,42 +81,26 @@ namespace Lesson
                             is1sert = true;
                         }
 
-
-
-
                         if (Convert.ToString(a) ==Convert.ToString( password[i]))
                         {
                             is2sert = true;
                         }
 
-
-
                         if (is1sert && is2sert)
                         {
-
                             isTure = true;
                             break;
-
                         }
-
                     }
-                        
-
                 }
 
                 if (isTure == true)
                 {
                     break;
                 }
-
-
             }
-
-
-
             return isTure;
         }
-
 
     }
 
