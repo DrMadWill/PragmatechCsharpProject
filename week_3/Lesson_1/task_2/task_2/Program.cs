@@ -24,21 +24,33 @@ namespace task_2
             que.Enqueue("4");
             que.Enqueue("5");
             que.Enqueue("6");
+            que.Enqueue("25");
 
 
 
 
-            int counts=0;
+            List<string> reserve = new List<string>();
+
             foreach (var item in que)
             {
-                counts += 1;
-                if (counts > 10)
-                {
-                    if (counts == que.Count)
-                    {
-                        item
-                    }
-                }
+                reserve.Add(item);
+
+            }
+
+            reserve[reserve.Count-1]="Misson Complited";
+            que.Clear();
+
+            foreach (var item in reserve)
+            {
+                que.Enqueue(item);
+
+            }
+
+
+
+
+            foreach (var item in que)
+            {
                 Console.WriteLine(">>> " + item);
             }
 
