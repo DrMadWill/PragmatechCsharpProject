@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Task_1
 {
@@ -6,7 +7,10 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello My World!");
+
+            Group clas = new Group("MadWill",5);
+            clas.Students = new List<Group>();
 
 
         }
@@ -29,6 +33,31 @@ namespace Task_1
             this.No = Count;
 
         }
+
+        
+
+    }
+
+    class Group
+    {
+        public string Name;
+        public int No;
+        public static int Cout = 100;
+        private readonly int Capacity;
+
+        public List<Group> Students = new List<Group>();
+ 
+        public Group(string name,int capasty)
+        {
+            this.Name = name;
+            Cout++;
+            this.No = Cout;
+            this.Capacity = capasty;
+
+        }
+
+        
+
 
     }
 }
