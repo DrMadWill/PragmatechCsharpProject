@@ -20,4 +20,7 @@
 - Base Class yardilacak Classlarin əsas xususiyyətini özündə toplayir;
 - Base Classini obyektinin yardılması düzgün deyil;
 - Base Classindan obyekt yardıl masinin qarsinin alinmasi üçün _abstract_ KeyWord dən istifadə edilir;
-
+- Base Class-ında teyin edilen Constractor prametrirə sahibdirsə Drived Classlarda Constractor yardılaraq hemin parametrləri _base_ keywordü sahəsində Base Classs-ın Canstractoruna göndərilməsi mütləqdir;
+- _Sealed_ Keyword istfadə edilərək yardılan Class daxildə:
+    - abstract Method ve Virtual Method işlədilə bilmir.
+    - həmin Class  Base Class ola bilmir (Yəni Inheritance verə bilmir);

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nofel\\OneDrive\\Desktop\\Lesson\\Lesson\\Lesson.csproj": {}
+    "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsap\\week_4\\Lesson_1\\Lesson\\Lesson\\Lesson.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nofel\\OneDrive\\Desktop\\Lesson\\Lesson\\Lesson.csproj": {
+    "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsap\\week_4\\Lesson_1\\Lesson\\Lesson\\Lesson.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nofel\\OneDrive\\Desktop\\Lesson\\Lesson\\Lesson.csproj",
+        "projectUniqueName": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsap\\week_4\\Lesson_1\\Lesson\\Lesson\\Lesson.csproj",
         "projectName": "Lesson",
-        "projectPath": "C:\\Users\\nofel\\OneDrive\\Desktop\\Lesson\\Lesson\\Lesson.csproj",
+        "projectPath": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsap\\week_4\\Lesson_1\\Lesson\\Lesson\\Lesson.csproj",
         "packagesPath": "C:\\Users\\nofel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nofel\\OneDrive\\Desktop\\Lesson\\Lesson\\obj\\",
+        "outputPath": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsap\\week_4\\Lesson_1\\Lesson\\Lesson\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nofel\\AppData\\Roaming\\NuGet\\NuGet.Config",
