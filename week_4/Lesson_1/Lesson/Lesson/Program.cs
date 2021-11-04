@@ -10,6 +10,7 @@ namespace Lesson
 
             MYWorld MadWill = new MYWorld("Mad","Will");
             MadWill.Eks_varliqlar();
+            MadWill.Learn();
             Console.WriteLine(MadWill.Name);
             Console.WriteLine(MadWill.Container);
 
@@ -33,7 +34,7 @@ namespace Lesson
             this.Name = name;
         }
 
-        public void Eks_varliqlar()
+        public virtual void Eks_varliqlar()
         {
             Console.WriteLine("Bir birine qarsi mubarize");
         }
@@ -51,6 +52,12 @@ namespace Lesson
         {
             Console.WriteLine("Gercekliyi oyren ,sebebleri oyern ,meqsedi oyren oyren oyer ..........");
         }
+
+        public override void Eks_varliqlar()
+        {
+            Console.WriteLine("Bu Menim cliskerimdir");
+        }
+
     }
 
 
