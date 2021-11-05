@@ -31,7 +31,17 @@
     - abstract Method ve Virtual Method işlədilə bilmir.
     - həmin Class  Base Class ola bilmir (Yəni Inheritance verə bilmir);
 
-#### Virtual and Override Method
+#### Encapsulation  
+- Encapsulation əsas xususiyyət bir Class daxildəki hər hansi fildi və ya property digər digər Classlardan qorumasıdır.Bunu üçün _set_ və _get_ methodundan istfadə edirik.
+    - _set_ İnformasiyani yoxlayib yazdırmaq üçündür;
+    - _get_ İnformasiyanı oxumaq üçündür;
+
+#### Polymorphism
+- Eyni adli methodu Static və Dynamic Polymorphism istfadə edərək müxtəlif cür istfadə etmək;
+    - Static Polymorphism aiddir Method Overloading;
+    - Dynamic Polymorphism aiddir Virtual and Override Keyword;
+
+##### Virtual and Override Keyword
 
 - Base Class-da _virtual_ keyword-ü vastəsi ilə təyin edilmiş Methodlar Drived Classlarda _override_ keyword-ü sahəsində body-si yenidən təyin edlə bilər.Xususiyyətlər:
     - Body-si olmaldir;
