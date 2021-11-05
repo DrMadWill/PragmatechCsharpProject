@@ -35,15 +35,8 @@ namespace task
     {
         public string FullName { get; set; }
 
-        //private string _email;
         public string Email;
-        //{
-        //    get { return _email; }
-        //    set
-        //    {
-                
-        //    }
-        //}
+        
 
         private string _password;
         public string Password
