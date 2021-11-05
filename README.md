@@ -1,4 +1,9 @@
 # PragmatechCsharpProject
+
+### Information structure
+- Lesson(a/b)
+    - _a_ Week
+    - _b_ Lesson
 .
 .
 .
