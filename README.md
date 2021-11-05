@@ -1,7 +1,7 @@
 # PragmatechCsharpProject
 
 ### Information structure
--<b> Lesson(a/b)</b>
+- <b> Lesson(a/b)</b>
     - _a_ Week
     - _b_ Lesson
 .
