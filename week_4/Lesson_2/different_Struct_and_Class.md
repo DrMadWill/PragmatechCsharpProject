@@ -6,3 +6,4 @@
     - Classlaın daha yüngül varyatıdır;// kiçik məlumat dəyərlərni saxlayır;
     - Parametrsiz Constroctor olmur;
     - Instance yardarken _new_ keyworünün istifadəsinə məcubriyyət duymuruq;
+    - 

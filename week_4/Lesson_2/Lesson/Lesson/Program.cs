@@ -9,9 +9,10 @@ namespace Lesson
             Console.WriteLine("Hello My World!");
             Console.WriteLine("-------- Struct and Class -------------------");
 
-            MW tipic = new MW("Learn","will");
+            MW tipic;// = new MW("Learn","will");
             
-            tipic.cw();
+            tipic.Ideal="Learn";
+            
             //Console.WriteLine(tipic.Ideal);
 
 
@@ -32,17 +33,12 @@ namespace Lesson
             this.Life = life;
         }
 
-        public void cw()
+        public void Cw()
         {
             Console.WriteLine(this.Ideal);
         }
 
     }
 
-    class WR
-    {
-        
-        string anime;
-        string bools;
-    }
+    
 }
