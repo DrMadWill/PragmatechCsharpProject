@@ -4,9 +4,41 @@
 - <b> Lesson(a/b)</b>
     - _a_ Week
     - _b_ Lesson
-.
-.
-.
+
+### My Lessons 
+
+#### Lesson(1/1) => CLI languages,For Loop,Switch Statement,Data Types,Stack Value Type,Heap Reference Type and Methods
+- Include 
+    - Task
+        - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-1-11-oktyabr-2021-)
+        ```
+            1)5 ədədin orta qiymətinin tapılması algoritmi qurun;
+            2)Düzbucaqlının sahə və perimetrini tapan algoritmi qurun;
+            3)Daxil edilən ədədin vurma cədvəlini yazdiran algoritmi qurun;
+            4)1 le verilmis eded arasinda kvadratlari cemi algoritmini qurun;
+            5)0 la verilmiş ədəd arasındaki ədədlərin hasili ilə cəminin fərqini hesablayan algoritmi qurun;
+            Hər birini methodlar vasitesile yazin. Ugurlar! :)
+        ```
+        - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_1/Lesson_1/Task-1)
+    - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_1/Lesson_1/Task-1)
+        - Code
+        - Documentation
+#### Lesson(1/2) => String vs StringBuilder,Ref & out keyword,Method Overloading,Type Casting,Boxing and Unboxing,String Methods,String Methods 2,Arrays,Duplicate values
+- Include 
+    - Task
+        - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-2-15-oktyabr-2021-)
+        ```
+            1)String Substring algorithmini qurun;
+            2)Reverse algoritmi qurun : input: hello, output: olleh
+            3)Verilmis sozun palindrome oldugunu yoxlayan algoritm mes:input: ana, output: ana (soldan ve sagdan eyni oxunur)
+            4)Remove duplicate data algoritmini yazin input: csharpcorner, output: csharpone c
+            azir methodlardan istifade etmeyin)) Meqsed hazir methodlarin algoritmini yazmaqdir Ugurlar! :)
+        ```
+        - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_1/Lesson_2)
+    - [Lesson]((https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_1/Lesson_2))
+        - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_1/Lesson_2/Lesson/Lesson/Lesson/Program.cs)
+        - Documentation
+
 #### Lesson(2/1) => Params,Class and Object
 - Include
     - Task
