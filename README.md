@@ -7,7 +7,26 @@
 .
 .
 .
-#### Lesson(2/2) Static
+#### Lesson(2/1) => Params,Class and Object
+- Include
+    - Task
+        - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-3-18-oktyabr-2021-)
+        ```
+            Student class-i yaradin:
+            Fullname
+            GroupNo
+            Age
+            Student classi ucun GetBirthYear() metodunu yazin.Bu metod Studentin dogum ilini geri qaytarir
+            Student Arrayi yaradin.
+            Qrup nomresini daxil etmekle bir qrupda nece telebenin oxudugunu check eden method yazin.(2ci parametr kimi     array       daxil edeceksiz)
+            ps:Student yaradilarken butun deyerlerin verilmesi mecburidir
+        ```
+        - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_2/Lesson_1/task_1/task_1/Program.cs)
+    - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_2/Lesson_1)
+        - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_2/Lesson_1/Lesson/Lesson/Program.cs)
+        - Documentation
+
+#### Lesson(2/2) => Static
 - İnclude
     - Task
         - [Task Content](https://github.com/PragmatechEducation/Csharp03#-lesson-4-22-oktyabr-2021-)
@@ -29,7 +48,7 @@
         - Code
         - Lesson Documentation
 
-#### Lesson(3/1) Array,Non-Generic and Generic
+#### Lesson(3/1) => Array,Non-Generic and Generic
 - Include
     - Task
         - [Task Content](https://github.com/PragmatechEducation/Csharp03#-lesson-5-25-oktyabr-2021-)
