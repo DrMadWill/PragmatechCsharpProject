@@ -61,7 +61,7 @@
 #### Lesson(2/2) => Static
 - İnclude
     - Task
-        - [Task Content](https://github.com/PragmatechEducation/Csharp03#-lesson-4-22-oktyabr-2021-)
+        - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-4-22-oktyabr-2021-)
 
         ```
             Account - class
@@ -74,16 +74,16 @@
 
             1.Constructorda name ve password qebul edilsin
         ```
-        - [Task Solution](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_2/Lesson_2/Task/Lesson/Program.cs)
+        - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_2/Lesson_2/Task/Lesson/Program.cs)
 
     - Lesson 
         - Code
-        - Lesson Documentation
+        - Documentation
 
 #### Lesson(3/1) => Array,Non-Generic and Generic
 - Include
     - Task
-        - [Task Content](https://github.com/PragmatechEducation/Csharp03#-lesson-5-25-oktyabr-2021-)
+        - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-5-25-oktyabr-2021-)
         ```
             1) Aşağıdaki tapşırığı yerinə yetirin:
             a) Key və value-su string tipində olan Dictionary yaradın.
@@ -142,15 +142,15 @@
             c) Nəticəni ekrana çap edin.
 
         ```
-        - [Task Solution](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_3/Lesson_1)
+        - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_3/Lesson_1)
     - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_3/Lesson_1)
         - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_3/Lesson_1/Lesson/Lesson/Program.cs)
-        - Lesson Documentation
+        - Documentation
 
 #### Lesson(4/1) => OOP (Object Oriented Programming)
 - Include
     - Task 
-        - [Task Content](https://github.com/PragmatechEducation/Csharp03#oxumal%C4%B1-m%C3%B6vzular-5)
+        - [Content](https://github.com/PragmatechEducation/Csharp03#oxumal%C4%B1-m%C3%B6vzular-5)
             ```
             Asagidaki metodlari olan Account abstract classi yaradirsiniz
                 - PasswordChecker() - parameter oalraq string sifreni qebul edir (abstract metod)
@@ -167,13 +167,22 @@
                 - ShowInfo() - bu metod Console-a user-in Fullanem ve email-inin yazdirir
             User classina Account class-i miras verilir.User yarandigi zaman email ve sifre teyin edilmesi mecburidir.Usere sifre teyin edilerken sifrenin PasswordChecker metodunun sertlerini odemesi lazimdir.
             ```
-        - [Task Solution](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_1/task/task/Program.cs)
+        - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_1/task/task/Program.cs)
     - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_4/Lesson_1) 
         - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_1/Lesson/Lesson/Program.cs)
-        - [Lesson Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_1/OOP_Research_and_Lesson.md)
+        - [Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_1/OOP_Research_and_Lesson.md)
 
  #### Lesson(4/2) => Struct
  - Include
     - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_4/Lesson_2)
         - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_2/Lesson/Lesson/Program.cs)
-        - [Lesson Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_2/different_Struct_and_Class.md)
+        - [Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_2/different_Struct_and_Class.md)
+
+ #### Lesson(5/1) => C# Interface and Access Modifiers
+- Include 
+    - Task
+        - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-9-8-noyabr-2021-)
+        - Solution
+    - Lesson
+        - Code
+        - Documatation

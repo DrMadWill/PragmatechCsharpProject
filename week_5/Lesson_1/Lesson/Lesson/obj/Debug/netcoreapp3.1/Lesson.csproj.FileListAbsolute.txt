@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_5\Lesson_1\Lesson\Lesson\bin\Debug\netcoreapp3.1\Lesson.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_5\Lesson_1\Lesson\Lesson\bin\Debug\netcoreapp3.1\Lesson.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_5\Lesson_1\Lesson\Lesson\bin\Debug\netcoreapp3.1\Lesson.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_5\Lesson_1\Lesson\Lesson\bin\Debug\netcoreapp3.1\Lesson.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_5\Lesson_1\Lesson\Lesson\bin\Debug\netcoreapp3.1\Lesson.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_5\Lesson_1\Lesson\Lesson\bin\Debug\netcoreapp3.1\Lesson.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_5\Lesson_1\Lesson\Lesson\obj\Debug\netcoreapp3.1\Lesson.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_5\Lesson_1\Lesson\Lesson\obj\Debug\netcoreapp3.1\Lesson.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_5\Lesson_1\Lesson\Lesson\obj\Debug\netcoreapp3.1\Lesson.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_5\Lesson_1\Lesson\Lesson\obj\Debug\netcoreapp3.1\Lesson.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_5\Lesson_1\Lesson\Lesson\obj\Debug\netcoreapp3.1\Lesson.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_5\Lesson_1\Lesson\Lesson\obj\Debug\netcoreapp3.1\Lesson.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_5\Lesson_1\Lesson\Lesson\obj\Debug\netcoreapp3.1\Lesson.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_5\Lesson_1\Lesson\Lesson\obj\Debug\netcoreapp3.1\Lesson.genruntimeconfig.cache
