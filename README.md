@@ -35,7 +35,7 @@
             azir methodlardan istifade etmeyin)) Meqsed hazir methodlarin algoritmini yazmaqdir Ugurlar! :)
         ```
         - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_1/Lesson_2)
-    - [Lesson]((https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_1/Lesson_2))
+    - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_1/Lesson_2)
         - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_1/Lesson_2/Lesson/Lesson/Lesson/Program.cs)
         - Documentation
 
