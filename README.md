@@ -7,6 +7,28 @@
 .
 .
 .
+#### Lesson(2/2) Static
+- İnclude
+    - Task
+        - [Task Content](https://github.com/PragmatechEducation/Csharp03#-lesson-4-22-oktyabr-2021-)
+
+        ```
+            Account - class
+            No - her bir account obyektinin unique nomersidir ve onun necenci yarandigini gosterir
+            Username
+            Password
+            IsUserNameValid() method - username yanlizca digit ve herflerden ibaret ola biler yoxlanisi
+
+            IsPasswordValid() method-uzunluq 8-25, siferenin icinde en az bir symbol,1 uppurcase letter ve en az bir digit          istifade olunmalidir yoxlanisi console readlinedan aldiginiz datani bu methodlarda yoxlayib sonra yeni obyekte          menimsedeceksiz...
+
+            1.Constructorda name ve password qebul edilsin
+        ```
+        - [Task Solution](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_2/Lesson_2/Task/Lesson/Program.cs)
+
+    - Lesson 
+        - Code
+        - Lesson Documentation
+
 #### Lesson(3/1) Array,Non-Generic and Generic
 - Include
     - Task
