@@ -182,7 +182,17 @@
 - Include 
     - Task
         - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-9-8-noyabr-2021-)
-        - Solution
-    - Lesson
-        - Code
-        - Documatation
+        ```
+            Tapshiriq 1:
+            Student.cs olsun, Name, Surname, Age propertyleri olsun, ancaq constructorda set olsun. Neche defe instance aldigimizi qaytaran Counter olsun, hansiniki yalniz constructorda set ede bilek.
+
+            Tapshiriq 2:
+            IFigure interface yaratmaq, CalculateArea ve CalculatePerimeter method-u olsun. Rectangle, Circle, Triangle, Square bu interface-in methodlarini implement etsin.
+
+            Tapshiriq 3:
+            ISum, IMultiply, IDifference, IDivide interface-leri olsun her birinde bir dene return type "double" olan ve parametrinde "params double[] numbers" method olsun. Bu 4 interface-i Calculator.cs class-inda her birini implement edin. Meselen: ISum interface-inde Sum() methodu olacaq ve arrayin butun elementlerini cemleyib qaytaracaq. Multiply - vurma, Difference -chixma, Divide - bolme. Sonda Program.cs-de Calculator.cs-i chagirib, verdiyiniz deyerlere uygun method chagirib neticeni gosterin.
+        ```
+        - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_5/Lesson_1)
+    - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_5/Lesson_1)
+        - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lesson_1/Lesson/TestinInternal/Program.cs)
+        - [Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lesson_1/Documantation.md)
