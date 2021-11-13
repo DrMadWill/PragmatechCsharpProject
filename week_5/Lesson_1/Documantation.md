@@ -9,7 +9,7 @@
 ## Interface
 - Classlara yol gostərmək üçün isfadə edilir.
     - Body su olmur.
-    - Decler edilen methodlar Puclic olaraq işlədilir.
+    - Implemente edilen methodlar Puclic olaraq işlədilir.
     - Decler edilərəkən _public_ keydən isfadə edilmir. Zatən publicdir deyə.
     - Interface bir birlərindən törəyə bilir ancaq Class və Stuctdan yox.
     - Törənən Classlarda mütələq Implemente edilməlidir.
