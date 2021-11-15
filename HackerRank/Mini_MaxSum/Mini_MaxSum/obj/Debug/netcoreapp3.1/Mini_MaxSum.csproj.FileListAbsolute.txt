@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\Mini_MaxSum\Mini_MaxSum\bin\Debug\netcoreapp3.1\Mini_MaxSum.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\Mini_MaxSum\Mini_MaxSum\bin\Debug\netcoreapp3.1\Mini_MaxSum.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\Mini_MaxSum\Mini_MaxSum\bin\Debug\netcoreapp3.1\Mini_MaxSum.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\Mini_MaxSum\Mini_MaxSum\bin\Debug\netcoreapp3.1\Mini_MaxSum.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\Mini_MaxSum\Mini_MaxSum\bin\Debug\netcoreapp3.1\Mini_MaxSum.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\Mini_MaxSum\Mini_MaxSum\bin\Debug\netcoreapp3.1\Mini_MaxSum.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\Mini_MaxSum\Mini_MaxSum\obj\Debug\netcoreapp3.1\Mini_MaxSum.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\Mini_MaxSum\Mini_MaxSum\obj\Debug\netcoreapp3.1\Mini_MaxSum.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\Mini_MaxSum\Mini_MaxSum\obj\Debug\netcoreapp3.1\Mini_MaxSum.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\Mini_MaxSum\Mini_MaxSum\obj\Debug\netcoreapp3.1\Mini_MaxSum.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\Mini_MaxSum\Mini_MaxSum\obj\Debug\netcoreapp3.1\Mini_MaxSum.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\Mini_MaxSum\Mini_MaxSum\obj\Debug\netcoreapp3.1\Mini_MaxSum.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\Mini_MaxSum\Mini_MaxSum\obj\Debug\netcoreapp3.1\Mini_MaxSum.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\Mini_MaxSum\Mini_MaxSum\obj\Debug\netcoreapp3.1\Mini_MaxSum.genruntimeconfig.cache
