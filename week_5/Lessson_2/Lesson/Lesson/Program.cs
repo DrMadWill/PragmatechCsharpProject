@@ -8,17 +8,19 @@ namespace Lesson
         {
             Console.WriteLine("Hello My World!");
 
-            ICrudForAdmin maid = new User();
-            maid.Update();
+            ICrudForAdmin maid = new User();//ICrudForAdmin basqa hec birirni method ve property gormur
+            ICrudForAdmin.Create();
 
 
         }
     }
 
+    
+
 
     interface ICrudForAdmin
     {
-        public void Create()
+        public static void Create()
         {
             Console.WriteLine("I am Created");
         }
@@ -46,6 +48,8 @@ namespace Lesson
             Console.WriteLine("User Update");
         }
     }
+
+
 
 
 

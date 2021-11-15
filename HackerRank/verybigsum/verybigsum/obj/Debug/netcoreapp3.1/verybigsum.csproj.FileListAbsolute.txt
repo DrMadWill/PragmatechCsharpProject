@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\verybigsum\verybigsum\bin\Debug\netcoreapp3.1\verybigsum.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\verybigsum\verybigsum\bin\Debug\netcoreapp3.1\verybigsum.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\verybigsum\verybigsum\bin\Debug\netcoreapp3.1\verybigsum.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\verybigsum\verybigsum\bin\Debug\netcoreapp3.1\verybigsum.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\verybigsum\verybigsum\bin\Debug\netcoreapp3.1\verybigsum.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\verybigsum\verybigsum\bin\Debug\netcoreapp3.1\verybigsum.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\verybigsum\verybigsum\obj\Debug\netcoreapp3.1\verybigsum.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\verybigsum\verybigsum\obj\Debug\netcoreapp3.1\verybigsum.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\verybigsum\verybigsum\obj\Debug\netcoreapp3.1\verybigsum.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\verybigsum\verybigsum\obj\Debug\netcoreapp3.1\verybigsum.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\verybigsum\verybigsum\obj\Debug\netcoreapp3.1\verybigsum.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\verybigsum\verybigsum\obj\Debug\netcoreapp3.1\verybigsum.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\verybigsum\verybigsum\obj\Debug\netcoreapp3.1\verybigsum.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\HackerRank\verybigsum\verybigsum\obj\Debug\netcoreapp3.1\verybigsum.genruntimeconfig.cache
