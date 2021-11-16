@@ -8,4 +8,3 @@
 - Open/Closed yazilan methodun mükün qədər əsas fuksiyasını təyin edərək  gələcək dəşikliklərə acıq olamsını sağlyır
 - Liskov Substitution Bases Classda verilən methodlar tam istfadə edilməsi.
 - Interface Segregation Öz fiksiyaları olan iterfeysler istfadə etməliyik.
-- 
