@@ -175,3 +175,8 @@
 - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_5/Lesson_1)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lesson_1/Lesson/TestinInternal/Program.cs)
     - [Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lesson_1/Documantation.md)
+
+## Lesson(5/2) => Solid Principles,Dependency Injection != Inversion and C#(8) Interface 
+- [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_5/Lessson_2)
+    - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lessson_2/Lesson/Lesson/Program.cs)
+    - [Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lessson_2/documatation.md)
