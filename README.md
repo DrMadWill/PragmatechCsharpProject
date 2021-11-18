@@ -1,4 +1,3 @@
-# PragmatechCsharpProject
 
 # Information structure
 - <b> Lesson(a/b)</b>
