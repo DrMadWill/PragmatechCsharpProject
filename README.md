@@ -8,7 +8,7 @@
 ### My Lessons 
 
 #### Lesson(1/1) => CLI languages,For Loop,Switch Statement,Data Types,Stack Value Type,Heap Reference Type and Methods
-- Include 
+ 
     - Task
         - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-1-11-oktyabr-2021-)
         ```
@@ -24,7 +24,7 @@
         - Code
         - Documentation
 #### Lesson(1/2) => String vs StringBuilder,Ref & out keyword,Method Overloading,Type Casting,Boxing and Unboxing,String Methods,String Methods 2,Arrays,Duplicate values
-- Include 
+ 
     - Task
         - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-2-15-oktyabr-2021-)
         ```
@@ -40,7 +40,7 @@
         - Documentation
 
 #### Lesson(2/1) => Params,Class and Object
-- Include
+
     - Task
         - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-3-18-oktyabr-2021-)
         ```
@@ -59,7 +59,7 @@
         - Documentation
 
 #### Lesson(2/2) => Static
-- İnclude
+
     - Task
         - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-4-22-oktyabr-2021-)
 
@@ -81,7 +81,7 @@
         - Documentation
 
 #### Lesson(3/1) => Array,Non-Generic and Generic
-- Include
+
     - Task
         - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-5-25-oktyabr-2021-)
         ```
@@ -148,7 +148,7 @@
         - Documentation
 
 #### Lesson(4/1) => OOP (Object Oriented Programming)
-- Include
+
     - Task 
         - [Content](https://github.com/PragmatechEducation/Csharp03#oxumal%C4%B1-m%C3%B6vzular-5)
             ```
@@ -173,13 +173,13 @@
         - [Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_1/OOP_Research_and_Lesson.md)
 
  #### Lesson(4/2) => Struct
- - Include
+ 
     - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_4/Lesson_2)
         - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_2/Lesson/Lesson/Program.cs)
         - [Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_2/different_Struct_and_Class.md)
 
  #### Lesson(5/1) => C# Interface and Access Modifiers
-- Include 
+ 
     - Task
         - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-9-8-noyabr-2021-)
         ```
