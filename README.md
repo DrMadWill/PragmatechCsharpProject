@@ -1,13 +1,13 @@
 # PragmatechCsharpProject
 
-### Information structure
+# Information structure
 - <b> Lesson(a/b)</b>
     - _a_ Week
     - _b_ Lesson
 
-### My Lessons 
+# My Lessons 
 
-#### Lesson(1/1) => CLI languages,For Loop,Switch Statement,Data Types,Stack Value Type,Heap Reference Type and Methods
+## Lesson(1/1) => CLI languages,For Loop,Switch Statement,Data Types,Stack Value Type,Heap Reference Type and Methods
 ***
 - Include 
     - Task
@@ -24,7 +24,7 @@
     - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_1/Lesson_1/Task-1)
         - Code
         - Documentation
-#### Lesson(1/2) => String vs StringBuilder,Ref & out keyword,Method Overloading,Type Casting,Boxing and Unboxing,String Methods,String Methods 2,Arrays,Duplicate values
+## Lesson(1/2) => String vs StringBuilder,Ref & out keyword,Method Overloading,Type Casting,Boxing and Unboxing,String Methods,String Methods 2,Arrays,Duplicate values
 ***
 - Include 
     - Task
@@ -41,7 +41,7 @@
         - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_1/Lesson_2/Lesson/Lesson/Lesson/Program.cs)
         - Documentation
 
-#### Lesson(2/1) => Params,Class and Object
+## Lesson(2/1) => Params,Class and Object
 ***
 - Include
     - Task
@@ -61,7 +61,7 @@
         - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_2/Lesson_1/Lesson/Lesson/Program.cs)
         - Documentation
 
-#### Lesson(2/2) => Static
+## Lesson(2/2) => Static
 ***
 - İnclude
     - Task
@@ -84,7 +84,7 @@
         - Code
         - Documentation
 
-#### Lesson(3/1) => Array,Non-Generic and Generic
+## Lesson(3/1) => Array,Non-Generic and Generic
 ***
 - Include
     - Task
@@ -152,7 +152,7 @@
         - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_3/Lesson_1/Lesson/Lesson/Program.cs)
         - Documentation
 
-#### Lesson(4/1) => OOP (Object Oriented Programming)
+## Lesson(4/1) => OOP (Object Oriented Programming)
 ***
 - Include
     - Task 
@@ -178,14 +178,14 @@
         - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_1/Lesson/Lesson/Program.cs)
         - [Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_1/OOP_Research_and_Lesson.md)
 
- #### Lesson(4/2) => Struct
+ ## Lesson(4/2) => Struct
  ***
  - Include
     - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_4/Lesson_2)
         - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_2/Lesson/Lesson/Program.cs)
         - [Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_2/different_Struct_and_Class.md)
 
- #### Lesson(5/1) => C# Interface and Access Modifiers
+ ## Lesson(5/1) => C# Interface and Access Modifiers
  ***
 - Include 
     - Task
