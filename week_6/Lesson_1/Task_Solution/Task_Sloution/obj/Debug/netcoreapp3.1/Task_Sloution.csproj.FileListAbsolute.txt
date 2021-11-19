@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_6\Lesson_1\Task_Solution\Task_Sloution\obj\Debug\netcoreapp3.1\Task_Sloution.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_6\Lesson_1\Task_Solution\Task_Sloution\obj\Debug\netcoreapp3.1\Task_Sloution.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_6\Lesson_1\Task_Solution\Task_Sloution\obj\Debug\netcoreapp3.1\Task_Sloution.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_6\Lesson_1\Task_Solution\Task_Sloution\obj\Debug\netcoreapp3.1\Task_Sloution.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_6\Lesson_1\Task_Solution\Task_Sloution\obj\Debug\netcoreapp3.1\Task_Sloution.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_6\Lesson_1\Task_Solution\Task_Sloution\bin\Debug\netcoreapp3.1\Task_Sloution.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_6\Lesson_1\Task_Solution\Task_Sloution\bin\Debug\netcoreapp3.1\Task_Sloution.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_6\Lesson_1\Task_Solution\Task_Sloution\bin\Debug\netcoreapp3.1\Task_Sloution.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_6\Lesson_1\Task_Solution\Task_Sloution\bin\Debug\netcoreapp3.1\Task_Sloution.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_6\Lesson_1\Task_Solution\Task_Sloution\bin\Debug\netcoreapp3.1\Task_Sloution.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_6\Lesson_1\Task_Solution\Task_Sloution\bin\Debug\netcoreapp3.1\Task_Sloution.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_6\Lesson_1\Task_Solution\Task_Sloution\obj\Debug\netcoreapp3.1\Task_Sloution.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_6\Lesson_1\Task_Solution\Task_Sloution\obj\Debug\netcoreapp3.1\Task_Sloution.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_6\Lesson_1\Task_Solution\Task_Sloution\obj\Debug\netcoreapp3.1\Task_Sloution.genruntimeconfig.cache

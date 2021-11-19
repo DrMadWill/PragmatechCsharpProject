@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsap\\week_6\\Lesson_1\\Task_Sloution\\Task_Sloution\\Task_Sloution.csproj",
+      "projectUniqueName": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsap\\week_6\\Lesson_1\\Task_Solution\\Task_Sloution\\Task_Sloution.csproj",
       "projectName": "Task_Sloution",
-      "projectPath": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsap\\week_6\\Lesson_1\\Task_Sloution\\Task_Sloution\\Task_Sloution.csproj",
+      "projectPath": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsap\\week_6\\Lesson_1\\Task_Solution\\Task_Sloution\\Task_Sloution.csproj",
       "packagesPath": "C:\\Users\\nofel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsap\\week_6\\Lesson_1\\Task_Sloution\\Task_Sloution\\obj\\",
+      "outputPath": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsap\\week_6\\Lesson_1\\Task_Solution\\Task_Sloution\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nofel\\AppData\\Roaming\\NuGet\\NuGet.Config",

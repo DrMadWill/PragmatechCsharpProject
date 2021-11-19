@@ -6,7 +6,8 @@ namespace Task_Sloution
 {
     class LibraryManager : ILibraryManager
     {
-        public List<Book> Books { get; set; }
+        private List<Book> _books;
+        public List<Book> Books { get { return _books; } set { _books = value; } }
 
         public LibraryManager()
         {
@@ -38,22 +39,57 @@ namespace Task_Sloution
 
         public List<Book> Filter(string author, Genere genere)
         {
-            throw new NotImplementedException();
+            string lowercase = author.Trim().ToLower();
+            List<Book> list = new List<Book>();
+            foreach (var item in this.Books)
+            {
+                if(item.Author.ToLower().Trim().Equals(lowercase) && item.Genere.Equals(genere))
+                {
+                    list.Add(item);
+                }
+            }
+
+            return list;
         }
 
         public void Remove(string book)
         {
-            throw new NotImplementedException();
+            string lowername = book.Trim().ToLower();
+            Book remove = this.Books.Find(x => x.Name.Trim().ToLower().Equals(lowername));
+            if (remove != null)
+            {
+                this.Books.Remove(remove);
+            }
         }
 
         public List<Book> Search(string value)
         {
-            throw new NotImplementedException();
+            string lowercase = value.Trim().ToLower();
+            List<Book> list = new List<Book>();
+            foreach (var item in this.Books)
+            {
+                if (item.Author.ToLower().Trim().Equals(lowercase) || item.Name.ToLower().Trim().Equals(lowercase))
+                {
+                    list.Add(item);
+                }
+            }
+
+            return list;
+
         }
 
         public void ShowInfo(string name)
         {
-            throw new NotImplementedException();
+            
+            Book showbook = this.Books.Find(x => x.Name.Trim().ToLower() == name.ToLower().Trim());
+            if (showbook != null)
+            {
+                Console.WriteLine($" Book Name : {showbook.Name} / Book Author : {showbook.Author} / Book Page Count : {showbook.PageCount} / Book Genere : {showbook.Genere}");
+            }
+            else
+            {
+                throw new BookNotFoundException("Not Found This Book");
+            }
         }
     }
 }
