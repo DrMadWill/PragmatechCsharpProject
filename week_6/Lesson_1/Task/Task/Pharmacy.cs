@@ -14,7 +14,11 @@ namespace Task
             this._medicines = new List<Medicine>();
         }
 
-
+        public void Sell(string name,int count)
+        {
+            Medicine sellmedicine = this.FindMedicineByName(name);
+            sellmedicine.Sell(count);
+        }
         public Medicine FindMedicineByName(string name)
         {
             if (string.IsNullOrEmpty(name))

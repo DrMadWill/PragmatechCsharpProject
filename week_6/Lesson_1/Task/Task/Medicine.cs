@@ -15,6 +15,8 @@ namespace Task
         private int _count;
         public int Count { get { return _count; } }
 
+        private int _totalIncome;
+        public int TotalIncome { get { return _totalIncome; } }
         public Medicine(string name,int price,int count)
         {
             this.Update(name, price, count);
@@ -53,6 +55,23 @@ namespace Task
             else
             {
                 this._count = count;
+            }
+        }
+
+        public void Sell(int count)
+        {
+            if (count == 0)
+            {
+                throw new IsNotZeroCountException("You Use UnCorrect Count");
+            }
+            else if (count > this.Count)
+            {
+                Console.WriteLine("Not Found This Count");
+            }
+            else
+            {
+                this._totalIncome = this._price * count;
+                this._count = this.Count - count;
             }
         }
     }
