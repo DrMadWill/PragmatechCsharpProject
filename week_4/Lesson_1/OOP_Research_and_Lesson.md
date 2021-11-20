@@ -31,9 +31,10 @@
     - həmin Class  Base Class ola bilmir (Yəni Inheritance verə bilmir);
 
 ### Encapsulation  
-- Encapsulation əsas xususiyyət bir Class daxildəki hər hansi fildi və ya property digər digər Classlardan qorumasıdır.Bunu üçün _set_ və _get_ methodundan istfadə edirik.
-    - _set_ İnformasiyani yoxlayib yazdırmaq üçündür;
-    - _get_ İnformasiyanı oxumaq üçündür;
+> Encapsulation əsas xususiyyət bir Class daxildəki hər hansi fildi və ya property digər Classlardan qorumasıdır.Bunu üçün _set_ və _get_ methodundan istfadə edirik.
+- _set_ İnformasiyani yoxlayib yazdırmaq üçündür;
+- _get_ İnformasiyanı oxumaq üçündür;
+- propertydə  tək _get_ methodundan istfifadə edərə bilərik. Ancaq tək _set_ methodundan xeyir.
 
 ### Polymorphism
 - Eyni adli methodu Static və Dynamic Polymorphism istfadə edərək müxtəlif cür istfadə etmək;
