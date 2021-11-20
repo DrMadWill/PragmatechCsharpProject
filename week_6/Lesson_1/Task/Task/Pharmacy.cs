@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Task
 {
-    class Pharmacy
+    class Pharmacy:IPharmacy
     {
         private readonly List<Medicine> _medicines;
         public List<Medicine> Medicines { get { return _medicines; } }
@@ -14,6 +14,41 @@ namespace Task
             this._medicines = new List<Medicine>();
         }
 
+        public void UpdateMedicine(string name, string newneme, int newprice, int newcount)
+        {
+            
+            if (string.IsNullOrEmpty(name))
+            {
+                throw new UnCatchNameException("Not Found This Medicine");
+            }
+            string lowercase = name.ToLower().Trim();
+            Medicine updatemedicines = this.Medicines.Find(f => f.Name.Trim().ToLower().Equals(name.ToLower().Trim()));
+            if (updatemedicines == null)
+            {
+                throw new UnCatchNameException("Not Found This Medicine");
+            }
+            else
+            {
+                
+
+                if (string.IsNullOrEmpty(newneme))
+                {
+                    newneme = updatemedicines.Name;
+                }
+
+                if (newprice == 0)
+                {
+                    newprice = updatemedicines.Price;
+                }
+
+                if (newcount == 0)
+                {
+                    newcount = updatemedicines.Count;
+                }
+
+                updatemedicines.Update(newneme, newprice, newcount);
+            }
+        }
         public void RemoveMedicine(string name)
         {
             string lowercase = name.Trim().ToLower();
@@ -24,7 +59,7 @@ namespace Task
             }
             else
             {
-                throw new UnCatchNameException(" Not Foun This Medicine");
+                throw new UnCatchNameException(" Not Found This Medicine");
             }
         }
         public void AddMedicine(Medicine medicine)
@@ -42,9 +77,6 @@ namespace Task
 
         }
 
-
-
-
         public void ShowInfoList()
         {
             int listnumber = 0;
@@ -58,4 +90,5 @@ namespace Task
         }
 
     }
+
 }

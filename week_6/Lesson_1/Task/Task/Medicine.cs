@@ -17,12 +17,22 @@ namespace Task
 
         public Medicine(string name,int price,int count)
         {
+            this.Update(name, price, count);
+        }
 
+        public void ShowInfo()
+        {
+            Console.WriteLine(">>>>>>>> Medicine Info <<<<<<<<<");
+            Console.WriteLine($" >> Name : {this.Name} / Price : {this.Price} / Count : {this.Count}");
+        }
+
+        public void Update(string name,int price,int count)
+        {
             if (string.IsNullOrEmpty(name))
             {
                 throw new UnCatchNameException("Name is Null or Empty");
             }
-            else 
+            else
             {
                 this._name = name;
             }
@@ -42,14 +52,8 @@ namespace Task
             }
             else
             {
-                this._count = _count + count;
+                this._count =  count;
             }
-        }
-
-        public void ShowInfo()
-        {
-            Console.WriteLine(">>>>>>>> Medicine Info <<<<<<<<<");
-            Console.WriteLine($" >> Name : {this.Name} / Price : {this.Price} / Count : {this.Count}");
         }
     }
 }

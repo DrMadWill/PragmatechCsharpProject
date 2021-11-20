@@ -12,6 +12,7 @@ namespace Task
             //medicine1.ShowInfo();
             Medicine medicine2 = new Medicine("Kmietrin", 21, 30);
             Medicine medicine3 = new Medicine("Pririnos-4", 21, 12);
+            medicine2.ShowInfo();
             Pharmacy tarkim = new Pharmacy();
             tarkim.AddMedicine(medicine1);
             tarkim.AddMedicine(medicine2);
@@ -23,6 +24,11 @@ namespace Task
             //tarkim.AddMedicine(medicine2);//IsAlreadyAddedException
             tarkim.ShowInfoList();
             tarkim.RemoveMedicine("Kmietrin");
+            tarkim.ShowInfoList();
+            tarkim.UpdateMedicine("fosetrin", "BoraPilus", 32, 35);
+            //tarkim.UpdateMedicine("fat", "vad", 32, 35);//Not Found
+
+
             tarkim.ShowInfoList();
         }
     }
