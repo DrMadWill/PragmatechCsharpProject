@@ -177,6 +177,38 @@
     - [Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lesson_1/Documantation.md)
 
 ## Lesson(5/2) => Solid Principles,Dependency Injection != Inversion and C#(8) Interface 
+***
 - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_5/Lessson_2)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lessson_2/Lesson/Lesson/Program.cs)
     - [Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lessson_2/documatation.md)
+## Lesson(6/1) => Task Solution 
+- Task 
+    - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-10-13-noyabr-2021-)
+    ```
+        Aptek sistemi
+
+        Aşağıdakı member-leri olan Medicine (derman) classi yaradirsiniz
+
+        Name - dermanin adi
+        Price - dermanin qiymeti
+        Count - dermanin sayi
+        Medicine obyektinin adi ve qiymeti yaradildigi an teyin olunmalidir.Adsiz ve ya qiymetsiz medicine obyekti ola bilmez Qeyd: Dermanin  qiymeti 0-dan boyuk olmalidir.Dermanin sayi 0-dan az ola bilmez.
+
+        Aşağıdakı memberlerden ibaret Pharmacy (aptek) class-i yaradirsiniz
+
+        Medicines - aptekdeki dermanlar siyahisini ifade edir (Medicine array-i)
+
+        TotalIncome - derman satislarindan elde edilen gelir.Bu memberin deyeri yalnizca satislar zamani artmalidir.Basqa hec bir sekilde deyisdirile bilinmemelidir.
+
+        Sell() - bu metod derman satisi ifade edir.Parameter olaraq dermanin adi ve sayini qebul edir. Hemin ada gore sihayidan axtarib tapacagi  dermanin satisini heyata kecirir.
+
+        FindMedicineByName() - bu metod adina gore axtarilan derman obyektini geri qaytarir.Parameter olaraq axtarilan dermanin adini qebul edir. Hemin ad ile dermanlar sihayisindan axtaris edib eyni adli derman obyektini tapıb geri qaytarir.
+
+        AddMedicine() - bu metod dermanlar siyahisina yeni derman elave etmeyi ifade edir.Parameter olaraq medicine qebul edir.
+
+        Qeyd : aptekin dermanlar siyahisinda eyni adda yalnizca bir medicine obyekti ola biler.İkinci eyin adli medicine obyekti elave edile  bilmez
+    ```
+    - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_1/Task/Task)
+
+- [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_1)
+    - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_1/Task/Task)
