@@ -66,7 +66,7 @@ namespace Task
             }
             else if (count > this.Count)
             {
-                Console.WriteLine("Not Found This Count");
+                throw new IsNotZeroCountException("Not Found This Count");
             }
             else
             {
