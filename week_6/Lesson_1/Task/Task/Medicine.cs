@@ -52,7 +52,7 @@ namespace Task
             }
             else
             {
-                this._count =  count;
+                this._count = count;
             }
         }
     }

@@ -14,12 +14,29 @@ namespace Task
             this._medicines = new List<Medicine>();
         }
 
+
+        public Medicine FindMedicineByName(string name)
+        {
+            if (string.IsNullOrEmpty(name))
+            {
+                throw new UnCatchNameException("This is Empty");
+            }
+            string lowercase = name.Trim().ToLower();
+            Medicine findmedicine = this._medicines.Find(f => f.Name.Trim().ToLower().Equals(name.ToLower().Trim()));
+            if (findmedicine == null)
+            {
+                throw new UnCatchNameException("Not Found This Medicine");
+            }
+
+            return findmedicine;
+
+        }
         public void UpdateMedicine(string name, string newneme, int newprice, int newcount)
         {
             
             if (string.IsNullOrEmpty(name))
             {
-                throw new UnCatchNameException("Not Found This Medicine");
+                throw new UnCatchNameException("This is Empty");
             }
             string lowercase = name.ToLower().Trim();
             Medicine updatemedicines = this.Medicines.Find(f => f.Name.Trim().ToLower().Equals(name.ToLower().Trim()));
@@ -51,6 +68,10 @@ namespace Task
         }
         public void RemoveMedicine(string name)
         {
+            if (string.IsNullOrEmpty(name))
+            {
+                throw new UnCatchNameException("This is Empty");
+            }
             string lowercase = name.Trim().ToLower();
             Medicine removemedicine = this._medicines.Find(f => f.Name.Trim().ToLower() == lowercase);
             if (removemedicine != null)

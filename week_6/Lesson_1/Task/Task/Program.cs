@@ -27,9 +27,11 @@ namespace Task
             tarkim.ShowInfoList();
             tarkim.UpdateMedicine("fosetrin", "BoraPilus", 32, 35);
             //tarkim.UpdateMedicine("fat", "vad", 32, 35);//Not Found
-
-
             tarkim.ShowInfoList();
+            Console.WriteLine(" Find >> Name : "+tarkim.FindMedicineByName("borapilus").Name+" / Price : "+ tarkim.FindMedicineByName("borapilus").Price);
+            //Console.WriteLine(tarkim.FindMedicineByName("cs"));Not Found
+
+
         }
     }
 }
