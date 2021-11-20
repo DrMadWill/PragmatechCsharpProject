@@ -9,6 +9,8 @@ namespace Task
         private readonly List<Medicine> _medicines;
         public List<Medicine> Medicines { get { return _medicines; } }
 
+        private int _totalcome;
+        public int TotalCome { get { return _totalcome; } }
         public Pharmacy()
         {
             this._medicines = new List<Medicine>();
@@ -18,6 +20,7 @@ namespace Task
         {
             Medicine sellmedicine = this.FindMedicineByName(name);
             sellmedicine.Sell(count);
+            this._totalcome = this.TotalCome + sellmedicine.Price * count;
         }
         public Medicine FindMedicineByName(string name)
         {

@@ -70,7 +70,7 @@ namespace Task
             }
             else
             {
-                this._totalIncome = this._price * count;
+                this._totalIncome = this.TotalIncome + this._price * count;
                 this._count = this.Count - count;
             }
         }

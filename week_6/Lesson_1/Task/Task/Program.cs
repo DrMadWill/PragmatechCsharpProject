@@ -43,11 +43,23 @@ namespace Task
             //Console.WriteLine(medicine4.TotalIncome);
 
             medicine4.ShowInfo();
-            tarkim.Sell("nemroot", 13);
+            tarkim.Sell("nemroot", 10);
             medicine4.ShowInfo();
-            Console.WriteLine(" Total Came >> "+medicine4.TotalIncome);
+            Console.WriteLine(medicine4.Name + " Total Came >> "+medicine4.TotalIncome);
 
 
+            medicine3.ShowInfo();
+            tarkim.Sell("Pririnos-4", 10);
+            medicine3.ShowInfo();
+            Console.WriteLine(medicine3.Name +" Total Came >> " + medicine3.TotalIncome);
+            Console.WriteLine("Common Totalincame : " + tarkim.TotalCome);
+
+            medicine4.ShowInfo();
+            tarkim.Sell("nemroot", 2);
+            medicine4.ShowInfo();
+            Console.WriteLine(medicine4.Name + " Total Came >> " + medicine4.TotalIncome);
+
+            Console.WriteLine("Common Totalincame : " + tarkim.TotalCome);
 
         }
     }
