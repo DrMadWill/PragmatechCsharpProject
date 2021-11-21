@@ -1,8 +1,19 @@
 
 # Information structure
-- <b> Lesson(a/b)</b>
+-  **Lesson(a/b)**
     - _a_ Week
     - _b_ Lesson
+
+# My Apps
+***
+### Calculator App
+> **App** _Consol_ üçün yazılmışdır. Heç bir methodan istfadə edilməyib. Kod maxsimum sadə yazılmağa çalışlıb.
+- [Preveiw](https://onlinegdb.com/uqfDGR-sE )
+- [Code Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/old_task/week-1/Lesson_2/calculator_with_switch/calculator_with_switch/Program.cs)
+- **App** xususiyyətləri
+    - _Consol_ üçün yazılıb.
+    - _Non-method_-dur.
+
 
 # My Lessons 
 
