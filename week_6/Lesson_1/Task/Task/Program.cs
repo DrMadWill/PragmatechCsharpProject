@@ -19,17 +19,104 @@ namespace Task
             tarkim.AddMedicine(medicine2);
             tarkim.AddMedicine(medicine3);
             tarkim.AddMedicine(medicine4);
+            
+
+
+
+
+
+            CreateMedicine(tarkim);
+            IsShowList(tarkim);
+
+            UpdateMedicine(tarkim);
+            IsShowList(tarkim);
+
+            RemoveMedicine(tarkim);
+            IsShowList(tarkim);
+        }
+        public static void RemoveMedicine(Pharmacy pharmacy)
+        {
+            string name;
+            bool is_continue_last;
+            bool is_continue_2;
+            do
+            {
+                do
+                {
+                    My.NoteHead("Medicine Remove");
+                    My.NoteInput("Input Update Medicine Name");
+                    name = My.ConsInputString();
+
+                    try
+                    {
+                        pharmacy.RemoveMedicine(name);
+                        is_continue_2 = false;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex);
+                        My.NoteOutput("Can't remove medicine! Plase input agen.");
+                        is_continue_2 = true;
+                    }
+
+                } while (is_continue_2);
+                My.NoteOutput("You remove updated!");
+                My.NoteOutput("Do you remove update medicine ?");
+                is_continue_last = !My.IsContinueLoop();
+                pharmacy.ShowInfoList();
+
+            } while (is_continue_last);
+        }
+
+        public static void UpdateMedicine(Pharmacy pharmacy)
+        {
             int price;
             int count;
             string name;
             string newname;
             bool is_continue_last;
             bool is_continue_2;
+            do
+            {
+                do
+                {
+                    My.NoteHead("Medicine Update");
+                    My.NoteInput("Input Update Medicine Name");
+                    name = My.ConsInputString();
+                    My.NoteInput("Input New Medicine Name");
+                    newname = My.ConsInputString();
+                    My.NoteInput("Input New Medicine Name");
+                    price = My.ConsInputInt();
+                    My.NoteInput("Input New Medicine Count");
+                    count = My.ConsInputInt();
+                    try
+                    {
+                        pharmacy.UpdateMedicine(name, newname, price, count);
+                        is_continue_2 = false;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex);
+                        My.NoteOutput("Can't update medicine! Plase input agen.");
+                        is_continue_2 = true;
+                    }
 
-            
+                } while (is_continue_2);
+                My.NoteOutput("You medicine updated!");
+                My.NoteOutput("Do you continue update medicine ?");
+                is_continue_last = !My.IsContinueLoop();
+                pharmacy.ShowInfoList();
 
-            
-            
+            } while (is_continue_last);
+        }
+        
+        public static void CreateMedicine(Pharmacy pharmacy)
+        {
+            int price;
+            int count;
+            string name;
+            bool is_continue_last;
+            bool is_continue_2;
             do
             {
                 for (int i = 0; i < 1; i++)
@@ -46,7 +133,7 @@ namespace Task
                         try
                         {
                             Medicine medicine = new Medicine(name, price, count);
-                            tarkim.AddMedicine(medicine);
+                            pharmacy.AddMedicine(medicine);
                             is_continue_2 = false;
                         }
                         catch (Exception ex)
@@ -54,7 +141,7 @@ namespace Task
                             Console.WriteLine(ex);
                             My.NoteOutput("Can't create medicine! Plase input agen.");
                             is_continue_2 = true;
-                            
+
                         }
 
                     } while (is_continue_2);
@@ -65,71 +152,6 @@ namespace Task
                 is_continue_last = !My.IsContinueLoop();
 
             } while (is_continue_last);
-            IsShowList(tarkim);
-
-
-            do
-            {
-                do
-                {
-                    My.NoteHead("Medicine Update");
-                    My.NoteInput("Input Update Medicine Name");
-                    name = My.ConsInputString();
-                    My.NoteInput("Input New Medicine Name");
-                    newname = My.ConsInputString();
-                    My.NoteInput("Input New Medicine Name");
-                    price = My.ConsInputInt();
-                    My.NoteInput("Input New Medicine Count");
-                    count = My.ConsInputInt();
-                    try
-                    {
-                        tarkim.UpdateMedicine(name, newname, price, count);
-                        is_continue_2 = false;
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine(ex);
-                        My.NoteOutput("Can't update medicine! Plase input agen.");
-                        is_continue_2 = true;
-                    }
-
-                } while (is_continue_2);
-                My.NoteOutput("You medicine updated!");
-                My.NoteOutput("Do you continue update medicine ?");
-                is_continue_last = !My.IsContinueLoop();
-                tarkim.ShowInfoList();
-
-            } while (is_continue_last);
-            IsShowList(tarkim);
-
-            do
-            {
-                do
-                {
-                    My.NoteHead("Medicine Remove");
-                    My.NoteInput("Input Update Medicine Name");
-                    name = My.ConsInputString();
-
-                    try
-                    {
-                        tarkim.RemoveMedicine(name);
-                        is_continue_2 = false;
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine(ex);
-                        My.NoteOutput("Can't remove medicine! Plase input agen.");
-                        is_continue_2 = true;
-                    }
-
-                } while (is_continue_2);
-                My.NoteOutput("You remove updated!");
-                My.NoteOutput("Do you remove update medicine ?");
-                is_continue_last = !My.IsContinueLoop();
-                tarkim.ShowInfoList();
-
-            } while (is_continue_last);
-            IsShowList(tarkim);
         }
 
         public static void IsShowList(Pharmacy pharmacy)
