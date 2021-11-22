@@ -31,12 +31,12 @@ namespace Task
                 {
                     do
                     {
-                        Console.WriteLine("------ >>>>> Medicine Create <<<<<------");
-                        Console.WriteLine(" <<<<<<<<<< Input Medicine Name ");
+                        My.NoteHead("Medicine Create");
+                        My.NoteInput("Input Medicine Name");
                         name = My.ConsInputString();
-                        Console.WriteLine(" <<<<<<<<<< Input Medicine Price ");
+                        My.NoteInput("Input Medicine Price");
                         price = My.ConsInputInt();
-                        Console.WriteLine(" <<<<<<<<<< Input Medicine Count ");
+                        My.NoteInput("Input Medicine Count");
                         count = My.ConsInputInt();
                         try
                         {
@@ -47,7 +47,7 @@ namespace Task
                         catch (Exception ex)
                         {
                             Console.WriteLine(ex);
-                            Console.WriteLine("Can't create medicine! Plase input agen .");
+                            My.NoteOutput("Can't create medicine! Plase input agen.");
                             is_continue_2 = true;
                             
                         }

@@ -52,5 +52,19 @@ namespace Task
 
             return is_continue;
         }
+
+        public static void NoteHead(string str)
+        {
+            Console.WriteLine($"---------- >>>>>>>>>> {str} <<<<<<<<<<< ----------");
+        }
+
+        public static void NoteInput(string str)
+        {
+            Console.WriteLine($"<<<<<<<<<<<<< : {str}");
+        }
+        public static void NoteOutput(string str)
+        {
+            Console.WriteLine($">>>>>>> : {str}");
+        }
     }
 }
