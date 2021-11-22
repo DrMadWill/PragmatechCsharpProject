@@ -39,7 +39,7 @@ namespace Task
         public static bool IsContinueLoop()
         {
             bool is_continue;
-            Console.Write("Are you continue or exit => (Any case / n ) <<< : ");
+            Console.Write(" <<<<<< Are you continue or exit => (Any case / n ) <<< : ");
             string str = Console.ReadLine();
             if (str == "n")
             {

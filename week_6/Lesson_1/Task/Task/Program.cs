@@ -22,11 +22,12 @@ namespace Task
             int price;
             int count;
             string name;
+            string newname;
             bool is_continue_last;
-            bool is_continue_create_m;
+            bool is_continue_2;
             do
             {
-                for (int i = 0; i < 2; i++)
+                for (int i = 0; i < 1; i++)
                 {
                     do
                     {
@@ -41,28 +42,60 @@ namespace Task
                         {
                             Medicine medicine = new Medicine(name, price, count);
                             tarkim.AddMedicine(medicine);
-                            is_continue_create_m = false;
+                            is_continue_2 = false;
                         }
                         catch (Exception ex)
                         {
                             Console.WriteLine(ex);
                             Console.WriteLine("Can't create medicine! Plase input agen .");
-                            is_continue_create_m = true;
+                            is_continue_2 = true;
                             
                         }
 
-                    } while (is_continue_create_m);
-                    
-                    
+                    } while (is_continue_2);
+
+                    Console.WriteLine("You medicine created!");
                 }
+                Console.WriteLine("Do you continue create medicine ?");
                 is_continue_last = !My.IsContinueLoop();
                 tarkim.ShowInfoList();
 
             } while (is_continue_last);
+
+            do
+            {
+                do
+                {
+                    Console.WriteLine("------ >>>>> Medicine Update <<<<<------");
+                    Console.WriteLine(" <<<<<<<<<< Input Update Medicine Name ");
+                    name = My.ConsInputString();
+                    Console.WriteLine(" <<<<<<<<<< Input New Medicine Name ");
+                    newname = My.ConsInputString();
+                    Console.WriteLine(" <<<<<<<<<< Input New Medicine Price ");
+                    price = My.ConsInputInt();
+                    Console.WriteLine(" <<<<<<<<<< Input New Medicine Count ");
+                    count = My.ConsInputInt();
+                    try
+                    {
+                        tarkim.UpdateMedicine(name, newname, price, count);
+                        is_continue_2 = false;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex);
+                        Console.WriteLine("Can't update medicine! Plase input agen .");
+                        is_continue_2 = true;
+                    }
+
+                } while (is_continue_2);
+                Console.WriteLine("You medicine updated!");
+                Console.WriteLine("Do you continue update medicine ?");
+                is_continue_last = !My.IsContinueLoop();
+                tarkim.ShowInfoList();
+
+            } while (is_continue_last);
+
             
-
-             
-
             
 
         }
