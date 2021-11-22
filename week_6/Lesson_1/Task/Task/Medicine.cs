@@ -22,6 +22,12 @@ namespace Task
             this.Update(name, price, count);
         }
 
+        public void ShowInfo()
+        {
+            My.NoteHead("Medicine Info");
+            Console.WriteLine($" >> Name : {this.Name} / Price : {this.Price} / Count : {this.Count} / TotalIncome : {this.TotalIncome}");
+        }
+
         public void Update(string name,int price,int count)
         {
             if (string.IsNullOrEmpty(name))

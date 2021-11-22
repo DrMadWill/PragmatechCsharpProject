@@ -56,7 +56,7 @@ namespace Task
 
         public static void NoteHead(string str)
         {
-            Console.WriteLine($"---------- >>>>>>>>>> {str} <<<<<<<<<<< ----------");
+            Console.WriteLine($"\n---------- >>>>>>>>>> {str} <<<<<<<<<<< ----------");
         }
         public static void NoteInput(string str)
         {

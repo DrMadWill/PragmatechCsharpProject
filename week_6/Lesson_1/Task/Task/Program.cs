@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Task
 {
@@ -13,26 +14,70 @@ namespace Task
             Medicine medicine2 = new Medicine("Kmietrin", 21, 30);
             Medicine medicine3 = new Medicine("Pririnos-4", 21, 12);
             Medicine medicine4 = new Medicine("NemRoot", 36, 12);
+            Medicine medicine5 = new Medicine("BomZi", 40, 10);
             //medicine2.ShowInfo();
-            Pharmacy tarkim = new Pharmacy();
-            tarkim.AddMedicine(medicine1);
-            tarkim.AddMedicine(medicine2);
-            tarkim.AddMedicine(medicine3);
-            tarkim.AddMedicine(medicine4);
-            
+            Pharmacy pharmacy = new Pharmacy();
+            pharmacy.AddMedicine(medicine1);
+            pharmacy.AddMedicine(medicine2);
+            pharmacy.AddMedicine(medicine3);
+            pharmacy.AddMedicine(medicine4);
+            pharmacy.AddMedicine(medicine5);
+            List<string> operation = new List<string>();
+            operation.Add("Create Medicine => cm");
+            operation.Add("Remove Medicine => rm");
+            operation.Add("Update Medicine => um");
+            operation.Add("Show Medicine List=> swm");//
+            operation.Add("Sell Medicine => slm");
+            operation.Add("Find Medicine => fm");
+            operation.Add("Show Common Totalincome => sctm");
 
+            string operaton;
+            bool is_conitue;
+            do
+            {
+                My.NoteHead("Opertions");
+                foreach (var item in operation)
+                {
+                    My.NoteOutput(item);
+                }
 
+                My.NoteHead("Choose your operation?");
+                operaton = My.ConsInputString();
+                switch (operaton)
+                {
+                    case "cm":
+                        CreateMedicine(pharmacy);
+                        IsShowList(pharmacy);
+                        break;
+                    case "rm":
+                        RemoveMedicine(pharmacy);
+                        IsShowList(pharmacy);
+                        break;
+                    case "um":
+                        UpdateMedicine(pharmacy);
+                        IsShowList(pharmacy);
+                        break;
+                    case "swm":
+                        pharmacy.ShowInfoList();
+                        break;
+                    case "slm":
+                        Sell(pharmacy);
+                        break;
+                    case "fm":
+                        Find(pharmacy);
+                        break;
+                    case "sctm":
+                        
+                        break;
+                    default:
+                        My.NoteOutput("Don't have this operation!");
+                        break;
+                }
+                My.NoteOutput("Want to do another operation?");
+                is_conitue = !My.IsContinueLoop();
 
+            } while (is_conitue);
 
-
-            CreateMedicine(tarkim);
-            IsShowList(tarkim);
-
-            UpdateMedicine(tarkim);
-            IsShowList(tarkim);
-
-            RemoveMedicine(tarkim);
-            IsShowList(tarkim);
         }
         public static void RemoveMedicine(Pharmacy pharmacy)
         {
@@ -63,7 +108,6 @@ namespace Task
                 My.NoteOutput("You remove updated!");
                 My.NoteOutput("Do you remove update medicine ?");
                 is_continue_last = !My.IsContinueLoop();
-                pharmacy.ShowInfoList();
 
             } while (is_continue_last);
         }
@@ -163,6 +207,81 @@ namespace Task
             {
                 pharmacy.ShowInfoList();
             }
+        }
+
+        public static void Sell(Pharmacy pharmacy)
+        {
+
+            string name;
+            int count;
+            bool is_continue_last;
+            bool is_continue_2;
+
+            do
+            {
+                do
+                {
+                    My.NoteHead("Sell Medicine");
+                    My.NoteInput("Input Medicine Name");
+                    name = My.ConsInputString();
+                    My.NoteInput("Input Medicine Count");
+                    count = My.ConsInputInt();
+
+                    try
+                    {
+                        pharmacy.Sell(name, count);
+                        is_continue_2 = false;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex);
+                        My.NoteOutput("Can't sell medicine! Plase input agen.");
+                        is_continue_2 = true;
+                    }
+
+                } while (is_continue_2);
+                My.NoteOutput("You selled the medicine!");
+                pharmacy.FindMedicineByName(name).ShowInfo();
+                My.NoteOutput("Do you sell medicine ?");
+                is_continue_last = !My.IsContinueLoop();
+
+            } while (is_continue_last);
+
+
+
+        }
+
+        public static void Find(Pharmacy pharmacy)
+        {
+            string name;
+            bool is_continue_last;
+            bool is_continue_2;
+            do
+            {
+                do
+                {
+                    My.NoteHead("Medicine Find");
+                    My.NoteInput("Input Update Medicine Name");
+                    name = My.ConsInputString();
+
+                    try
+                    {
+                        pharmacy.FindMedicineByName(name);
+                        is_continue_2 = false;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex);
+                        My.NoteOutput("Can't find medicine! Plase input agen.");
+                        is_continue_2 = true;
+                    }
+                } while (is_continue_2);
+                pharmacy.FindMedicineByName(name).ShowInfo();
+
+                My.NoteOutput("Do you find medicine ?");
+                is_continue_last = !My.IsContinueLoop();
+
+            } while (is_continue_last);
         }
     }
 }

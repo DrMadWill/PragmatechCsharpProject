@@ -111,9 +111,8 @@ namespace Task
             My.NoteHead("Medicines List");
             foreach (var item in this.Medicines)
             {
-                listnumber += 1;
-                
-                Console.WriteLine($" >>> {listnumber}. Name : {item.Name} / Price : {item.Price} / Count : {item.Count} ");
+                listnumber += 1;                
+                Console.WriteLine($" >>> {listnumber}. Name : {item.Name} / Price : {item.Price} / Count : {item.Count} / TotalIncome : {item.TotalIncome} ");
             }
         }
 
