@@ -47,15 +47,12 @@ namespace Task
                 {
                     case "cm":
                         CreateMedicine(pharmacy);
-                        IsShowList(pharmacy);
                         break;
                     case "rm":
                         RemoveMedicine(pharmacy);
-                        IsShowList(pharmacy);
                         break;
                     case "um":
                         UpdateMedicine(pharmacy);
-                        IsShowList(pharmacy);
                         break;
                     case "swm":
                         pharmacy.ShowInfoList();
@@ -67,7 +64,8 @@ namespace Task
                         Find(pharmacy);
                         break;
                     case "sctm":
-                        
+                        My.NoteHead("Common Totalincome Medicine");
+                        My.NoteOutput(pharmacy.TotalCome.ToString());
                         break;
                     default:
                         My.NoteOutput("Don't have this operation!");
@@ -78,6 +76,12 @@ namespace Task
 
             } while (is_conitue);
 
+        }
+        public static void CommonTotalincome(Pharmacy pharmacy)
+        {
+            My.NoteHead("Common Totalincome Medicine");
+            
+            
         }
         public static void RemoveMedicine(Pharmacy pharmacy)
         {
@@ -110,6 +114,7 @@ namespace Task
                 is_continue_last = !My.IsContinueLoop();
 
             } while (is_continue_last);
+            IsShowList(pharmacy);
         }
 
         public static void UpdateMedicine(Pharmacy pharmacy)
@@ -152,6 +157,7 @@ namespace Task
                 pharmacy.ShowInfoList();
 
             } while (is_continue_last);
+            IsShowList(pharmacy);
         }
         
         public static void CreateMedicine(Pharmacy pharmacy)
@@ -196,6 +202,7 @@ namespace Task
                 is_continue_last = !My.IsContinueLoop();
 
             } while (is_continue_last);
+            IsShowList(pharmacy);
         }
 
         public static void IsShowList(Pharmacy pharmacy)
