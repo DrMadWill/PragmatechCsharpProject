@@ -108,7 +108,7 @@ namespace Task
         public void ShowInfoList()
         {
             int listnumber = 0;
-            Console.WriteLine("-------- >>>>>>>>>>> Medicines List <<<<<<<<<<< -------");
+            My.NoteHead("Medicines List");
             foreach (var item in this.Medicines)
             {
                 listnumber += 1;

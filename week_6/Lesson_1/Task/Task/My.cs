@@ -36,10 +36,11 @@ namespace Task
 
             return str;
         }
+
         public static bool IsContinueLoop()
         {
             bool is_continue;
-            Console.Write(" <<<<<< Are you continue or exit => (Any case / n ) <<< : ");
+            Console.Write("<<<<<< Are you continue or exit => (Any case / n ) <<< : ");
             string str = Console.ReadLine();
             if (str == "n")
             {
@@ -57,7 +58,6 @@ namespace Task
         {
             Console.WriteLine($"---------- >>>>>>>>>> {str} <<<<<<<<<<< ----------");
         }
-
         public static void NoteInput(string str)
         {
             Console.WriteLine($"<<<<<<<<<<<<< : {str}");
