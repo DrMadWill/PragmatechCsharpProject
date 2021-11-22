@@ -30,7 +30,7 @@ namespace Task
                 {
                     do
                     {
-                        Console.WriteLine(" >>>>> Medicine Create <<<<<");
+                        Console.WriteLine("------ >>>>> Medicine Create <<<<<------");
                         Console.WriteLine(" <<<<<<<<<< Input Medicine Name ");
                         name = My.ConsInputString();
                         Console.WriteLine(" <<<<<<<<<< Input Medicine Price ");
@@ -41,13 +41,13 @@ namespace Task
                         {
                             Medicine medicine = new Medicine(name, price, count);
                             tarkim.AddMedicine(medicine);
-                            is_continue_create_m = true;
+                            is_continue_create_m = false;
                         }
                         catch (Exception ex)
                         {
                             Console.WriteLine(ex);
                             Console.WriteLine("Can't create medicine! Plase input agen .");
-                            is_continue_create_m = false;
+                            is_continue_create_m = true;
                             
                         }
 
@@ -55,53 +55,15 @@ namespace Task
                     
                     
                 }
-                is_continue_last = My.IsContinueLoop();
+                is_continue_last = !My.IsContinueLoop();
+                tarkim.ShowInfoList();
 
             } while (is_continue_last);
             
 
              
 
-            //tarkim.ShowInfoList();
-            //Medicine medicine2 = new Medicine("Fosetrin", 21, 12);//
-            //medicine2.ShowInfo();
-            //tarkim.AddMedicine(medicine2);//IsAlreadyAddedException
-
-            //tarkim.ShowInfoList();
-            //tarkim.RemoveMedicine("Kmietrin");
-            //tarkim.ShowInfoList();
-            //tarkim.UpdateMedicine("fosetrin", "BoraPilus", 32, 35);
-            //tarkim.UpdateMedicine("fat", "vad", 32, 35);//Not Found Exception
-            //tarkim.ShowInfoList();
-
-            //Console.WriteLine(" Find >> Name : "+tarkim.FindMedicineByName("borapilus").Name+" / Price : "+ tarkim.FindMedicineByName("borapilus").Price);
-            //Console.WriteLine(tarkim.FindMedicineByName("cs"));Not Found Exception
-
-            //medicine4.ShowInfo();
-            //medicine4.Sell(12);
-            //medicine4.Sell(13);//Not Found
-            //medicine4.Sell(0);// Exception
-            //medicine4.ShowInfo();
-            //Console.WriteLine(medicine4.TotalIncome);
-
-            //medicine4.ShowInfo();
-            //tarkim.Sell("nemroot", 10);
-            //medicine4.ShowInfo();
-            //Console.WriteLine(medicine4.Name + " Total Came >> "+medicine4.TotalIncome);
-
-
-            //medicine3.ShowInfo();
-            //tarkim.Sell("Pririnos-4", 10);
-            //medicine3.ShowInfo();
-            //Console.WriteLine(medicine3.Name +" Total Came >> " + medicine3.TotalIncome);
-            //Console.WriteLine("Common Totalincame : " + tarkim.TotalCome);
-
-            //medicine4.ShowInfo();
-            //tarkim.Sell("nemroot", 2);
-            //medicine4.ShowInfo();
-            //Console.WriteLine(medicine4.Name + " Total Came >> " + medicine4.TotalIncome);
-
-            //Console.WriteLine("Common Totalincame : " + tarkim.TotalCome);
+            
 
         }
     }

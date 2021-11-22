@@ -31,7 +31,7 @@ namespace Task
 
         public static string ConsInputString()
         {
-            Console.Write("Input a text : <<<<<< : ");
+            Console.Write("Input text : <<<<<< : ");
             string str = Console.ReadLine();
 
             return str;
