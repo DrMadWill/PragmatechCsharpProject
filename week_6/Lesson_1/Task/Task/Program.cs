@@ -10,12 +10,10 @@ namespace Task
             Console.WriteLine(">>>>>>>>>>>>>>> Hello My World! <<<<<<<<<<<<<<<<<<<");
 
             Medicine medicine1 = new Medicine("Fosetrin", 30, 12);
-            //medicine1.ShowInfo();
             Medicine medicine2 = new Medicine("Kmietrin", 21, 30);
             Medicine medicine3 = new Medicine("Pririnos-4", 21, 12);
             Medicine medicine4 = new Medicine("NemRoot", 36, 12);
             Medicine medicine5 = new Medicine("BomZi", 40, 10);
-            //medicine2.ShowInfo();
             Pharmacy pharmacy = new Pharmacy();
             pharmacy.AddMedicine(medicine1);
             pharmacy.AddMedicine(medicine2);
@@ -71,7 +69,7 @@ namespace Task
                         My.NoteOutput("Don't have this operation!");
                         break;
                 }
-                My.NoteOutput("Want to do another operation?");
+                My.NoteHead("Want to do another operation?");
                 is_conitue = !My.IsContinueLoop();
 
             } while (is_conitue);
