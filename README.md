@@ -227,3 +227,25 @@
 
 - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_1)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_1/Task/Task)
+
+## Lesson(6/2) => C# Delegate and Extension Method
+- Task
+    - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-12-20-noyabr-2021-)
+    ```
+    asagidaki metodlardan iabret static ExtentionMethods class-i yaradin.
+
+    IsOdd() - int obyektler ucun hemin obyektin tek eded olub olmadigini geri qaytaran (true/false) method
+
+    IsEven() - int obyektler ucun hemin obyektin cut eded olub olmadigini geri qaytaran (true/false) method
+
+    IsContainsDigit() - string obyektler ucun hemin obyektin daxilinde digit charactre olub olmamsini geri qaytaran(true/false) metod
+
+    GetValueIndexes() - string-ler ucun parameter oaraq gonderilen charin stringin hansi indexlerinde yerlesdiyini tapan ve tapdigi butun indexleri array olaraq geri qaytaran metod (hec bir deyer tapilmazsa geriya bos (0 uzunluqlu) int[] qayidir)
+
+    GetValueIndexes() - integer array-leri ucun parameter olaraq gonderilmis integer deyerinin bu arrayin hansi indexlerinde oldugunu tapi ,butun tapdigi indexleri array olaraq geri qaytaran metod .(hec bir deyer tapilmazsa geriya bos (0 uzunluqlu) int[] qayidir)
+
+    ```
+    - [Solution]()
+- [Lesson]()
+    - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_2/Lesson/Lesson)
+    - [Documattion](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_6/Lesson_2/Documantation.md)
