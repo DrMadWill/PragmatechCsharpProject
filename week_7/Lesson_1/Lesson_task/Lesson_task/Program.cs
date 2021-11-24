@@ -7,38 +7,45 @@ namespace Lesson_task
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello My World!");
 
-            //Print print = new Print(PrintSeasonName);
-
-            //print += TranslateMonthName;
-
-            //byte num=Convert.ToByte(Console.ReadLine());
-            //print.Invoke(num);
-
-            //Console.OutputEncoding = Encoding.UTF8;
-            //Console.WriteLine("**Methods** \n 1. Ayin adini yazdirmaq \n 2. Feslin adini yazdirmaq");
-            //Console.WriteLine("Bir method secin");
-            //string method = Console.ReadLine();
-            //Console.WriteLine("bir ay secin");
-            //byte month = byte.Parse(Console.ReadLine());
-            //Console.WriteLine(ChooseMethod(method, month));
-            Action<int> goster = delegate (int a)
+            
+            Console.OutputEncoding = Encoding.UTF8;
+            string method;
+            byte month;
+            bool is_conitue;
+            do
             {
-                Action<int> ad = MenfiYokla;
-                ad += DivsibleBy5;
-                ad += Even;
-                ad.Invoke(a);
-            };
+                My.NoteHead("Methods");
+                My.NoteOutput("1.Ayin adini yazdirmaq");
+                My.NoteOutput("2. Feslin adini yazdirmaq");
+                My.NoteInput("Bir method secin");
+                method = My.ConsInputString();
+                My.NoteInput("bir ay secin");
+                month = My.ConsInputByte();
+                My.NoteOutput(ChooseMethod(method, month));
+                My.NoteHead("Yeidən Ay Seçimi ?");
+                is_conitue = !My.IsContinueLoop();
+            } while (is_conitue);
+            
 
-            goster.Invoke(5);
+
+            //Action<int> goster = delegate (int a)
+            //{
+            //    Action<int> ad = MenfiYokla;
+            //    ad += DivsibleBy5;
+            //    ad += Even;
+            //    ad.Invoke(a);
+            //};
+
+            //goster.Invoke(5);
 
         }
         
 
-        public static void MenfiYokla(int a) => Console.WriteLine(a < 0 ? "Menfi" : "Musbet");
-        public static void DivsibleBy5(int a) => Console.WriteLine(a % 5 == 0 ? "Divsible" : "Not Divsible");
-        public static void Even(int a) => Console.WriteLine(a % 2 == 0 ? "even" : "odd");
+        //public static void MenfiYokla(int a) => Console.WriteLine(a < 0 ? "Menfi" : "Musbet");
+        //public static void DivsibleBy5(int a) => Console.WriteLine(a % 5 == 0 ? "Divsible" : "Not Divsible");
+        //public static void Even(int a) => Console.WriteLine(a % 2 == 0 ? "even" : "odd");
 
 
 
@@ -47,15 +54,15 @@ namespace Lesson_task
 
         public delegate string ChoosMounth(string method, byte month);
 
-        public static string PrintSeasonName(byte b)
+        public static string PrintSeasonName(byte month_number)
         {
             string sizon;
-            switch (b)
+            switch (month_number)
             {
                 case 12:
                 case 1:
                 case 2:
-                    sizon = "qis";
+                    sizon = "Qiş";
                     break;
                 case 3:
                 case 4:
@@ -75,83 +82,51 @@ namespace Lesson_task
                     
                     break;
                 default:
-                    sizon = "Bele bir ay yoxdur";
+                    sizon = "Belə bir ay yoxdur!";
                     break;
             }
 
             return sizon;
         }
-        public static string  TranslateMonthName(byte b)
+        public static string  TranslateMonthName(byte month_number)
         {
-            string month;
-            switch (b)
+            string month = month_number switch
             {
-                case 1:
-                    month = "Yanvar";
-                    break;
-                case 2:
-                    month = "Fevral";
-                    break;
-                case 3:
-                    month = "Mart";
-                    break;
-                case 4:
-                    month = "Aprel";
-                    break;
-                case 5:
-                    month = "May";
-                    break;
-                case 6:
-                    month = "Iyun";
-                    break;
-                case 7:
-                    month = "Iyul";
-                    break;
-                case 8:
-                    month = "Avqust";
-                    break;
-                case 9:
-                    month = "Sentyabr";
-                    break;
-                case 10:
-                    month = "Oktyabr";
-                    break;
-                case 11:
-                    month = "Oktyabr";
-                    break;
-                case 12:
-                    month = "Dekabir";
-                    break;
-
-                default:
-                    month = "belə bir fəsil mövcud deyildir";
-                    break;
-            }
-
+                1 => "Yanvar",
+                2 => "Fevral",
+                3 => "Mart",
+                4 => "Aprel",
+                5 => "May",
+                6 => "Iyun",
+                7 => "Iyul",
+                8 => "Avqust",
+                9 => "Sentyabr",
+                10 => "Oktyabr",
+                11 => "Oktyabr",
+                12 => "Dekabır",
+                _ => "Belə bir ay mövcud deyildir!",
+            };
             return month;
         }
 
         public static string ChooseMethod(string method, byte month)
         {
-            Print print = null;
+            Print print;
             
             if (method == "1")
             {
-                PrintInfo("Month göstərir");
+                My.NoteHead("Ay göstərir");
                 print = TranslateMonthName;
                 
             }
             else
             {
-                PrintInfo("Sezon göstərir");
+                My.NoteHead("Sezon göstərir");
                 print = PrintSeasonName;
             }
             return print.Invoke(month);
         }
 
-        public static void PrintInfo(string info)
-        {
-            Console.WriteLine(info);
-        }
+        
     }
 }

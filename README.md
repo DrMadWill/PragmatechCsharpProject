@@ -19,6 +19,15 @@
  - [Preveiw](https://onlinegdb.com/G41oRbzaI)
  - [Code Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_1/Task/Task)
 
+### Month Number App
+> Ayın nömrəsini daxil edərək hansı fəsili və ay olduğunu görürük. `delegate`-in istfadəsi üçün yazılmışdır.
+- [Preveiw](https://onlinegdb.com/tL0IBru0X)
+- [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_7/Lesson_1/Lesson_task/Lesson_task)
+- **App** xususiyyətləri
+    - _Consol_ üçün yazılıb.
+    - `switch` istfadə edilib.
+    - `delegate` istfadə edilib.
+
 # My Lessons 
 
 ## Lesson(1/1) => CLI languages,For Loop,Switch Statement,Data Types,Stack Value Type,Heap Reference Type and Methods
