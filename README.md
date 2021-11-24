@@ -254,7 +254,7 @@
     GetValueIndexes() - integer array-leri ucun parameter olaraq gonderilmis integer deyerinin bu arrayin hansi indexlerinde oldugunu tapi ,butun tapdigi indexleri array olaraq geri qaytaran metod .(hec bir deyer tapilmazsa geriya bos (0 uzunluqlu) int[] qayidir)
 
     ```
-    - [Solution]()
+    - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_6/Lesson_2/Task/Task/Program.cs)
 - [Lesson]()
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_2/Lesson/Lesson)
     - [Documattion](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_6/Lesson_2/Documantation.md)
