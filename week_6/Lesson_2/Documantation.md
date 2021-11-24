@@ -1,5 +1,8 @@
 ## Existation
-> Hər hansı bir methodun çağırılması üçün `Class` müraciyyət edərək yaradılan dəyərdən istfadə etmək lazımdır. Bunu [qarşısını almaq üçün]() müthodun qəbul etdiyi dəyərin qarşısına `this` key yazılır.
+> Hər hansı bir methodun çağırılması üçün `Class`-a və ya `Struct`-a müraciyyət edərək yaradılan dəyərdən istfadə etmək lazımdır. Bunu prosesin qarşısını almaq üçün `Existation method`-undan istfadə edilir.`Existation method`-method üçün əsas tələblər bunlardır:
+- Method `static` clasin içərisində olmalıdır.
+- Extend ediləcək methodun parametrini qaşısına `this` key yazılır.
+- `Existation method`-da yalnız bir parametir `this` key-i ilə yazıla bilər.
 
 ## Delegate
 > `delegate` Methodların adresini özündə tutan accessible(Methodu methoda parametir kimi godərdiyimiz) structurdur.
@@ -15,5 +18,8 @@
     - _Lambda expression_-la
 
 ### Action
->  `void` `delegate`-in yaradılmasında istfadə edilir.
+- `void` `delegate`-in yaradılmasında istfadə edilir.
 - 16 parametir ala bilir.
+### Func
+- `return` type olan `delegate`-dir.
+- yalniz sonuncu type `return` dəyər olaraq götürür.

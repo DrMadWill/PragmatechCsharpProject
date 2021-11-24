@@ -75,12 +75,7 @@ namespace Task
             } while (is_conitue);
 
         }
-        public static void CommonTotalincome(Pharmacy pharmacy)
-        {
-            My.NoteHead("Common Totalincome Medicine");
-            
-            
-        }
+        
         public static void RemoveMedicine(Pharmacy pharmacy)
         {
             string name;
