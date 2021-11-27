@@ -9,13 +9,16 @@ namespace Task
         {
             Console.WriteLine("Hello My World!");
 
-            ValutaExchanger kass = new ValutaExchanger();
+            ValutaExchanger kass = new ValutaExchanger(CurrencyType.TL);
 
-            kass.AddNewCurencies(CurrencyType.EUR, 2);
+            kass.AddNewCurencies(CurrencyType.EUR, 5);
+            kass.AddNewCurencies(CurrencyType.USD, 2);
 
             kass.CurenciesShowInfo();
 
-            My.NoteOutput($"Cost : {kass.Exchange(CurrencyType.EUR, 25)}");
+            //My.NoteOutput($"Cost : {kass.Exchange(CurrencyType.EUR, 25,CurrencyType.AZN)}");
+            //My.NoteOutput($"Cost : {kass.Exchange(CurrencyType.EUR, 25, CurrencyType.USD)}");
+
 
         }
     }
@@ -25,8 +28,14 @@ namespace Task
         USD, EUR,TL,AZN
     }
 
-    
+    public enum PaymentTypes
+    {
+        Card,Cash
+    }
 
-    
+
+
+
+
 
 }
