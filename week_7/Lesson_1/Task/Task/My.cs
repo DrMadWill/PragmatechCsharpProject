@@ -29,6 +29,30 @@ namespace Task
             return number;
         }
 
+        public static byte ConsInputByte()
+        {
+            byte number = 0;
+            bool break_loop;
+            do
+            {
+                try
+                {
+                    Console.Write("Input a number : <<<<<< : ");
+                    number = Convert.ToByte(Console.ReadLine());
+                    break_loop = false;
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("You don't use full number and don't use number !");
+                    break_loop = true;
+                }
+
+            } while (break_loop);
+
+            return number;
+        }
+
+
         public static string ConsInputString()
         {
             Console.Write("Input text : <<<<<< : ");

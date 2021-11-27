@@ -68,7 +68,15 @@ namespace Task
 
         public void AddNewCurencies(CurrencyType currency, double Currency_cost)
         {
-            this._urencies.Add(currency, Currency_cost);
+            if (currency != this.Currency)
+            {
+                this._urencies.Add(currency, Currency_cost);
+            }
+            else
+            {
+                My.NoteOutput(" Currency : Bases Currency !");
+            }
+            
         }
 
         public void CurenciesShowInfo()

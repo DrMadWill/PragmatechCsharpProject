@@ -288,4 +288,4 @@
 
         RemoveSale - bu metod kassa aparatina daxil edilmis BİR satisi silmek ucundur. Parametr olaraq satisin meblegini ve currency qebul edir.Gonderilmis currency parametr kimi gonderilmis meblegin valyutasini ifade edir ve eger gonderilen bu valyuta kassa obyetinin valyutasindan ferqlidirse (Classin Currency peopertisinden) gonderilen mebleg kassanin istifade etdiyi valyutaya cevrilib daha sonra totalAmount-dan cixilir
     ```
-    - [Solution]()
+    - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_7/Lesson_1/Task/Task/Program.cs)

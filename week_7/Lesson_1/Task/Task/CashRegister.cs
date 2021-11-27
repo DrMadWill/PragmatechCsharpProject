@@ -34,17 +34,31 @@ namespace Task
             {
                 this.Changer = new ValutaExchanger(currency);
                 total=this.Changer.Exchange(currency, cost, this.Currency);
+                this._TotalSalesCount = ++this._TotalSalesCount ;
+                this._TotalAmount = this.TotalAmount + total;
             }
             else
             {
-                this._TotalSalesCount = this._TotalSalesCount + 1;
+                this._TotalSalesCount = ++this._TotalSalesCount;
                 this._TotalAmount = this.TotalAmount + cost;
             }
             
         }
-        public void RemoveSale()
+        public void RemoveSale(CurrencyType currency, double cost)
         {
-            
+            double total;
+            if (currency != this.Currency)
+            {
+                this.Changer = new ValutaExchanger(currency);
+                total = this.Changer.Exchange(currency, cost, this.Currency);
+                this._TotalSalesCount = --this._TotalSalesCount;
+                this._TotalAmount = this.TotalAmount - total;
+            }
+            else
+            {
+                this._TotalSalesCount = --this._TotalSalesCount;
+                this._TotalAmount = this.TotalAmount - cost;
+            }
         }
 
     }
