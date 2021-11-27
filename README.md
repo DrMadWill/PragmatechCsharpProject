@@ -206,6 +206,7 @@
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lessson_2/Lesson/Lesson/Program.cs)
     - [Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lessson_2/documatation.md)
 ## Lesson(6/1) => Task Solution 
+***
 - Task 
     - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-10-13-noyabr-2021-)
     ```
@@ -238,6 +239,7 @@
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_1/Task/Task)
 
 ## Lesson(6/2) => C# Delegate and Extension Method
+***
 - Task
     - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-12-20-noyabr-2021-)
     ```
@@ -258,3 +260,32 @@
 - [Lesson]()
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_2/Lesson/Lesson)
     - [Documattion](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_6/Lesson_2/Documantation.md)
+
+## Lesson(7/1) => Task Solution
+- Task
+    - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-13-21-noyabr-2021-)
+    ```
+        1.CurrencyType enumi - Bu enum cerrency value-lari saxlayir (USD,EUR ve TL)
+        ValutaExchanger static class
+
+        Exchange() - parameter olaraq valyuta (CurrencyType) ve meblegi (double)
+
+        Curencies - icinde currency ve meblegini tutan collection (key value mentiqinde, key olaraq currencyType, value olaraq double)
+
+        Main hissesinde bu metodlar bir nece enchage heyata kecirin, o emeliyyatlar ucun gotureceyiniz deyerleri console-dan qebul edin
+
+        2.CashRegister (magazalardaki kassa aparati) classi yaradirziniz Bu class-in TotalAmount,Currency,TotalSalesCount xususiyyetleri ve AddNewSale ve RemoveSale metodlari olsun
+
+        TotalAmount - kassa aparatinin kassasindaki pulun miqdarini ifade edir. Bu deyer kassa obyekti yaradildigi zaman mecburi olaraq daxil edilmeli ve daha sonradan yalnizca yeni satis elave edildikde ve ya silindikde avtomatik olaraq deyismelidir.
+
+        Currency - kassa aparatinin istifade etdiyi valyutani bildirir. Currency ucun enum yaradin ve bu memberi typi olaraq da hemin enumdan istidafe edin
+
+        PaymentType - satisin odenis novunu ifade edir.Bu card ve ya cash ola biler (odenis novu ucun enum istifade edin)
+
+        TotalSalesCount - bu deyer kassaya daxil edilmis satis emeliyyatlarinin sayini ifade edir. Ilkin oalraq 0-dir ver yalnizca Yeni satis daxil edildikde ve ya silindikde deyisir
+
+        AddSale - bu metod kassa aparatina yeni BİR satis elave etmek ucundur. Parametr olaraq satisin meblegini ve currency qebul edir.Gonderilmis currency parametr kimi gonderilmis meblegin valyutasini ifade edir ve eger gonderilen bu valyuta kassa obyetinin valyutasindan ferqlidirse (Classin Currency peopertisinden) gonderilen mebleg kassanin istifade etdiyi valyutaya cevrilib daha sonra totalAmoun-a elave edilmelidir
+
+        RemoveSale - bu metod kassa aparatina daxil edilmis BİR satisi silmek ucundur. Parametr olaraq satisin meblegini ve currency qebul edir.Gonderilmis currency parametr kimi gonderilmis meblegin valyutasini ifade edir ve eger gonderilen bu valyuta kassa obyetinin valyutasindan ferqlidirse (Classin Currency peopertisinden) gonderilen mebleg kassanin istifade etdiyi valyutaya cevrilib daha sonra totalAmount-dan cixilir
+    ```
+    - [Solution]()

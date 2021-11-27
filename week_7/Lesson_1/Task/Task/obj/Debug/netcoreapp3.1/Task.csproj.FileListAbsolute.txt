@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_7\Lesson_1\Task\Task\obj\Debug\netcoreapp3.1\Task.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_7\Lesson_1\Task\Task\obj\Debug\netcoreapp3.1\Task.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_7\Lesson_1\Task\Task\obj\Debug\netcoreapp3.1\Task.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_7\Lesson_1\Task\Task\obj\Debug\netcoreapp3.1\Task.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_7\Lesson_1\Task\Task\obj\Debug\netcoreapp3.1\Task.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_7\Lesson_1\Task\Task\bin\Debug\netcoreapp3.1\Task.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_7\Lesson_1\Task\Task\bin\Debug\netcoreapp3.1\Task.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_7\Lesson_1\Task\Task\bin\Debug\netcoreapp3.1\Task.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_7\Lesson_1\Task\Task\bin\Debug\netcoreapp3.1\Task.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_7\Lesson_1\Task\Task\bin\Debug\netcoreapp3.1\Task.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_7\Lesson_1\Task\Task\bin\Debug\netcoreapp3.1\Task.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_7\Lesson_1\Task\Task\obj\Debug\netcoreapp3.1\Task.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_7\Lesson_1\Task\Task\obj\Debug\netcoreapp3.1\Task.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsap\week_7\Lesson_1\Task\Task\obj\Debug\netcoreapp3.1\Task.genruntimeconfig.cache
