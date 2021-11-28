@@ -257,7 +257,7 @@
 
     ```
     - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_6/Lesson_2/Task/Task/Program.cs)
-- [Lesson]()
+- [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-13-21-noyabr-2021-)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_2/Lesson/Lesson)
     - [Documattion](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_6/Lesson_2/Documantation.md)
 
@@ -289,3 +289,9 @@
         RemoveSale - bu metod kassa aparatina daxil edilmis BİR satisi silmek ucundur. Parametr olaraq satisin meblegini ve currency qebul edir.Gonderilmis currency parametr kimi gonderilmis meblegin valyutasini ifade edir ve eger gonderilen bu valyuta kassa obyetinin valyutasindan ferqlidirse (Classin Currency peopertisinden) gonderilen mebleg kassanin istifade etdiyi valyutaya cevrilib daha sonra totalAmount-dan cixilir
     ```
     - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_7/Lesson_1/Task/Task/Program.cs)
+
+## Lesson(7/2) => C# Delegate and events
+- [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-14-27-noyabr-2021-) 
+    - [Code]()
+    - [My Documantation]()
+
