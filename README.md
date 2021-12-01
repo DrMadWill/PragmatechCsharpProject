@@ -14,7 +14,7 @@
     - _Consol_ üçün yazılıb.
     - _Non-method_-dur.
 
- ## Aptek App <a href="https://onlinegdb.com/G41oRbzaI" target="blank"> <img src="https://i.postimg.cc/Vkspg9p7/medical.png" width="220" height="200" align="right" ></a>
+## Aptek App <a href="https://onlinegdb.com/G41oRbzaI" target="blank"> <img src="https://i.postimg.cc/Vkspg9p7/medical.png" width="220" height="200" align="right" ></a>
  > Apteklərdə istfadə edlilən programların sadə versiyasıdır. Medicines create,delete, update və read etmək olur. Medicines-ləri satmaq və ümumi və tək gəlirlərə baxmaq mükündür.
  - [Preveiw](https://onlinegdb.com/G41oRbzaI)
  - [Code Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_1/Task/Task)
