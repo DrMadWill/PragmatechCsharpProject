@@ -4,7 +4,7 @@
     - _a_ Week
     - _b_ Lesson
 
-# My Apps
+# My Apps <a href="https://drmadwill.github.io/PragmatechCsharpProject/" target="blank"> <img src="https://i.postimg.cc/6Q7k4DHr/app.png" width="100" align="right" ></a>
 ***
 ### Calculator App<a href="https://onlinegdb.com/uqfDGR-sE" target="blank"> <img src="https://i.postimg.cc/tg06FP1C/calc.png" width="220" height="200" align="right" ></a>
 > **App** _Consol_ üçün yazılmışdır. Heç bir methodan istfadə edilməyib. Kod maxsimum sadə yazılmağa çalışlıb.
