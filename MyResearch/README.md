@@ -1,4 +1,3 @@
-# .Net-C#
 
 # My Research 
 
@@ -16,6 +15,7 @@
     - [Condition](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_7%20Codition/1_7%20Codition/Program.cs)
     - [Loop](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_8_Loop/1_8_Loop/Program.cs)
         - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/Documatation/Documatation.md#loop)
-    - [Class]()
-        - [My Documantation]()
+    - [Class](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_9_Class/1_9_Class/Program.cs)
+        - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/Documatation/Documatation.md#class)
+        
     
