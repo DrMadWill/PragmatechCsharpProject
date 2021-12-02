@@ -53,8 +53,8 @@ namespace _1_5_Array
                 //Console.WriteLine(list[i].Name);
             }
 
-            
-           
+
+            List<int> ededler = new List<int>() { 1, 3, 4, 5 };
             
         }
     }
