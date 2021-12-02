@@ -32,7 +32,7 @@
 - Toplama methodu ilə  
 - `string.Format()` methodundan istifadə edərək `string` dəyəri _variable_-lardan alaraq **index** uyğun yaza bilrərik daha çox time və rəqsal məlumatları göstərmək üçün istifadə edilir.
 - [**Template String**](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_4_String/1_4_String/Program.cs#L16) `$""`
-#### String [Method]()
+#### String [Method](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_4_String/1_4_String/Program.cs#L39)
 - `Length` propertidir.İçərisinidə olan `char`-ın miqdarını göstərir.
 - `ToLower()` methodu ilə `string` daxilindəki bütün hərifləri kiçik həriflərə çevirir.
 - `ToUpper()` methodu ilə `string` daxilindəki bütün hərifləri böyük həriflərə çevirir.
