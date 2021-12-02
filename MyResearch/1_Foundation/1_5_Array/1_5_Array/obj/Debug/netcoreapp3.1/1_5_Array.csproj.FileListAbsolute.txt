@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_5_Array\1_5_Array\bin\Debug\netcoreapp3.1\1_5_Array.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_5_Array\1_5_Array\bin\Debug\netcoreapp3.1\1_5_Array.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_5_Array\1_5_Array\bin\Debug\netcoreapp3.1\1_5_Array.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_5_Array\1_5_Array\bin\Debug\netcoreapp3.1\1_5_Array.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_5_Array\1_5_Array\bin\Debug\netcoreapp3.1\1_5_Array.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_5_Array\1_5_Array\bin\Debug\netcoreapp3.1\1_5_Array.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_5_Array\1_5_Array\obj\Debug\netcoreapp3.1\1_5_Array.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_5_Array\1_5_Array\obj\Debug\netcoreapp3.1\1_5_Array.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_5_Array\1_5_Array\obj\Debug\netcoreapp3.1\1_5_Array.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_5_Array\1_5_Array\obj\Debug\netcoreapp3.1\1_5_Array.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_5_Array\1_5_Array\obj\Debug\netcoreapp3.1\1_5_Array.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_5_Array\1_5_Array\obj\Debug\netcoreapp3.1\1_5_Array.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_5_Array\1_5_Array\obj\Debug\netcoreapp3.1\1_5_Array.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_5_Array\1_5_Array\obj\Debug\netcoreapp3.1\1_5_Array.genruntimeconfig.cache

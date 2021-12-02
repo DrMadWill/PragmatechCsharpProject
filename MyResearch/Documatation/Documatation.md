@@ -47,5 +47,9 @@
 - `Insert()`  daxilinə yazılan **index** sonra əlavə ediləcək `string`i yazırılır və o bizə **index** qabağına ələva edəcəmiyiz dəyəri yazıdır.
 - `Remove()` daxilinə yazılan **index** etibarən sona qədər və ya **index** sonra **nə qədər** gedəcəyni yaza bilərik və o bizə **index** dən sonrasını silir.
 
-
+### [Array]()
+***
+> Yaddaşda arard arda yer alan koleksiyaya `array` deyilir.
+> **Əvvəlcəndən Təyin edilmiş Bir genişliyi və tipi var**.
+> `array` tutacağı genişlik mütləq doldurulmaldır.
 
