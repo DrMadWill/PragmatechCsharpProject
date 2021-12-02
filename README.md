@@ -6,7 +6,7 @@
 
 # My Apps <a href="https://drmadwill.github.io/PragmatechCsharpProject/" target="blank"> <img src="https://i.postimg.cc/6Q7k4DHr/app.png" width="100" align="right" ></a>
 ***
-### Calculator App<a href="https://onlinegdb.com/uqfDGR-sE" target="blank"> <img src="https://i.postimg.cc/tg06FP1C/calc.png" width="220" height="200" align="right" ></a>
+### Calculator App<a href="https://onlinegdb.com/uqfDGR-sE" target="blank"> <img src="https://i.postimg.cc/tg06FP1C/calc.png" width="180"  align="right" ></a>
 > **App** _Consol_ üçün yazılmışdır. Heç bir methodan istfadə edilməyib. Kod maxsimum sadə yazılmağa çalışlıb.
 - [Preveiw](https://onlinegdb.com/uqfDGR-sE )
 - [Code Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/old_task/week-1/Lesson_2/calculator_with_switch/calculator_with_switch/Program.cs)
@@ -14,13 +14,13 @@
     - _Consol_ üçün yazılıb.
     - _Non-method_-dur.
 
- ### Aptek App <a href="https://onlinegdb.com/G41oRbzaI" target="blank"> <img src="https://i.postimg.cc/Vkspg9p7/medical.png" width="220" height="200" align="right" ></a>
+ ### Aptek App <a href="https://onlinegdb.com/G41oRbzaI" target="blank"> <img src="https://i.postimg.cc/Vkspg9p7/medical.png" width="180"  align="right" ></a>
  > Apteklərdə istfadə edlilən programların sadə versiyasıdır. Medicines create,delete, update və read etmək olur. Medicines-ləri satmaq və ümumi və tək gəlirlərə baxmaq mükündür.
  - [Preveiw](https://onlinegdb.com/G41oRbzaI)
  - [Code Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_1/Task/Task)
 
-### Month Number App
-> Ayın nömrəsini daxil edərək hansı fəsili və ay olduğunu görürük. `delegate`-in istfadəsi üçün yazılmışdır.<a href="https://onlinegdb.com/tL0IBru0X" target="blank"> <img src="https://i.postimg.cc/90Tt7hVz/calders.png" width="200" height="200" align="right" ></a>
+### Month Number App<a href="https://onlinegdb.com/tL0IBru0X" target="blank"> <img src="https://i.postimg.cc/90Tt7hVz/calders.png" width="180"  align="right" ></a>
+> Ayın nömrəsini daxil edərək hansı fəsili və ay olduğunu görürük. `delegate`-in istfadəsi üçün yazılmışdır.
 - [Preveiw](https://onlinegdb.com/tL0IBru0X)
 - [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_7/Lesson_1/Lesson_task/Lesson_task)
 - **App** xususiyyətləri
