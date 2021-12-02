@@ -60,3 +60,7 @@
     - Əvvələdən b(int) kimi `array` üçün `text_list[..b]`kimi bir ifadədən istifadə edə bilərirk. 
 
 
+### Loop
+***
+> Dövür üçün `for`,`while`,`foreach` və `do while` kimi dövürlərdən istifadə edilir.
+- `for` döngü sayının müəyyən olundauqda istifadə edilir.`for` döngüsün başlığın sonuncu elementini yəni hər döngündə aratan `i++` yazılamasa sonsuz döngüyə düşür.

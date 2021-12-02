@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_8_Loop\1_8_Loop\bin\Debug\netcoreapp3.1\1_8_Loop.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_8_Loop\1_8_Loop\bin\Debug\netcoreapp3.1\1_8_Loop.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_8_Loop\1_8_Loop\bin\Debug\netcoreapp3.1\1_8_Loop.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_8_Loop\1_8_Loop\bin\Debug\netcoreapp3.1\1_8_Loop.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_8_Loop\1_8_Loop\bin\Debug\netcoreapp3.1\1_8_Loop.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_8_Loop\1_8_Loop\bin\Debug\netcoreapp3.1\1_8_Loop.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_8_Loop\1_8_Loop\obj\Debug\netcoreapp3.1\1_8_Loop.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_8_Loop\1_8_Loop\obj\Debug\netcoreapp3.1\1_8_Loop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_8_Loop\1_8_Loop\obj\Debug\netcoreapp3.1\1_8_Loop.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_8_Loop\1_8_Loop\obj\Debug\netcoreapp3.1\1_8_Loop.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_8_Loop\1_8_Loop\obj\Debug\netcoreapp3.1\1_8_Loop.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_8_Loop\1_8_Loop\obj\Debug\netcoreapp3.1\1_8_Loop.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_8_Loop\1_8_Loop\obj\Debug\netcoreapp3.1\1_8_Loop.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_8_Loop\1_8_Loop\obj\Debug\netcoreapp3.1\1_8_Loop.genruntimeconfig.cache

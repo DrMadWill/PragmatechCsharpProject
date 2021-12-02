@@ -14,4 +14,4 @@
         - [My Research](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/Documatation/Documatation.md#array)
     - [Opertors](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_6%20Opertors/1_6%20Opertors/Program.cs)
     - [Condition](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_7%20Codition/1_7%20Codition/Program.cs)
-
+    - [Loop]
