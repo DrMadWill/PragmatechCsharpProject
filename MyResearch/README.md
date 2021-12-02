@@ -4,8 +4,8 @@
 
 ## Basic C#
 - Data Type
-    - [Variable]()
-        - [My Documantation]()
-    - [Type Convert]()
-        - [My Documantation]()
+    - [Variable](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_2_Varyable/Program.cs)
+        - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/Documatation/Documatation.md#variable)
+    - [Type Convert](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_3_data_type_convert/data_type_convert/Program.cs)
+        - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/Documatation/Documatation.md#type-convert)
 
