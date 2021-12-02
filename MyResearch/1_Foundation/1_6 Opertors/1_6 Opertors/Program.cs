@@ -31,7 +31,7 @@ namespace _1_6_Opertors
             iscadition = a == b;
             iscadition = a != b;
             iscadition = a > b && a < b;
-            //iscadition = a < b || a > b;
+            iscadition = a < b || a > b;
 
             Console.WriteLine(iscadition);
             Console.WriteLine("a : " + a);
