@@ -1,0 +1,13 @@
+C:\Users\nofel\OneDrive\Desktop\CDev\Foundation\1-FristLesson\bin\Debug\netcoreapp3.1\1-FristLesson.exe
+C:\Users\nofel\OneDrive\Desktop\CDev\Foundation\1-FristLesson\bin\Debug\netcoreapp3.1\1-FristLesson.deps.json
+C:\Users\nofel\OneDrive\Desktop\CDev\Foundation\1-FristLesson\bin\Debug\netcoreapp3.1\1-FristLesson.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\CDev\Foundation\1-FristLesson\bin\Debug\netcoreapp3.1\1-FristLesson.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\CDev\Foundation\1-FristLesson\bin\Debug\netcoreapp3.1\1-FristLesson.dll
+C:\Users\nofel\OneDrive\Desktop\CDev\Foundation\1-FristLesson\bin\Debug\netcoreapp3.1\1-FristLesson.pdb
+C:\Users\nofel\OneDrive\Desktop\CDev\Foundation\1-FristLesson\obj\Debug\netcoreapp3.1\1-FristLesson.csprojAssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\CDev\Foundation\1-FristLesson\obj\Debug\netcoreapp3.1\1-FristLesson.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\CDev\Foundation\1-FristLesson\obj\Debug\netcoreapp3.1\1-FristLesson.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\CDev\Foundation\1-FristLesson\obj\Debug\netcoreapp3.1\1-FristLesson.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\CDev\Foundation\1-FristLesson\obj\Debug\netcoreapp3.1\1-FristLesson.dll
+C:\Users\nofel\OneDrive\Desktop\CDev\Foundation\1-FristLesson\obj\Debug\netcoreapp3.1\1-FristLesson.pdb
+C:\Users\nofel\OneDrive\Desktop\CDev\Foundation\1-FristLesson\obj\Debug\netcoreapp3.1\1-FristLesson.genruntimeconfig.cache
