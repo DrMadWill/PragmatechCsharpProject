@@ -27,11 +27,11 @@
 
 ###  String
 ***
-> value olaraq `char` **array**ında ibaraətdir ancaq bu **array daxili dəyişməzdir**. Linkdə verdiyim məsələdəki kimi `string`lərin yadaşda tutacağı yer son `resault`un tutacağı dəyər qədər deyildir hər toplamada `result`da alınan dəyər yaşada yer tutur. Bunu qaşısını alamq üçün `StringBuilder`-dən istifadə edilməlidir.
+> value olaraq `char` **array**ında ibaraətdir ancaq bu **array daxili dəyişməzdir**. [Linkdə verdiyim məsələ](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_4_String/1_4_String/Program.cs#L22)dəki kimi `string`lərin yadaşda tutacağı yer son `resault`un tutacağı dəyər qədər deyildir hər toplamada `result`da alınan dəyər yaşada yer tutur. Bunu qaşısını alamq üçün `StringBuilder`-[dən istifadə edilməlidir.](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_4_String/1_4_String/Program.cs#L29)
 ##### Variable-ları String ifadə də birləşdirmək
 - Toplama methodu ilə  
 - `string.Format()` methodundan istifadə edərək `string` dəyəri _variable_-lardan alaraq **index** uyğun yaza bilrərik daha çox time və rəqsal məlumatları göstərmək üçün istifadə edilir.
-- _Template String_ `$""` 
+- [**Template String**](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_4_String/1_4_String/Program.cs#L16) `$""` 
 
 
 
