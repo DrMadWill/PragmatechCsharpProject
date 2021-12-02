@@ -12,6 +12,6 @@
         - [My Research](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/Documatation/Documatation.md#string)
     - [Array](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_5_Array/1_5_Array/Program.cs)
         - [My Research](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/Documatation/Documatation.md#array)
-    - [Opertors]()
+    - [Opertors](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_6%20Opertors/1_6%20Opertors/Program.cs)
     
 
