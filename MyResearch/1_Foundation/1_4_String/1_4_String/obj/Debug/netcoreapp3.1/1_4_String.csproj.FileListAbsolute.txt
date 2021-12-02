@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_4_String\1_4_String\bin\Debug\netcoreapp3.1\1_4_String.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_4_String\1_4_String\bin\Debug\netcoreapp3.1\1_4_String.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_4_String\1_4_String\bin\Debug\netcoreapp3.1\1_4_String.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_4_String\1_4_String\bin\Debug\netcoreapp3.1\1_4_String.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_4_String\1_4_String\bin\Debug\netcoreapp3.1\1_4_String.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_4_String\1_4_String\bin\Debug\netcoreapp3.1\1_4_String.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_4_String\1_4_String\obj\Debug\netcoreapp3.1\1_4_String.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_4_String\1_4_String\obj\Debug\netcoreapp3.1\1_4_String.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_4_String\1_4_String\obj\Debug\netcoreapp3.1\1_4_String.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_4_String\1_4_String\obj\Debug\netcoreapp3.1\1_4_String.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_4_String\1_4_String\obj\Debug\netcoreapp3.1\1_4_String.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_4_String\1_4_String\obj\Debug\netcoreapp3.1\1_4_String.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_4_String\1_4_String\obj\Debug\netcoreapp3.1\1_4_String.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_4_String\1_4_String\obj\Debug\netcoreapp3.1\1_4_String.genruntimeconfig.cache

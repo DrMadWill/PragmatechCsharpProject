@@ -8,4 +8,6 @@
         - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/Documatation/Documatation.md#variable)
     - [Type Convert](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_3_data_type_convert/data_type_convert/Program.cs)
         - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/Documatation/Documatation.md#type-convert)
+    - [String]()
+        - [My Research]()
 

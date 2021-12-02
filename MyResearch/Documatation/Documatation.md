@@ -25,3 +25,14 @@
 - **Down Casting** özündən _kiçik_  genişliyi olan dəyərə yuvarlamadan söhbət gedir.
 > Mətin tipli dəyərlərin çevrilməsi zamanı  `Parse` methodundan istifadə edilə bilər.
 
+###  String
+***
+> value olaraq `char` **array**ında ibaraətdir ancaq bu **array daxili dəyişməzdir**. Linkdə verdiyim məsələdəki kimi `string`lərin yadaşda tutacağı yer son `resault`un tutacağı dəyər qədər deyildir hər toplamada `result`da alınan dəyər yaşada yer tutur. Bunu qaşısını alamq üçün `StringBuilder`-dən istifadə edilməlidir.
+##### Variable-ları String ifadə də birləşdirmək
+- Toplama methodu ilə  
+- `string.Format()` methodundan istifadə edərək `string` dəyəri _variable_-lardan alaraq **index** uyğun yaza bilrərik daha çox time və rəqsal məlumatları göstərmək üçün istifadə edilir.
+- _Template String_ `$""` 
+
+
+
+
