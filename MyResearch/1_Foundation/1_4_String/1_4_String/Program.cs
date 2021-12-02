@@ -24,7 +24,7 @@ namespace _1_4_String
             {
                 resault_string += texts[i];
             }
-            Console.WriteLine(resault_string);
+            //Console.WriteLine(resault_string);
 
             // yaddaş prablemei
             StringBuilder result_stringBilder = new StringBuilder();
@@ -32,10 +32,34 @@ namespace _1_4_String
             {
                 result_stringBilder.Append(texts[i]);
             }
-            Console.WriteLine(result_stringBilder);
+            //Console.WriteLine(result_stringBilder);
 
 
-            Console.WriteLine(str);
+
+            string test_txt = " My name is Nofel Salahov and I'am 25 years old. ";
+            //Console.WriteLine(test_txt.Length);
+            //Console.WriteLine(test_txt.ToLower());
+            //Console.WriteLine(test_txt.ToUpper());
+            //Console.WriteLine(test_txt.Trim());
+            //Console.WriteLine(test_txt.Split("is")[0]);
+            //Console.WriteLine(test_txt.StartsWith(" My"));
+            //Console.WriteLine(test_txt.EndsWith(". "));
+            //Console.WriteLine(test_txt.Contains("Nofel"));
+            //Console.WriteLine(test_txt.IndexOf("Nofel"));
+            //Console.WriteLine(test_txt.Substring(5));
+            //Console.WriteLine(test_txt.Replace("25","23")); 
+            Console.WriteLine(test_txt.Insert(test_txt.Length,"23"));
+
+
+
+
+
+
+
+
+
+
+            //Console.WriteLine(str);
         }
     }
 }

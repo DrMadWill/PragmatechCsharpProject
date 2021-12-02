@@ -28,11 +28,24 @@
 ###  String
 ***
 > value olaraq `char` **array**ında ibaraətdir ancaq bu **array daxili dəyişməzdir**. [Linkdə verdiyim məsələ](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_4_String/1_4_String/Program.cs#L22)dəki kimi `string`lərin yadaşda tutacağı yer son `resault`un tutacağı dəyər qədər deyildir hər toplamada `result`da alınan dəyər yaşada yer tutur. Bunu qaşısını alamq üçün `StringBuilder`-[dən istifadə edilməlidir.](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_4_String/1_4_String/Program.cs#L29)
-##### Variable-ları String ifadə də birləşdirmək
+#### Variable-ları String ifadə də birləşdirmək
 - Toplama methodu ilə  
 - `string.Format()` methodundan istifadə edərək `string` dəyəri _variable_-lardan alaraq **index** uyğun yaza bilrərik daha çox time və rəqsal məlumatları göstərmək üçün istifadə edilir.
-- [**Template String**](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_4_String/1_4_String/Program.cs#L16) `$""` 
-
+- [**Template String**](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_4_String/1_4_String/Program.cs#L16) `$""`
+#### String [Method]()
+- `Length` propertidir.İçərisinidə olan `char`-ın miqdarını göstərir.
+- `ToLower()` methodu ilə `string` daxilindəki bütün hərifləri kiçik həriflərə çevirir.
+- `ToUpper()` methodu ilə `string` daxilindəki bütün hərifləri böyük həriflərə çevirir.
+- `Trim()` methodu ilə başdakı və sondakı boşluqları kəsə bilirik.`TrimStart()` başdakı `TrimEnd()` sondakı boşluğu silər.
+- `Split()` methodu ilə methodun içərisinə yazılan dəyəri `string` dəyərin içərsində tatpıb oradan öcəni və sonra **kəsir** və **array** içərisinə atır döndürür.
+- `StartsWith()` methodu ilə methodun daxilinə yazılan dəyər ilə `string` dəyərin başlayib başlamnadığını yoxlayır `bool` tipində dəyər döndürür.
+- `EndsWith()` `string` sonu ilə methoda yazılan dəyərin bərəbərliyi.`bool` tipində dəyər döndürür.
+- `Contains()` daxilinə yazılan ifadənin `string`in içərisində olub olmadadığını yoxlayır. `bool` tipində dəyər döndürür.
+- `IndexOf()` daxilinə yazılan ifadənin `string`in içərisində yerini tapır. `int` tipində dəyər döndürür.
+- `Substring()` daxilinə yazılan **index** etibarən sona qədər və ya **index** sonra **nə qədər** gedəcəyni yaza bilərik və o bizə həmin aralıqda ifadəni tapıb çıxarır.
+- `Replace()` daxilinə yazılan ilk dəyəri `string` tapıb son yazılan dəyər ilə dəyişdirir.
+- `Insert()`  daxilinə yazılan **index** sonra əlavə ediləcək `string`i yazırılır və o bizə **index** qabağına ələva edəcəmiyiz dəyəri yazıdır.
+- `Remove()` daxilinə yazılan **index** etibarən sona qədər və ya **index** sonra **nə qədər** gedəcəyni yaza bilərik və o bizə **index** dən sonrasını silir.
 
 
 
