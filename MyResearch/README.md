@@ -9,9 +9,11 @@
     - [Type Convert](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_3_data_type_convert/data_type_convert/Program.cs)
         - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/Documatation/Documatation.md#type-convert)
     - [String](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_4_String/1_4_String/Program.cs)
-        - [My Research](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/Documatation/Documatation.md#string)
+        - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/Documatation/Documatation.md#string)
     - [Array](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_5_Array/1_5_Array/Program.cs)
-        - [My Research](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/Documatation/Documatation.md#array)
+        - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/Documatation/Documatation.md#array)
     - [Opertors](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_6%20Opertors/1_6%20Opertors/Program.cs)
     - [Condition](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_7%20Codition/1_7%20Codition/Program.cs)
-    - [Loop]
+    - [Loop](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_8_Loop/1_8_Loop/Program.cs)
+        - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/Documatation/Documatation.md#loop)
+    

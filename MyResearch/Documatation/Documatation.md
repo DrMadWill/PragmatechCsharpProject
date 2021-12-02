@@ -63,4 +63,8 @@
 ### Loop
 ***
 > Dövür üçün `for`,`while`,`foreach` və `do while` kimi dövürlərdən istifadə edilir.
-- `for` döngü sayının müəyyən olundauqda istifadə edilir.`for` döngüsün başlığın sonuncu elementini yəni hər döngündə aratan `i++` yazılamasa sonsuz döngüyə düşür.
+- [`for`](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_8_Loop/1_8_Loop/Program.cs#L11) döngü sayının müəyyən olundauqda istifadə edilir.`for` döngüsün başlığın sonuncu elementini yəni hər döngündə aratan `i++` yazılamasa sonsuz döngüyə düşür.
+- `while` döngüsü döngü sayının müəyyən olmadıqda istifadə edilir.
+- `do while` döngüsü ən az bir dəfə icra olunur.
+- kod `continue` yazılan sətrə gəldikdə həmin döngünü başa vurur növbəti döngüyə keçir.
+- kod `break` yazılan sətrə gəldikdə ondan sonraki bütün döngüləri sonlandırır.
