@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_9_Class\1_9_Class\bin\Debug\netcoreapp3.1\1_9_Class.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_9_Class\1_9_Class\bin\Debug\netcoreapp3.1\1_9_Class.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_9_Class\1_9_Class\bin\Debug\netcoreapp3.1\1_9_Class.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_9_Class\1_9_Class\bin\Debug\netcoreapp3.1\1_9_Class.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_9_Class\1_9_Class\bin\Debug\netcoreapp3.1\1_9_Class.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_9_Class\1_9_Class\bin\Debug\netcoreapp3.1\1_9_Class.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_9_Class\1_9_Class\obj\Debug\netcoreapp3.1\1_9_Class.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_9_Class\1_9_Class\obj\Debug\netcoreapp3.1\1_9_Class.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_9_Class\1_9_Class\obj\Debug\netcoreapp3.1\1_9_Class.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_9_Class\1_9_Class\obj\Debug\netcoreapp3.1\1_9_Class.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_9_Class\1_9_Class\obj\Debug\netcoreapp3.1\1_9_Class.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_9_Class\1_9_Class\obj\Debug\netcoreapp3.1\1_9_Class.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_9_Class\1_9_Class\obj\Debug\netcoreapp3.1\1_9_Class.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\MyResearch\1_Foundation\1_9_Class\1_9_Class\obj\Debug\netcoreapp3.1\1_9_Class.genruntimeconfig.cache

@@ -68,3 +68,8 @@
 - `do while` döngüsü ən az bir dəfə icra olunur.
 - kod `continue` yazılan sətrə gəldikdə həmin döngünü başa vurur növbəti döngüyə keçir.
 - kod `break` yazılan sətrə gəldikdə ondan sonraki bütün döngüləri sonlandırır.
+
+
+### Class
+*** 
+> Bir məqsədə uyğun kidaları daxilində saxlayır. Çərçivə kimi düşünülə bilər. Kodları daha oxunaqlı edir.Daxilidə `property` və `class` xidmət edən methodlar var.
