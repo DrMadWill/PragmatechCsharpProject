@@ -19,7 +19,7 @@
         - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/Documatation/Documatation.md#class)
     ...
 
-    - [Exception]()
-        - [My Documantation]()
-         
+    - [Exception](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/Control_Exception/Control_Exception/Program.cs#L12)
+        - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/Documatation/Documatation.md#exception)
+
     

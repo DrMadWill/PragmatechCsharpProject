@@ -76,7 +76,7 @@
 
 ....
 
-### Exception
+### [Exception](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/Control_Exception/Control_Exception/Program.cs#L12)
 ***
 > Çox zaman errorlar əsasən **Runtime error**lar app işləməsinə mane olur. Məsələn app yazılarkən databases ilə olan ələqənin kəsilməsi zamanı bizə gələn dəyərlər `null` olur nəicə etibarı ilə boş dəyərlər üzərindən işləyirik. Bunun kimi errorların qarşını almaq üçün `Exception`ları idarə etmək lazımdır.
 - `Exception`lar `try``catch` ilə tutlur və idarə edilir.
