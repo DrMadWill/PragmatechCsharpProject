@@ -17,5 +17,9 @@
         - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/Documatation/Documatation.md#loop)
     - [Class](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/1_Foundation/1_9_Class/1_9_Class/Program.cs)
         - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/Documatation/Documatation.md#class)
-        
+    ...
+
+    - [Exception]()
+        - [My Documantation]()
+         
     

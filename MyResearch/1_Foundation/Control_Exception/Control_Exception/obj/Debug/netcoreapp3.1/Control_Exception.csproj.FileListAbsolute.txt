@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\Control_Exception\Control_Exception\bin\Debug\netcoreapp3.1\Control_Exception.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\Control_Exception\Control_Exception\bin\Debug\netcoreapp3.1\Control_Exception.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\Control_Exception\Control_Exception\bin\Debug\netcoreapp3.1\Control_Exception.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\Control_Exception\Control_Exception\bin\Debug\netcoreapp3.1\Control_Exception.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\Control_Exception\Control_Exception\bin\Debug\netcoreapp3.1\Control_Exception.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\Control_Exception\Control_Exception\bin\Debug\netcoreapp3.1\Control_Exception.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\Control_Exception\Control_Exception\obj\Debug\netcoreapp3.1\Control_Exception.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\Control_Exception\Control_Exception\obj\Debug\netcoreapp3.1\Control_Exception.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\Control_Exception\Control_Exception\obj\Debug\netcoreapp3.1\Control_Exception.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\Control_Exception\Control_Exception\obj\Debug\netcoreapp3.1\Control_Exception.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\Control_Exception\Control_Exception\obj\Debug\netcoreapp3.1\Control_Exception.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\Control_Exception\Control_Exception\obj\Debug\netcoreapp3.1\Control_Exception.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\Control_Exception\Control_Exception\obj\Debug\netcoreapp3.1\Control_Exception.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\Control_Exception\Control_Exception\obj\Debug\netcoreapp3.1\Control_Exception.genruntimeconfig.cache

@@ -73,3 +73,16 @@
 ### Class
 *** 
 > Bir məqsədə uyğun kidaları daxilində saxlayır. Çərçivə kimi düşünülə bilər. Kodları daha oxunaqlı edir.Daxilidə `property` və `class` xidmət edən methodlar var.
+
+....
+
+### Exception
+***
+> Çox zaman errorlar əsasən **Runtime error**lar app işləməsinə mane olur. Məsələn app yazılarkən databases ilə olan ələqənin kəsilməsi zamanı bizə gələn dəyərlər `null` olur nəicə etibarı ilə boş dəyərlər üzərindən işləyirik. Bunun kimi errorların qarşını almaq üçün `Exception`ları idarə etmək lazımdır.
+- `Exception`lar `try``catch` ilə tutlur və idarə edilir.
+    - `try` təhlükəli kod bloqu yazılır.
+    - `catch` Baş vercək error qeyd edilir və bu halda hansı kodların icrası olacaqsa bu hissəyə yazıılır.`catch` bir neçə ədəd ola bilər.
+    - `finaly` hər iki halda işləyəcək blok.
+- `Exception`lar `Exception` obyektindən törəyir.
+- `Exception`ların `Massage` propertysi və s. var. 
+
