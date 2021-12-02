@@ -51,5 +51,12 @@
 ***
 > Yaddaşda arard arda yer alan koleksiyaya `array` deyilir.
 > **Əvvəlcəndən Təyin edilmiş Bir genişliyi və tipi var**.
-> `array` tutacağı genişlik mütləq doldurulmaldır.
+> Təyin edilməyən indexslərin yerinə uyğun olaraq ya `null` ya 0.
+> `string[] text_list = { "Domation", "of", "Road", "Mad", "Will" };`
+- yuxaridaki kimi kod blokumuz oldğunu düşünəlim.
+    - Sonunc ifadəni almaq üçün `text_list[^text_list.Length]`  
+    - a(int) və b(int)  aralıqda `array` üçün `text_list[a..b]`
+    - a(int) sona kimi `array` üçün `text_list[a..]`
+    - Əvvələdən b(int) kimi `array` üçün `text_list[..b]`kimi bir ifadədən istifadə edə bilərirk. 
+
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace _1_5_Array
 {
@@ -6,13 +7,28 @@ namespace _1_5_Array
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello My World!");
+            //Console.WriteLine("Hello My World!");
 
             int[] numbers = new int[3];
             int[] numbers_1 = { 1, 2, 3, 5 };
 
-            string[] text_list = { "Domation", "of", "Road", "Mad", "Will" };
 
+            Array.Reverse(numbers_1);
+            for (int i = 0; i < numbers_1.Length; i++)
+            {
+                Console.WriteLine(numbers_1[i]);
+            }
+
+            string[] text_list = { "Domation", "of", "Road", "Mad", "Will" };
+            Array.Sort(text_list);
+            for (int i = 0; i < text_list.Length; i++)
+            {
+                Console.WriteLine(text_list[i]);
+            }
+
+            string[] texts = new string[2];
+            texts[0] = "Name";
+            //Console.WriteLine(texts[1]);
 
             numbers[1] = 5;
             
@@ -21,17 +37,23 @@ namespace _1_5_Array
                 numbers[i] = i;
             }
 
-            Console.WriteLine(numbers[2]);
+            
+
+            //Console.WriteLine(numbers[2]);
 
             Test dr = new Test("Dr");
             Test Mad = new Test("Mad");
             Test Will = new Test("Will");
-            Test[] List = { dr, Mad, Will };
+            Test[] list = { dr, Mad, Will };
+            
 
-            for (int i = 0; i < List.Length; i++)
+
+            for (int i = 0; i < list.Length; i++)
             {
-                Console.WriteLine(List[i].Name);
+                //Console.WriteLine(list[i].Name);
             }
+
+            
            
             
         }
