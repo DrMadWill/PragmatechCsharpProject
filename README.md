@@ -292,6 +292,9 @@
 
 ## Lesson(7/2) => C# Delegate and events
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-14-27-noyabr-2021-) 
-    - [Code]()
+    - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_7/Lesson_2/Lesson/Lesson)
     - [My Documantation]()
 
+## Lesson(8/1) WinForm App 
+- [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-15-28-noyabr-2021-)
+    - [Code]()
