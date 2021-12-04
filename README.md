@@ -301,4 +301,4 @@
     - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_8/Lesson_1/Task/Task)
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-15-28-noyabr-2021-)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_8/Lesson_1/Lesson/Lesson)
-    
+## Lesson(8/2) => Task Solution
