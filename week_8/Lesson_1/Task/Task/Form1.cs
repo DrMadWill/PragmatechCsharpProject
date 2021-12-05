@@ -81,5 +81,10 @@ namespace Task
             Book item = madwill.GetFindBook(name);
             listSeachBox.Items.Add($">> Id : {item.Id} / Name : {item.Name} / ISBN No : {item.ISBNNo} / Price : {item.Price} / Genere {item.GenreType}");
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            comboGenereBox.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
     }
 }

@@ -22,14 +22,19 @@ namespace Task
             {
                 if (IsUniq(isbnNo))
                 {
+
                     Book book = new Book(name, isbnNo, generetype, price);
-                    _books.Add(book);
+                    if (book.Name == "" || book.ISBNNo == "" || book.Price == 0)
+                        throw new Exception("Empty value not added");
+                    else
+                        _books.Add(book);
+
                 }
   
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
 

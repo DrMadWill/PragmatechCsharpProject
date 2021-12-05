@@ -50,12 +50,14 @@ namespace Task
                     this._GenreType = generetype;
                     this._id = generetype.ToString() + Total;
                 }
+                else
+                    throw new Exception("This Book Not Usible.");
                     
             }
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
         }
