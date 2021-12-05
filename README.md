@@ -298,7 +298,11 @@
 ## Lesson(8/1) => WinForm App 
 - Task
     - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-15-28-noyabr-2021-)
+    ```
+        Homework - C# WinForm Start Mini Kitabxana üçün bir app yazın. Kitabların adı, ISBN nömrəsi (user daxil edəcək və duplicate ola bilməz), qiyməti olmalıdır. Janrlar olacaq, janrın adı və unikal sistem tərəfindən yaradılan Id-si olacaq. Hər kitabın janr İd-si olmalıdır. Kitab yaradıldıqda janr mütləq seçilməlidir. ListBox-da bütün kitablar siyahı şəklində görsənməlidir. Kitablar janra görə listbox daxilində filter oluna bilməlidir.
+    ```
     - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_8/Lesson_1/Task/Task)
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-15-28-noyabr-2021-)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_8/Lesson_1/Lesson/Lesson)
+
 ## Lesson(8/2) => Task Solution
