@@ -19,9 +19,8 @@ namespace Task
             madwill = new Library();
             genrelis = new GenreList();
             genrelis.AddGenre("Novel");
+            genrelis.AddGenre("Story");
             genrelis.AddGenre("Teatr");
-            genrelis.AddGenre("Stra");
-            genrelis.AddGenre("Mak");
             InitializeComponent();
         }
 
@@ -41,23 +40,15 @@ namespace Task
             string isbnn;
             int price;
             int genertype;
+            string genreName;
             try
             {
                 bookname = textNameBox1.Text.Trim();
                 isbnn = textISBNNoBox.Text.Trim();
                 price = int.Parse(textPriceBox.Text);
-                //MessageBox.Show(comboGenereBox.Text, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 genertype = genrelis.FindGenreId(comboGenereBox.Text);
-                
-
-                //switch
-                //{
-                //    //    "Novel" => Genre.Novel,
-                //    //    "Story" => Genre.Story,
-                //    //    "Theater" => Genre.Theater,
-                //    _ => throw new Exception("You Dont Use Ture Genre"),
-                //};
-                this.madwill.AddBook(bookname, isbnn, genertype, price);
+                genreName = comboGenereBox.Text;
+                this.madwill.AddBook(bookname, isbnn, genertype, price, genreName);
             }
             catch (Exception ex)
             {
@@ -77,12 +68,23 @@ namespace Task
             
         }
 
+        public string GetFindGenreName(int id)
+        {
+            string name = "";
+            Genre genre = genrelis.genres.Find(e => e.GenreId == id);
+            if (genre != null)
+            {
+                name = genre.Name;
+            }
+            return name;
+        }
+
         private void ShowInfo()
         {
             Books.Items.Clear();
             foreach (var item in this.madwill.Books)
             {
-                Books.Items.Add($">> Id : {item.Id} / Name : {item.Name} / ISBN No : {item.ISBNNo} / Price : {item.Price} / Genere {item.GenreType}");
+                Books.Items.Add($">> Id : {item.Id} / Name : {item.Name} / ISBN No : {item.ISBNNo} / Price : {item.Price} / Genere : { GetFindGenreName(item.GenreType)}");
             }
         }
 
@@ -100,7 +102,7 @@ namespace Task
                     string name = textSearchBox.Text.Trim();
                     Book item = madwill.GetFindBook(name);
                     if (item != null)
-                        listSeachBox.Items.Add($">> Id : {item.Id} / Name : {item.Name} / ISBN No : {item.ISBNNo} / Price : {item.Price} / Genere {item.GenreType}");
+                        listSeachBox.Items.Add($">> Id : {item.Id} / Name : {item.Name} / ISBN No : {item.ISBNNo} / Price : {item.Price} / Genere : {GetFindGenreName(item.GenreType)}");
                     else
                         throw new Exception("Not Found This Book");
                 }
@@ -119,6 +121,11 @@ namespace Task
         }
 
         private void textSearchBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Books_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

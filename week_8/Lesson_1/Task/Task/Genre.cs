@@ -26,10 +26,11 @@ namespace Task
         }
 
 
-        public string GetGenre(int id)
+        public override string ToString()
         {
             return this.Name;
         }
+        
 
     }
 

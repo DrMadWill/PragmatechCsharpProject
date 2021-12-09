@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Forms;
 
 namespace Task
 {
@@ -28,25 +29,6 @@ namespace Task
                 return genre.GenreId;
             else
                 throw new Exception("Not Found This Genre");
-        }
-
-
-        public string FindGenre(int id)
-        {
-            string name="";
-            foreach (var item in genres)
-            {
-                if (item.GenreId == id)
-                {
-                    name = item.Name;
-                    break;
-                }
-            }
-            return name;
-            //if (genre != null)
-            //    return genre.Name;
-            //else
-            //    throw new Exception("Not Found This Genre");
         }
 
         public List<string> GetGenreNames()

@@ -156,12 +156,14 @@ namespace Task
             // 
             // Books
             // 
+            this.Books.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Books.FormattingEnabled = true;
-            this.Books.ItemHeight = 20;
+            this.Books.ItemHeight = 34;
             this.Books.Location = new System.Drawing.Point(12, 333);
             this.Books.Name = "Books";
-            this.Books.Size = new System.Drawing.Size(1171, 204);
+            this.Books.Size = new System.Drawing.Size(1171, 174);
             this.Books.TabIndex = 10;
+            this.Books.SelectedIndexChanged += new System.EventHandler(this.Books_SelectedIndexChanged);
             // 
             // textSearchBox
             // 
@@ -198,18 +200,19 @@ namespace Task
             // 
             // listSeachBox
             // 
+            this.listSeachBox.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.listSeachBox.FormattingEnabled = true;
-            this.listSeachBox.ItemHeight = 20;
+            this.listSeachBox.ItemHeight = 34;
             this.listSeachBox.Location = new System.Drawing.Point(12, 668);
             this.listSeachBox.Name = "listSeachBox";
-            this.listSeachBox.Size = new System.Drawing.Size(1171, 44);
+            this.listSeachBox.Size = new System.Drawing.Size(1171, 38);
             this.listSeachBox.TabIndex = 14;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1188, 801);
+            this.ClientSize = new System.Drawing.Size(1202, 725);
             this.Controls.Add(this.listSeachBox);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.textSearchBox);

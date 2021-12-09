@@ -16,7 +16,7 @@ namespace Task
             _books = new List<Book>();
         }
 
-        public void AddBook(string name, string isbnNo, int genereid, int price)
+        public void AddBook(string name, string isbnNo, int genereid, int price,string genreName)
         {
             try
             {
@@ -28,7 +28,7 @@ namespace Task
                         throw new Exception("Empty value not added");
                     else
                     {
-                        Book book = new Book(name, isbnNo, genereid, price);
+                        Book book = new Book(name, isbnNo, genereid, price, genreName);
                         _books.Add(book);
                     }
                 }

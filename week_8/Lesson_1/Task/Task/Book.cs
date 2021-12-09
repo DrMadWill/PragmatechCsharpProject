@@ -37,16 +37,14 @@ namespace Task
         }
 
 
-        public Book(string name,string isbnNo,int genreid,int price)
+        public Book(string name,string isbnNo,int genreid,int price,string genreName)
         {
             try
             {
                 if (IsName(name) && IsName(name) && price != 0)
                 {
-                    GenreList list = new GenreList();
-                    
                     ++Total;
-                    this._id = list.FindGenre(genreid)+Total;
+                    this._id = genreName + Total;
                     this._name = name;
                     this._ISBNNo = isbnNo;
                     this._price = price;
