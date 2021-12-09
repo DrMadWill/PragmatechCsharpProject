@@ -27,7 +27,7 @@
     - _Consol_ üçün yazılıb.
     - `switch` istfadə edilib.
     - `delegate` istfadə edilib.
-## Library App<a href="" target="blank"> <img src="https://i.postimg.cc/C13zHZv3/106851-2166236bc078f775bc5424c4b7fdee74-modified.png" width="180"  align="right" ></a>
+## Library App<a href="https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_8/Lesson_1/Task/Task" target="blank"> <img src="https://i.postimg.cc/C13zHZv3/106851-2166236bc078f775bc5424c4b7fdee74-modified.png" width="180"  align="right" ></a>
 > **Windows Forms** istifadə edilərək sadə kitbxana App yazılmağa çalışılmışdır.Kitabları ələavə edirb sonra onları axtara biliərək. Kitabların xususiyyətləri: Biz burada Kitab əlavə edə və Əlavə Etdiymiz Kitabı axtara bilərik.
 - [Preveiw](https://i.postimg.cc/L5SvQs5W/Library.png)
 - [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_8/Lesson_1/Task/Task)
