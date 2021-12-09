@@ -13,9 +13,15 @@ namespace Task
     public partial class Form1 : Form
     {
         private Library madwill;
+        private GenreList genrelis;
         public Form1()
         {
             madwill = new Library();
+            genrelis = new GenreList();
+            genrelis.AddGenre("Novel");
+            genrelis.AddGenre("Teatr");
+            genrelis.AddGenre("Stra");
+            genrelis.AddGenre("Mak");
             InitializeComponent();
         }
 
@@ -34,30 +40,36 @@ namespace Task
             string bookname;
             string isbnn;
             int price;
-            Genre genertype;
+            int genertype;
             try
             {
                 bookname = textNameBox1.Text.Trim();
                 isbnn = textISBNNoBox.Text.Trim();
                 price = int.Parse(textPriceBox.Text);
-                genertype = comboGenereBox.Text switch
-                {
-                    "Novel" => Genre.Novel,
-                    "Story" => Genre.Story,
-                    "Theater" => Genre.Theater,
-                    _ => throw new Exception("You Dont Use Ture Genre"),
-                };
+                //MessageBox.Show(comboGenereBox.Text, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                genertype = genrelis.FindGenreId(comboGenereBox.Text);
+                
+
+                //switch
+                //{
+                //    //    "Novel" => Genre.Novel,
+                //    //    "Story" => Genre.Story,
+                //    //    "Theater" => Genre.Theater,
+                //    _ => throw new Exception("You Dont Use Ture Genre"),
+                //};
                 this.madwill.AddBook(bookname, isbnn, genertype, price);
             }
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             ShowInfo();
-
-
+            textNameBox1.Text = String.Empty;
+            textISBNNoBox.Text = String.Empty;
+            textPriceBox.Text = String.Empty;
+            comboGenereBox.SelectedIndex = -1;
         }
 
         private void comboGenereBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -77,14 +89,38 @@ namespace Task
         private void searchButton_Click(object sender, EventArgs e)
         {
             listSeachBox.Items.Clear();
-            string name = textSearchBox.Text.Trim();
-            Book item = madwill.GetFindBook(name);
-            listSeachBox.Items.Add($">> Id : {item.Id} / Name : {item.Name} / ISBN No : {item.ISBNNo} / Price : {item.Price} / Genere {item.GenreType}");
+            try
+            {
+                if (string.IsNullOrEmpty(textSearchBox.Text))
+                {
+                    throw new Exception("Empty Element");
+                }
+                else
+                {
+                    string name = textSearchBox.Text.Trim();
+                    Book item = madwill.GetFindBook(name);
+                    if (item != null)
+                        listSeachBox.Items.Add($">> Id : {item.Id} / Name : {item.Name} / ISBN No : {item.ISBNNo} / Price : {item.Price} / Genere {item.GenreType}");
+                    else
+                        throw new Exception("Not Found This Book");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+               
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             comboGenereBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboGenereBox.Items.AddRange(genrelis.GetGenreNames().ToArray());
+        }
+
+        private void textSearchBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

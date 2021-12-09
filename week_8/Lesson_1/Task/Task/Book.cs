@@ -16,8 +16,8 @@ namespace Task
         private int _price;
         public int Price { get { return _price; } }
         
-        private Genre _GenreType;
-        public Genre GenreType { get { return _GenreType; } }
+        private int _GenreId;
+        public int GenreType { get { return _GenreId; } }
 
         private string _id;
         public string Id { get { return _id; } }
@@ -37,18 +37,21 @@ namespace Task
         }
 
 
-        public Book(string name,string isbnNo,Genre generetype,int price)
+        public Book(string name,string isbnNo,int genreid,int price)
         {
             try
             {
                 if (IsName(name) && IsName(name) && price != 0)
                 {
+                    GenreList list = new GenreList();
+                    
                     ++Total;
+                    this._id = list.FindGenre(genreid)+Total;
                     this._name = name;
                     this._ISBNNo = isbnNo;
                     this._price = price;
-                    this._GenreType = generetype;
-                    this._id = generetype.ToString() + Total;
+                    this._GenreId = genreid;
+                    
                 }
                 else
                     throw new Exception("This Book Not Usible.");
@@ -70,9 +73,9 @@ namespace Task
 
     
 
-    public enum Genre
-    {
-        Novel=1,Story=2,Theater=3
-    }
+    //public enum Genre
+    //{
+    //    Novel=1,Story=2,Theater=3
+    //}
 
 }

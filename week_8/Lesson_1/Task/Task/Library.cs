@@ -16,19 +16,21 @@ namespace Task
             _books = new List<Book>();
         }
 
-        public void AddBook(string name, string isbnNo, Genre generetype, int price)
+        public void AddBook(string name, string isbnNo, int genereid, int price)
         {
             try
             {
                 if (IsUniq(isbnNo))
                 {
 
-                    Book book = new Book(name, isbnNo, generetype, price);
-                    if (book.Name == "" || book.ISBNNo == "" || book.Price == 0)
+                    
+                    if (name == "" || isbnNo == "" || price == 0 || genereid < 0)
                         throw new Exception("Empty value not added");
                     else
+                    {
+                        Book book = new Book(name, isbnNo, genereid, price);
                         _books.Add(book);
-
+                    }
                 }
   
             }

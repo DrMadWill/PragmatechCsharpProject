@@ -100,10 +100,6 @@ namespace Task
             // 
             this.comboGenereBox.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboGenereBox.FormattingEnabled = true;
-            this.comboGenereBox.Items.AddRange(new object[] {
-            "Novel",
-            "Story",
-            "Theater"});
             this.comboGenereBox.Location = new System.Drawing.Point(897, 179);
             this.comboGenereBox.Name = "comboGenereBox";
             this.comboGenereBox.Size = new System.Drawing.Size(245, 49);
@@ -174,6 +170,7 @@ namespace Task
             this.textSearchBox.Name = "textSearchBox";
             this.textSearchBox.Size = new System.Drawing.Size(436, 45);
             this.textSearchBox.TabIndex = 12;
+            this.textSearchBox.TextChanged += new System.EventHandler(this.textSearchBox_TextChanged);
             // 
             // label5
             // 
