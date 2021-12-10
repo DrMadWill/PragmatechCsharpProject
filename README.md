@@ -316,8 +316,8 @@
 ## Lesson(9/1) => C# Thread
 - Task
     - [Contet](https://github.com/PragmatechEducation/Csharp03/tree/main/Lesson-17/Task)
-    - [Solution]()
+    - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_9/Lesson_1/Task_Group)
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-17-5-dekabr-2021-)
-    - [Code]()
-    - [My Documantation]()
+    - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Lesson_1/Lesson/Lesson/Program.cs)
+    - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Lesson_1/Documantation.md)
 
