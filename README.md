@@ -313,3 +313,11 @@
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_8/Lesson_1/Lesson/Lesson)
 
 ## Lesson(8/2) => Task Solution
+## Lesson(9/1) => C# Thread
+- Task
+    - [Contet](https://github.com/PragmatechEducation/Csharp03/tree/main/Lesson-17/Task)
+    - [Solution]()
+- [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-17-5-dekabr-2021-)
+    - [Code]()
+    - [My Documantation]()
+

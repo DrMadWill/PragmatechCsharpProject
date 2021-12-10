@@ -16,7 +16,7 @@
 > 2 tip Thread var 
 - ForeGroupd Əsas Threadin işi bitdikdən sonra işini dayandırır.
 - BackGroud
-> Thread-i Background etmək üçün  
+> Thread-i Background etmək üçün `isBackground` parametrini True etmək lazımdır. 
 
 
 
