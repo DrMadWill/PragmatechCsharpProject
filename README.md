@@ -8,7 +8,7 @@
 ***
 ## Calculator App<a href="https://onlinegdb.com/dv9JU4MGr" target="blank"> <img src="https://i.postimg.cc/tg06FP1C/calc.png" width="180"  align="right" ></a>
 > **App** _Consol_ üçün yazılmışdır. Heç bir methodan istfadə edilməyib. Kod maxsimum sadə yazılmağa çalışlıb.
-- [Preveiw]https://onlinegdb.com/dv9JU4MGr)
+- [Preveiw](https://onlinegdb.com/dv9JU4MGr)
 - [Code Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/old_task/week-1/Lesson_2/calculator_with_switch/calculator_with_switch/Program.cs)
 - **App** xususiyyətləri
     - _Consol_ üçün yazılıb.
