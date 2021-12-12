@@ -54,8 +54,6 @@ namespace P121021
         {
             cmbGroupDelete.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbStuDelete.DropDownStyle = ComboBoxStyle.DropDownList;
-            //cmbStuDelete.SelectedIndex = 0;
-            //cmbGroupDelete.SelectedIndex = 0;
             cmbGroupDelete.SelectedIndex = 0;
             cmbStuDelete.SelectedIndex = 0;
         }
