@@ -24,16 +24,16 @@ namespace Lesson
 
             #region Abort Problem
 
-            //Thread thread = new Thread(() => Console.WriteLine("Will"));
-            //thread.Start();
+            Thread thread = new Thread(() => Console.WriteLine("Will"));
+            thread.Start();
 
-            //if (6 > 5)
-            //{
-            //    thread.Abort();
-            //}
+            if (6 > 5)
+            {
+                thread.Abort();
+            }
 
-            //Thread thread1 = new Thread(() => Console.WriteLine("Add"));
-            //thread1.Start();
+            Thread thread1 = new Thread(() => Console.WriteLine("Add"));
+            thread1.Start();
 
             #endregion
 
@@ -45,15 +45,15 @@ namespace Lesson
 
 
             // Thread Priority 
-            Thread thread = new Thread(Heights);
-            thread.Priority = ThreadPriority.Highest;
-            thread.Start();
+            //Thread thread = new Thread(Heights);
+            //thread.Priority = ThreadPriority.Highest;
+            //thread.Start();
 
-            Thread.CurrentThread.Priority = ThreadPriority.Highest;
-            for (int i = 0; i < 100; i++)
-            {
-                Console.WriteLine(i);
-            }
+            //Thread.CurrentThread.Priority = ThreadPriority.Highest;
+            //for (int i = 0; i < 100; i++)
+            //{
+            //    Console.WriteLine(i);
+            //}
 
         }
 
