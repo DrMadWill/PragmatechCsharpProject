@@ -319,5 +319,9 @@
     - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_9/Lesson_1/Task_Group)
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-17-5-dekabr-2021-)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Lesson_1/Lesson/Lesson/Program.cs)
-    - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Lesson_1/Documantation.md)
+    - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Documantation.md#race-condition-problem)
+## Lesson(9/1) => C# Thread
+- [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-18-10-dekabr-2021-)
+	- [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Lesson_2/Lesson/Lesson/Program.cs)
+	- [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Documantation.md#race-condition-problem)
 
