@@ -14,10 +14,13 @@
     - _Consol_ üçün yazılıb.
     - _Non-method_-dur.
 
- ## Aptek App <a href="https://onlinegdb.com/G41oRbzaI" target="blank"> <img src="https://i.postimg.cc/Vkspg9p7/medical.png" width="180"  align="right" ></a>
+ ## Medicines App <a href="https://onlinegdb.com/G41oRbzaI" target="blank"> <img src="https://i.postimg.cc/Vkspg9p7/medical.png" width="180"  align="right" ></a>
  > Apteklərdə istfadə edlilən programların sadə versiyasıdır. Medicines create,delete, update və read etmək olur. Medicines-ləri satmaq və ümumi və tək gəlirlərə baxmaq mükündür.
  - [Preveiw](https://onlinegdb.com/G41oRbzaI)
  - [Code Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_1/Task/Task)
+ -  **App** xususiyyətləri
+	-  _Consol_ üçün yazılıb.
+
 
 ## Month Number App<a href="https://onlinegdb.com/tL0IBru0X" target="blank"> <img src="https://i.postimg.cc/90Tt7hVz/calders.png" width="180"  align="right" ></a>
 > Ayın nömrəsini daxil edərək hansı fəsili və ay olduğunu görürük. `delegate`-in istfadəsi üçün yazılmışdır.
@@ -33,7 +36,13 @@
 - [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_8/Lesson_1/Task/Task)
 - **App** xususiyyətləri
     - **Windows Forms** üçün yazılıb.
-    - DataBases-' bağlanmayıb.
+    - `DataBases` bağlanmayıb.
+## Group App<a href="https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_8/Lesson_1/Task/Task" >  <img src="https://i.postimg.cc/7h0FxtcV/App-Group-modified.png"  width="180"  align="right"  ></a>
+> `Group`lara `Student`lərə əlavə edirk. Əlavə etdiklirmiz bizə list şəkilində göstərilir. `Update`  və `Delete` buttonlar vastəsi ilə düzəliş edə və silə bilərik.
+-  Preveiw
+-  [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_9/Lesson_1/Task_Group)
+-  **App** xususiyyətləri
+	-  _Windows Forms_ üçün yazılıb.
 
 # My Lessons 
 
