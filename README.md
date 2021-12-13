@@ -37,7 +37,7 @@
 - **App** xususiyyətləri
     - **Windows Forms** üçün yazılıb.
     - `DataBases` bağlanmayıb.
-## Group App<a href="https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_9/Lesson_1/Task_Group" >  <img src="https://i.postimg.cc/7h0FxtcV/App-Group-modified.png"  width="180"  align="right"  ></a>
+## Group App<a href="https://www.facebook.com/100075726683398/videos/236668928589900/" >  <img src="https://i.postimg.cc/7h0FxtcV/App-Group-modified.png"  width="180"  align="right"  ></a>
 > `Group`lara `Student`lərə əlavə edirk. Əlavə etdiklirmiz bizə list şəkilində göstərilir. `Update`  və `Delete` buttonlar vastəsi ilə düzəliş edə və silə bilərik.
 -  [Preveiw](https://www.facebook.com/100075726683398/videos/236668928589900/)
 -  [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_9/Lesson_1/Task_Group)
