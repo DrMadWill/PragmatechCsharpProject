@@ -13,8 +13,8 @@ namespace P121021
             Student s1 = new Student("Eli", "Eliyev");
             Student s2 = new Student("Mina", "Farzali");
             Student s3 = new Student("Xeyal", "Eliyev");
-            Student s4 = new Student("Mad", "Will");
-            Student s5 = new Student("Domation", "Road");
+            Student s4 = new Student("Mark", "Will");
+            Student s5 = new Student("Doliton", "Rod");
 
             Group group1 = new Group("P500");
             Group group2 = new Group("P505");

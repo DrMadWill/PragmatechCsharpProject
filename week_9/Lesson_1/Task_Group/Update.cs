@@ -77,6 +77,7 @@ namespace P121021
             cmbStuUpdate.Items.Clear();
             cmbStuUpdate.Text = "";
             cmbStuUpdate.Items.AddRange(selected_group.GetAlLStudent().ToArray());
+            cmbStuUpdate.SelectedIndex = 0;
         }
     }
 }
