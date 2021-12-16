@@ -60,6 +60,11 @@ for (int i = 0; i < 10; i++)
 - **Sleep ()**  method təyin edilmiş vaxt ərzində icrasını dayadırır və davam bu döngü şəklində `Thread` icrasını bitirir.
 - **Thread Priority** `Thread`in aktivliyinə nəzərət edir.
 
+## ThreadPool
+> `Thread` ona tapşırılan işi yerinə yetirir. Tapşırıq tamalandıqdan sonra _garbage collector_ tərəfindən silinir. Ancaq biz bunun `ThreadPool` vastəsi ilə qaşısını ala bilirik. `ThreadPool`a əlvə etmək üçün `QueueUserWorkItem` istifadə edirik.
+- Max 25 `Thread`
+- Yeni `Thread`ləri yaratmaqdan canimiz qurtatarır.
+
 
 
 
