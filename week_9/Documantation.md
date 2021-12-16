@@ -62,7 +62,7 @@ for (int i = 0; i < 10; i++)
 
 ## ThreadPool
 > `Thread` ona tapşırılan işi yerinə yetirir. Tapşırıq tamalandıqdan sonra _garbage collector_ tərəfindən silinir. Ancaq biz bunun `ThreadPool` vastəsi ilə qaşısını ala bilirik. `ThreadPool`a əlvə etmək üçün `QueueUserWorkItem` istifadə edirik.
-- Max 25 `Thread`
+- Max 25 `Thread` əlavə edə bilirik.
 - Yeni `Thread`ləri yaratmaqdan canimiz qurtatarır.
 
 
