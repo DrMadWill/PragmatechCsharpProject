@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Reflection;
 
 namespace Lesson
 {
@@ -12,6 +13,13 @@ namespace Lesson
 
             Console.WriteLine(st.GetType().Assembly);// assembly yeri
             foreach (var item in st.GetType().GetMethods()) // methodlar.
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("++++++++++++++++++");
+            var tip = typeof(Student);
+            var infor = tip.GetFields();
+            foreach (var item in tip.GetFields())
             {
                 Console.WriteLine(item);
             }
