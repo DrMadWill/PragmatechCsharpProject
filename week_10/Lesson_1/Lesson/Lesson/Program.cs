@@ -19,7 +19,10 @@ namespace Lesson
             #endregion
 
             //Console.WriteLine(Y());
-            
+            Task task = new Task(CallMet);
+            task.Start();
+            task.Wait();
+            Console.ReadLine();
 
 
         }
@@ -45,9 +48,15 @@ namespace Lesson
             return x;
         }
 
-        static async void Call()
+        public static async void CallMet()
         {
-            string filPath = "C:\Users\nofel\OneDrive\Desktop\Color.txt";
+            var filPath = @"C:\Users\nofel\OneDrive\Desktop\Color.txt";
+            Task<int> total = ReadFile(filPath);
+            Console.WriteLine("I'am first");
+            Console.WriteLine("Comon .I'am second");
+            Console.WriteLine("You so fast . I'am thread");
+            int len = await total;
+            Console.WriteLine($" Hello this file words length {len}");
 
         }
 

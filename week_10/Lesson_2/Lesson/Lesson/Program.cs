@@ -10,8 +10,8 @@ namespace Lesson
             Console.WriteLine("Hello World!");
             Student st = new Student("Statick");
 
-            Console.WriteLine(st.GetType().Assembly);
-            foreach (var item in st.GetType().GetMethods())
+            Console.WriteLine(st.GetType().Assembly);// assembly yeri
+            foreach (var item in st.GetType().GetMethods()) // methodlar.
             {
                 Console.WriteLine(item);
             }
