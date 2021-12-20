@@ -329,8 +329,16 @@
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-17-5-dekabr-2021-)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Lesson_1/Lesson/Lesson/Program.cs)
     - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Documantation.md#c-thread)
-## Lesson(9/1) => C# Thread
+## Lesson(9/2) => C# Thread Pool
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-18-10-dekabr-2021-)
 	- [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Lesson_2/Lesson/Lesson/Program.cs)
 	- [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Documantation.md#race-condition-problem)
+## Lesson(10/1) => Task And Thread In C#, StreamReader And StreamWriter Classes In C#, C# StreamReader, Get Files from Directory
+- [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-19-12-dekabr-2021-)
+    - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_10/Lesson_1/Lesson/Lesson/Program.cs)
+    - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_10#async-and-await)
 
+## Lesson(10/1) => C# Reflection , C# Garbage Collection
+- [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-20-17-dekabr-2021-)
+    - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_10/Lesson_2/Lesson/Lesson/Program.cs)
+    - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_10#reflection)
