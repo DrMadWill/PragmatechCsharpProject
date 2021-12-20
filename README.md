@@ -338,7 +338,7 @@
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_10/Lesson_1/Lesson/Lesson/Program.cs)
     - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_10#async-and-await)
 
-## Lesson(10/1) => C# Reflection , C# Garbage Collection
+## Lesson(10/2) => C# Reflection , C# Garbage Collection
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-20-17-dekabr-2021-)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_10/Lesson_2/Lesson/Lesson/Program.cs)
     - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_10#reflection)
