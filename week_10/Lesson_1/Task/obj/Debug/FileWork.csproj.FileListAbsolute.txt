@@ -11,9 +11,10 @@ C:\Users\nofel\OneDrive\Desktop\FileWork\bin\Debug\FileWork.exe.config
 C:\Users\nofel\OneDrive\Desktop\FileWork\bin\Debug\FileWork.exe
 C:\Users\nofel\OneDrive\Desktop\FileWork\bin\Debug\FileWork.pdb
 C:\Users\nofel\OneDrive\Desktop\FileWork\obj\Debug\FileWork.csproj.AssemblyReference.cache
-C:\Users\nofel\OneDrive\Desktop\FileWork\obj\Debug\FileWork.Form1.resources
 C:\Users\nofel\OneDrive\Desktop\FileWork\obj\Debug\FileWork.Properties.Resources.resources
 C:\Users\nofel\OneDrive\Desktop\FileWork\obj\Debug\FileWork.csproj.GenerateResource.cache
 C:\Users\nofel\OneDrive\Desktop\FileWork\obj\Debug\FileWork.csproj.CoreCompileInputs.cache
 C:\Users\nofel\OneDrive\Desktop\FileWork\obj\Debug\FileWork.exe
 C:\Users\nofel\OneDrive\Desktop\FileWork\obj\Debug\FileWork.pdb
+C:\Users\nofel\OneDrive\Desktop\FileWork\obj\Debug\FileWork.PersonAdd.resources
+C:\Users\nofel\OneDrive\Desktop\FileWork\obj\Debug\FileWork.PersonList.resources
