@@ -45,6 +45,7 @@
 -  [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_9/Lesson_1/Task_Group)
 -  **App** xususiyyətləri
 	-  _Windows Forms_ üçün yazılıb.
+    - `CRUD` Sistemi
 
 
 ## People App<a href="https://www.facebook.com/nofel.salahov.5/videos/207464484916744/?notif_id=1640372493623291&notif_t=video_processed&ref=notif"  >  <img src="https://i.postimg.cc/63rQdWcj/people-modified.png"  width="180"  align="right"  ></a>
