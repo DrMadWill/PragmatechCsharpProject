@@ -359,3 +359,15 @@
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-20-17-dekabr-2021-)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_10/Lesson_2/Lesson/Lesson/Program.cs)
     - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_10#reflection)
+
+## Lesson(11/1) => Sql express download ,SQL data-types ,Introduction to SQL, SQL Syntax, SQL Commands SQL Server, CREATE DATABASE, SQL Server DROP DATABASE, SQL Server CREATE TABLE, SQL Server Identity, SQL Server ALTER TABLE ADD,Column, SQL Server ALTER TABLE ALTER COLUMN, SQL Server ALTER TABLE DROP COLUMN, SQL Server Rename Table, SQL Server DROP TABLE, SELECT, Insert, Update, Delete, Top, SQL Server ORDER BY, Where, AND, OR, IN, Between, Like, Fetch
+- [Task]()
+    - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-21-20-dekabr-2021-)
+    ```
+    . Aşağıdakı taskları SQL queryləri ilə yazın.
+    Baza yaradın, tabellara data əlavə edin, CRUD(create,read,update-delete) istifade edin. Academy database, student table, grade,fullname,birthdate,group AND,OR,IN,BETWEEN,LIKE,FETCH istifade edin. Bir bir dersde kodlara baxacam. Sonda ev tapsirigini dersde gosterdiyim kimi query olan file repoya yukleyin. Note. Linklər çox olsada, sadədir.
+    ```
+    - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_11/Lesson_1/SQLQuery_Lesson_and_Task.sql)
+- [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-21-20-dekabr-2021-)
+    - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_11/Lesson_1/SQLQuery_Lesson_and_Task.sql)
+    - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_11/Readme.md)
