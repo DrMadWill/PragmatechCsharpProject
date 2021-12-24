@@ -30,6 +30,7 @@
     - _Consol_ üçün yazılıb.
     - `switch` istfadə edilib.
     - `delegate` istfadə edilib.
+
 ## Library App<a href="https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_8/Lesson_1/Task/Task" target="blank"> <img src="https://i.postimg.cc/C13zHZv3/106851-2166236bc078f775bc5424c4b7fdee74-modified.png" width="180"  align="right" ></a>
 > **Windows Forms** istifadə edilərək sadə kitbxana App yazılmağa çalışılmışdır.Kitabları ələavə edirb sonra onları axtara biliərək. Kitabların xususiyyətləri: Biz burada Kitab əlavə edə və Əlavə Etdiymiz Kitabı axtara bilərik.
 - [Preveiw](https://i.postimg.cc/L5SvQs5W/Library.png)
@@ -37,23 +38,23 @@
 - **App** xususiyyətləri
     - **Windows Forms** üçün yazılıb.
     - `DataBases` bağlanmayıb.
-## Group App<a href="https://www.facebook.com/100075726683398/videos/236668928589900/" >  <img src="https://i.postimg.cc/7h0FxtcV/App-Group-modified.png"  width="180"  align="right"  ></a>
+
+## Group App<a href="https://www.facebook.com/nofel.salahov.5/videos/654084819087395" >  <img src="https://i.postimg.cc/7h0FxtcV/App-Group-modified.png"  width="180"  align="right"  ></a>
 > `Group`lara `Student`ləri əlavə edirk. Əlavə etdiklirmiz bizə list şəkilində göstərilir. `Update`  və `Delete` buttonlar vastəsi ilə düzəliş edə və silə bilərik.
--  [Preveiw](https://www.facebook.com/100075726683398/videos/236668928589900/)
+-  [Preveiw](https://www.facebook.com/nofel.salahov.5/videos/654084819087395)
 -  [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_9/Lesson_1/Task_Group)
 -  **App** xususiyyətləri
 	-  _Windows Forms_ üçün yazılıb.
 
 
-## People App<a href="https://www.facebook.com/100075726683398/videos/267050272077727/"  >  <img src="https://i.postimg.cc/63rQdWcj/people-modified.png"  width="180"  align="right"  ></a>
+## People App<a href="https://www.facebook.com/nofel.salahov.5/videos/207464484916744/?notif_id=1640372493623291&notif_t=video_processed&ref=notif"  >  <img src="https://i.postimg.cc/63rQdWcj/people-modified.png"  width="180"  align="right"  ></a>
 
 >  `Person` barəsindəki **data**nı saxlayır və `datagridveiw` vast'si ilə bizə datani göstərir. `data`ya aiddir:
 >   - Şəkil (İmage)
 >   - Adı və Soyadı (Name and SureName)
 >   - Email 
 
--  [Preveiw](https://www.facebook.com/100075726683398/videos/267050272077727/)
-
+-  [Preveiw](https://www.facebook.com/nofel.salahov.5/videos/207464484916744/?notif_id=1640372493623291&notif_t=video_processed&ref=notif)
 -  [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_10/Lesson_1/Task)
 
 -  **App** xususiyyətləri
