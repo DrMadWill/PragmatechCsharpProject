@@ -5,6 +5,9 @@
 
 ## Reflection
 > Bu `class` sayəsində biz **Assembly** daxilindəki bütün class, method və s. kimi bütün məlumatları əldə edə bilərik. Əsasən bizə array qaytarır.
+> - Reflection vastəsi ilə yalnız `get`i olan propertiyə `set` etmək imkanı tanıyır.
+> - Privet olan fildi set etmək olur və Reflectionda axtarış zamanı fild görsənir.
+
 
 ##  Garbage Collection
 > İstifadə edilməyən referanceləri silərək komputerə düşən yükü azaldır. Necə ?
