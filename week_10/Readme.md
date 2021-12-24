@@ -15,3 +15,8 @@
 -  **Generation 0(Gen0)** ilk yarılan obyektlər burada tutulur. Əgər bura dolarsa və yaradılan obyektər arsinda işləyən varsa növbəti _Generation_-a (Gen1) keçirilir.İşləməyən silinir.
 -  **Generation 1(Gen1)** Gen0-dan  bura düşən obyektər artiq programda istifadəsi ən azı bir dəfə olur və əgər bura dolarsa bura düşən obyektlər arasindan işləyən obyektləri növbəti _Generation_-a (Gen2) keçirilir işləməyən silinir.
 - **Generation 2(Gen2)** Gen2-dan  bura düşən obyektər artiq programda istifadəsi  daimidir məsələn static və s. Əgər bura dolarsa o vaxt error atacaq OutOfRange Yaddaşın dolması ilə bağlı.
+> **GC.Collect** - istənməyən ölü obyektləri yaddaşdan təmizləmək üçün **GC** idarə etmək istədikdə bu methodan istifadə edə bilərik.
+> **GC.CollectionCount** - Bu üsulla genertionda GC-un neçə dəfə baş verdiyini göstərir.
+>**GC.MaxGenertion** - Sistemdə hal hazırda necə genertion olduğunu göstərir. 
+>**GC.GetTotalMemory** - Tutulan yaddaş sahəsini göstərir.
+>**GC.GetGeneretion** - obyektin hansi generationda olduğunu göstərir.
