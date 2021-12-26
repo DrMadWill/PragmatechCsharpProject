@@ -1,0 +1,2 @@
+--CREATE DATABASE Lesson_1;
+--Drop DATABASE Lesson_1;
