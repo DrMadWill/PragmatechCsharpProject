@@ -373,3 +373,5 @@
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-21-20-dekabr-2021-)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_11/Lesson_1/SQLQuery_Lesson_and_Task.sql)
     - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_11/Readme.md)
+
+## Lesson(11/1) => SQL Relationships and Joins
