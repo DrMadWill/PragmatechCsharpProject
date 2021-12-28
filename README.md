@@ -1,9 +1,13 @@
 
 <div align="center">
 <img src="https://i.postimg.cc/GpGTg6Lh/learncode.gif" align="center" >
+
+# Description 
+
 </div>
 <div align="center">
-    <h1>This Repostory was written while I was studying at Progmatech. Currently under development.</h1>
+    <h2>This Repostory was written while I was studying at Progmatech. Currently under development.</h2>
+    <hr>
     <p>
         Kursda olduğum müddətdə verilən tapşırıqlar və keçilən dərslərin başlıqlarnı <a href="https://github.com/DrMadWill/PragmatechCsharpProject#my-lessons">Readme.md > My Lessson</a> hissəsində qeyd etmişəm.Öz araştırmalarimi <a href="https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/MyResearch">MyResearch </a> faylını icərsində qeyd etdim . <a href="https://github.com/DrMadWill/PragmatechCsharpProject#my-apps--">My App</a>  bölməsində isə yazıdığım applicationlar göstərlir.
         Başqa lahiyələrimə baxmaq istəyirsizsə burada qoyduğum <a href="https://github.com/DrMadWill/PragmatechCsharpProject#my-apps--">link vastəsi ilə</a> GitHub Profilimə gedə bilərsiz...
