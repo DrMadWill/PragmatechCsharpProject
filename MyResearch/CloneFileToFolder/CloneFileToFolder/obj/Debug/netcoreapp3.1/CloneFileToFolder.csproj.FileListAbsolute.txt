@@ -1,0 +1,16 @@
+C:\Users\nofel\OneDrive\Desktop\CloneFileToFolder\CloneFileToFolder\bin\Debug\netcoreapp3.1\CloneFileToFolder.exe
+C:\Users\nofel\OneDrive\Desktop\CloneFileToFolder\CloneFileToFolder\bin\Debug\netcoreapp3.1\CloneFileToFolder.deps.json
+C:\Users\nofel\OneDrive\Desktop\CloneFileToFolder\CloneFileToFolder\bin\Debug\netcoreapp3.1\CloneFileToFolder.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\CloneFileToFolder\CloneFileToFolder\bin\Debug\netcoreapp3.1\CloneFileToFolder.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\CloneFileToFolder\CloneFileToFolder\bin\Debug\netcoreapp3.1\CloneFileToFolder.dll
+C:\Users\nofel\OneDrive\Desktop\CloneFileToFolder\CloneFileToFolder\bin\Debug\netcoreapp3.1\CloneFileToFolder.pdb
+C:\Users\nofel\OneDrive\Desktop\CloneFileToFolder\CloneFileToFolder\obj\Debug\netcoreapp3.1\CloneFileToFolder.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\CloneFileToFolder\CloneFileToFolder\obj\Debug\netcoreapp3.1\CloneFileToFolder.Form1.resources
+C:\Users\nofel\OneDrive\Desktop\CloneFileToFolder\CloneFileToFolder\obj\Debug\netcoreapp3.1\CloneFileToFolder.csproj.GenerateResource.cache
+C:\Users\nofel\OneDrive\Desktop\CloneFileToFolder\CloneFileToFolder\obj\Debug\netcoreapp3.1\CloneFileToFolder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\CloneFileToFolder\CloneFileToFolder\obj\Debug\netcoreapp3.1\CloneFileToFolder.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\CloneFileToFolder\CloneFileToFolder\obj\Debug\netcoreapp3.1\CloneFileToFolder.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\CloneFileToFolder\CloneFileToFolder\obj\Debug\netcoreapp3.1\CloneFileToFolder.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\CloneFileToFolder\CloneFileToFolder\obj\Debug\netcoreapp3.1\CloneFileToFolder.dll
+C:\Users\nofel\OneDrive\Desktop\CloneFileToFolder\CloneFileToFolder\obj\Debug\netcoreapp3.1\CloneFileToFolder.pdb
+C:\Users\nofel\OneDrive\Desktop\CloneFileToFolder\CloneFileToFolder\obj\Debug\netcoreapp3.1\CloneFileToFolder.genruntimeconfig.cache
