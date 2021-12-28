@@ -6,7 +6,7 @@
     <h1>This Repostory was written while I was studying at Progmatech. Currently under development.</h1>
     <p>
         Kursda olduğum müddətdə verilən tapşırıqlar və keçilən dərslərin başlıqlarnı <a href="https://github.com/DrMadWill/PragmatechCsharpProject#my-lessons">Readme.md > My Lessson</a> hissəsində qeyd etmişəm.Öz araştırmalarimi <a herf="https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/MyResearch">MyResearch </a> faylını icərsində qeyd etdim . <a herf="https://github.com/DrMadWill/PragmatechCsharpProject#my-apps--">My App</a>  bölməsində isə yazıdığım applicationlar göstərlir.
-        Başqa lahiyələrimə baxmaq istəyirsizsə burada qoyduğum <a herf="https://github.com/DrMadWill/PragmatechCsharpProject#my-apps--">link vastəsi ilə</a> GitHub Profilimə gedə bilərsiz.
+        Başqa lahiyələrimə baxmaq istəyirsizsə burada qoyduğum <a herf="https://github.com/DrMadWill/PragmatechCsharpProject#my-apps--">link vastəsi ilə</a> GitHub Profilimə gedə bilərsiz...
     </p>
 </div>
 
