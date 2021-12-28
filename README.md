@@ -63,6 +63,19 @@
 	-  _Windows Forms_ üçün yazılıb.
 	- `ComboBox` vastəsi ilə Personlari seçib ona aid bütün datani görmək olur.
 
+## Copy File to Path Name File App<a href="https://www.facebook.com/nofel.salahov.5/videos/207464484916744/?notif_id=1640372493623291&notif_t=video_processed&ref=notif"  >  <img src="https://i.postimg.cc/jdkgVD0s/2715723-modified.png"  width="180"  align="right"  ></a>
+
+> Bu program vastəsi ilə istənilən  `file` instənilən yerə  yerə adini dəyişdirərək kopyalamq olur.Günümüzdə kodlarda istifadəsi üçün file adında boşluqdan istifadə etmək olmaz. Bunu düşünərək `Developer-File` əlavə etdim.Bu Check sayəsində kodlarda istifdə edə biləcəyimiz uyğun **file name** əldə edə bilərik. Boşluqlari aradan qaldırır.
+
+-  [Preveiw](https://www.facebook.com/100004987969188/videos/255526803336456/)
+-  [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/MyResearch/CloneFileToFolder/CloneFileToFolder)
+
+-  **App** xususiyyətləri
+	-  _Windows Forms_ üçün yazılıb.
+    - `File`-ım adını dəyişib kopyalamaq olur.
+    - `File`-ın adını Dəyişdirmədəndə koyalamq olur.
+    - `Developer-File` sayəsində kodlarda istifadə edə biləcəyimiz uyğun **file name** əldə edə bilərik.
+
 # My Lessons 
 
 ## Lesson(1/1) => CLI languages,For Loop,Switch Statement,Data Types,Stack Value Type,Heap Reference Type and Methods
