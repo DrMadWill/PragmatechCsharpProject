@@ -1,4 +1,8 @@
 
+<div align="center">
+<img src="https://i.postimg.cc/GpGTg6Lh/learncode.gif" align="center" >
+</div>
+
 # Information structure
 -  **Lesson(a/b)**
     - _a_ Week
