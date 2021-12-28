@@ -78,7 +78,7 @@
 
 # My Lessons 
 
-## Lesson(1/1) => CLI languages,For Loop,Switch Statement,Data Types,Stack Value Type,Heap Reference Type and Methods
+## Lesson(1/1) => CLI languages,For Loop,Switch Statement,Data Types,Stack Value Type,Heap Reference Type and Methods <img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 
 - Task
@@ -95,7 +95,7 @@
 - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_1/Lesson_1/Task-1)
     - Code
     - Documentation
-## Lesson(1/2) => String vs StringBuilder,Ref & out keyword,Method Overloading,Type Casting,Boxing and Unboxing,String Methods,String Methods 2,Arrays,Duplicate values
+## Lesson(1/2) => String vs StringBuilder,Ref & out keyword,Method Overloading,Type Casting,Boxing and Unboxing,String Methods,String Methods 2,Arrays,Duplicate values<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 
 - Task
@@ -112,7 +112,7 @@
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_1/Lesson_2/Lesson/LessonLesson/Program.cs)
     - Documentation
 
-## Lesson(2/1) => Params,Class and Object
+## Lesson(2/1) => Params,Class and Object<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 
 - Task
@@ -132,7 +132,7 @@
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_2/Lesson_1/Lesson/LessonProgram.cs)
     - Documentation
 
-## Lesson(2/2) => Static
+## Lesson(2/2) => Static<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 
 - Task
@@ -155,7 +155,7 @@
     - Code
     - Documentation
 
-## Lesson(3/1) => Array,Non-Generic and Generic
+## Lesson(3/1) => Array,Non-Generic and Generic<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/><img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 
 - Task
@@ -197,7 +197,7 @@
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_3/Lesson_1/Lesson/Lesson/Program.cs)
     - Documentation
 
-## Lesson(4/1) => OOP (Object Oriented Programming)
+## Lesson(4/1) => OOP (Object Oriented Programming)<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 - Include
     - Task 
@@ -223,14 +223,14 @@
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_1/Lesson/Lesson/Program.cs)
     - [Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_1/OOP_Research_and_Lesson.md)
 
- ## Lesson(4/2) => Struct
+ ## Lesson(4/2) => Struct<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
  ***
 
 - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_4/Lesson_2)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_2/Lesson/Lesson/Program.cs)
     - [Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_2/different_Struct_and_Class.md)
 
- ## Lesson(5/1) => C# Interface and Access Modifiers
+ ## Lesson(5/1) => C# Interface and Access Modifiers<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
  ***
 
 - Task
@@ -248,12 +248,12 @@
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lesson_1/Lesson/TestinInternal/Program.cs)
     - [Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lesson_1/Documantation.md)
 
-## Lesson(5/2) => Solid Principles,Dependency Injection != Inversion and C#(8) Interface 
+## Lesson(5/2) => Solid Principles,Dependency Injection != Inversion and C#(8) Interface <img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_5/Lessson_2)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lessson_2/Lesson/Lesson/Program.cs)
     - [Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lessson_2/documatation.md)
-## Lesson(6/1) => Task Solution 
+## Lesson(6/1) => Task Solution <img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 - Task 
     - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-10-13-noyabr-2021-)
@@ -286,7 +286,7 @@
 - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_1)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_1/Task/Task)
 
-## Lesson(6/2) => C# Delegate and Extension Method
+## Lesson(6/2) => C# Delegate and Extension Method<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 - Task
     - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-12-20-noyabr-2021-)
@@ -309,7 +309,8 @@
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_2/Lesson/Lesson)
     - [Documattion](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_6/Lesson_2/Documantation.md)
 
-## Lesson(7/1) => Task Solution
+## Lesson(7/1) => Task Solution<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
+***
 - Task
     - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-13-21-noyabr-2021-)
     ```
@@ -338,12 +339,14 @@
     ```
     - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_7/Lesson_1/Task/Task/Program.cs)
 
-## Lesson(7/2) => C# Delegate and events
+## Lesson(7/2) => C# Delegate and events<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
+***
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-14-27-noyabr-2021-) 
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_7/Lesson_2/Lesson/Lesson)
     - My Documantation
 
-## Lesson(8/1) => WinForm App 
+## Lesson(8/1) => WinForm App<img src="https://i.postimg.cc/bN1Mk7NX/application-icon.png" alt="winform" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/> 
+***
 - Task
     - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-15-28-noyabr-2021-)
     ```
@@ -353,29 +356,35 @@
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-15-28-noyabr-2021-)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_8/Lesson_1/Lesson/Lesson)
 
-## Lesson(8/2) => Task Solution
-## Lesson(9/1) => C# Thread
+## Lesson(8/2) => Task Solution<img src="https://i.postimg.cc/bN1Mk7NX/application-icon.png" alt="winform" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/> 
+***
+## Lesson(9/1) => C# Thread<img src="https://i.postimg.cc/bN1Mk7NX/application-icon.png" alt="winform" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/> 
+***
 - Task
     - [Contet](https://github.com/PragmatechEducation/Csharp03/tree/main/Lesson-17/Task)
     - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_9/Lesson_1/Task_Group)
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-17-5-dekabr-2021-)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Lesson_1/Lesson/Lesson/Program.cs)
     - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Documantation.md#c-thread)
-## Lesson(9/2) => C# Thread Pool
+## Lesson(9/2) => C# Thread Pool<img src="https://i.postimg.cc/bN1Mk7NX/application-icon.png" alt="winform" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/> 
+***
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-18-10-dekabr-2021-)
 	- [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Lesson_2/Lesson/Lesson/Program.cs)
 	- [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Documantation.md#race-condition-problem)
-## Lesson(10/1) => Task And Thread In C#, StreamReader And StreamWriter Classes In C#, C# StreamReader, Get Files from Directory
+## Lesson(10/1) => Task And Thread In C#, StreamReader And StreamWriter Classes In C#, C# StreamReader, Get Files from Directory<img src="https://i.postimg.cc/bN1Mk7NX/application-icon.png" alt="winform" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/> 
+***
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-19-12-dekabr-2021-)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_10/Lesson_1/Lesson/Lesson/Program.cs)
     - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_10#async-and-await)
 
-## Lesson(10/2) => C# Reflection , C# Garbage Collection
+## Lesson(10/2) => C# Reflection , C# Garbage Collection<img src="https://i.postimg.cc/bN1Mk7NX/application-icon.png" alt="winform" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/> 
+***
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-20-17-dekabr-2021-)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_10/Lesson_2/Lesson/Lesson/Program.cs)
     - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_10#reflection)
 
-## Lesson(11/1) => Sql express download ,SQL data-types ,Introduction to SQL, SQL Syntax, SQL Commands SQL Server, CREATE DATABASE, SQL Server DROP DATABASE, SQL Server CREATE TABLE, SQL Server Identity, SQL Server ALTER TABLE ADD,Column, SQL Server ALTER TABLE ALTER COLUMN, SQL Server ALTER TABLE DROP COLUMN, SQL Server Rename Table, SQL Server DROP TABLE, SELECT, Insert, Update, Delete, Top, SQL Server ORDER BY, Where, AND, OR, IN, Between, Like, Fetch
+## Lesson(11/1) => Sql express download ,SQL data-types ,Introduction to SQL, SQL Syntax, SQL Commands SQL Server, CREATE DATABASE, SQL Server DROP DATABASE, SQL Server CREATE TABLE, SQL Server Identity, SQL Server ALTER TABLE ADD,Column, SQL Server ALTER TABLE ALTER COLUMN, SQL Server ALTER TABLE DROP COLUMN, SQL Server Rename Table, SQL Server DROP TABLE, SELECT, Insert, Update, Delete, Top, SQL Server ORDER BY, Where, AND, OR, IN, Between, Like, Fetch<img src="https://i.postimg.cc/Yq427q36/sql-database-icon-logo-design-ui-ux-app-orange-inscription-shadow-96841969-modified.png" alt="sql" align="right" width="40" height="40"/>
+***
 - [Task]()
     - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-21-20-dekabr-2021-)
     ```
@@ -387,7 +396,8 @@
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_11/Lesson_1/SQLQuery_Lesson_and_Task.sql)
     - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_11/Readme.md)
 
-## Lesson(11/2) => SQL Relationships and Joins
+## Lesson(11/2) => SQL Relationships and Joins<img src="https://i.postimg.cc/Yq427q36/sql-database-icon-logo-design-ui-ux-app-orange-inscription-shadow-96841969-modified.png" alt="sql" align="right" width="40" height="40"/>
+***
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-22-24-dekabr-2021-)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_11/Lesson_2/SQLQuery_Lesson_and_Task.sql)
     - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_11#some-keywords)
