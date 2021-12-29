@@ -27,5 +27,5 @@
 ***
 #### School DataBase Schema
 > Məktəbdəki sinifləri,müəllimləri,müəllimlərin ixtisasını və şagirdləri nəzərə alan DataBase bir sistemidir.
-- [Soruce]()
-    
+- [Soruce](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/MyResearch/SQL/SchoolDbDesigner)
+
