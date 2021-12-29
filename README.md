@@ -91,6 +91,11 @@
     - `File`-ın adını Dəyişdirmədəndə koyalamq olur.
     - `Developer-File` sayəsində kodlarda istifadə edə biləcəyimiz uyğun **file name** əldə edə bilərik.
 
+## My DataBase Schemas and Query Code
+- [School](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/MyResearch#school-database-schema) 
+    - Schemas
+
+
 # My Lessons 
 
 ## Lesson(1/1) => CLI languages,For Loop,Switch Statement,Data Types,Stack Value Type,Heap Reference Type and Methods <img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
