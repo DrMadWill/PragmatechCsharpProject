@@ -94,6 +94,8 @@
 ## My DataBase Schemas and Query Code
 - [School](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/MyResearch#school-database-schema) 
     - Schemas
+- [Movie](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/MyResearch#movie-database-schema)
+    - Schemas
 
 
 # My Lessons 
