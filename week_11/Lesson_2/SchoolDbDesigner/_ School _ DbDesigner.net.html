@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://app.dbdesigner.net/designer/schema/new -->
+<html lang="en" class=" "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>* School | DbDesigner.net</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--[if lt IE 9]>
+  <script src="/excanvas.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" media="all" href="./_ School _ DbDesigner.net_files/application-e9fec36f521b3b43b0c3045812d538b9c01c3d5d8485e1156a10a582cd4b7b20.css">
+  <script async="" src="./_ School _ DbDesigner.net_files/analytics.js.download"></script><script src="./_ School _ DbDesigner.net_files/application-99ebee98edc3f2883f54b73b6761e890fd7b7b3119526e97f5a261c73bc6f976.js.download"></script><style>@-webkit-keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}body.swal2-toast-shown .swal2-container{position:fixed;background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-shown{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}body.swal2-toast-column .swal2-toast{flex-direction:column;align-items:stretch}body.swal2-toast-column .swal2-toast .swal2-actions{flex:1;align-self:stretch;height:2.2em;margin-top:.3125em}body.swal2-toast-column .swal2-toast .swal2-loading{justify-content:center}body.swal2-toast-column .swal2-toast .swal2-input{height:2em;margin:.3125em auto;font-size:1em}body.swal2-toast-column .swal2-toast .swal2-validation-message{font-size:1em}.swal2-popup.swal2-toast{flex-direction:row;align-items:center;width:auto;padding:.625em;box-shadow:0 0 .625em #d9d9d9;overflow-y:hidden}.swal2-popup.swal2-toast .swal2-header{flex-direction:row}.swal2-popup.swal2-toast .swal2-title{flex-grow:1;justify-content:flex-start;margin:0 .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{position:initial;width:.8em;height:.8em;line-height:.8}.swal2-popup.swal2-toast .swal2-content{justify-content:flex-start;font-size:1em}.swal2-popup.swal2-toast .swal2-icon{width:2em;min-width:2em;height:2em;margin:0}.swal2-popup.swal2-toast .swal2-icon-text{font-size:2em;font-weight:700;line-height:1em}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{height:auto;margin:0 .3125em}.swal2-popup.swal2-toast .swal2-styled{margin:0 .3125em;padding:.3125em .625em;font-size:1em}.swal2-popup.swal2-toast .swal2-styled:focus{box-shadow:0 0 0 .0625em #fff,0 0 0 .125em rgba(50,100,150,.4)}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:2em;height:2.8125em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.25em;left:-.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:2em 2em;transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;-webkit-transform-origin:0 2em;transform-origin:0 2em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:showSweetToast .5s;animation:showSweetToast .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:hideSweetToast .2s forwards;animation:hideSweetToast .2s forwards}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:animate-toast-success-tip .75s;animation:animate-toast-success-tip .75s}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:animate-toast-success-long .75s;animation:animate-toast-success-long .75s}@-webkit-keyframes showSweetToast{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg);opacity:0}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg);opacity:.5}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg);opacity:.7}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0);opacity:1}}@keyframes showSweetToast{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg);opacity:0}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg);opacity:.5}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg);opacity:.7}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0);opacity:1}}@-webkit-keyframes hideSweetToast{0%{opacity:1}33%{opacity:.5}100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@keyframes hideSweetToast{0%{opacity:1}33%{opacity:.5}100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes animate-toast-success-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes animate-toast-success-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes animate-toast-success-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes animate-toast-success-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-shown{top:auto;right:auto;bottom:auto;left:auto;background-color:transparent}body.swal2-no-backdrop .swal2-shown>.swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}body.swal2-no-backdrop .swal2-shown.swal2-top{top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-top-left,body.swal2-no-backdrop .swal2-shown.swal2-top-start{top:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-top-end,body.swal2-no-backdrop .swal2-shown.swal2-top-right{top:0;right:0}body.swal2-no-backdrop .swal2-shown.swal2-center{top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-left,body.swal2-no-backdrop .swal2-shown.swal2-center-start{top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-end,body.swal2-no-backdrop .swal2-shown.swal2-center-right{top:50%;right:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom{bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom-left,body.swal2-no-backdrop .swal2-shown.swal2-bottom-start{bottom:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-bottom-end,body.swal2-no-backdrop .swal2-shown.swal2-bottom-right{right:0;bottom:0}.swal2-container{display:flex;position:fixed;top:0;right:0;bottom:0;left:0;flex-direction:row;align-items:center;justify-content:center;padding:10px;background-color:transparent;z-index:1060;overflow-x:hidden;-webkit-overflow-scrolling:touch}.swal2-container.swal2-top{align-items:flex-start}.swal2-container.swal2-top-left,.swal2-container.swal2-top-start{align-items:flex-start;justify-content:flex-start}.swal2-container.swal2-top-end,.swal2-container.swal2-top-right{align-items:flex-start;justify-content:flex-end}.swal2-container.swal2-center{align-items:center}.swal2-container.swal2-center-left,.swal2-container.swal2-center-start{align-items:center;justify-content:flex-start}.swal2-container.swal2-center-end,.swal2-container.swal2-center-right{align-items:center;justify-content:flex-end}.swal2-container.swal2-bottom{align-items:flex-end}.swal2-container.swal2-bottom-left,.swal2-container.swal2-bottom-start{align-items:flex-end;justify-content:flex-start}.swal2-container.swal2-bottom-end,.swal2-container.swal2-bottom-right{align-items:flex-end;justify-content:flex-end}.swal2-container.swal2-grow-fullscreen>.swal2-modal{display:flex!important;flex:1;align-self:stretch;justify-content:center}.swal2-container.swal2-grow-row>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-grow-column{flex:1;flex-direction:column}.swal2-container.swal2-grow-column.swal2-bottom,.swal2-container.swal2-grow-column.swal2-center,.swal2-container.swal2-grow-column.swal2-top{align-items:center}.swal2-container.swal2-grow-column.swal2-bottom-left,.swal2-container.swal2-grow-column.swal2-bottom-start,.swal2-container.swal2-grow-column.swal2-center-left,.swal2-container.swal2-grow-column.swal2-center-start,.swal2-container.swal2-grow-column.swal2-top-left,.swal2-container.swal2-grow-column.swal2-top-start{align-items:flex-start}.swal2-container.swal2-grow-column.swal2-bottom-end,.swal2-container.swal2-grow-column.swal2-bottom-right,.swal2-container.swal2-grow-column.swal2-center-end,.swal2-container.swal2-grow-column.swal2-center-right,.swal2-container.swal2-grow-column.swal2-top-end,.swal2-container.swal2-grow-column.swal2-top-right{align-items:flex-end}.swal2-container.swal2-grow-column>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{margin:auto}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-container .swal2-modal{margin:0!important}}.swal2-container.swal2-fade{transition:background-color .1s}.swal2-container.swal2-shown{background-color:rgba(0,0,0,.4)}.swal2-popup{display:none;position:relative;flex-direction:column;justify-content:center;width:32em;max-width:100%;padding:1.25em;border-radius:.3125em;background:#fff;font-family:inherit;font-size:1rem;box-sizing:border-box}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-popup .swal2-header{display:flex;flex-direction:column;align-items:center}.swal2-popup .swal2-title{display:block;position:relative;max-width:100%;margin:0 0 .4em;padding:0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-popup .swal2-actions{flex-wrap:wrap;align-items:center;justify-content:center;margin:1.25em auto 0;z-index:1}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-confirm{width:2.5em;height:2.5em;margin:.46875em;padding:0;border:.25em solid transparent;border-radius:100%;border-color:transparent;background-color:transparent!important;color:transparent;cursor:default;box-sizing:border-box;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-cancel{margin-right:30px;margin-left:30px}.swal2-popup .swal2-actions.swal2-loading :not(.swal2-styled).swal2-confirm::after{display:inline-block;width:15px;height:15px;margin-left:5px;border:3px solid #999;border-radius:50%;border-right-color:transparent;box-shadow:1px 1px 1px #fff;content:'';-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal}.swal2-popup .swal2-styled{margin:.3125em;padding:.625em 2em;font-weight:500;box-shadow:none}.swal2-popup .swal2-styled:not([disabled]){cursor:pointer}.swal2-popup .swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#3085d6;color:#fff;font-size:1.0625em}.swal2-popup .swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#aaa;color:#fff;font-size:1.0625em}.swal2-popup .swal2-styled:focus{outline:0;box-shadow:0 0 0 2px #fff,0 0 0 4px rgba(50,100,150,.4)}.swal2-popup .swal2-styled::-moz-focus-inner{border:0}.swal2-popup .swal2-footer{justify-content:center;margin:1.25em 0 0;padding:1em 0 0;border-top:1px solid #eee;color:#545454;font-size:1em}.swal2-popup .swal2-image{max-width:100%;margin:1.25em auto}.swal2-popup .swal2-close{position:absolute;top:0;right:0;justify-content:center;width:1.2em;height:1.2em;padding:0;transition:color .1s ease-out;border:none;border-radius:0;background:0 0;color:#ccc;font-family:serif;font-size:2.5em;line-height:1.2;cursor:pointer;overflow:hidden}.swal2-popup .swal2-close:hover{-webkit-transform:none;transform:none;color:#f27474}.swal2-popup>.swal2-checkbox,.swal2-popup>.swal2-file,.swal2-popup>.swal2-input,.swal2-popup>.swal2-radio,.swal2-popup>.swal2-select,.swal2-popup>.swal2-textarea{display:none}.swal2-popup .swal2-content{justify-content:center;margin:0;padding:0;color:#545454;font-size:1.125em;font-weight:300;line-height:normal;z-index:1;word-wrap:break-word}.swal2-popup #swal2-content{text-align:center}.swal2-popup .swal2-checkbox,.swal2-popup .swal2-file,.swal2-popup .swal2-input,.swal2-popup .swal2-radio,.swal2-popup .swal2-select,.swal2-popup .swal2-textarea{margin:1em auto}.swal2-popup .swal2-file,.swal2-popup .swal2-input,.swal2-popup .swal2-textarea{width:100%;transition:border-color .3s,box-shadow .3s;border:1px solid #d9d9d9;border-radius:.1875em;font-size:1.125em;box-shadow:inset 0 1px 1px rgba(0,0,0,.06);box-sizing:border-box}.swal2-popup .swal2-file.swal2-inputerror,.swal2-popup .swal2-input.swal2-inputerror,.swal2-popup .swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-popup .swal2-file:focus,.swal2-popup .swal2-input:focus,.swal2-popup .swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:0 0 3px #c4e6f5}.swal2-popup .swal2-file::-webkit-input-placeholder,.swal2-popup .swal2-input::-webkit-input-placeholder,.swal2-popup .swal2-textarea::-webkit-input-placeholder{color:#ccc}.swal2-popup .swal2-file:-ms-input-placeholder,.swal2-popup .swal2-input:-ms-input-placeholder,.swal2-popup .swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-popup .swal2-file::-ms-input-placeholder,.swal2-popup .swal2-input::-ms-input-placeholder,.swal2-popup .swal2-textarea::-ms-input-placeholder{color:#ccc}.swal2-popup .swal2-file::placeholder,.swal2-popup .swal2-input::placeholder,.swal2-popup .swal2-textarea::placeholder{color:#ccc}.swal2-popup .swal2-range input{width:80%}.swal2-popup .swal2-range output{width:20%;font-weight:600;text-align:center}.swal2-popup .swal2-range input,.swal2-popup .swal2-range output{height:2.625em;margin:1em auto;padding:0;font-size:1.125em;line-height:2.625em}.swal2-popup .swal2-input{height:2.625em;padding:0 .75em}.swal2-popup .swal2-input[type=number]{max-width:10em}.swal2-popup .swal2-file{font-size:1.125em}.swal2-popup .swal2-textarea{height:6.75em;padding:.75em}.swal2-popup .swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;color:#545454;font-size:1.125em}.swal2-popup .swal2-checkbox,.swal2-popup .swal2-radio{align-items:center;justify-content:center}.swal2-popup .swal2-checkbox label,.swal2-popup .swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-popup .swal2-checkbox input,.swal2-popup .swal2-radio input{margin:0 .4em}.swal2-popup .swal2-validation-message{display:none;align-items:center;justify-content:center;padding:.625em;background:#f0f0f0;color:#666;font-size:1em;font-weight:300;overflow:hidden}.swal2-popup .swal2-validation-message::before{display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center;content:'!';zoom:normal}@supports (-ms-accelerator:true){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@-moz-document url-prefix(){.swal2-close:focus{outline:2px solid rgba(50,100,150,.4)}}.swal2-icon{position:relative;justify-content:center;width:5em;height:5em;margin:1.25em auto 1.875em;border:.25em solid transparent;border-radius:50%;line-height:5em;cursor:default;box-sizing:content-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;zoom:normal}.swal2-icon-text{font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-success{border-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:3.75em 3.75em;transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 3.75em;transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;top:-.25em;left:-.25em;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%;z-index:2;box-sizing:content-box}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;top:.5em;left:1.625em;width:.4375em;height:5.625em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);z-index:1}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;height:.3125em;border-radius:.125em;background-color:#a5dc86;z-index:2}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.875em;width:1.5625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-progresssteps{align-items:center;margin:0 0 1.25em;padding:0;font-weight:600}.swal2-progresssteps li{display:inline-block;position:relative}.swal2-progresssteps .swal2-progresscircle{width:2em;height:2em;border-radius:2em;background:#3085d6;color:#fff;line-height:2em;text-align:center;z-index:20}.swal2-progresssteps .swal2-progresscircle:first-child{margin-left:0}.swal2-progresssteps .swal2-progresscircle:last-child{margin-right:0}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep{background:#3085d6}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep~.swal2-progresscircle{background:#add8e6}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep~.swal2-progressline{background:#add8e6}.swal2-progresssteps .swal2-progressline{width:2.5em;height:.4em;margin:0 -1px;background:#3085d6;z-index:10}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-show.swal2-noanimation{-webkit-animation:none;animation:none}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-hide.swal2-noanimation{-webkit-animation:none;animation:none}[dir=rtl] .swal2-close{right:auto;left:0}.swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-animate-success-icon .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-animate-error-icon{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-animate-error-icon .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}@-webkit-keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:initial!important}}</style><style type="text/css">.treejs {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 14px;
+}
+.treejs *:after,
+.treejs *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.treejs > .treejs-node {
+  padding-left: 0;
+}
+.treejs .treejs-nodes {
+  list-style: none;
+  padding-left: 20px;
+  overflow: hidden;
+  -webkit-transition: height 150ms ease-out, opacity 150ms ease-out;
+  -o-transition: height 150ms ease-out, opacity 150ms ease-out;
+  transition: height 150ms ease-out, opacity 150ms ease-out;
+}
+.treejs .treejs-node {
+  cursor: pointer;
+  overflow: hidden;
+}
+.treejs .treejs-node.treejs-placeholder {
+  padding-left: 20px;
+}
+.treejs .treejs-switcher {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: -webkit-transform 150ms ease-out;
+  transition: -webkit-transform 150ms ease-out;
+  -o-transition: transform 150ms ease-out;
+  transition: transform 150ms ease-out;
+  transition: transform 150ms ease-out, -webkit-transform 150ms ease-out;
+}
+.treejs .treejs-switcher:before {
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  display: block;
+  content: ' ';
+  border: 4px solid transparent;
+  border-top: 4px solid rgba(0, 0, 0, 0.4);
+  -webkit-transition: border-color 150ms;
+  -o-transition: border-color 150ms;
+  transition: border-color 150ms;
+}
+.treejs .treejs-switcher:hover:before {
+  border-top: 4px solid rgba(0, 0, 0, 0.65);
+}
+.treejs .treejs-node__close > .treejs-switcher {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.treejs .treejs-node__close > .treejs-nodes {
+  height: 0;
+}
+.treejs .treejs-checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.treejs .treejs-checkbox:before {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  content: ' ';
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+}
+.treejs .treejs-checkbox:hover:before {
+  -webkit-box-shadow: 0 0 2px 1px #1890ff;
+          box-shadow: 0 0 2px 1px #1890ff;
+}
+.treejs .treejs-node__checked > .treejs-checkbox:before {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+.treejs .treejs-node__checked > .treejs-checkbox:after {
+  position: absolute;
+  content: ' ';
+  display: block;
+  top: 4px;
+  left: 5px;
+  width: 5px;
+  height: 9px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.treejs .treejs-node__halfchecked > .treejs-checkbox:before {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+.treejs .treejs-node__halfchecked > .treejs-checkbox:after {
+  position: absolute;
+  content: ' ';
+  display: block;
+  top: 9px;
+  left: 3px;
+  width: 10px;
+  height: 2px;
+  background-color: #fff;
+}
+.treejs .treejs-node__disabled {
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.25);
+}
+.treejs .treejs-node__disabled .treejs-checkbox {
+  cursor: not-allowed;
+}
+.treejs .treejs-node__disabled .treejs-checkbox:before {
+  cursor: not-allowed;
+  border-color: #d9d9d9 !important;
+  background-color: #f5f5f5 !important;
+}
+.treejs .treejs-node__disabled .treejs-checkbox:hover:before {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+.treejs .treejs-node__disabled .treejs-node__checked > .treejs-checkbox:after {
+  border-color: #d9d9d9;
+}
+.treejs .treejs-node__disabled .treejs-node__halfchecked > .treejs-checkbox:after {
+  background-color: #d9d9d9;
+}
+.treejs .treejs-node__disabled.treejs-node__checked > .treejs-checkbox:after {
+  border-color: #d9d9d9;
+}
+.treejs .treejs-node__disabled.treejs-node__halfchecked > .treejs-checkbox:after {
+  background-color: #d9d9d9;
+}
+.treejs .treejs-label {
+  vertical-align: middle;
+}
+</style>
+  <script src="./_ School _ DbDesigner.net_files/jscolor.js.download" type="text/javascript"></script>
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="CwOoMGNd1ioQiEzHXXC8Zj4glR1tdna3c3Np9--QGu0U58qE7uu4t48IZEawMJbXHzWZ30y0S1X28T5pjxPPoQ">
+  <script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga("create","UA-131043143-1","auto");
+ga("send","pageview");
+</script>
+
+
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://app.dbdesigner.net/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://app.dbdesigner.net/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://app.dbdesigner.net/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://app.dbdesigner.net/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://app.dbdesigner.net/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://app.dbdesigner.net/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://app.dbdesigner.net/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://app.dbdesigner.net/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="https://app.dbdesigner.net/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="https://app.dbdesigner.net/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="https://app.dbdesigner.net/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://app.dbdesigner.net/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="https://app.dbdesigner.net/favicon-128.png" sizes="128x128">
+
+  <script>
+//<![CDATA[
+window.gon={};
+//]]>
+</script>
+  <meta name="google-site-verification" content="WWzamkTEa52df2tfxAvoZFdiMwokuNqFT1XKfq_flhQ">
+</head>
+<body cz-shortcut-listen="true" style="cursor: auto;"><audio class="audio-for-speech" src=""></audio><div class="translate-tooltip-mtz hidden">
+                    <div class="header">
+                        <div class="header-controls">
+                            Translator
+                        </div>
+                        <div class="header-controls">
+                            <span class="settings"></span>
+                        </div>
+                    </div>
+                    <div class="translated-text">
+                        <div class="words"></div>
+                        <div class="sentences"></div>
+                    </div>
+                </div><span class="translate-button-mtz hidden" style="top: 313.8374938964844px;left: 336.6125030517578px;"></span>
+    
+
+
+<div class="app-container">
+	<div class="toolbar" style="display: block; width: 100%;"><ul class="menu" id="mainmenu" unselectable="on">
+    <li class="">
+    <span class="menu-item" data-step="1" data-intro="Start your project here. Click on NEW to start fresh project or use a TEMPLATE to get started. You can also import SQL.">Schema</span>
+    <ul class="submenu" style="display: none;">
+        <li id="menu-item-schema-new">New ...<span class="shortcut" data-accel="ctrl+n">Ctrl+N</span></li>
+        <li id="menu-item-schema-load">Load ...<span class="shortcut" data-accel="ctrl+l">Ctrl+L</span></li>
+        <li id="menu-item-schema-save" class="">Save<span class="shortcut" data-accel="ctrl+s">Ctrl+S</span></li>
+        <li id="menu-item-schema-save-as">Save As ...</li>
+        <li class="menu-separator">&nbsp;</li>
+        <li id="menu-item-schema-templates">Templates ...</li>
+        <li class="menu-separator">&nbsp;</li>
+        <li id="menu-item-schema-properties">Properties ...</li>
+        <li id="menu-item-schema-share">Share ...</li>
+        <li class="menu-separator">&nbsp;</li>
+        <li id="menu-item-schema-import">Import ...<span class="shortcut" data-accel="ctrl+i">Ctrl+I</span></li>
+    </ul>
+    </li>
+    <li class="">
+    <span class="menu-item">Edit</span>
+    <ul class="submenu" style="display: none;">
+        <li id="menu-item-edit-undo" class="">Undo<span class="shortcut" data-accel="ctrl+z">Ctrl+Z</span></li>
+        <li id="menu-item-edit-redo" class="disabled">Redo<span class="shortcut" data-accel="ctrl+y">Ctrl+Y</span></li>
+        <li class="menu-separator">&nbsp;</li>
+        <li id="menu-item-edit-select-all">Select All<span class="shortcut" data-accel="ctrl+a">Ctrl+A</span></li>
+        <li id="menu-item-edit-select-none">Select None</li>
+    </ul>
+    </li>
+    <li class="">
+    <span class="menu-item" data-step="2" data-intro="Click INSERT to add new table or a note. You can also right click in empty space of canvas to add new Table.">Insert</span>
+    <ul class="submenu" style="display: none;">
+        <li id="menu-item-insert-table">Table<span class="shortcut" data-accel="alt+t">Alt+T</span></li>
+        <li id="menu-item-insert-note">Note<span class="shortcut" data-accel="alt+n">Alt+N</span></li>
+    </ul>
+    </li>
+    <li>
+    <span class="menu-item" data-step="4" data-intro="Click VIEW to show/hide minimap, sidebar or grid. Use Sort Items to automatically sort a large database. To change line type or click on Options to change line color and show/hide icons.">View</span>
+    <ul class="submenu" style="display: none;">
+        <li id="menu-item-view-minimap">Hide Minimap</li>
+        <li id="menu-item-view-sidebar"><span class="menu-caption">Show Sidebar</span> <span class="shortcut" data-accel="alt+s">Alt+S</span></li>
+        <li id="menu-item-view-grid">Hide Grid</li>
+        <li class="menu-separator">&nbsp;</li>
+        <li id="menu-item-view-sort">Sort Items <span class="shortcut" data-accel="ctrl+1">Ctrl+1</span></li>
+        <li class="menu-separator">&nbsp;</li>
+        <li id="menu-item-view-line" class="has-submenu">
+        Line Type
+        <ul class="submenu second-lvl-menu" style="display: none;">
+            <li id="menu-item-view-line-bezier">Bezier</li>
+            <li id="menu-item-view-line-cornered">Cornered</li>
+        </ul>
+        </li>
+        <li class="menu-separator">&nbsp;</li>
+        <li id="menu-item-view-options">Options ...</li>
+    </ul>
+    </li>
+
+    <li class="">
+    <span class="menu-item" data-step="6" data-intro="Click EXPORT to generate SQL from your schema, click &#39;SQL&#39; from the &#39;Export&#39; menu. The export dialog that pops up will let you customize the SQL output. You can also Export a PNG image.">Export</span>
+    <ul class="submenu" style="display: none;">
+        <li id="menu-item-export-sql">Sql ...<span class="shortcut" data-accel="ctrl+e">Ctrl+E</span></li>
+        <li id="menu-item-export-image">Image ...</li>
+        <li id="menu-item-export-pdf">PDF ...</li>
+    </ul>
+    </li>
+
+    <li class="click" id="menu-item-schema-share" data-step="3" data-intro="Click SHARE to invite other team members and give them Read Only or Read &amp; Write permissions. You can always make changes later from your Account Dashboard"><span class="pl-7">Share</span></li>
+
+    <li>
+    <span class="menu-item">Help</span>
+    <ul class="submenu" style="display: none;">
+        <li id="menu-item-help-index">Index</li>
+        <li class="menu-separator">&nbsp;</li>
+        <li id="menu-item-help-changes">Changes</li>
+        <li class="menu-separator">&nbsp;</li>
+        <li id="menu-item-help-tutorial">Show Tutorial</li>
+        <li id="menu-item-help-shortcuts">Keyboard Shortcuts<span class="shortcut" data-accel="shift+/">?</span></li>
+        <li id="menu-item-help-feedback">Feedback</li>
+        <li class="menu-separator">&nbsp;</li>
+        <li id="menu-item-help-about">About</li>
+    </ul>
+    </li>
+
+    <li class="click" id="menu-item-doc"><span class="pl-7">Documentation</span></li>
+</ul>
+		<div class="notification">...
+<span class="close"><i class="icon-cancel"></i></span></div>
+	<ul id="usermenu" class="menu" userselectable="on">
+  <li id="upgrade" style="display: none;">
+    &nbsp; Free - <span>Upgrade Now</span>
+  </li>
+
+  <li class="has-dropdown">
+    <span class="menu-item">
+      <i class="icon-user"></i>
+      <span class="toolbar-username">Nofel</span>
+    </span>
+    <ul class="submenu" style="display: none; left: -82.4375px;">
+      <li id="menu-item-user-account-dashboard">Dashboard</li>
+      <li id="menu-item-user-account-settings">Settings</li>
+      <li class="menu-separator">&nbsp;</li>
+      <li id="menu-item-user-logout">Logout</li>
+    </ul>
+  </li>
+</ul></div>
+	<div class="canvas-container" style="width: 1536px; height: 635px;">
+		<div class="init-loading" style="display: none;"><i class="icon-spin1 animate-spin"></i></div>
+		<canvas id="graph" class="canvas" width="3840" height="2400"></canvas>
+		<div class="selection" style="left: 0px; top: 0px; width: 0px; height: 0px;"></div>
+	<ul class="context-menu menu" style="display: none; left: 462.6px; top: 497.2px;"><li id="menu-item-delete-table">Delete Table</li>
+<li class="menu-separator">&nbsp;</li>
+<li id="menu-item-duplicate-table">Clone Table</li>
+<li class="menu-separator">&nbsp;</li>
+<li class="no-highlight">
+	<div class="color-lines top-row">
+		<span title="maroon" class="table-color table-color-maroon" data-color="#800040"></span>
+		<span title="ocean" class="table-color table-color-ocean" data-color="#004080"></span>
+		<span title="teal" class="table-color table-color-teal" data-color="#008080"></span>
+		<span title="asparagus" class="table-color table-color-asparagus" data-color="#808000"></span>
+		<span title="strawberry" class="table-color table-color-strawberry" data-color="#FF0080"></span>
+		<span title="iron" class="table-color table-color-iron" data-color="#505050"></span>
+	</div>
+	<div class="color-lines bottom-row">
+		<span title="red" class="table-color table-color-red" data-color="#cc3333"></span>
+		<span title="blue" class="table-color table-color-blue" data-color="#1586D6"></span>
+		<span title="green" class="table-color table-color-green" data-color="#008000"></span>
+		<span title="orange" class="table-color table-color-orange" data-color="#ff8000"></span>
+		<span title="purple" class="table-color table-color-purple" data-color="#7F007F"></span>
+		<span title="reset" class="table-color table-color-reset"></span>
+	</div>
+</li></ul><ul class="context-menu menu" style="left: 519px; top: 200px; display: none;"><li id="menu-item-delete-note">Delete</li>
+<li class="menu-separator">&nbsp;</li>
+<li class="no-highlight">
+    <div class="color-lines top-row">
+        <span title="maroon" class="table-color table-color-maroon" data-color="#800040"></span>
+        <span title="ocean" class="table-color table-color-ocean" data-color="#004080"></span>
+        <span title="teal" class="table-color table-color-teal" data-color="#008080"></span>
+        <span title="asparagus" class="table-color table-color-asparagus" data-color="#808000"></span>
+        <span title="strawberry" class="table-color table-color-strawberry" data-color="#FF0080"></span>
+        <span title="iron" class="table-color table-color-iron" data-color="#505050"></span>
+    </div>
+    <div class="color-lines bottom-row">
+        <span title="red" class="table-color table-color-red" data-color="#cc3333"></span>
+        <span title="blue" class="table-color table-color-blue" data-color="#1586D6"></span>
+        <span title="green" class="table-color table-color-green" data-color="#008000"></span>
+        <span title="orange" class="table-color table-color-orange" data-color="#ff8000"></span>
+        <span title="purple" class="table-color table-color-purple" data-color="#7F007F"></span>
+        <span title="reset" class="table-color table-color-reset"></span>
+    </div>
+</li></ul><ul class="context-menu menu" style="display: none; left: 1031.6px; top: 860px;"><li id="menu-item-insert-table">Table</li>
+<li id="menu-item-insert-note">Note</li>
+<li class="menu-separator">&nbsp;</li>
+<li id="menu-item-view-sort">Sort Items</li></ul><div class="minimap" style="right: 20px; width: 191px; height: 119px;"><div class="minimap__viewport" style="top: 13px; left: -1px; width: 76px; height: 32px;"></div><div class="minimap__icon minimap__icon_type_table" title="Student Information" style="background-color: rgb(255, 255, 255); left: 5px; top: 31px; width: 10px; height: 6px;"></div><div class="minimap__icon minimap__icon_type_table" title="Teacher İnformation" style="background-color: rgb(255, 255, 255); left: 53px; top: 35px; width: 10px; height: 6px;"></div><div class="minimap__icon minimap__icon_type_table" title="Class" style="background-color: rgb(255, 255, 255); left: 19px; top: 29px; width: 10px; height: 5px;"></div><div class="minimap__icon minimap__icon_type_table" title="TeacherToClass" style="background-color: rgb(255, 255, 255); left: 36px; top: 27px; width: 10px; height: 4px;"></div><div class="minimap__icon minimap__icon_type_table" title="Specialty" style="background-color: rgb(255, 255, 255); left: 14px; top: 40px; width: 10px; height: 4px;"></div><div class="minimap__icon minimap__icon_type_table" title="SpecialtyToTeacher" style="background-color: rgb(255, 255, 255); left: 31px; top: 37px; width: 10px; height: 4px;"></div></div><table data-table-name="Untitled" class="entity-table ui-draggable" id="240000" style="position: absolute; opacity: 1; left: 91px; top: 626px; z-index: 33;"><thead>
+    <tr class="caption" style="display: table-row;">
+        <th class="table-name" colspan="3">Student Information</th>
+        <th class="table-ops">
+            <img src="./_ School _ DbDesigner.net_files/table-edit-b4870113929f982983766275ce5a05d12718a36bdc05b9e0841ddb31d216dee9.png" alt="Edit table properties" class="edit-table">
+        </th>
+    </tr>
+    <tr class="comment hidden" style="display: table-row;">
+        <th class="table-comment" colspan="4"><textarea readonly="readonly" class="table-comment-box" style="height: 4px;"></textarea></th>
+    </tr>
+    <tr class="edit-table" style="display: none;">
+      <th colspan="4">
+        <span class="dummy dummy-down" tabindex="0"></span>
+        <label for="table-name" data-lang-text="designer.table_name">Table Name</label>
+        <input type="text" name="table-name" value="Untitled" class="table-name">
+        <br>
+        <label for="table-comment" data-lang-text="designer.table_comment">Table Comment</label>
+        <textarea class="table-comment" rows="4"></textarea>
+        <br>
+        <br>
+        <input type="button" data-lang-value="designer.table_save" value="Save" class="save-edit-table btn">
+        <span class="action cancel-edit-table" data-lang-text="designer.table_cancel" tabindex="0">Cancel</span>
+        <span class="action delete-table danger" data-lang-text="designer.table_delete" tabindex="0">Delete Table</span>
+        <span class="dummy dummy-up" tabindex="0"></span>
+      </th>
+    </tr>
+</thead>
+<tbody class="ui-sortable">
+<tr data-field-name="İd" class="tr colored" id="1070001"><td class="pk-field auto-increment not-null" style="background-color: rgb(0, 128, 128); color: rgb(255, 255, 255);"><img src="./_ School _ DbDesigner.net_files/key-0f0ed284afcf94f728410e720ca9ac84107d90a676864c780b0a3ddd70d8e58b.png"></td>
+<td style="background-color: rgb(0, 128, 128); color: rgb(255, 255, 255);">İd</td>
+<td style="background-color: rgb(0, 128, 128); color: rgb(255, 255, 255);">int </td>
+<td class="rightmost" style="background-color: rgb(0, 128, 128); color: rgb(255, 255, 255);">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr><tr data-field-name="Name" class="tr colored" id="8440002"><td class="not-null"></td>
+<td>Name</td>
+<td>varchar(255) </td>
+<td class="rightmost">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr><tr data-field-name="Sure Name" class="tr colored" id="1530003"><td class="not-null"></td>
+<td>Sure Name</td>
+<td>varchar(255) </td>
+<td class="rightmost">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr><tr data-field-name="Evaluation" class="tr colored" id="5540005"><td class="not-null"></td>
+<td>Evaluation</td>
+<td>varchar(255) </td>
+<td class="rightmost">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr></tbody>
+<tfoot>
+    <tr>
+        <td colspan="4">
+            <div class="operations" style="display: block;">
+                <img src="./_ School _ DbDesigner.net_files/table-row-add-ff52abbbe3d087ba3b5cee3fda5614c92c2bc6f5ed5d0ab05129659688b924b5.png" alt="">
+                <span class="insert-field action" data-lang-text="designer.table_add_field">Add field</span>
+            </div>
+        <div class="insert-panel" style="display: none;"><div class="insert-panel" style="display: none;">
+    <span class="dummy dummy-down" tabindex="0"></span>
+
+    <label for="field-name" data-lang-text="designer.field_name">Name</label>
+    <input type="text" name="field-name" class="field-name">
+    <br>
+    <label for="field-type" data-lang-text="designer.field_type">Type</label>
+    <select class="field-type" name="field-type">
+      <option value="bigint">bigint</option>
+      <option value="binary">binary</option>
+      <option value="bit">bit</option>
+      <option value="blob">blob</option>
+      <option value="bool">bool</option>
+      <option value="boolean">boolean</option>
+      <option value="char">char</option>
+      <option value="date">date</option>
+      <option value="datetime">datetime</option>
+      <option value="decimal">decimal</option>
+      <option value="double">double</option>
+      <option value="enum">enum</option>
+      <option value="float">float</option>
+      <option value="geometry">geometry</option>
+      <option value="geometrycollection">geometrycollection</option>
+      <option value="int">int</option>
+      <option value="integer">integer</option>
+      <option value="json">json</option>
+      <option value="linestring">linestring</option>
+      <option value="longblob">longblob</option>
+      <option value="longtext">longtext</option>
+      <option value="mediumblob">mediumblob</option>
+      <option value="mediumint">mediumint</option>
+      <option value="mediumtext">mediumtext</option>
+      <option value="multilinestring">multilinestring</option>
+      <option value="multipoint">multipoint</option>
+      <option value="multipolygon">multipolygon</option>
+      <option value="numeric">numeric</option>
+      <option value="point">point</option>
+      <option value="polygon">polygon</option>
+      <option value="real">real</option>
+      <option value="set">set</option>
+      <option value="smallint">smallint</option>
+      <option value="text">text</option>
+      <option value="time">time</option>
+      <option value="timestamp">timestamp</option>
+      <option value="tinyblob">tinyblob</option>
+      <option value="tinyint">tinyint</option>
+      <option value="tinytext">tinytext</option>
+      <option value="varbinary">varbinary</option>
+      <option value="varchar">varchar</option>
+      <option value="year">year</option>
+    </select>
+    <br>
+    <label for="field-size" data-lang-text="designer.field_size">Size</label>
+    <input type="text" name="field-size" class="field-size">
+    <br>
+    <label for="" data-lang-text="designer.field_default">Default</label>
+    <input type="text" name="field-default" class="field-default">
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-pk" class="checkbox field-pk"><span data-lang-text="designer.field_primary_key">Primary Key</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-null" class="checkbox field-null"><span data-lang-text="designer.field_allow_nulls">Allow nulls</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-unique" class="checkbox field-unique"><span data-lang-text="designer.field_unique">Unique</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-ai" class="checkbox field-ai"><span data-lang-text="designer.field_autoincrement">Auto Increment</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-fk" class="checkbox field-fk"><span data-lang-text="designer.field_foreign_key">Foreign Key</span>
+    </label>
+    <br>
+    <div class="refs" style="display: none;"><label for="field-ref-table">Ref. Table</label>
+<select class="field-ref-table">
+<option value="Untitled">Untitled</option></select>
+<br>
+<label for="field-ref-fields">Ref. Field</label>
+<select class="field-ref-fields">
+</select>
+<br></div>
+    <br>
+    <hr>
+    <input type="text" name="field-color" class="field-color hidden" tabindex="2" value="">
+    <ul class="color-palette">
+        <li class="no-highlight">
+            <div class="color-lines top-row">
+                <span title="maroon" class="table-color table-color-maroon" data-color="#800040"></span>
+                <span title="ocean" class="table-color table-color-ocean" data-color="#004080"></span>
+                <span title="teal" class="table-color table-color-teal selected" data-color="#008080" style="top: 2294px; left: 2959px;"></span>
+                <span title="asparagus" class="table-color table-color-asparagus" data-color="#808000"></span>
+                <span title="strawberry" class="table-color table-color-strawberry" data-color="#FF0080"></span>
+                <span title="iron" class="table-color table-color-iron" data-color="#505050"></span>
+                <span title="red" class="table-color table-color-red" data-color="#cc3333"></span>
+                <span title="blue" class="table-color table-color-blue" data-color="#1586D6"></span>
+                <span title="green" class="table-color table-color-green" data-color="#008000"></span>
+                <span title="orange" class="table-color table-color-orange" data-color="#ff8000"></span>
+                <span title="purple" class="table-color table-color-purple" data-color="#7F007F"></span>
+                <span title="reset" class="table-color table-color-reset"></span>
+            </div>
+        </li>
+    </ul>
+    <input type="button" data-lang-value="designer.field_save" value="Save" class="btn save-button">
+    <span class="cancel-insert action" data-lang-text="designer.field_cancel" tabindex="0">Cancel</span>
+    <span class="dummy dummy-up" tabindex="0"></span>
+</div></div></td>
+    </tr>
+</tfoot></table><table data-table-name="Untitled" class="entity-table ui-draggable" id="2440006" style="position: absolute; opacity: 1; left: 1060px; top: 696px; z-index: 36;"><thead>
+    <tr class="caption" style="display: table-row;">
+        <th class="table-name" colspan="3">Teacher İnformation</th>
+        <th class="table-ops">
+            <img src="./_ School _ DbDesigner.net_files/table-edit-b4870113929f982983766275ce5a05d12718a36bdc05b9e0841ddb31d216dee9.png" alt="Edit table properties" class="edit-table">
+        </th>
+    </tr>
+    <tr class="comment hidden" style="display: table-row;">
+        <th class="table-comment" colspan="4"><textarea readonly="readonly" class="table-comment-box" style="height: 4px;"></textarea></th>
+    </tr>
+    <tr class="edit-table" style="display: none;">
+      <th colspan="4">
+        <span class="dummy dummy-down" tabindex="0"></span>
+        <label for="table-name" data-lang-text="designer.table_name">Table Name</label>
+        <input type="text" name="table-name" value="Untitled" class="table-name">
+        <br>
+        <label for="table-comment" data-lang-text="designer.table_comment">Table Comment</label>
+        <textarea class="table-comment" rows="4"></textarea>
+        <br>
+        <br>
+        <input type="button" data-lang-value="designer.table_save" value="Save" class="save-edit-table btn">
+        <span class="action cancel-edit-table" data-lang-text="designer.table_cancel" tabindex="0">Cancel</span>
+        <span class="action delete-table danger" data-lang-text="designer.table_delete" tabindex="0">Delete Table</span>
+        <span class="dummy dummy-up" tabindex="0"></span>
+      </th>
+    </tr>
+</thead>
+<tbody class="ui-sortable">
+<tr data-field-name="Id" class="tr colored" id="2490007"><td class="pk-field auto-increment not-null" style="background-color: rgb(21, 134, 214); color: rgb(255, 255, 255);"><img src="./_ School _ DbDesigner.net_files/key-0f0ed284afcf94f728410e720ca9ac84107d90a676864c780b0a3ddd70d8e58b.png"></td>
+<td style="background-color: rgb(21, 134, 214); color: rgb(255, 255, 255);">Id</td>
+<td style="background-color: rgb(21, 134, 214); color: rgb(255, 255, 255);">int </td>
+<td class="rightmost" style="background-color: rgb(21, 134, 214); color: rgb(255, 255, 255);">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr><tr data-field-name="Name" class="tr colored" id="3000008"><td class="not-null"></td>
+<td>Name</td>
+<td>varchar(255) </td>
+<td class="rightmost">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr><tr data-field-name="Sure Name" class="tr colored" id="7090009"><td class="not-null"></td>
+<td>Sure Name</td>
+<td>varchar(255) </td>
+<td class="rightmost">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr><tr data-field-name="Class" class="tr colored" id="6250011" style="display: table-row;"><td class="not-null"></td>
+<td>Class hours</td>
+<td>int(255) </td>
+<td class="rightmost">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr><tr data-field-name="Head of the class İd" class="tr colored" id="790024"><td class="fk-field not-null"></td>
+<td>Head of the class İd</td>
+<td>int(255) </td>
+<td class="rightmost">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr></tbody>
+<tfoot>
+    <tr>
+        <td colspan="4">
+            <div class="operations" style="display: block;">
+                <img src="./_ School _ DbDesigner.net_files/table-row-add-ff52abbbe3d087ba3b5cee3fda5614c92c2bc6f5ed5d0ab05129659688b924b5.png" alt="">
+                <span class="insert-field action" data-lang-text="designer.table_add_field">Add field</span>
+            </div>
+        <div class="insert-panel" style="display: none;"><div class="insert-panel" style="display: none;">
+    <span class="dummy dummy-down" tabindex="0"></span>
+
+    <label for="field-name" data-lang-text="designer.field_name">Name</label>
+    <input type="text" name="field-name" class="field-name">
+    <br>
+    <label for="field-type" data-lang-text="designer.field_type">Type</label>
+    <select class="field-type" name="field-type">
+      <option value="bigint">bigint</option>
+      <option value="binary">binary</option>
+      <option value="bit">bit</option>
+      <option value="blob">blob</option>
+      <option value="bool">bool</option>
+      <option value="boolean">boolean</option>
+      <option value="char">char</option>
+      <option value="date">date</option>
+      <option value="datetime">datetime</option>
+      <option value="decimal">decimal</option>
+      <option value="double">double</option>
+      <option value="enum">enum</option>
+      <option value="float">float</option>
+      <option value="geometry">geometry</option>
+      <option value="geometrycollection">geometrycollection</option>
+      <option value="int">int</option>
+      <option value="integer">integer</option>
+      <option value="json">json</option>
+      <option value="linestring">linestring</option>
+      <option value="longblob">longblob</option>
+      <option value="longtext">longtext</option>
+      <option value="mediumblob">mediumblob</option>
+      <option value="mediumint">mediumint</option>
+      <option value="mediumtext">mediumtext</option>
+      <option value="multilinestring">multilinestring</option>
+      <option value="multipoint">multipoint</option>
+      <option value="multipolygon">multipolygon</option>
+      <option value="numeric">numeric</option>
+      <option value="point">point</option>
+      <option value="polygon">polygon</option>
+      <option value="real">real</option>
+      <option value="set">set</option>
+      <option value="smallint">smallint</option>
+      <option value="text">text</option>
+      <option value="time">time</option>
+      <option value="timestamp">timestamp</option>
+      <option value="tinyblob">tinyblob</option>
+      <option value="tinyint">tinyint</option>
+      <option value="tinytext">tinytext</option>
+      <option value="varbinary">varbinary</option>
+      <option value="varchar">varchar</option>
+      <option value="year">year</option>
+    </select>
+    <br>
+    <label for="field-size" data-lang-text="designer.field_size">Size</label>
+    <input type="text" name="field-size" class="field-size">
+    <br>
+    <label for="" data-lang-text="designer.field_default">Default</label>
+    <input type="text" name="field-default" class="field-default">
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-pk" class="checkbox field-pk"><span data-lang-text="designer.field_primary_key">Primary Key</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-null" class="checkbox field-null"><span data-lang-text="designer.field_allow_nulls">Allow nulls</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-unique" class="checkbox field-unique"><span data-lang-text="designer.field_unique">Unique</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-ai" class="checkbox field-ai"><span data-lang-text="designer.field_autoincrement">Auto Increment</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-fk" class="checkbox field-fk"><span data-lang-text="designer.field_foreign_key">Foreign Key</span>
+    </label>
+    <br>
+    <div class="refs" style=""><label for="field-ref-table">Ref. Table</label>
+<select class="field-ref-table"><option value="Class">Class</option><option value="Specialty">Specialty</option><option value="Student Information">Student Information</option><option value="Teacher İnformation">Teacher İnformation</option><option value="TeacherToClass">TeacherToClass</option></select>
+<br>
+<label for="field-ref-fields">Ref. Field</label>
+<select class="field-ref-fields"><option value="Id">Id</option><option value="Name">Name</option><option value="StudentId">StudentId</option></select>
+<br></div>
+    <br>
+    <hr>
+    <input type="text" name="field-color" class="field-color hidden" tabindex="2" value="">
+    <ul class="color-palette">
+        <li class="no-highlight">
+            <div class="color-lines top-row">
+                <span title="maroon" class="table-color table-color-maroon" data-color="#800040"></span>
+                <span title="ocean" class="table-color table-color-ocean" data-color="#004080"></span>
+                <span title="teal" class="table-color table-color-teal" data-color="#008080"></span>
+                <span title="asparagus" class="table-color table-color-asparagus" data-color="#808000"></span>
+                <span title="strawberry" class="table-color table-color-strawberry" data-color="#FF0080"></span>
+                <span title="iron" class="table-color table-color-iron" data-color="#505050"></span>
+                <span title="red" class="table-color table-color-red" data-color="#cc3333"></span>
+                <span title="blue" class="table-color table-color-blue" data-color="#1586D6"></span>
+                <span title="green" class="table-color table-color-green" data-color="#008000"></span>
+                <span title="orange" class="table-color table-color-orange" data-color="#ff8000"></span>
+                <span title="purple" class="table-color table-color-purple" data-color="#7F007F"></span>
+                <span title="reset" class="table-color table-color-reset"></span>
+            </div>
+        </li>
+    </ul>
+    <input type="button" data-lang-value="designer.field_save" value="Save" class="btn save-button">
+    <span class="cancel-insert action" data-lang-text="designer.field_cancel" tabindex="0">Cancel</span>
+    <span class="dummy dummy-up" tabindex="0"></span>
+</div></div></td>
+    </tr>
+</tfoot></table><table data-table-name="Untitled" class="entity-table ui-draggable" id="330012" style="position: absolute; opacity: 1; left: 375px; top: 592px; z-index: 34;"><thead>
+    <tr class="caption" style="display: table-row;">
+        <th class="table-name" colspan="3">Class</th>
+        <th class="table-ops">
+            <img src="./_ School _ DbDesigner.net_files/table-edit-b4870113929f982983766275ce5a05d12718a36bdc05b9e0841ddb31d216dee9.png" alt="Edit table properties" class="edit-table">
+        </th>
+    </tr>
+    <tr class="comment hidden" style="display: table-row;">
+        <th class="table-comment" colspan="4"><textarea readonly="readonly" class="table-comment-box" style="height: 4px;"></textarea></th>
+    </tr>
+    <tr class="edit-table" style="display: none;">
+      <th colspan="4">
+        <span class="dummy dummy-down" tabindex="0"></span>
+        <label for="table-name" data-lang-text="designer.table_name">Table Name</label>
+        <input type="text" name="table-name" value="Untitled" class="table-name">
+        <br>
+        <label for="table-comment" data-lang-text="designer.table_comment">Table Comment</label>
+        <textarea class="table-comment" rows="4"></textarea>
+        <br>
+        <br>
+        <input type="button" data-lang-value="designer.table_save" value="Save" class="save-edit-table btn">
+        <span class="action cancel-edit-table" data-lang-text="designer.table_cancel" tabindex="0">Cancel</span>
+        <span class="action delete-table danger" data-lang-text="designer.table_delete" tabindex="0">Delete Table</span>
+        <span class="dummy dummy-up" tabindex="0"></span>
+      </th>
+    </tr>
+</thead>
+<tbody class="ui-sortable">
+<tr data-field-name="Id" class="tr colored" id="810013"><td class="pk-field auto-increment not-null" style="background-color: rgb(204, 51, 51); color: rgb(255, 255, 255);"><img src="./_ School _ DbDesigner.net_files/key-0f0ed284afcf94f728410e720ca9ac84107d90a676864c780b0a3ddd70d8e58b.png"></td>
+<td style="background-color: rgb(204, 51, 51); color: rgb(255, 255, 255);">Id</td>
+<td style="background-color: rgb(204, 51, 51); color: rgb(255, 255, 255);">int </td>
+<td class="rightmost" style="background-color: rgb(204, 51, 51); color: rgb(255, 255, 255);">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr><tr data-field-name="Name" class="tr colored" id="2680014"><td class="not-null"></td>
+<td>Name</td>
+<td>varchar(255) </td>
+<td class="rightmost">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr><tr data-field-name="StudentId" class="tr colored" id="550016"><td class="fk-field not-null" style="background-color: rgb(0, 128, 128); color: rgb(255, 255, 255);"></td>
+<td style="background-color: rgb(0, 128, 128); color: rgb(255, 255, 255);">StudentId</td>
+<td style="background-color: rgb(0, 128, 128); color: rgb(255, 255, 255);">varchar(255) </td>
+<td class="rightmost" style="background-color: rgb(0, 128, 128); color: rgb(255, 255, 255);">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr></tbody>
+<tfoot>
+    <tr>
+        <td colspan="4">
+            <div class="operations" style="display: block;">
+                <img src="./_ School _ DbDesigner.net_files/table-row-add-ff52abbbe3d087ba3b5cee3fda5614c92c2bc6f5ed5d0ab05129659688b924b5.png" alt="">
+                <span class="insert-field action" data-lang-text="designer.table_add_field">Add field</span>
+            </div>
+        <div class="insert-panel" style="display: none;"><div class="insert-panel" style="display: none;">
+    <span class="dummy dummy-down" tabindex="0"></span>
+
+    <label for="field-name" data-lang-text="designer.field_name">Name</label>
+    <input type="text" name="field-name" class="field-name">
+    <br>
+    <label for="field-type" data-lang-text="designer.field_type">Type</label>
+    <select class="field-type" name="field-type">
+      <option value="bigint">bigint</option>
+      <option value="binary">binary</option>
+      <option value="bit">bit</option>
+      <option value="blob">blob</option>
+      <option value="bool">bool</option>
+      <option value="boolean">boolean</option>
+      <option value="char">char</option>
+      <option value="date">date</option>
+      <option value="datetime">datetime</option>
+      <option value="decimal">decimal</option>
+      <option value="double">double</option>
+      <option value="enum">enum</option>
+      <option value="float">float</option>
+      <option value="geometry">geometry</option>
+      <option value="geometrycollection">geometrycollection</option>
+      <option value="int">int</option>
+      <option value="integer">integer</option>
+      <option value="json">json</option>
+      <option value="linestring">linestring</option>
+      <option value="longblob">longblob</option>
+      <option value="longtext">longtext</option>
+      <option value="mediumblob">mediumblob</option>
+      <option value="mediumint">mediumint</option>
+      <option value="mediumtext">mediumtext</option>
+      <option value="multilinestring">multilinestring</option>
+      <option value="multipoint">multipoint</option>
+      <option value="multipolygon">multipolygon</option>
+      <option value="numeric">numeric</option>
+      <option value="point">point</option>
+      <option value="polygon">polygon</option>
+      <option value="real">real</option>
+      <option value="set">set</option>
+      <option value="smallint">smallint</option>
+      <option value="text">text</option>
+      <option value="time">time</option>
+      <option value="timestamp">timestamp</option>
+      <option value="tinyblob">tinyblob</option>
+      <option value="tinyint">tinyint</option>
+      <option value="tinytext">tinytext</option>
+      <option value="varbinary">varbinary</option>
+      <option value="varchar">varchar</option>
+      <option value="year">year</option>
+    </select>
+    <br>
+    <label for="field-size" data-lang-text="designer.field_size">Size</label>
+    <input type="text" name="field-size" class="field-size">
+    <br>
+    <label for="" data-lang-text="designer.field_default">Default</label>
+    <input type="text" name="field-default" class="field-default">
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-pk" class="checkbox field-pk"><span data-lang-text="designer.field_primary_key">Primary Key</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-null" class="checkbox field-null"><span data-lang-text="designer.field_allow_nulls">Allow nulls</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-unique" class="checkbox field-unique"><span data-lang-text="designer.field_unique">Unique</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-ai" class="checkbox field-ai"><span data-lang-text="designer.field_autoincrement">Auto Increment</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-fk" class="checkbox field-fk"><span data-lang-text="designer.field_foreign_key">Foreign Key</span>
+    </label>
+    <br>
+    <div class="refs" style="display: none;"><label for="field-ref-table">Ref. Table</label>
+<select class="field-ref-table">
+<option value="Student Information">Student Information</option><option value="Teacher İnformation">Teacher İnformation</option><option value="Untitled">Untitled</option></select>
+<br>
+<label for="field-ref-fields">Ref. Field</label>
+<select class="field-ref-fields">
+<option value="İd">İd</option><option value="Name">Name</option><option value="Sure Name">Sure Name</option><option value="ClassId">ClassId</option><option value="Evaluation">Evaluation</option></select>
+<br></div>
+    <br>
+    <hr>
+    <input type="text" name="field-color" class="field-color hidden" tabindex="2" value="">
+    <ul class="color-palette">
+        <li class="no-highlight">
+            <div class="color-lines top-row">
+                <span title="maroon" class="table-color table-color-maroon" data-color="#800040"></span>
+                <span title="ocean" class="table-color table-color-ocean" data-color="#004080"></span>
+                <span title="teal" class="table-color table-color-teal" data-color="#008080"></span>
+                <span title="asparagus" class="table-color table-color-asparagus" data-color="#808000"></span>
+                <span title="strawberry" class="table-color table-color-strawberry" data-color="#FF0080"></span>
+                <span title="iron" class="table-color table-color-iron" data-color="#505050"></span>
+                <span title="red" class="table-color table-color-red" data-color="#cc3333"></span>
+                <span title="blue" class="table-color table-color-blue" data-color="#1586D6"></span>
+                <span title="green" class="table-color table-color-green selected" data-color="#008000" style="top: 1755px; left: 1983px;"></span>
+                <span title="orange" class="table-color table-color-orange" data-color="#ff8000"></span>
+                <span title="purple" class="table-color table-color-purple" data-color="#7F007F"></span>
+                <span title="reset" class="table-color table-color-reset"></span>
+            </div>
+        </li>
+    </ul>
+    <input type="button" data-lang-value="designer.field_save" value="Save" class="btn save-button">
+    <span class="cancel-insert action" data-lang-text="designer.field_cancel" tabindex="0">Cancel</span>
+    <span class="dummy dummy-up" tabindex="0"></span>
+</div></div></td>
+    </tr>
+</tfoot></table><table data-table-name="Untitled" class="entity-table ui-draggable" id="3920017" style="position: absolute; opacity: 1; left: 726px; top: 543px; z-index: 35;"><thead>
+    <tr class="caption" style="display: table-row;">
+        <th class="table-name" colspan="3">TeacherToClass</th>
+        <th class="table-ops">
+            <img src="./_ School _ DbDesigner.net_files/table-edit-b4870113929f982983766275ce5a05d12718a36bdc05b9e0841ddb31d216dee9.png" alt="Edit table properties" class="edit-table">
+        </th>
+    </tr>
+    <tr class="comment hidden" style="display: table-row;">
+        <th class="table-comment" colspan="4"><textarea readonly="readonly" class="table-comment-box" style="height: 4px;"></textarea></th>
+    </tr>
+    <tr class="edit-table" style="display: none;">
+      <th colspan="4">
+        <span class="dummy dummy-down" tabindex="0"></span>
+        <label for="table-name" data-lang-text="designer.table_name">Table Name</label>
+        <input type="text" name="table-name" value="Untitled" class="table-name">
+        <br>
+        <label for="table-comment" data-lang-text="designer.table_comment">Table Comment</label>
+        <textarea class="table-comment" rows="4"></textarea>
+        <br>
+        <br>
+        <input type="button" data-lang-value="designer.table_save" value="Save" class="save-edit-table btn">
+        <span class="action cancel-edit-table" data-lang-text="designer.table_cancel" tabindex="0">Cancel</span>
+        <span class="action delete-table danger" data-lang-text="designer.table_delete" tabindex="0">Delete Table</span>
+        <span class="dummy dummy-up" tabindex="0"></span>
+      </th>
+    </tr>
+</thead>
+<tbody class="ui-sortable">
+<tr data-field-name="Id" class="tr colored" id="9630018"><td class="pk-field auto-increment not-null" style="background-color: rgb(0, 128, 0); color: rgb(255, 255, 255);"><img src="./_ School _ DbDesigner.net_files/key-0f0ed284afcf94f728410e720ca9ac84107d90a676864c780b0a3ddd70d8e58b.png"></td>
+<td style="background-color: rgb(0, 128, 0); color: rgb(255, 255, 255);">Id</td>
+<td style="background-color: rgb(0, 128, 0); color: rgb(255, 255, 255);">int </td>
+<td class="rightmost" style="background-color: rgb(0, 128, 0); color: rgb(255, 255, 255);">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr><tr data-field-name="ClassId" class="tr colored" id="3500019"><td class="fk-field not-null" style="background-color: rgb(204, 51, 51); color: rgb(255, 255, 255);"></td>
+<td style="background-color: rgb(204, 51, 51); color: rgb(255, 255, 255);">ClassId</td>
+<td style="background-color: rgb(204, 51, 51); color: rgb(255, 255, 255);">int </td>
+<td class="rightmost" style="background-color: rgb(204, 51, 51); color: rgb(255, 255, 255);">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr><tr data-field-name="TeacherId" class="tr colored" id="7000020"><td class="fk-field not-null" style="background-color: rgb(21, 134, 214); color: rgb(255, 255, 255);"></td>
+<td style="background-color: rgb(21, 134, 214); color: rgb(255, 255, 255);">TeacherId</td>
+<td style="background-color: rgb(21, 134, 214); color: rgb(255, 255, 255);">int </td>
+<td class="rightmost" style="background-color: rgb(21, 134, 214); color: rgb(255, 255, 255);">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr></tbody>
+<tfoot>
+    <tr>
+        <td colspan="4">
+            <div class="operations" style="display: block;">
+                <img src="./_ School _ DbDesigner.net_files/table-row-add-ff52abbbe3d087ba3b5cee3fda5614c92c2bc6f5ed5d0ab05129659688b924b5.png" alt="">
+                <span class="insert-field action" data-lang-text="designer.table_add_field">Add field</span>
+            </div>
+        <div class="insert-panel" style="display: none;"><div class="insert-panel" style="display: none;">
+    <span class="dummy dummy-down" tabindex="0"></span>
+
+    <label for="field-name" data-lang-text="designer.field_name">Name</label>
+    <input type="text" name="field-name" class="field-name">
+    <br>
+    <label for="field-type" data-lang-text="designer.field_type">Type</label>
+    <select class="field-type" name="field-type">
+      <option value="bigint">bigint</option>
+      <option value="binary">binary</option>
+      <option value="bit">bit</option>
+      <option value="blob">blob</option>
+      <option value="bool">bool</option>
+      <option value="boolean">boolean</option>
+      <option value="char">char</option>
+      <option value="date">date</option>
+      <option value="datetime">datetime</option>
+      <option value="decimal">decimal</option>
+      <option value="double">double</option>
+      <option value="enum">enum</option>
+      <option value="float">float</option>
+      <option value="geometry">geometry</option>
+      <option value="geometrycollection">geometrycollection</option>
+      <option value="int">int</option>
+      <option value="integer">integer</option>
+      <option value="json">json</option>
+      <option value="linestring">linestring</option>
+      <option value="longblob">longblob</option>
+      <option value="longtext">longtext</option>
+      <option value="mediumblob">mediumblob</option>
+      <option value="mediumint">mediumint</option>
+      <option value="mediumtext">mediumtext</option>
+      <option value="multilinestring">multilinestring</option>
+      <option value="multipoint">multipoint</option>
+      <option value="multipolygon">multipolygon</option>
+      <option value="numeric">numeric</option>
+      <option value="point">point</option>
+      <option value="polygon">polygon</option>
+      <option value="real">real</option>
+      <option value="set">set</option>
+      <option value="smallint">smallint</option>
+      <option value="text">text</option>
+      <option value="time">time</option>
+      <option value="timestamp">timestamp</option>
+      <option value="tinyblob">tinyblob</option>
+      <option value="tinyint">tinyint</option>
+      <option value="tinytext">tinytext</option>
+      <option value="varbinary">varbinary</option>
+      <option value="varchar">varchar</option>
+      <option value="year">year</option>
+    </select>
+    <br>
+    <label for="field-size" data-lang-text="designer.field_size">Size</label>
+    <input type="text" name="field-size" class="field-size">
+    <br>
+    <label for="" data-lang-text="designer.field_default">Default</label>
+    <input type="text" name="field-default" class="field-default">
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-pk" class="checkbox field-pk"><span data-lang-text="designer.field_primary_key">Primary Key</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-null" class="checkbox field-null"><span data-lang-text="designer.field_allow_nulls">Allow nulls</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-unique" class="checkbox field-unique"><span data-lang-text="designer.field_unique">Unique</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-ai" class="checkbox field-ai"><span data-lang-text="designer.field_autoincrement">Auto Increment</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-fk" class="checkbox field-fk"><span data-lang-text="designer.field_foreign_key">Foreign Key</span>
+    </label>
+    <br>
+    <div class="refs" style="display: none;"><label for="field-ref-table">Ref. Table</label>
+<select class="field-ref-table">
+<option value="Class">Class</option><option value="Student Information">Student Information</option><option value="Teacher İnformation">Teacher İnformation</option><option value="Untitled">Untitled</option></select>
+<br>
+<label for="field-ref-fields">Ref. Field</label>
+<select class="field-ref-fields">
+<option value="Id">Id</option><option value="Name">Name</option><option value="TeacherId">TeacherId</option><option value="StudentId">StudentId</option></select>
+<br></div>
+    <br>
+    <hr>
+    <input type="text" name="field-color" class="field-color hidden" tabindex="2" value="">
+    <ul class="color-palette">
+        <li class="no-highlight">
+            <div class="color-lines top-row">
+                <span title="maroon" class="table-color table-color-maroon" data-color="#800040"></span>
+                <span title="ocean" class="table-color table-color-ocean" data-color="#004080"></span>
+                <span title="teal" class="table-color table-color-teal" data-color="#008080"></span>
+                <span title="asparagus" class="table-color table-color-asparagus" data-color="#808000"></span>
+                <span title="strawberry" class="table-color table-color-strawberry" data-color="#FF0080"></span>
+                <span title="iron" class="table-color table-color-iron" data-color="#505050"></span>
+                <span title="red" class="table-color table-color-red" data-color="#cc3333"></span>
+                <span title="blue" class="table-color table-color-blue" data-color="#1586D6"></span>
+                <span title="green" class="table-color table-color-green selected" data-color="#008000" style="top: 1140px; left: 1460px;"></span>
+                <span title="orange" class="table-color table-color-orange" data-color="#ff8000"></span>
+                <span title="purple" class="table-color table-color-purple" data-color="#7F007F"></span>
+                <span title="reset" class="table-color table-color-reset"></span>
+            </div>
+        </li>
+    </ul>
+    <input type="button" data-lang-value="designer.field_save" value="Save" class="btn save-button">
+    <span class="cancel-insert action" data-lang-text="designer.field_cancel" tabindex="0">Cancel</span>
+    <span class="dummy dummy-up" tabindex="0"></span>
+</div></div></td>
+    </tr>
+</tfoot></table><table data-table-name="Untitled" class="entity-table ui-draggable" id="9660021" style="position: absolute; z-index: 39; opacity: 1; left: 273px; top: 813px;"><thead>
+    <tr class="caption" style="display: table-row;">
+        <th class="table-name" colspan="3">Specialty</th>
+        <th class="table-ops">
+            <img src="./_ School _ DbDesigner.net_files/table-edit-b4870113929f982983766275ce5a05d12718a36bdc05b9e0841ddb31d216dee9.png" alt="Edit table properties" class="edit-table">
+        </th>
+    </tr>
+    <tr class="comment hidden" style="display: table-row;">
+        <th class="table-comment" colspan="4"><textarea readonly="readonly" class="table-comment-box" style="height: 4px;"></textarea></th>
+    </tr>
+    <tr class="edit-table" style="display: none;">
+      <th colspan="4">
+        <span class="dummy dummy-down" tabindex="0"></span>
+        <label for="table-name" data-lang-text="designer.table_name">Table Name</label>
+        <input type="text" name="table-name" value="Untitled" class="table-name">
+        <br>
+        <label for="table-comment" data-lang-text="designer.table_comment">Table Comment</label>
+        <textarea class="table-comment" rows="4"></textarea>
+        <br>
+        <br>
+        <input type="button" data-lang-value="designer.table_save" value="Save" class="save-edit-table btn">
+        <span class="action cancel-edit-table" data-lang-text="designer.table_cancel" tabindex="0">Cancel</span>
+        <span class="action delete-table danger" data-lang-text="designer.table_delete" tabindex="0">Delete Table</span>
+        <span class="dummy dummy-up" tabindex="0"></span>
+      </th>
+    </tr>
+</thead>
+<tbody class="ui-sortable">
+<tr data-field-name="İd" class="tr colored" id="4170022"><td class="pk-field not-null" style="background-color: rgb(80, 80, 80); color: rgb(255, 255, 255);"><img src="./_ School _ DbDesigner.net_files/key-0f0ed284afcf94f728410e720ca9ac84107d90a676864c780b0a3ddd70d8e58b.png"></td>
+<td style="background-color: rgb(80, 80, 80); color: rgb(255, 255, 255);">İd</td>
+<td style="background-color: rgb(80, 80, 80); color: rgb(255, 255, 255);">int </td>
+<td class="rightmost" style="background-color: rgb(80, 80, 80); color: rgb(255, 255, 255);">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr><tr data-field-name="Name" class="tr colored" id="4320023"><td class="not-null"></td>
+<td>Name</td>
+<td>varchar(255) </td>
+<td class="rightmost">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr></tbody>
+<tfoot>
+    <tr>
+        <td colspan="4">
+            <div class="operations" style="display: block;">
+                <img src="./_ School _ DbDesigner.net_files/table-row-add-ff52abbbe3d087ba3b5cee3fda5614c92c2bc6f5ed5d0ab05129659688b924b5.png" alt="">
+                <span class="insert-field action" data-lang-text="designer.table_add_field">Add field</span>
+            </div>
+        <div class="insert-panel" style="display: none;"><div class="insert-panel" style="display: none;">
+    <span class="dummy dummy-down" tabindex="0"></span>
+
+    <label for="field-name" data-lang-text="designer.field_name">Name</label>
+    <input type="text" name="field-name" class="field-name">
+    <br>
+    <label for="field-type" data-lang-text="designer.field_type">Type</label>
+    <select class="field-type" name="field-type">
+      <option value="bigint">bigint</option>
+      <option value="binary">binary</option>
+      <option value="bit">bit</option>
+      <option value="blob">blob</option>
+      <option value="bool">bool</option>
+      <option value="boolean">boolean</option>
+      <option value="char">char</option>
+      <option value="date">date</option>
+      <option value="datetime">datetime</option>
+      <option value="decimal">decimal</option>
+      <option value="double">double</option>
+      <option value="enum">enum</option>
+      <option value="float">float</option>
+      <option value="geometry">geometry</option>
+      <option value="geometrycollection">geometrycollection</option>
+      <option value="int">int</option>
+      <option value="integer">integer</option>
+      <option value="json">json</option>
+      <option value="linestring">linestring</option>
+      <option value="longblob">longblob</option>
+      <option value="longtext">longtext</option>
+      <option value="mediumblob">mediumblob</option>
+      <option value="mediumint">mediumint</option>
+      <option value="mediumtext">mediumtext</option>
+      <option value="multilinestring">multilinestring</option>
+      <option value="multipoint">multipoint</option>
+      <option value="multipolygon">multipolygon</option>
+      <option value="numeric">numeric</option>
+      <option value="point">point</option>
+      <option value="polygon">polygon</option>
+      <option value="real">real</option>
+      <option value="set">set</option>
+      <option value="smallint">smallint</option>
+      <option value="text">text</option>
+      <option value="time">time</option>
+      <option value="timestamp">timestamp</option>
+      <option value="tinyblob">tinyblob</option>
+      <option value="tinyint">tinyint</option>
+      <option value="tinytext">tinytext</option>
+      <option value="varbinary">varbinary</option>
+      <option value="varchar">varchar</option>
+      <option value="year">year</option>
+    </select>
+    <br>
+    <label for="field-size" data-lang-text="designer.field_size">Size</label>
+    <input type="text" name="field-size" class="field-size">
+    <br>
+    <label for="" data-lang-text="designer.field_default">Default</label>
+    <input type="text" name="field-default" class="field-default">
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-pk" class="checkbox field-pk"><span data-lang-text="designer.field_primary_key">Primary Key</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-null" class="checkbox field-null"><span data-lang-text="designer.field_allow_nulls">Allow nulls</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-unique" class="checkbox field-unique"><span data-lang-text="designer.field_unique">Unique</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-ai" class="checkbox field-ai"><span data-lang-text="designer.field_autoincrement">Auto Increment</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-fk" class="checkbox field-fk"><span data-lang-text="designer.field_foreign_key">Foreign Key</span>
+    </label>
+    <br>
+    <div class="refs" style="display: none;"><label for="field-ref-table">Ref. Table</label>
+<select class="field-ref-table">
+<option value="Class">Class</option><option value="Student Information">Student Information</option><option value="Teacher İnformation">Teacher İnformation</option><option value="TeacherToClass">TeacherToClass</option><option value="Untitled">Untitled</option></select>
+<br>
+<label for="field-ref-fields">Ref. Field</label>
+<select class="field-ref-fields">
+<option value="Id">Id</option><option value="Name">Name</option><option value="StudentId">StudentId</option></select>
+<br></div>
+    <br>
+    <hr>
+    <input type="text" name="field-color" class="field-color hidden" tabindex="2" value="">
+    <ul class="color-palette">
+        <li class="no-highlight">
+            <div class="color-lines top-row">
+                <span title="maroon" class="table-color table-color-maroon" data-color="#800040"></span>
+                <span title="ocean" class="table-color table-color-ocean" data-color="#004080"></span>
+                <span title="teal" class="table-color table-color-teal" data-color="#008080"></span>
+                <span title="asparagus" class="table-color table-color-asparagus" data-color="#808000"></span>
+                <span title="strawberry" class="table-color table-color-strawberry" data-color="#FF0080"></span>
+                <span title="iron" class="table-color table-color-iron" data-color="#505050"></span>
+                <span title="red" class="table-color table-color-red" data-color="#cc3333"></span>
+                <span title="blue" class="table-color table-color-blue" data-color="#1586D6"></span>
+                <span title="green" class="table-color table-color-green" data-color="#008000"></span>
+                <span title="orange" class="table-color table-color-orange" data-color="#ff8000"></span>
+                <span title="purple" class="table-color table-color-purple" data-color="#7F007F"></span>
+                <span title="reset" class="table-color table-color-reset"></span>
+            </div>
+        </li>
+    </ul>
+    <input type="button" data-lang-value="designer.field_save" value="Save" class="btn save-button">
+    <span class="cancel-insert action" data-lang-text="designer.field_cancel" tabindex="0">Cancel</span>
+    <span class="dummy dummy-up" tabindex="0"></span>
+</div></div></td>
+    </tr>
+</tfoot></table><table data-table-name="Untitled" class="entity-table ui-draggable" id="3360025" style="position: absolute; opacity: 1; left: 620.6px; top: 742px; z-index: 37;"><thead>
+    <tr class="caption" style="display: table-row;">
+        <th class="table-name" colspan="3">SpecialtyToTeacher</th>
+        <th class="table-ops">
+            <img src="./_ School _ DbDesigner.net_files/table-edit-b4870113929f982983766275ce5a05d12718a36bdc05b9e0841ddb31d216dee9.png" alt="Edit table properties" class="edit-table">
+        </th>
+    </tr>
+    <tr class="comment hidden" style="display: table-row;">
+        <th class="table-comment" colspan="4"><textarea readonly="readonly" class="table-comment-box" style="height: 4px;"></textarea></th>
+    </tr>
+    <tr class="edit-table" style="display: none;">
+      <th colspan="4">
+        <span class="dummy dummy-down" tabindex="0"></span>
+        <label for="table-name" data-lang-text="designer.table_name">Table Name</label>
+        <input type="text" name="table-name" value="Untitled" class="table-name">
+        <br>
+        <label for="table-comment" data-lang-text="designer.table_comment">Table Comment</label>
+        <textarea class="table-comment" rows="4"></textarea>
+        <br>
+        <br>
+        <input type="button" data-lang-value="designer.table_save" value="Save" class="save-edit-table btn">
+        <span class="action cancel-edit-table" data-lang-text="designer.table_cancel" tabindex="0">Cancel</span>
+        <span class="action delete-table danger" data-lang-text="designer.table_delete" tabindex="0">Delete Table</span>
+        <span class="dummy dummy-up" tabindex="0"></span>
+      </th>
+    </tr>
+</thead>
+<tbody class="ui-sortable">
+<tr data-field-name="İd" class="tr colored" id="5140026"><td class="pk-field auto-increment not-null" style="background-color: rgb(0, 128, 0); color: rgb(255, 255, 255);"><img src="./_ School _ DbDesigner.net_files/key-0f0ed284afcf94f728410e720ca9ac84107d90a676864c780b0a3ddd70d8e58b.png"></td>
+<td style="background-color: rgb(0, 128, 0); color: rgb(255, 255, 255);">İd</td>
+<td style="background-color: rgb(0, 128, 0); color: rgb(255, 255, 255);">int </td>
+<td class="rightmost" style="background-color: rgb(0, 128, 0); color: rgb(255, 255, 255);">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr><tr data-field-name="Specialtyİd" class="tr colored" id="5280027"><td class="fk-field not-null" style="background-color: rgb(80, 80, 80); color: rgb(255, 255, 255);"></td>
+<td style="background-color: rgb(80, 80, 80); color: rgb(255, 255, 255);">Specialtyİd</td>
+<td style="background-color: rgb(80, 80, 80); color: rgb(255, 255, 255);">int </td>
+<td class="rightmost" style="background-color: rgb(80, 80, 80); color: rgb(255, 255, 255);">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr><tr data-field-name="Teacherİd" class="tr colored" id="790028"><td class="fk-field not-null" style="background-color: rgb(21, 134, 214); color: rgb(255, 255, 255);"></td>
+<td style="background-color: rgb(21, 134, 214); color: rgb(255, 255, 255);">Teacherİd</td>
+<td style="background-color: rgb(21, 134, 214); color: rgb(255, 255, 255);">int </td>
+<td class="rightmost" style="background-color: rgb(21, 134, 214); color: rgb(255, 255, 255);">
+    <img src="./_ School _ DbDesigner.net_files/edit-57084f464e212db93cba614c602ee7a883a87131916b7b0eef5471d5fbc1a6c3.png" alt="" class="edit-field">
+    <img src="./_ School _ DbDesigner.net_files/updownp-c2606a4bd5314bb571aa22336c0c9756294c8fe817cceb78410bdc66da039c4c.png" alt="" class="mover">
+</td></tr></tbody>
+<tfoot>
+    <tr>
+        <td colspan="4">
+            <div class="operations" style="display: block;">
+                <img src="./_ School _ DbDesigner.net_files/table-row-add-ff52abbbe3d087ba3b5cee3fda5614c92c2bc6f5ed5d0ab05129659688b924b5.png" alt="">
+                <span class="insert-field action" data-lang-text="designer.table_add_field">Add field</span>
+            </div>
+        <div class="insert-panel" style="display: none;"><div class="insert-panel" style="display: none;">
+    <span class="dummy dummy-down" tabindex="0"></span>
+
+    <label for="field-name" data-lang-text="designer.field_name">Name</label>
+    <input type="text" name="field-name" class="field-name">
+    <br>
+    <label for="field-type" data-lang-text="designer.field_type">Type</label>
+    <select class="field-type" name="field-type">
+      <option value="bigint">bigint</option>
+      <option value="binary">binary</option>
+      <option value="bit">bit</option>
+      <option value="blob">blob</option>
+      <option value="bool">bool</option>
+      <option value="boolean">boolean</option>
+      <option value="char">char</option>
+      <option value="date">date</option>
+      <option value="datetime">datetime</option>
+      <option value="decimal">decimal</option>
+      <option value="double">double</option>
+      <option value="enum">enum</option>
+      <option value="float">float</option>
+      <option value="geometry">geometry</option>
+      <option value="geometrycollection">geometrycollection</option>
+      <option value="int">int</option>
+      <option value="integer">integer</option>
+      <option value="json">json</option>
+      <option value="linestring">linestring</option>
+      <option value="longblob">longblob</option>
+      <option value="longtext">longtext</option>
+      <option value="mediumblob">mediumblob</option>
+      <option value="mediumint">mediumint</option>
+      <option value="mediumtext">mediumtext</option>
+      <option value="multilinestring">multilinestring</option>
+      <option value="multipoint">multipoint</option>
+      <option value="multipolygon">multipolygon</option>
+      <option value="numeric">numeric</option>
+      <option value="point">point</option>
+      <option value="polygon">polygon</option>
+      <option value="real">real</option>
+      <option value="set">set</option>
+      <option value="smallint">smallint</option>
+      <option value="text">text</option>
+      <option value="time">time</option>
+      <option value="timestamp">timestamp</option>
+      <option value="tinyblob">tinyblob</option>
+      <option value="tinyint">tinyint</option>
+      <option value="tinytext">tinytext</option>
+      <option value="varbinary">varbinary</option>
+      <option value="varchar">varchar</option>
+      <option value="year">year</option>
+    </select>
+    <br>
+    <label for="field-size" data-lang-text="designer.field_size">Size</label>
+    <input type="text" name="field-size" class="field-size">
+    <br>
+    <label for="" data-lang-text="designer.field_default">Default</label>
+    <input type="text" name="field-default" class="field-default">
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-pk" class="checkbox field-pk"><span data-lang-text="designer.field_primary_key">Primary Key</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-null" class="checkbox field-null"><span data-lang-text="designer.field_allow_nulls">Allow nulls</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-unique" class="checkbox field-unique"><span data-lang-text="designer.field_unique">Unique</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-ai" class="checkbox field-ai"><span data-lang-text="designer.field_autoincrement">Auto Increment</span>
+    </label>
+    <br>
+    <label class="cb-label">
+      <input type="checkbox" name="field-fk" class="checkbox field-fk"><span data-lang-text="designer.field_foreign_key">Foreign Key</span>
+    </label>
+    <br>
+    <div class="refs" style=""><label for="field-ref-table">Ref. Table</label>
+<select class="field-ref-table"><option value="Class">Class</option><option value="Specialty">Specialty</option><option value="SpecialtyToTeacher">SpecialtyToTeacher</option><option value="Student Information">Student Information</option><option value="Teacher İnformation">Teacher İnformation</option><option value="TeacherToClass">TeacherToClass</option></select>
+<br>
+<label for="field-ref-fields">Ref. Field</label>
+<select class="field-ref-fields"><option value="Id">Id</option><option value="Name">Name</option><option value="Sure Name">Sure Name</option><option value="Class hours">Class hours</option><option value="Head of the class İd">Head of the class İd</option></select>
+<br></div>
+    <br>
+    <hr>
+    <input type="text" name="field-color" class="field-color hidden" tabindex="2" value="">
+    <ul class="color-palette">
+        <li class="no-highlight">
+            <div class="color-lines top-row">
+                <span title="maroon" class="table-color table-color-maroon" data-color="#800040"></span>
+                <span title="ocean" class="table-color table-color-ocean" data-color="#004080"></span>
+                <span title="teal" class="table-color table-color-teal" data-color="#008080"></span>
+                <span title="asparagus" class="table-color table-color-asparagus" data-color="#808000"></span>
+                <span title="strawberry" class="table-color table-color-strawberry" data-color="#FF0080"></span>
+                <span title="iron" class="table-color table-color-iron" data-color="#505050"></span>
+                <span title="red" class="table-color table-color-red" data-color="#cc3333"></span>
+                <span title="blue" class="table-color table-color-blue selected" data-color="#1586D6" style="top: -267px; left: -284px;"></span>
+                <span title="green" class="table-color table-color-green" data-color="#008000" style="top: -9px; left: 10px;"></span>
+                <span title="orange" class="table-color table-color-orange" data-color="#ff8000"></span>
+                <span title="purple" class="table-color table-color-purple" data-color="#7F007F"></span>
+                <span title="reset" class="table-color table-color-reset"></span>
+            </div>
+        </li>
+    </ul>
+    <input type="button" data-lang-value="designer.field_save" value="Save" class="btn save-button">
+    <span class="cancel-insert action" data-lang-text="designer.field_cancel" tabindex="0">Cancel</span>
+    <span class="dummy dummy-up" tabindex="0"></span>
+</div></div></td>
+    </tr>
+</tfoot></table></div>
+	<div class="resizer ui-draggable" style="display: none;"></div>
+	<div class="sidebar" style="width: 240px;"><div class="schema-properties panel"><div class="panel-header">
+	<i class="icon-down-open"></i>
+	<span class="panel-caption" data-lang-text="panel.properties">Properties</span>
+</div>
+<div class="panel-body">
+	<table class="property-table">
+		<tbody><tr>
+			<td class="property-label">
+				<span data-lang-text="panel.properties_schema_name">Schema Name:</span>
+			</td>
+			<td>
+				<span class="schema-title">School</span>
+			</td>
+		</tr>
+		<tr>
+			<td class="property-label">
+				<span data-lang-text="panel.properties_database">Database:</span>
+			</td>
+			<td>
+				<span class="db-type label-default">mysql</span>
+			</td>
+		</tr>
+	</tbody></table>
+</div></div>
+<div class="db-properties panel"><div class="panel-header">
+	<i class="icon-down-open"></i>
+	<span class="panel-caption" data-lang-text="panel.diagram_explorer">Schema Explorer</span>
+</div>
+<div class="panel-body">
+    <div class="loading" style="display: none;"><i class="icon-spin1 animate-spin"></i></div>
+	<div class="diagram-explorer"><div class="treejs"><ul class="treejs-nodes"><li class="treejs-node treejs-node__checked"><span class="treejs-switcher"></span><span class="treejs-checkbox"></span><span class="treejs-label">School</span><ul class="treejs-nodes"><li class="treejs-node treejs-node__checked"><span class="treejs-switcher"></span><span class="treejs-checkbox"></span><span class="treejs-label">Student Information</span><ul class="treejs-nodes"><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">İd</span></li><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">Name</span></li><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">Sure Name</span></li><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">Evaluation</span></li></ul></li><li class="treejs-node treejs-node__checked"><span class="treejs-switcher"></span><span class="treejs-checkbox"></span><span class="treejs-label">Teacher İnformation</span><ul class="treejs-nodes"><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">Id</span></li><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">Name</span></li><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">Sure Name</span></li><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">Class hours</span></li><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">Head of the class İd</span></li></ul></li><li class="treejs-node treejs-node__checked"><span class="treejs-switcher"></span><span class="treejs-checkbox"></span><span class="treejs-label">Class</span><ul class="treejs-nodes"><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">Id</span></li><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">Name</span></li><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">StudentId</span></li></ul></li><li class="treejs-node treejs-node__checked"><span class="treejs-switcher"></span><span class="treejs-checkbox"></span><span class="treejs-label">TeacherToClass</span><ul class="treejs-nodes"><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">Id</span></li><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">ClassId</span></li><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">TeacherId</span></li></ul></li><li class="treejs-node treejs-node__checked"><span class="treejs-switcher"></span><span class="treejs-checkbox"></span><span class="treejs-label">Specialty</span><ul class="treejs-nodes"><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">İd</span></li><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">Name</span></li></ul></li><li class="treejs-node treejs-node__checked"><span class="treejs-switcher"></span><span class="treejs-checkbox"></span><span class="treejs-label">SpecialtyToTeacher</span><ul class="treejs-nodes"><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">İd</span></li><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">Specialtyİd</span></li><li class="treejs-node treejs-node__close treejs-placeholder treejs-node__checked"><span class="treejs-checkbox"></span><span class="treejs-label">Teacherİd</span></li></ul></li></ul></li></ul></div></div>
+</div></div>
+<div class="history panel" data-step="5" data-intro="You can hide or show this sidebar by clicking on VIEW in top menu. Your revision history is available here. Use comments to communicate with team members or to leave yourself important notes."><div class="panel-header">
+	<i class="icon-down-open"></i>
+	<span class="panel-caption" data-lang-text="panel.history">History</span>
+</div>
+<div class="panel-body">
+</div></div>
+<div class="comments panel"><div class="panel-header">
+	<i class="icon-down-open"></i>
+	<span class="panel-caption" data-lang-text="panel.comments">Comments</span>
+</div>
+<div class="panel-body">
+	<div class="new-comment">
+		<textarea rows="5" class="new-comment-content" placeholder="Enter your comment here"></textarea>
+		<button class="btn send-comment" data-lang-text="panel.send">Send</button>
+	</div>
+	<div class="comment-list"></div>
+	<div class="comments-options">
+		<button class="btn refresh"><i class="icon-spin3"></i> Refresh Comment List</button>
+	</div>
+</div></div></div>
+	<div style="display: none">
+		<img id="cache-image-bg" src="./_ School _ DbDesigner.net_files/canvas-background-382ddae37df2afda79a647cf643277cc012d079c989b71853f3b9c6f2908c167.png">
+		<img id="cache-image-key" src="./_ School _ DbDesigner.net_files/key-0f0ed284afcf94f728410e720ca9ac84107d90a676864c780b0a3ddd70d8e58b.png">
+		<img id="cache-image-key-ai" src="./_ School _ DbDesigner.net_files/key_ai-24ad7604a9cd84fea26fb6d92893079145c7a266d772e7bed9f82814729f524e.png">
+		<img id="cache-image-fk" src="./_ School _ DbDesigner.net_files/table_relationship-50286182fcbd7f9cd9dc4f2b496a9152552d43285cb97dcab3f88f08f16734b2.png">
+		<img id="cache-image-nn" src="./_ School _ DbDesigner.net_files/notnull-a34e5e8bb4c0ac6157b22a1eb4c4cc75e05b55b62cf81e9814d87dab335aef7e.png">
+		<img id="cache-image-ai" src="./_ School _ DbDesigner.net_files/ai-5ad4475567db2451cc26ce4e7f53c0bd7c07ba5593377ce938eefe47da2c93cc.png">
+		<img src="./_ School _ DbDesigner.net_files/dbdesigner_logo_bw.png" id="cache-image-bw-logo">
+	</div>
+</div>
+<script>
+window.userinfo = {
+	login: true,
+	username: "c988a7be63",
+  name:     "Nofel",
+	email:    "87474631-github@dbdesigner.net",
+	avatar:   "https://avatars.githubusercontent.com/u/87474631?v=4",
+  a_type:   "true",
+  is_free:  "false",
+	tmpid:    "37355527216518"
+};
+window.renv = 'production';
+</script>
+
+
+<div class="bg" style="display: none; opacity: 0.6; width: 1536px; height: 664px;"></div></body></html>
