@@ -34,7 +34,9 @@
 - `like` codda müəyyən verdiyimiz elemetə oxasralari tapır.
 - `Update` ve `Delete` mutleq `where` cadition olmalidir.
 - `ordere by`
-
+- `Between a and b`  `a` ilə `b` aralığını istədikdə `a` və `b` daxil olaraq gətirir.
+- `in(a)`  içərisində olan `a` dəyəri olan bütün datanı gətirir.
+- `Not` qeyd edilən element xaricində bütün elemetlər. 
 ## Constrains (Qadağa)
 ***
 > - `not null` göndərilən dəyərlər boş ola bilməz.
