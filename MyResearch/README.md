@@ -29,3 +29,6 @@
 > Məktəbdəki sinifləri,müəllimləri,müəllimlərin ixtisasını və şagirdləri nəzərə alan DataBase bir sistemidir.
 - [Soruce](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/MyResearch/SQL/SchoolDbDesigner)
 
+#### Movie DataBase Schema
+> Dizayda  rejisor,actyor,film və filmin katogoriyası nəzərə alınaraq DataBase şeması qurulmuşdur.
+- [Soruce](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/SQL/MovieDbSchema.png)
