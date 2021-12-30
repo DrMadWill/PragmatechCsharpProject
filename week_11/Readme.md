@@ -33,7 +33,9 @@
 - `offset` müəyyən araliqdan seşmeyimizə icazə verir. 
 - `like` codda müəyyən verdiyimiz elemetə oxasralari tapır.
 - `Update` ve `Delete` mutleq `where` cadition olmalidir.
-- `ordere by`
+- `ordere by` Siralma etmək istədikdə istifadə edilir. Sonuna :
+	- `ASC` Artan şəkildə siralar.
+	- `DESC` Azalan şəkildə sırlar.
 - `Between a and b`  `a` ilə `b` aralığını istədikdə `a` və `b` daxil olaraq gətirir.
 - `in(a)`  içərisində olan `a` dəyəri olan bütün datanı gətirir.
 - `Not` qeyd edilən element xaricində bütün elemetlər. 
