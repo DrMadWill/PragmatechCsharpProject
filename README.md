@@ -74,7 +74,7 @@
 
 -  [Preveiw](https://www.facebook.com/nofel.salahov.5/videos/207464484916744/?notif_id=1640372493623291&notif_t=video_processed&ref=notif)
 -  [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_10/Lesson_1/Task)
-
+- [Install Setup](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_10/Lesson_1/People%20Setup.zip?raw=true)
 -  **App** xususiyyətləri
 
 	-  _Windows Forms_ üçün yazılıb.
