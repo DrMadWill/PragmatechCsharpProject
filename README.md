@@ -84,6 +84,7 @@
 
 -  [Preveiw](https://www.facebook.com/100004987969188/videos/255526803336456/)
 -  [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/MyResearch/CSharp/CloneFileToFolder/CloneFileToFolder)
+- [Install Setup](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/CSharp/CloneFileToFolder/CopyToPathSetup.zip?raw=true)
 
 -  **App** xususiyyətləri
 	-  _Windows Forms_ üçün yazılıb.
