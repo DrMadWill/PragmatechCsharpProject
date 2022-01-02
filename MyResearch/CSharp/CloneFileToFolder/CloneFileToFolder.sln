@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloneFileToFolder", "CloneFileToFolder\CloneFileToFolder.csproj", "{0E94DA97-AEE9-4F11-822E-D8D6BD384497}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloneFileToFolder", "CloneFileToFolder\CloneFileToFolder.csproj", "{0E94DA97-AEE9-4F11-822E-D8D6BD384497}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Copy To Path and Rename W.0.0.0", "Copy To Path and Rename W.0.0.0\Copy To Path and Rename W.0.0.0.vdproj", "{19C0FDA3-593C-4713-9B38-42A633BAEAD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,8 @@ Global
 		{0E94DA97-AEE9-4F11-822E-D8D6BD384497}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E94DA97-AEE9-4F11-822E-D8D6BD384497}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E94DA97-AEE9-4F11-822E-D8D6BD384497}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19C0FDA3-593C-4713-9B38-42A633BAEAD2}.Debug|Any CPU.ActiveCfg = Debug
+		{19C0FDA3-593C-4713-9B38-42A633BAEAD2}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

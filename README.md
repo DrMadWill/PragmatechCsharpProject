@@ -66,17 +66,14 @@
     - `DataBases`-dən istifadə edilməyib.
 
 ## People App<a href="https://www.facebook.com/nofel.salahov.5/videos/207464484916744/?notif_id=1640372493623291&notif_t=video_processed&ref=notif"  >  <img src="https://i.postimg.cc/63rQdWcj/people-modified.png"  width="180"  align="right"  ></a>
-
 >  `Person` barəsindəki **data**nı saxlayır və `datagridveiw` vast'si ilə bizə datani göstərir. `data`ya aiddir:
 >   - Şəkil (İmage)
 >   - Adı və Soyadı (Name and SureName)
 >   - Email 
-
 -  [Preveiw](https://www.facebook.com/nofel.salahov.5/videos/207464484916744/?notif_id=1640372493623291&notif_t=video_processed&ref=notif)
 -  [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_10/Lesson_1/Task)
 - [Install Setup](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_10/Lesson_1/People%20Setup.zip?raw=true)
 -  **App** xususiyyətləri
-
 	-  _Windows Forms_ üçün yazılıb.
 	- `ComboBox` vastəsi ilə Personlari seçib ona aid bütün datani görmək olur.
     - `DataBases`-dən istifadə edilməyib.
@@ -86,7 +83,7 @@
 > Bu program vastəsi ilə istənilən  `file` instənilən yerə  yerə adini dəyişdirərək kopyalamq olur.Günümüzdə kodlarda istifadəsi üçün file adında boşluqdan istifadə etmək olmaz. Bunu düşünərək `Developer-File` əlavə etdim.Bu Check sayəsində kodlarda istifdə edə biləcəyimiz uyğun **file name** əldə edə bilərik. Boşluqlari aradan qaldırır.
 
 -  [Preveiw](https://www.facebook.com/100004987969188/videos/255526803336456/)
--  [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/MyResearch/CloneFileToFolder/CloneFileToFolder)
+-  [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/MyResearch/CSharp/CloneFileToFolder/CloneFileToFolder)
 
 -  **App** xususiyyətləri
 	-  _Windows Forms_ üçün yazılıb.

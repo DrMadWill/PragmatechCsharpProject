@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nofel\\OneDrive\\Desktop\\CloneFileToFolder\\CloneFileToFolder\\CloneFileToFolder.csproj": {}
+    "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsharpProject\\MyResearch\\CSharp\\CloneFileToFolder\\CloneFileToFolder\\CloneFileToFolder.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nofel\\OneDrive\\Desktop\\CloneFileToFolder\\CloneFileToFolder\\CloneFileToFolder.csproj": {
+    "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsharpProject\\MyResearch\\CSharp\\CloneFileToFolder\\CloneFileToFolder\\CloneFileToFolder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nofel\\OneDrive\\Desktop\\CloneFileToFolder\\CloneFileToFolder\\CloneFileToFolder.csproj",
+        "projectUniqueName": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsharpProject\\MyResearch\\CSharp\\CloneFileToFolder\\CloneFileToFolder\\CloneFileToFolder.csproj",
         "projectName": "CloneFileToFolder",
-        "projectPath": "C:\\Users\\nofel\\OneDrive\\Desktop\\CloneFileToFolder\\CloneFileToFolder\\CloneFileToFolder.csproj",
+        "projectPath": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsharpProject\\MyResearch\\CSharp\\CloneFileToFolder\\CloneFileToFolder\\CloneFileToFolder.csproj",
         "packagesPath": "C:\\Users\\nofel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nofel\\OneDrive\\Desktop\\CloneFileToFolder\\CloneFileToFolder\\obj\\",
+        "outputPath": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsharpProject\\MyResearch\\CSharp\\CloneFileToFolder\\CloneFileToFolder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nofel\\AppData\\Roaming\\NuGet\\NuGet.Config",
