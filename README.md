@@ -50,6 +50,7 @@
 > **Windows Forms** istifadə edilərək sadə kitbxana App yazılmağa çalışılmışdır.Kitabları ələavə edirb sonra onları axtara biliərək. Kitabların xususiyyətləri: Biz burada Kitab əlavə edə və Əlavə Etdiymiz Kitabı axtara bilərik.
 - [Preveiw](https://i.postimg.cc/L5SvQs5W/Library.png)
 - [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_8/Lesson_1/Task/Task)
+- [Install Setup](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_8/Lesson_1/Task/Library%20Setup.zip?raw=true)
 - **App** xususiyyətləri
     - **Windows Forms** üçün yazılıb.
     - `DataBases` bağlanmayıb.
