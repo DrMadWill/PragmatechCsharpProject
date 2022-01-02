@@ -59,6 +59,7 @@
 > `Group`lara `Student`ləri əlavə edirk. Əlavə etdiklirmiz bizə list şəkilində göstərilir. `Update`  və `Delete` buttonlar vastəsi ilə düzəliş edə və silə bilərik.
 -  [Preveiw](https://www.facebook.com/nofel.salahov.5/videos/654084819087395)
 -  [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_9/Lesson_1/Task_Group)
+- [Install Setup](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Lesson_1/Groups%20Setup.zip?raw=true)
 -  **App** xususiyyətləri
 	-  _Windows Forms_ üçün yazılıb.
     - `CRUD` Sistemi
