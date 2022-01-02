@@ -53,7 +53,7 @@
 - [Install Setup](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_8/Lesson_1/Task/Library%20Setup.zip?raw=true)
 - **App** xususiyyətləri
     - **Windows Forms** üçün yazılıb.
-    - `DataBases` bağlanmayıb.
+    - `DataBases`-dən istifadə edilməyib.
 
 ## Group App<a href="https://www.facebook.com/nofel.salahov.5/videos/654084819087395" >  <img src="https://i.postimg.cc/7h0FxtcV/App-Group-modified.png"  width="180"  align="right"  ></a>
 > `Group`lara `Student`ləri əlavə edirk. Əlavə etdiklirmiz bizə list şəkilində göstərilir. `Update`  və `Delete` buttonlar vastəsi ilə düzəliş edə və silə bilərik.
@@ -63,7 +63,7 @@
 -  **App** xususiyyətləri
 	-  _Windows Forms_ üçün yazılıb.
     - `CRUD` Sistemi
-
+    - `DataBases`-dən istifadə edilməyib.
 
 ## People App<a href="https://www.facebook.com/nofel.salahov.5/videos/207464484916744/?notif_id=1640372493623291&notif_t=video_processed&ref=notif"  >  <img src="https://i.postimg.cc/63rQdWcj/people-modified.png"  width="180"  align="right"  ></a>
 
@@ -79,6 +79,7 @@
 
 	-  _Windows Forms_ üçün yazılıb.
 	- `ComboBox` vastəsi ilə Personlari seçib ona aid bütün datani görmək olur.
+    - `DataBases`-dən istifadə edilməyib.
 
 ## Copy File to Path Name File App<a href="https://www.facebook.com/nofel.salahov.5/videos/207464484916744/?notif_id=1640372493623291&notif_t=video_processed&ref=notif"  >  <img src="https://i.postimg.cc/jdkgVD0s/2715723-modified.png"  width="180"  align="right"  ></a>
 
@@ -92,6 +93,7 @@
     - `File`-ım adını dəyişib kopyalamaq olur.
     - `File`-ın adını Dəyişdirmədəndə koyalamq olur.
     - `Developer-File` sayəsində kodlarda istifadə edə biləcəyimiz uyğun **file name** əldə edə bilərik.
+    - `DataBases`-dən istifadə edilməyib.
 
 ## My DataBase Schemas and Query Code
 - [School](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/MyResearch#school-database-schema) 
