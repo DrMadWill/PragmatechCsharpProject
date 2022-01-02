@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P121021", "P121021.csproj", "{DA67C4D3-2591-471C-8A11-E32E14E19531}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Group App Will-v.0.0.0", "..\Group App Will-v.0.0.0\Group App Will-v.0.0.0.vdproj", "{132FBEBA-00C0-435E-AA68-01DB9BE04662}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{DA67C4D3-2591-471C-8A11-E32E14E19531}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA67C4D3-2591-471C-8A11-E32E14E19531}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA67C4D3-2591-471C-8A11-E32E14E19531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{132FBEBA-00C0-435E-AA68-01DB9BE04662}.Debug|Any CPU.ActiveCfg = Debug
+		{132FBEBA-00C0-435E-AA68-01DB9BE04662}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
