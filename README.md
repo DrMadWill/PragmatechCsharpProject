@@ -1,26 +1,44 @@
 
+<div align="center">
+<img src="https://i.postimg.cc/GpGTg6Lh/learncode.gif" align="center" >
+
+# Description 
+
+</div>
+<div align="center">
+    <h2>This Repostory was written while I was studying at Progmatech. Currently under development.</h2>
+    <hr>
+    <p>
+        Kursda olduğum müddətdə verilən tapşırıqlar və keçilən dərslərin başlıqlarnı <a href="https://github.com/DrMadWill/PragmatechCsharpProject#my-lessons">Readme.md > My Lessson</a> hissəsində qeyd etmişəm.Öz araştırmalarimi <a href="https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/MyResearch">MyResearch </a> faylını icərsində qeyd etdim . <a href="https://github.com/DrMadWill/PragmatechCsharpProject#my-apps--">My App</a>  bölməsində isə yazıdığım applicationlar göstərlir.
+        Başqa lahiyələrimə baxmaq istəyirsizsə burada qoyduğum <a href="https://github.com/DrMadWill/PragmatechCsharpProject#my-apps--">link vastəsi ilə</a> GitHub Profilimə gedə bilərsiz...
+    </p>
+</div>
+
 # Information structure
 -  **Lesson(a/b)**
     - _a_ Week
     - _b_ Lesson
 
-# My Apps
+# My Apps <a href="https://drmadwill.github.io/PragmatechCsharpProject/" target="blank"> <img src="https://i.postimg.cc/6Q7k4DHr/app.png" width="100" align="right" ></a>
 ***
-## Calculator App<a href="https://onlinegdb.com/uqfDGR-sE" target="blank"> <img src="https://i.postimg.cc/tg06FP1C/calc.png" width="220" height="200" align="right" ></a>
+## Calculator App<a href="https://onlinegdb.com/dv9JU4MGr" target="blank"> <img src="https://i.postimg.cc/tg06FP1C/calc.png" width="180"  align="right" ></a>
 > **App** _Consol_ üçün yazılmışdır. Heç bir methodan istfadə edilməyib. Kod maxsimum sadə yazılmağa çalışlıb.
-- [Preveiw](https://onlinegdb.com/uqfDGR-sE )
+- [Preveiw](https://onlinegdb.com/dv9JU4MGr)
 - [Code Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/old_task/week-1/Lesson_2/calculator_with_switch/calculator_with_switch/Program.cs)
 - **App** xususiyyətləri
     - _Consol_ üçün yazılıb.
     - _Non-method_-dur.
 
-## Aptek App <a href="https://onlinegdb.com/G41oRbzaI" target="blank"> <img src="https://i.postimg.cc/Vkspg9p7/medical.png" width="220" height="200" align="right" ></a>
+ ## Medicines App <a href="https://onlinegdb.com/G41oRbzaI" target="blank"> <img src="https://i.postimg.cc/Vkspg9p7/medical.png" width="180"  align="right" ></a>
  > Apteklərdə istfadə edlilən programların sadə versiyasıdır. Medicines create,delete, update və read etmək olur. Medicines-ləri satmaq və ümumi və tək gəlirlərə baxmaq mükündür.
  - [Preveiw](https://onlinegdb.com/G41oRbzaI)
  - [Code Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_1/Task/Task)
+ -  **App** xususiyyətləri
+	-  _Consol_ üçün yazılıb.
 
-## Month Number App
-> Ayın nömrəsini daxil edərək hansı fəsili və ay olduğunu görürük. `delegate`-in istfadəsi üçün yazılmışdır.<a href="https://onlinegdb.com/tL0IBru0X" target="blank"> <img src="https://i.postimg.cc/90Tt7hVz/calders.png" width="200" height="200" align="right" ></a>
+
+## Month Number App<a href="https://onlinegdb.com/tL0IBru0X" target="blank"> <img src="https://i.postimg.cc/90Tt7hVz/calders.png" width="180"  align="right" ></a>
+> Ayın nömrəsini daxil edərək hansı fəsili və ay olduğunu görürük. `delegate`-in istfadəsi üçün yazılmışdır.
 - [Preveiw](https://onlinegdb.com/tL0IBru0X)
 - [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_7/Lesson_1/Lesson_task/Lesson_task)
 - **App** xususiyyətləri
@@ -28,9 +46,63 @@
     - `switch` istfadə edilib.
     - `delegate` istfadə edilib.
 
+## Library App<a href="https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_8/Lesson_1/Task/Task" target="blank"> <img src="https://i.postimg.cc/C13zHZv3/106851-2166236bc078f775bc5424c4b7fdee74-modified.png" width="180"  align="right" ></a>
+> **Windows Forms** istifadə edilərək sadə kitbxana App yazılmağa çalışılmışdır.Kitabları ələavə edirb sonra onları axtara biliərək. Kitabların xususiyyətləri: Biz burada Kitab əlavə edə və Əlavə Etdiymiz Kitabı axtara bilərik.
+- [Preveiw](https://i.postimg.cc/L5SvQs5W/Library.png)
+- [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_8/Lesson_1/Task/Task)
+- [Install Setup](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_8/Lesson_1/Task/Library%20Setup.zip?raw=true)
+- **App** xususiyyətləri
+    - **Windows Forms** üçün yazılıb.
+    - `DataBases`-dən istifadə edilməyib.
+
+## Group App<a href="https://www.facebook.com/nofel.salahov.5/videos/654084819087395" >  <img src="https://i.postimg.cc/7h0FxtcV/App-Group-modified.png"  width="180"  align="right"  ></a>
+> `Group`lara `Student`ləri əlavə edirk. Əlavə etdiklirmiz bizə list şəkilində göstərilir. `Update`  və `Delete` buttonlar vastəsi ilə düzəliş edə və silə bilərik.
+-  [Preveiw](https://www.facebook.com/nofel.salahov.5/videos/654084819087395)
+-  [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_9/Lesson_1/Task_Group)
+- [Install Setup](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Lesson_1/Groups%20Setup.zip?raw=true)
+-  **App** xususiyyətləri
+	-  _Windows Forms_ üçün yazılıb.
+    - `CRUD` Sistemi
+    - `DataBases`-dən istifadə edilməyib.
+
+## People App<a href="https://www.facebook.com/nofel.salahov.5/videos/207464484916744/?notif_id=1640372493623291&notif_t=video_processed&ref=notif"  >  <img src="https://i.postimg.cc/63rQdWcj/people-modified.png"  width="180"  align="right"  ></a>
+>  `Person` barəsindəki **data**nı saxlayır və `datagridveiw` vast'si ilə bizə datani göstərir. `data`ya aiddir:
+>   - Şəkil (İmage)
+>   - Adı və Soyadı (Name and SureName)
+>   - Email 
+-  [Preveiw](https://www.facebook.com/nofel.salahov.5/videos/207464484916744/?notif_id=1640372493623291&notif_t=video_processed&ref=notif)
+-  [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_10/Lesson_1/Task)
+- [Install Setup](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_10/Lesson_1/People%20Setup.zip?raw=true)
+-  **App** xususiyyətləri
+	-  _Windows Forms_ üçün yazılıb.
+	- `ComboBox` vastəsi ilə Personlari seçib ona aid bütün datani görmək olur.
+    - `DataBases`-dən istifadə edilməyib.
+
+## Copy File to Path Name File App<a href="https://www.facebook.com/nofel.salahov.5/videos/207464484916744/?notif_id=1640372493623291&notif_t=video_processed&ref=notif"  >  <img src="https://i.postimg.cc/jdkgVD0s/2715723-modified.png"  width="180"  align="right"  ></a>
+
+> Bu program vastəsi ilə istənilən  `file` instənilən yerə  yerə adini dəyişdirərək kopyalamq olur.Günümüzdə kodlarda istifadəsi üçün file adında boşluqdan istifadə etmək olmaz. Bunu düşünərək `Developer-File` əlavə etdim.Bu Check sayəsində kodlarda istifdə edə biləcəyimiz uyğun **file name** əldə edə bilərik. Boşluqlari aradan qaldırır.
+
+-  [Preveiw](https://www.facebook.com/100004987969188/videos/255526803336456/)
+-  [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/MyResearch/CSharp/CloneFileToFolder/CloneFileToFolder)
+- [Install Setup](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/MyResearch/CSharp/CloneFileToFolder/CopyToPathSetup.zip?raw=true)
+
+-  **App** xususiyyətləri
+	-  _Windows Forms_ üçün yazılıb.
+    - `File`-ım adını dəyişib kopyalamaq olur.
+    - `File`-ın adını Dəyişdirmədəndə koyalamq olur.
+    - `Developer-File` sayəsində kodlarda istifadə edə biləcəyimiz uyğun **file name** əldə edə bilərik.
+    - `DataBases`-dən istifadə edilməyib.
+
+## My DataBase Schemas and Query Code
+- [School](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/MyResearch#school-database-schema) 
+    - Schemas
+- [Movie](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/MyResearch#movie-database-schema)
+    - Schemas
+
+
 # My Lessons 
 
-## Lesson(1/1) => CLI languages,For Loop,Switch Statement,Data Types,Stack Value Type,Heap Reference Type and Methods
+## Lesson(1/1) => CLI languages,For Loop,Switch Statement,Data Types,Stack Value Type,Heap Reference Type and Methods <img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 
 - Task
@@ -47,7 +119,7 @@
 - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_1/Lesson_1/Task-1)
     - Code
     - Documentation
-## Lesson(1/2) => String vs StringBuilder,Ref & out keyword,Method Overloading,Type Casting,Boxing and Unboxing,String Methods,String Methods 2,Arrays,Duplicate values
+## Lesson(1/2) => String vs StringBuilder,Ref & out keyword,Method Overloading,Type Casting,Boxing and Unboxing,String Methods,String Methods 2,Arrays,Duplicate values<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 
 - Task
@@ -64,7 +136,7 @@
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_1/Lesson_2/Lesson/LessonLesson/Program.cs)
     - Documentation
 
-## Lesson(2/1) => Params,Class and Object
+## Lesson(2/1) => Params,Class and Object<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 
 - Task
@@ -84,7 +156,7 @@
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_2/Lesson_1/Lesson/LessonProgram.cs)
     - Documentation
 
-## Lesson(2/2) => Static
+## Lesson(2/2) => Static<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 
 - Task
@@ -107,7 +179,7 @@
     - Code
     - Documentation
 
-## Lesson(3/1) => Array,Non-Generic and Generic
+## Lesson(3/1) => Array,Non-Generic and Generic<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/><img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 
 - Task
@@ -149,7 +221,7 @@
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_3/Lesson_1/Lesson/Lesson/Program.cs)
     - Documentation
 
-## Lesson(4/1) => OOP (Object Oriented Programming)
+## Lesson(4/1) => OOP (Object Oriented Programming)<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 - Include
     - Task 
@@ -175,14 +247,14 @@
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_1/Lesson/Lesson/Program.cs)
     - [Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_1/OOP_Research_and_Lesson.md)
 
- ## Lesson(4/2) => Struct
+ ## Lesson(4/2) => Struct<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
  ***
 
 - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_4/Lesson_2)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_2/Lesson/Lesson/Program.cs)
     - [Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_2/different_Struct_and_Class.md)
 
- ## Lesson(5/1) => C# Interface and Access Modifiers
+ ## Lesson(5/1) => C# Interface and Access Modifiers<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
  ***
 
 - Task
@@ -200,12 +272,12 @@
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lesson_1/Lesson/TestinInternal/Program.cs)
     - [Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lesson_1/Documantation.md)
 
-## Lesson(5/2) => Solid Principles,Dependency Injection != Inversion and C#(8) Interface 
+## Lesson(5/2) => Solid Principles,Dependency Injection != Inversion and C#(8) Interface <img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_5/Lessson_2)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lessson_2/Lesson/Lesson/Program.cs)
     - [Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lessson_2/documatation.md)
-## Lesson(6/1) => Task Solution 
+## Lesson(6/1) => Task Solution <img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 - Task 
     - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-10-13-noyabr-2021-)
@@ -238,7 +310,7 @@
 - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_1)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_1/Task/Task)
 
-## Lesson(6/2) => C# Delegate and Extension Method
+## Lesson(6/2) => C# Delegate and Extension Method<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 - Task
     - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-12-20-noyabr-2021-)
@@ -261,7 +333,8 @@
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_2/Lesson/Lesson)
     - [Documattion](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_6/Lesson_2/Documantation.md)
 
-## Lesson(7/1) => Task Solution
+## Lesson(7/1) => Task Solution<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
+***
 - Task
     - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-13-21-noyabr-2021-)
     ```
@@ -290,8 +363,67 @@
     ```
     - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_7/Lesson_1/Task/Task/Program.cs)
 
-## Lesson(7/2) => C# Delegate and events
+## Lesson(7/2) => C# Delegate and events<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
+***
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-14-27-noyabr-2021-) 
-    - [Code]()
-    - [My Documantation]()
+    - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_7/Lesson_2/Lesson/Lesson)
+    - My Documantation
+
+## Lesson(8/1) => WinForm App<img src="https://i.postimg.cc/bN1Mk7NX/application-icon.png" alt="winform" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/> 
+***
+- Task
+    - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-15-28-noyabr-2021-)
+    ```
+        Homework - C# WinForm Start Mini Kitabxana üçün bir app yazın. Kitabların adı, ISBN nömrəsi (user daxil edəcək və duplicate ola bilməz), qiyməti olmalıdır. Janrlar olacaq, janrın adı və unikal sistem tərəfindən yaradılan Id-si olacaq. Hər kitabın janr İd-si olmalıdır. Kitab yaradıldıqda janr mütləq seçilməlidir. ListBox-da bütün kitablar siyahı şəklində görsənməlidir. Kitablar janra görə listbox daxilində filter oluna bilməlidir.
+    ```
+    - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_8/Lesson_1/Task/Task)
+- [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-15-28-noyabr-2021-)
+    - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_8/Lesson_1/Lesson/Lesson)
+
+## Lesson(8/2) => Task Solution<img src="https://i.postimg.cc/bN1Mk7NX/application-icon.png" alt="winform" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/> 
+***
+## Lesson(9/1) => C# Thread<img src="https://i.postimg.cc/bN1Mk7NX/application-icon.png" alt="winform" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/> 
+***
+- Task
+    - [Contet](https://github.com/PragmatechEducation/Csharp03/tree/main/Lesson-17/Task)
+    - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_9/Lesson_1/Task_Group)
+- [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-17-5-dekabr-2021-)
+    - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Lesson_1/Lesson/Lesson/Program.cs)
+    - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Documantation.md#c-thread)
+## Lesson(9/2) => C# Thread Pool<img src="https://i.postimg.cc/bN1Mk7NX/application-icon.png" alt="winform" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/> 
+***
+- [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-18-10-dekabr-2021-)
+	- [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Lesson_2/Lesson/Lesson/Program.cs)
+	- [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Documantation.md#race-condition-problem)
+## Lesson(10/1) => Task And Thread In C#, StreamReader And StreamWriter Classes In C#, C# StreamReader, Get Files from Directory<img src="https://i.postimg.cc/bN1Mk7NX/application-icon.png" alt="winform" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/> 
+***
+- [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-19-12-dekabr-2021-)
+    - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_10/Lesson_1/Lesson/Lesson/Program.cs)
+    - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_10#async-and-await)
+
+## Lesson(10/2) => C# Reflection , C# Garbage Collection<img src="https://i.postimg.cc/bN1Mk7NX/application-icon.png" alt="winform" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/> 
+***
+- [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-20-17-dekabr-2021-)
+    - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_10/Lesson_2/Lesson/Lesson/Program.cs)
+    - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_10#reflection)
+
+## Lesson(11/1) => Sql express download ,SQL data-types ,Introduction to SQL, SQL Syntax, SQL Commands SQL Server, CREATE DATABASE, SQL Server DROP DATABASE, SQL Server CREATE TABLE, SQL Server Identity, SQL Server ALTER TABLE ADD,Column, SQL Server ALTER TABLE ALTER COLUMN, SQL Server ALTER TABLE DROP COLUMN, SQL Server Rename Table, SQL Server DROP TABLE, SELECT, Insert, Update, Delete, Top, SQL Server ORDER BY, Where, AND, OR, IN, Between, Like, Fetch<img src="https://i.postimg.cc/Yq427q36/sql-database-icon-logo-design-ui-ux-app-orange-inscription-shadow-96841969-modified.png" alt="sql" align="right" width="40" height="40"/>
+***
+- [Task]()
+    - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-21-20-dekabr-2021-)
+    ```
+    . Aşağıdakı taskları SQL queryləri ilə yazın.
+    Baza yaradın, tabellara data əlavə edin, CRUD(create,read,update-delete) istifade edin. Academy database, student table, grade,fullname,birthdate,group AND,OR,IN,BETWEEN,LIKE,FETCH istifade edin. Bir bir dersde kodlara baxacam. Sonda ev tapsirigini dersde gosterdiyim kimi query olan file repoya yukleyin. Note. Linklər çox olsada, sadədir.
+    ```
+    - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_11/Lesson_1/SQLQuery_Lesson_and_Task.sql)
+- [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-21-20-dekabr-2021-)
+    - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_11/Lesson_1/SQLQuery_Lesson_and_Task.sql)
+    - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_11/Readme.md)
+
+## Lesson(11/2) => SQL Relationships and Joins<img src="https://i.postimg.cc/Yq427q36/sql-database-icon-logo-design-ui-ux-app-orange-inscription-shadow-96841969-modified.png" alt="sql" align="right" width="40" height="40"/>
+***
+- [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-22-24-dekabr-2021-)
+    - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_11/Lesson_2/SQLQuery_Lesson_and_Task.sql)
+    - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_11#some-keywords)
+
 
