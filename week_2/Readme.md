@@ -1,7 +1,7 @@
 ## String and String Bilder
 > String tip `char` arrayında ibarət olmasına baxmayaraq bu arrayın daxildəki `char`lara müraciyyət eib dəyişdirmək olmur. 
 
-```c
+```c#
     // 1 Using
     string txt = "Hello I like Anime. ";
     txt = txt + "Ofcorse I like manga";

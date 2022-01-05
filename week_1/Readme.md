@@ -42,7 +42,7 @@
 
 > value type stack yaddaşdan istifadə edir buna görə bir-birinə `a` və `b` value type bərbərləşdirsək `b`-ə `a`-ın dəyərini **kopyas**ı göndərilir. Yəni yadaşları bir birinə  bağlamır.
 
-```c
+```c#
     int a = 5;
 
     int b = a;
@@ -64,7 +64,7 @@
 
 > Əgər item_b reference type item_a reference type birləşdirəriksə o zaman heap yaddaş linkləri eyni olur nəticə etibarı ilə dəyərlərdə eyni olur.
 
-```c
+```c#
 class Program
     {
         static void Main(string[] args)
