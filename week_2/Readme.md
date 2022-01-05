@@ -93,3 +93,8 @@
             number = 5;
         }
 ```
+
+## Method Overloading
+> **Methodların Eyni Addan** istafadə etməsinə ancaq daxilində fərqli method olmasına gətirib çıxarır. Bu **fərqləndirmə** :
+> - return və ya void olmasına görə 
+> - parametir sayına görə fərqlənə bilir.
