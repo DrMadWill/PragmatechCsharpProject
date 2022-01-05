@@ -245,14 +245,14 @@
         - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_1/task/task/Program.cs)
 - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_4/Lesson_1) 
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_1/Lesson/Lesson/Program.cs)
-    - [Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_1/OOP_Research_and_Lesson.md)
+    - [My Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_4#oop--object-oriented-programming---obyek-yonlu-praglamlasdirma)
 
  ## Lesson(4/2) => Struct<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
  ***
 
 - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_4/Lesson_2)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_2/Lesson/Lesson/Program.cs)
-    - [Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_4/Lesson_2/different_Struct_and_Class.md)
+    - [My Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_4#struct)
 
  ## Lesson(5/1) => C# Interface and Access Modifiers<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
  ***
@@ -270,13 +270,13 @@
     - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_5/Lesson_1)
 - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_5/Lesson_1)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lesson_1/Lesson/TestinInternal/Program.cs)
-    - [Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lesson_1/Documantation.md)
+    - [My Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_5#access-modifiers)
 
 ## Lesson(5/2) => Solid Principles,Dependency Injection != Inversion and C#(8) Interface <img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_5/Lessson_2)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lessson_2/Lesson/Lesson/Program.cs)
-    - [Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_5/Lessson_2/documatation.md)
+    - [My Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_5#iterface-new-fuctionc8)
 ## Lesson(6/1) => Task Solution <img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
 - Task 
@@ -331,7 +331,7 @@
     - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_6/Lesson_2/Task/Task/Program.cs)
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-13-21-noyabr-2021-)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6/Lesson_2/Lesson/Lesson)
-    - [Documattion](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_6/Lesson_2/Documantation.md)
+    - [My Documattion](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_6#existation)
 
 ## Lesson(7/1) => Task Solution<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
@@ -389,12 +389,12 @@
     - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_9/Lesson_1/Task_Group)
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-17-5-dekabr-2021-)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Lesson_1/Lesson/Lesson/Program.cs)
-    - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Documantation.md#c-thread)
+    - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_9#c-thread)
 ## Lesson(9/2) => C# Thread Pool<img src="https://i.postimg.cc/bN1Mk7NX/application-icon.png" alt="winform" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/> 
 ***
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-18-10-dekabr-2021-)
 	- [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Lesson_2/Lesson/Lesson/Program.cs)
-	- [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_9/Documantation.md#race-condition-problem)
+	- [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_9#race-condition-problem)
 ## Lesson(10/1) => Task And Thread In C#, StreamReader And StreamWriter Classes In C#, C# StreamReader, Get Files from Directory<img src="https://i.postimg.cc/bN1Mk7NX/application-icon.png" alt="winform" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/> 
 ***
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-19-12-dekabr-2021-)
