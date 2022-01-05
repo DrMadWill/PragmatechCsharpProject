@@ -1,4 +1,4 @@
-### CLI languages
+## CLI languages
 > **C#** **Java**-ya baxılaraq yaradılmışdır.
 > İşləmə mətiqi  Aşağıdakı kimidir.
 
@@ -89,4 +89,16 @@ class Program
     }
 
 ```
+
+
+## Method
+> Methodlar iki tipə bölünür.
+> - Void => Hər hası bir dəyər qaytarmır
+> - Return => Bizə bir dəyər qayatarır.
+
+> Methodlar özlüyündə iki hissəyə bölünür.
+> - Argumetli 
+> - Argumetsiz
+
+
 
