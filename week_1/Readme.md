@@ -21,6 +21,7 @@
 >**Value type**  **System.ValueType** classından yaradılır və bu variable tipində tutlan dəyər `Stack` yaddaşda tulur.
 
 >**Value Type** misal olaraq aşğdakıları misal göstər bilrəik:
+
 | Type | Represents | Represents |
 |--|--|--|
 | bool | Boolean value | True or False |
