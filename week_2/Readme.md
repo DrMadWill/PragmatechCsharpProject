@@ -23,27 +23,27 @@
 ### Casting Up
 > Özüdən kiçikdəyər tipinin özündə yerləşməsidir.
 
-```c
+```c#
     int int_number = 5;
     long long_number = int_number;
 ```
 ### Casting Down
 > Özündən böyük dəyər tipinin özündə yerləşməsidir. Bu zaman dəyərdə itki baş verir.
-```c
+```c#
     long long_number = 5;
     int int_number = (int) long_number;
 ```
 
 ## Boxing 
 > value type-ın referance type çevirilməsidir.
-```c
+```c#
     int number = 7;
     object obj = number;
 ```
 ## UnBoxing
 > referance type-ın value type çevirilməsidir. Belə hallarda error olma ehtimalı yüksəkdir.
 
-```c
+```c#
     object obj = 7;
     int number = (int)obj;
 ```
@@ -52,7 +52,7 @@
 > ref və out keyləri vastəsi ilə biz methodlara value type dəyərləri referance type dəyərlər kimi yaddaşda tutuğu yerin linkini göndərə bilərik. Bu bizə göndərilən dəyərin özünün üzərində oynama imkanı yaradır. 
 ### Ref 
 > Göndərilən value mütləq əvəlcədən içərində dəyər atamış olmalıdır.
-```c
+```c#
  static void Main(string[] args)
         {
            
@@ -76,7 +76,7 @@
 ### Out 
 > Methoda göndərilən valueunun içərisinə dəyər atamaq mütləq deyildir anca mütləq methodda yenidən **override** edilməlidir.Yəni həmindəyərə nəsə mənimsədilməlidir.
 
-```c
+```c#
  static void Main(string[] args)
         {
            
