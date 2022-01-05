@@ -47,3 +47,49 @@
     object obj = 7;
     int number = (int)obj;
 ```
+
+## Ref and Out keyword
+> ref və out keyləri vastəsi ilə biz methodlara value type dəyərləri referance type dəyərlər kimi yaddaşda tutuğu yerin linkini göndərə bilərik. Bu bizə göndərilən dəyərin özünün üzərində oynama imkanı yaradır. 
+### Ref 
+> Göndərilən value mütləq əvəlcədən içərində dəyər atamış olmalıdır.
+```c
+ static void Main(string[] args)
+        {
+           
+            int j = 7;
+
+            Console.WriteLine(j);//7
+
+            RefMethod(ref j);
+
+            Console.WriteLine(j);//10
+        }
+
+
+        static void RefMethod(ref int number)
+        {
+            number = 10;
+            
+        }
+```
+
+### Out 
+> Methoda göndərilən valueunun içərisinə dəyər atamaq mütləq deyildir anca mütləq methodda yenidən **override** edilməlidir.Yəni həmindəyərə nəsə mənimsədilməlidir.
+
+```c
+ static void Main(string[] args)
+        {
+           
+            int j;
+
+            OutMethod(out j);
+
+            Console.WriteLine(j);//5
+        }
+
+
+        static void OutMethod(out int number)
+        {
+            number = 5;
+        }
+```

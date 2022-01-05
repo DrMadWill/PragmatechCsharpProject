@@ -44,11 +44,45 @@ namespace Repeat
 
             // Casting
 
+            long long_number = 5;
+            int int_number =(int) long_number;
+
+
+            // Boxing
+
+            //int number = 7;
+            //object obj = number;
+
+            // Un Boxing
+
+            object obj = 7;
+            int number = (int)obj;
+
+
+            int j ;
+
+            //Console.WriteLine(j);//7
+
+            //RefMethod(ref j);
+            OutMethod(out j);
+
+            Console.WriteLine(j);//10
 
 
         }
 
-        
+
+        static void RefMethod(ref int number)
+        {
+            number = 10;
+            
+        }
+
+        static void OutMethod(out int number)
+        {
+            number = 5;
+        }
+
 
     }
 
