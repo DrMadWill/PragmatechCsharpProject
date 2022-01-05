@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\1_Repeat_lesson\5_1_2022\Repeat\Repeat\bin\Debug\netcoreapp3.1\Repeat.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\1_Repeat_lesson\5_1_2022\Repeat\Repeat\bin\Debug\netcoreapp3.1\Repeat.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\1_Repeat_lesson\5_1_2022\Repeat\Repeat\bin\Debug\netcoreapp3.1\Repeat.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\1_Repeat_lesson\5_1_2022\Repeat\Repeat\bin\Debug\netcoreapp3.1\Repeat.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\1_Repeat_lesson\5_1_2022\Repeat\Repeat\bin\Debug\netcoreapp3.1\Repeat.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\1_Repeat_lesson\5_1_2022\Repeat\Repeat\bin\Debug\netcoreapp3.1\Repeat.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\1_Repeat_lesson\5_1_2022\Repeat\Repeat\obj\Debug\netcoreapp3.1\Repeat.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\1_Repeat_lesson\5_1_2022\Repeat\Repeat\obj\Debug\netcoreapp3.1\Repeat.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\1_Repeat_lesson\5_1_2022\Repeat\Repeat\obj\Debug\netcoreapp3.1\Repeat.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\1_Repeat_lesson\5_1_2022\Repeat\Repeat\obj\Debug\netcoreapp3.1\Repeat.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\1_Repeat_lesson\5_1_2022\Repeat\Repeat\obj\Debug\netcoreapp3.1\Repeat.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\1_Repeat_lesson\5_1_2022\Repeat\Repeat\obj\Debug\netcoreapp3.1\Repeat.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\1_Repeat_lesson\5_1_2022\Repeat\Repeat\obj\Debug\netcoreapp3.1\Repeat.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\1_Repeat_lesson\5_1_2022\Repeat\Repeat\obj\Debug\netcoreapp3.1\Repeat.genruntimeconfig.cache

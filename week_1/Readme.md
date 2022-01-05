@@ -16,13 +16,13 @@
 > Hər `Data Taype` bir classdır. Variables `C#`üçü cür katogorizə edilir:
 > - **Value Types** 
 > - **Reference Type** 
-> - **Pointer Type** 
 
+#### Value Type
 >**Value type**  **System.ValueType** classından yaradılır və bu variable tipində tutlan dəyər `Stack` yaddaşda tulur.
 
 >**Value Type** misal olaraq aşğdakıları misal göstər bilrəik:
 
-| Type | Represents | Represents |
+| Type | Represents | Range |
 |--|--|--|
 | bool | Boolean value | True or False |
 | byte| 8-bit unsigned integer |  0 to 255 |
@@ -37,6 +37,56 @@
 |uint|32-bit unsigned integer type|0 to 4,294,967,295|
 |ulong|64-bit unsigned integer type|0 to 18,446,744,073,709,551,615|
 |ushort|16-bit unsigned integer type|0 to 65,535|
+|enum|Enumeration types ||
+|struct|represents data structures||
 
+> value type stack yaddaşdan istifadə edir buna görə bir-birinə `a` və `b` value type bərbərləşdirsək `b`-ə `a`-ın dəyərini **kopyas**ı göndərilir. Yəni yadaşları bir birinə  bağlamır.
 
+```c
+    int a = 5;
+
+    int b = a;
+
+    a = 7;
+
+    Console.WriteLine("a : " + a);
+    Console.WriteLine("b : " + b);
+
+    // we see
+    //a : 7
+    //b : 5
+```
+#### Reference Type
+> **Reference Type** value type dan başqa bütün tiplər Reference tipə aidirlər. Reference tipin daxilindəki dəyər **Heap** yadddaşda tutlur. Stack yaddaşda isə həmin variablein adı və **Heap** yaddaşdakı dəyərin link tutulur. Reference type aşağıdakıları misal göstərmək olar:
+- `string`
+- `class`
+- `interface` vs ə.
+
+> Əgər item_b reference type item_a reference type birləşdirəriksə o zaman heap yaddaş linkləri eyni olur nəticə etibarı ilə dəyərlərdə eyni olur.
+
+```c
+class Program
+    {
+        static void Main(string[] args)
+        {
+            // Referance Type
+            Item item_a = new Item();
+            Item item_b = new Item();
+            item_a.number = 5;
+            item_b = item_a;
+
+            item_a.number = 7;
+            Console.WriteLine(item_a.number);//7
+            Console.WriteLine(item_b.number);//7
+
+        }
+
+    }
+
+    class Item
+    {
+        public int number;
+    }
+
+```
 
