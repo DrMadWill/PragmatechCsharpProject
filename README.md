@@ -134,7 +134,7 @@
     - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_1/Lesson_2)
 - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_1/Lesson_2)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_1/Lesson_2/Lesson/LessonLesson/Program.cs)
-    - [My Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_2#string-and-string-bilder)
+    - [My Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_1#string-and-string-bilder)
 
 ## Lesson(2/1) => Params,Class and Object<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
@@ -154,7 +154,7 @@
     - [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_2/Lesson_1/task_1/task_1Program.cs)
 - [Lesson](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_2/Lesson_1)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_2/Lesson_1/Lesson/LessonProgram.cs)
-    - Documentation
+    - [My Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_2#params-keyword)
 
 ## Lesson(2/2) => Static<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/> <img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
@@ -177,7 +177,7 @@
 
 - Lesson 
     - Code
-    - Documentation
+    - [My Documentation]()
 
 ## Lesson(3/1) => Array,Non-Generic and Generic<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/><img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
