@@ -177,7 +177,7 @@
 
 - Lesson 
     - Code
-    - [My Documentation]()
+    - [My Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_2#static)
 
 ## Lesson(3/1) => Array,Non-Generic and Generic<img src="https://i.postimg.cc/63TqG5Bh/commands-icon-3-modified.png" alt="console" align="right" width="40" height="40"/><img src="https://www.freeiconspng.com/uploads/c-logo-icon-18.png" alt="csharp" align="right" width="40" height="40"/>
 ***
