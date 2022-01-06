@@ -36,7 +36,18 @@
             Console.WriteLine(item);
         }
     }
-
 ```
 
+## Class
+> Bir neçə methodu, fildi və propertiyi bir başlıqda yığmağa kömək edir. 
+> Class daxildə class yazılmır. C# daxildəki hər şey classlardan törəmişdir.
+
+
+## Static
+> `static` keywordü ilə yazılan method ramda özünə yer tutur. Artıq həmin fildə müraciyyət üçün instance yaratmağa ehtiyac yoxdur.
+
+> - `static` class daxilində **yalnız `static` fild ola bilər**.  
+> - `static` class daxilində **unstatic fild method ola bilməz**
+
+> - `static` olmayan class daxilində **static fildə static olmayan fildə ola bilər**.
 
