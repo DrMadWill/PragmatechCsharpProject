@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace Repeat
@@ -31,7 +32,6 @@ namespace Repeat
             //Console.WriteLine(item_b.number);
 
             // StringBilder
-
 
             string txt = "Hello I like Anime. ";
             txt = txt + "Ofcorse I like manga";
@@ -66,8 +66,28 @@ namespace Repeat
             //RefMethod(ref j);
             OutMethod(out j);
 
-            Console.WriteLine(j);//10
+            //Console.WriteLine(j);//10
 
+            string[] text2 = new string[5] { "Strange", " Book", "Live", "Void","End" };
+
+            string[] text1 = new string[3];
+
+            string[] text3 = new string[] { "Apple", "Orange" };
+
+            string[] text4 = { "Will", "Mad" };
+
+            //int[] numbers = new int[5] { 1, 2 };
+
+            text1[0] = "Header";
+
+            //foreach (var item in text1)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            ParamKeyWord(1, 5, 6, 7);
+
+            ParamKeyWord("Will", 7, 8);
 
         }
 
@@ -83,6 +103,22 @@ namespace Repeat
             number = 5;
         }
 
+        static void ParamKeyWord(params int[] numbers)
+        {
+            foreach (var item in numbers)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        static void ParamKeyWord(string name,params int[] numbers)
+        {
+            foreach (var item in numbers)
+            {
+                Console.WriteLine(name);
+                Console.WriteLine(item);
+            }
+        }
 
     }
 
