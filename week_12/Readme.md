@@ -29,7 +29,16 @@ Silinmə şablonu belədir:
 DROP VIEW deleteveiw;
 ```
 
+## PROCEDURE
+> Hər hansi bir dildə olan methodlaral eyni funksiyani daşıyır.
 
+```sql
+create PROCEDURE us_Psoitio
+@Name varchar(60)
+as
+select * from dbo.CostomertsDetal where Positions=@Name
+
+```
 
 
 
