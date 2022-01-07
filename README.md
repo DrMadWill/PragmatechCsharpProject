@@ -445,7 +445,7 @@
         parfum satis datalarini ucun procedure yaradiresinz , parameter olaraq serach metni, min qiymet ve max qiymet qebul eden procedur parfumename, brandname ve ya category name-inde hemin serach valusu olan ve qiymeti gonderilmis min max qiymet intervalinda olan parfum datalrini asagidaki sekilde qaytarsin: Id,ParfumName,BrandName,CategoryName,Price
     ```
 
-    - [Solition]()
+    - [Solition](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_12/Lesson_1/ParfumeSQLQuery.sql)
 
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-23-26-dekabr-2021--1)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_12/Lesson_1/Lesson_3.sql)
