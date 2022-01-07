@@ -428,6 +428,25 @@
 
 ## Lesson(12/1) => SQL VIEW and SQL Stored Procedure<img src="https://i.postimg.cc/Yq427q36/sql-database-icon-logo-design-ui-ux-app-orange-inscription-shadow-96841969-modified.png" alt="sql" align="right" width="40" height="40"/>
 ***
+- Task
+    - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-23-26-dekabr-2021--1)
+    ```markdown
+    # Tapşırıq
+    https://www.parfumshop.az/ sayta esasen sade bir databaza sturukturu qurmaginizi isteyirem Parfumlar, parfum kateqoriyalari, parfum brendleri, parfum satislarinin table-lari olmalidir.Elave table-lar yarada bilersiniz ehtiyaca gore,minimual olaraq bu yazdiqlarim olmalidi,elave olaraq sayta esasen databaza strukturunuzu genislendire bilersiz(saytdaki nisbeted daha genisdi cunki) Databaza strukturunu https://www.dbdesigner.net/ saytinda qurub, pdf export edib gondermelisiz.Bunun ucun saytdan qeydiyyatdan kecmelisiz
+
+        INSERT,UPDATE,DELETE emeliyyatlarini procedure vasitesile icra etmek. Datalari table-a dolduranda istifade edin
+
+        parfum datalarini asagidaki columnlar kimi qayataran bir view yaradirsiniz: Id,Name,Price,BrandName,CategoryName
+
+        parfum satislari datalarini asagidaki sekilde qaytaran bir view : Id,ParfumName,BrandName,CategoryName,Price
+
+        parfum satislari datalari ucun bir procedure yazirsiniz.Bu procedure gondeirlmis iki qiymet araliginda olan satis melumatlarini asagidaki columnlar seklinde gosterir : Id,ParfumName,BrandName,CategoryName,Price
+
+        parfum satis datalarini ucun procedure yaradiresinz , parameter olaraq serach metni, min qiymet ve max qiymet qebul eden procedur parfumename, brandname ve ya category name-inde hemin serach valusu olan ve qiymeti gonderilmis min max qiymet intervalinda olan parfum datalrini asagidaki sekilde qaytarsin: Id,ParfumName,BrandName,CategoryName,Price
+    ```
+
+    - [Solition]()
+
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-23-26-dekabr-2021--1)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_12/Lesson_1/Lesson_3.sql)
     - [My Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_12#sql-veiw)
