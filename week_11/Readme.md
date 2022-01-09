@@ -68,6 +68,7 @@
 ## Code Exp
 
 ### DataBases
+***
 #### Create
 ```sql
 Create database Acedemy
@@ -78,5 +79,45 @@ Create database Acedemy
 DROP DATABASE Acedemy
 ```
 
+### Table
+***
+#### Create
+
+```sql
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+);
+```
+#### Delete 
+
+```sql
+DROP TABLE table_name;
+```
+#### Update(Rename)
+```sql
+ALTER TABLE table_name
+RENAME TO new_table_name;
+```
+### Table Column
+***
+#### Add
+```sql
+ALTER TABLE table_name
+ADD column_name datatype;
+```
+#### Delete
+```sql
+ALTER TABLE Customers
+DROP COLUMN Email;
+```
+
+#### Update
+```sql
+ALTER TABLE table_name
+ALTER COLUMN column_name datatype;
+```
 
 
