@@ -65,7 +65,7 @@
 
 
 
-# Code Exp
+# Code Shcema
 
 ## DataBases
 ***
@@ -174,5 +174,21 @@ UPDATE table_name
 SET column_name=value
 WHERE condition;
 ```
+## Join
+```sql
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+FROM Orders
+JOIN Customers ON Orders.CustomerId=Customers.Id;
+```
 
+
+## ViEW
+```sql
+CREATE VIEW view_name AS
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+
+SELECT * FROM view_name
+```
 
