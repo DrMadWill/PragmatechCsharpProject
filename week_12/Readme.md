@@ -38,7 +38,7 @@ create PROCEDURE us_Psoitio
 as
 select * from dbo.CostomertsDetal where Positions=@Name
 
-EXECUTE 
+EXECUTE us_Psoitio 'Sa'
 
 ```
 

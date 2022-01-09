@@ -62,3 +62,21 @@
 **One to one** iki tərəfində əlqəsi uniqdir
 **One to many**  bir tərəfin əlqəsi uniqdir digər tərəf azadır.
 **Many to  Many**  iki tərəfində əlqəsi azadır.
+
+
+
+## Code Exp
+
+### DataBases
+#### Create
+```sql
+Create database Acedemy
+```
+
+#### Delete 
+```sql
+DROP DATABASE Acedemy
+```
+
+
+
