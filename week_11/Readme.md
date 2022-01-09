@@ -65,23 +65,23 @@
 
 
 
-## Code Exp
+# Code Exp
 
-### DataBases
+## DataBases
 ***
-#### Create
+### Create
 ```sql
 Create database Acedemy
 ```
 
-#### Delete 
+### Delete 
 ```sql
 DROP DATABASE Acedemy
 ```
 
-### Table
+## Table
 ***
-#### Create
+### Create
 
 ```sql
 CREATE TABLE table_name (
@@ -91,33 +91,88 @@ CREATE TABLE table_name (
    ....
 );
 ```
-#### Delete 
+### Delete 
 
 ```sql
 DROP TABLE table_name;
 ```
-#### Update(Rename)
+### Update(Rename)
 ```sql
 ALTER TABLE table_name
 RENAME TO new_table_name;
 ```
-### Table Column
+## Table Column
 ***
-#### Add
+### Add
 ```sql
 ALTER TABLE table_name
 ADD column_name datatype;
 ```
-#### Delete
+### Delete
 ```sql
 ALTER TABLE Customers
 DROP COLUMN Email;
 ```
 
-#### Update
+### Update
 ```sql
 ALTER TABLE table_name
 ALTER COLUMN column_name datatype;
+```
+
+
+## UNIQUE 
+### Add
+```sql
+ALTER TABLE Persons
+ADD UNIQUE (ID);
+
+-- Multiple columns
+ALTER TABLE Persons
+ADD CONSTRAINT UC_Person UNIQUE (ID,LastName);
+
+```
+
+### Delete 
+```sql
+ALTER TABLE Persons
+DROP CONSTRAINT UC_Person;
+```
+
+## FOREIGN KEY
+### Add
+```sql
+ALTER TABLE Orders
+ADD FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);
+
+-- Multiple columns
+
+ALTER TABLE Orders
+ADD CONSTRAINT FK_PersonOrder
+FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);
+```
+
+### Delete
+```sql
+ALTER TABLE Orders
+DROP CONSTRAINT FK_PersonOrder;
+```
+
+## Information 
+### Add
+```sql
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
+```
+### Delete
+```sql
+DELETE FROM table_name WHERE condition;
+```
+### Update
+```sql
+UPDATE table_name
+SET column_name=value
+WHERE condition;
 ```
 
 
