@@ -463,7 +463,7 @@
     ```
         Register formu yazin. ado net vasitesile sqle insert edin. Trigger yazin copyRegister table-a da avtomatik insert getsin
     ```
-    - Solition
+    - [Solition](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_13/Lesson_1/Task)
 - Lesson
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_13/Lesson_1)
     - [My Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_13#trigger)
