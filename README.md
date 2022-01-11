@@ -465,5 +465,5 @@
     ```
     - Solition
 - Lesson
-    - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_13/Lesson_1/Lesson.sql)
+    - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_13)
     - [My Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_13#trigger)
