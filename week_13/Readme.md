@@ -20,3 +20,31 @@ values(@emp_Id,@emp_name,@emp_salary,@addedDate)
 Print('-- After Insert Trigger')
 go
 ```
+
+
+## Ado.net
+> Databese ilə bağlantı qurmaq üçün istifadə edilirir.
+> İki növ girişi var 
+> - Connected
+> - Disconnected
+
+
+### Connected
+> Database qoşulduqdan sonra ona uyğun məlumatları ötrə və ala bilirik ta ki biz əlqəni kəsənə kimi.
+
+- `using System.Data.SqlClient` namespace-i sqlə qoşulmaq və crud əmliyyatları üçün istifadə edirik.
+- `ConnectionString` database-in yerini göstəmək üçün app config file-na yazılır.
+    1. `Data Source` və ya `Server` serverin adını və ya ip ünvanını qeyd edirik.
+    2. `Initial Catalog` və ya `Database` data bazanin adı.
+    3. `Integrated Security`-Windows Authentication istifadə edərək sqlə bağlanır.
+
+- `Open()` Method ilə bağlantı qurulur.
+- `Close()` Əlaqə kəsilir.
+
+**SqlCommand** - sqldə yazılan kodları burda icrasını tələb edirik.
+Nəticə almaq üçün :
+1. `ExecuteNonQuery`- geriyə int qaytarır, bu komandanı insert,update,delete-də stifadə edə bilərsiz.
+2. `ExecuteReader`- Datanı oxuyur.Select-də istifadə edirik.
+3. `ExecuteScalar`- 1 row 1 column qaytarır, bunu skalyar ifadələrdə istifadə edə bilərik məs: select count(*)
+
+
