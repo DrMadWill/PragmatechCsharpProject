@@ -47,7 +47,7 @@ namespace ORM_FristConect
 
         static void GetMySQLConnect()
         {
-            string connectionString = @"server=localhost;port=3306;database=drmadwill;user =root; password=nozh0506847748";
+            string connectionString = @"server=localhost;port=3306;database=drmadwill;user =root; password=mypass";
 
             using (var connection = new MySqlConnection(connectionString))
             {

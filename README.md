@@ -426,7 +426,11 @@
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_11/Lesson_2/SQLQuery_Lesson_and_Task.sql)
     - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_11#some-keywords)
 
-## Lesson(12/1) => SQL VIEW and SQL Stored Procedure<img src="https://i.postimg.cc/Yq427q36/sql-database-icon-logo-design-ui-ux-app-orange-inscription-shadow-96841969-modified.png" alt="sql" align="right" width="40" height="40"/>
+## Lesson(12/1) => SQL Task Solution<img src="https://i.postimg.cc/Yq427q36/sql-database-icon-logo-design-ui-ux-app-orange-inscription-shadow-96841969-modified.png" alt="sql" align="right" width="40" height="40"/>
+***
+
+
+## Lesson(12/2) => SQL VIEW and SQL Stored Procedure<img src="https://i.postimg.cc/Yq427q36/sql-database-icon-logo-design-ui-ux-app-orange-inscription-shadow-96841969-modified.png" alt="sql" align="right" width="40" height="40"/>
 ***
 - Task
     - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-23-26-dekabr-2021--1)
@@ -450,3 +454,16 @@
 - [Lesson](https://github.com/PragmatechEducation/Csharp03#-lesson-23-26-dekabr-2021--1)
     - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/blob/main/week_12/Lesson_1/Lesson_3.sql)
     - [My Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_12#sql-veiw)
+
+
+## Lesson(12/2) => SQL Server Trigger,ADO NET Connected and Disconnected model<img src="https://i.postimg.cc/Yq427q36/sql-database-icon-logo-design-ui-ux-app-orange-inscription-shadow-96841969-modified.png" alt="sql" align="right" width="40" height="40"/>
+***
+- Task
+    - [Content](https://github.com/PragmatechEducation/Csharp03#-lesson-25-7-yanvar-2022-)
+    ```
+        Register formu yazin. ado net vasitesile sqle insert edin. Trigger yazin copyRegister table-a da avtomatik insert getsin
+    ```
+    - Solition
+- Lesson
+    - [Code]()
+    - [My Documatation]()
