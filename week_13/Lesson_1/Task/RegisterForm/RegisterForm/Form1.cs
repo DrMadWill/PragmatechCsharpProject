@@ -50,31 +50,50 @@ namespace RegisterForm
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            string name = textName.Text;
-            string username = textUserName.Text;
-            string region = textRegion.Text;
-            int tel = Convert.ToInt32(textTelb.Text);
-            string job = combJob.SelectedItem.ToString();
-            //MessageBox.Show(name + "--" + username + "--" + region + "--" + tel + "--" + job);
-
-            string connectionString = ConfigurationManager.ConnectionStrings["RegisterForm.Properties.Settings.Setting"].ConnectionString;
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            string name;
+            string username;
+            string region;
+            int tel;
+            string job;
+            string command;
+            try
             {
-                string command = $"execute usp_SearchJobId @Name={name},@UserName={username},@Tel={tel},@Region={region},@Job={job}";
-
-                using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
+                name = textName.Text.Trim();
+                username = textUserName.Text.Trim();
+                region = textRegion.Text.Trim();
+                tel = Convert.ToInt32(textTelb.Text.Trim());
+                job = combJob.SelectedItem.ToString().Trim();
+                if (name.Length > 40 || username.Length > 40 || region.Length > 40)
                 {
-                    sqlConnection.Open();
-                    sqlCommand.ExecuteNonQuery();
+                    throw new Exception("So Long Information");
+                }
 
-                    MessageBox.Show("Information added", "Added", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    textName.Text="";
-                    textUserName.Text="";
-                    textRegion.Text="";
-                    textTelb.Text="";
-                    combJob.SelectedIndex = 0;
+                command = $"execute usp_SearchJobId @Name={name},@UserName={username},@Tel={tel},@Region={region},@Job={job}";
+                string connectionString = ConfigurationManager.ConnectionStrings["RegisterForm.Properties.Settings.Setting"].ConnectionString;
+                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
+                    {
+                        sqlConnection.Open();
+                        sqlCommand.ExecuteNonQuery();
+                        
+                        MessageBox.Show("Information added", "Added", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        textName.Text = "";
+                        textUserName.Text = "";
+                        textRegion.Text = "";
+                        textTelb.Text = "";
+                        combJob.SelectedIndex = 0;
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+
+            
 
         }
 
