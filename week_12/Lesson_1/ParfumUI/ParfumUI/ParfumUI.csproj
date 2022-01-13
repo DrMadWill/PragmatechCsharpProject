@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,7 +49,28 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.6.0.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.3\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.6.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Permissions.6.0.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,16 +80,89 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BrendAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrendAdd.Designer.cs">
+      <DependentUpon>BrendAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Female.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Female.Designer.cs">
+      <DependentUpon>Female.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Male.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Male.Designer.cs">
+      <DependentUpon>Male.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewParfum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewParfum.Designer.cs">
+      <DependentUpon>NewParfum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parfum Function.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parfum Function.Designer.cs">
+      <DependentUpon>Parfum Function.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParfumAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParfumAdd.Designer.cs">
+      <DependentUpon>ParfumAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParfumeUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParfumeUpdate.Designer.cs">
+      <DependentUpon>ParfumeUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Special.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Special.Designer.cs">
+      <DependentUpon>Special.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BrendAdd.resx">
+      <DependentUpon>BrendAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Female.resx">
+      <DependentUpon>Female.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Male.resx">
+      <DependentUpon>Male.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewParfum.resx">
+      <DependentUpon>NewParfum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parfum Function.resx">
+      <DependentUpon>Parfum Function.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParfumAdd.resx">
+      <DependentUpon>ParfumAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParfumeUpdate.resx">
+      <DependentUpon>ParfumeUpdate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +172,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Special.resx">
+      <DependentUpon>Special.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +188,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
