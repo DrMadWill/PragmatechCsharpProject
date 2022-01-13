@@ -97,6 +97,7 @@ namespace ParfumUI
             this.Controls.Add(this.label1);
             this.Name = "BrendAdd";
             this.Text = "BrendAdd";
+            this.Load += new System.EventHandler(this.BrendAdd_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

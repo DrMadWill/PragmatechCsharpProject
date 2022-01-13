@@ -14,11 +14,13 @@ namespace ParfumUI
 {
     public partial class BrendAdd : Form
     {
-        public ParfumAdd parfums;
-        public BrendAdd(ParfumAdd parfum)
+        public ParfumAdd parfumAdd;
+        public ParfumeUpdate parfumeUpdate;
+        private bool isParfumAdd=false;
+        public BrendAdd(bool isAdd)
         {
             InitializeComponent();
-            parfums = parfum;
+            isParfumAdd = isAdd;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,13 +35,34 @@ namespace ParfumUI
                 using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
                 {
                     sqlConnection.Open();
+
+                    // Add DataBases
                     sqlCommand.ExecuteNonQuery();
-                    parfums.ChangeBrend();
+                    
+                    if (isParfumAdd)
+                    {
+                        // Added Combo Box Change
+                        parfumAdd.ChangeBrend();
+
+                    }
+                    else
+                    {
+                        // Update Combo Box Change
+                        parfumeUpdate.ChangeBrend();
+                    }
+
+
+
                     MessageBox.Show("Information added", "Add", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     textName.Text = "";
                     textDescript.Text="";
                 }
             }
+        }
+
+        private void BrendAdd_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

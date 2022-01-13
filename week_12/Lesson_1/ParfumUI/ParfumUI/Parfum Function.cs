@@ -35,6 +35,7 @@ namespace ParfumUI
         {
             ParfumAdd parfumAdd = new ParfumAdd();
             parfumAdd.parfumAdd_Location = parfumAdd;
+            parfumAdd.parfums = parfums;
             parfumAdd.ShowDialog();
         }
 
@@ -42,6 +43,7 @@ namespace ParfumUI
         {
             ParfumeUpdate parfumeUpdate = new ParfumeUpdate();
             parfumeUpdate.parfums = parfums;
+            parfumeUpdate.ParfumeUpdate_Location = parfumeUpdate;
             parfumeUpdate.ShowDialog();
         }
 
@@ -58,6 +60,13 @@ namespace ParfumUI
                 sqlDataAdapter.Fill(dataTable);
                 dataGridView1.DataSource = dataTable;
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DeleteParfum deleteParfum = new DeleteParfum();
+            deleteParfum.parfums = parfums;
+            deleteParfum.ShowDialog();
         }
     }
 }

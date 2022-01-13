@@ -56,6 +56,7 @@ namespace ParfumUI
             this.button4.TabIndex = 32;
             this.button4.Text = "Brend Add";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label4
             // 

@@ -16,7 +16,7 @@ namespace ParfumUI
     {
 
         public  ParfumAdd parfumAdd_Location;
-
+        public Parfum_Function parfums;
         public ParfumAdd()
         {
             InitializeComponent();
@@ -79,22 +79,30 @@ namespace ParfumUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string name = textName.Text.Trim();
-            string image = textImage.Text.Trim();
-            string decrip = textDescription.Text.Trim();
-            string brend = combBrend.SelectedItem.ToString().Trim();
-            string gender = combGender.SelectedItem.ToString().Trim();
-            string density = combDensity.SelectedItem.ToString().Trim();
-
-            string command = $"EXECUTE usp_AddParfum @Name = '{name}',@Image='{image}',@Descriptio = '{decrip}',@Brend = '{brend}', @Gender = '{gender}',@Density ='{density}'";
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            DialogResult result = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
             {
-                using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
-                {
-                    sqlConnection.Open();
-                    sqlCommand.ExecuteNonQuery();
+                string name = textName.Text.Trim();
+                string image = textImage.Text.Trim();
+                string decrip = textDescription.Text.Trim();
+                string brend = combBrend.SelectedItem.ToString().Trim();
+                string gender = combGender.SelectedItem.ToString().Trim();
+                string density = combDensity.SelectedItem.ToString().Trim();
 
-                    MessageBox.Show("Information added", "Add", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                string command = $"EXECUTE usp_AddParfum @Name = '{name}',@Image='{image}',@Descriptio = '{decrip}',@Brend = '{brend}', @Gender = '{gender}',@Density ='{density}'";
+                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
+                    {
+                        sqlConnection.Open();
+                        // Add DataBase
+                        sqlCommand.ExecuteNonQuery();
+
+                        MessageBox.Show("Information added", "Add", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                        // Change DataGridView
+                        parfums.ChangeParfum();
+                    }
                 }
             }
         }
@@ -106,7 +114,8 @@ namespace ParfumUI
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            BrendAdd brend = new BrendAdd(parfumAdd_Location);
+            BrendAdd brend = new BrendAdd(true);
+            brend.parfumAdd = parfumAdd_Location;
             brend.ShowDialog();
         }
 

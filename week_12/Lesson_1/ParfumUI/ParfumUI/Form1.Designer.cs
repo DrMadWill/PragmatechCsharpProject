@@ -35,8 +35,9 @@ namespace ParfumUI
             this.btnEksk = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.parfumAddToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parfumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.parfumAddToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,13 +108,6 @@ namespace ParfumUI
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // parfumAddToolStripMenuItem
-            // 
-            this.parfumAddToolStripMenuItem.Name = "parfumAddToolStripMenuItem";
-            this.parfumAddToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
-            this.parfumAddToolStripMenuItem.Text = "Sale Price";
-            this.parfumAddToolStripMenuItem.Click += new System.EventHandler(this.parfumAddToolStripMenuItem_Click);
-            // 
             // parfumToolStripMenuItem
             // 
             this.parfumToolStripMenuItem.Name = "parfumToolStripMenuItem";
@@ -121,11 +115,30 @@ namespace ParfumUI
             this.parfumToolStripMenuItem.Text = "Parfum";
             this.parfumToolStripMenuItem.Click += new System.EventHandler(this.parfumToolStripMenuItem_Click);
             // 
+            // parfumAddToolStripMenuItem
+            // 
+            this.parfumAddToolStripMenuItem.Name = "parfumAddToolStripMenuItem";
+            this.parfumAddToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
+            this.parfumAddToolStripMenuItem.Text = "Sale Price";
+            this.parfumAddToolStripMenuItem.Click += new System.EventHandler(this.parfumAddToolStripMenuItem_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(243, 425);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(338, 79);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "All";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(867, 530);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEksk);
             this.Controls.Add(this.btnYeni);
@@ -152,6 +165,7 @@ namespace ParfumUI
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem parfumAddToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem parfumToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }
 

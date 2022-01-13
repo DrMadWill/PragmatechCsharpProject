@@ -17,6 +17,7 @@ namespace ParfumUI
     {
 
         public Parfum_Function parfums;
+        public ParfumeUpdate ParfumeUpdate_Location;
 
         string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
 
@@ -134,30 +135,52 @@ namespace ParfumUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int Id = ParfumNameToID[combSearchName.SelectedItem.ToString()];
-            string name = textName.Text.Trim();
-            string image = textImage.Text.Trim();
-            string decrip = textDescription.Text.Trim();
-            string brend = combBrend.SelectedItem.ToString().Trim();
-            string gender = combGender.SelectedItem.ToString().Trim();
-            string density = combDensity.SelectedItem.ToString().Trim();
-
-            string command = $"EXECUTE usp_UpdateParfum @Id={Id},@Name = '{name}',@Image='{image}',@Descriptio = '{decrip}',@Brend = '{brend}', @Gender = '{gender}',@Density ='{density}'";
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            DialogResult result = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
             {
-                using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
+                int Id = ParfumNameToID[combSearchName.SelectedItem.ToString()];
+                string name = textName.Text.Trim();
+                string image = textImage.Text.Trim();
+                string decrip = textDescription.Text.Trim();
+                string brend = combBrend.SelectedItem.ToString().Trim();
+                string gender = combGender.SelectedItem.ToString().Trim();
+                string density = combDensity.SelectedItem.ToString().Trim();
+
+                string command = $"EXECUTE usp_UpdateParfum @Id={Id},@Name = '{name}',@Image='{image}',@Descriptio = '{decrip}',@Brend = '{brend}', @Gender = '{gender}',@Density ='{density}'";
+                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
                 {
-                    sqlConnection.Open();
+                    using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
+                    {
+                        sqlConnection.Open();
 
-                    // Change DataBases
-                    sqlCommand.ExecuteNonQuery();
+                        // Change DataBases
+                        sqlCommand.ExecuteNonQuery();
 
-                    MessageBox.Show("Information updated", "Update", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Information updated", "Update", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-                    // Change DataGridVeiw
-                    parfums.ChangeParfum();
+                        // Change DataGridVeiw
+                        parfums.ChangeParfum();
 
 
+                    }
+                    int indexsd = combSearchName.SelectedIndex;
+                    string commandSearch = "select * from SearchHead";
+                    using (SqlCommand sqlCommand = new SqlCommand(commandSearch, sqlConnection))
+                    {
+                        combSearchName.Items.Clear();
+                        ParfumNameToID.Clear();
+                        using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                        {
+                            while (sqlDataReader.Read())
+                            {
+                                combSearchName.Items.Add(sqlDataReader[1].ToString().Trim());
+
+                                ParfumNameToID.Add(sqlDataReader[1].ToString().Trim(), Convert.ToInt32(sqlDataReader[0]));
+                            }
+                        }
+
+                        combSearchName.SelectedIndex = indexsd;
+                    }
                 }
             }
         }
@@ -185,6 +208,42 @@ namespace ParfumUI
                         }
                     }
                 }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            BrendAdd brendAdd = new BrendAdd(false);
+            brendAdd.parfumeUpdate = ParfumeUpdate_Location;
+            brendAdd.ShowDialog();
+        }
+
+
+        public void ChangeBrend()
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            {
+                string commandBrend = "select Name from Brend";
+                
+                using (SqlCommand sqlCommand = new SqlCommand(commandBrend, sqlConnection))
+                {
+
+                    sqlConnection.Open();
+                    combBrend.Items.Clear();
+                    using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                    {
+
+                        while (sqlDataReader.Read())
+                        {
+                            
+                            combBrend.Items.Add(sqlDataReader[0].ToString().Trim());
+                            
+                        }
+                    }
+
+                }
+                
+
             }
         }
     }
