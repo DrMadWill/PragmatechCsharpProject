@@ -1,0 +1,15 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_13\Lesson_2\EFapp\EFapp\bin\Debug\EFapp.exe.config
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_13\Lesson_2\EFapp\EFapp\bin\Debug\EFapp.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_13\Lesson_2\EFapp\EFapp\bin\Debug\EFapp.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_13\Lesson_2\EFapp\EFapp\bin\Debug\EntityFramework.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_13\Lesson_2\EFapp\EFapp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_13\Lesson_2\EFapp\EFapp\bin\Debug\EntityFramework.xml
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_13\Lesson_2\EFapp\EFapp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_13\Lesson_2\EFapp\EFapp\obj\Debug\EFapp.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_13\Lesson_2\EFapp\EFapp\obj\Debug\EFapp.Form1.resources
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_13\Lesson_2\EFapp\EFapp\obj\Debug\EFapp.Properties.Resources.resources
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_13\Lesson_2\EFapp\EFapp\obj\Debug\EFapp.csproj.GenerateResource.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_13\Lesson_2\EFapp\EFapp\obj\Debug\EFapp.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_13\Lesson_2\EFapp\EFapp\obj\Debug\EFapp.csproj.CopyComplete
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_13\Lesson_2\EFapp\EFapp\obj\Debug\EFapp.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_13\Lesson_2\EFapp\EFapp\obj\Debug\EFapp.pdb
