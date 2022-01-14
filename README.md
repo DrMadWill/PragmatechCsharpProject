@@ -93,6 +93,7 @@
     - `Developer-File` sayəsində kodlarda istifadə edə biləcəyimiz uyğun **file name** əldə edə bilərik.
     - `DataBases`-dən istifadə edilməyib.
 
+
 ## My DataBase Schemas and Query Code
 - [School](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/MyResearch#school-database-schema) 
     - Schemas

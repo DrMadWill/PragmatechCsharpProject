@@ -50,50 +50,54 @@ namespace RegisterForm
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            string name;
-            string username;
-            string region;
-            int tel;
-            string job;
-            string command;
-            try
+            DialogResult result = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
             {
-                name = textName.Text.Trim();
-                username = textUserName.Text.Trim();
-                region = textRegion.Text.Trim();
-                tel = Convert.ToInt32(textTelb.Text.Trim());
-                job = combJob.SelectedItem.ToString().Trim();
-                if (name.Length > 40 || username.Length > 40 || region.Length > 40)
+                string name;
+                string username;
+                string region;
+                int tel;
+                string job;
+                string command;
+                try
                 {
-                    throw new Exception("So Long Information");
-                }
 
-                command = $"execute usp_SearchJobId @Name={name},@UserName={username},@Tel={tel},@Region={region},@Job={job}";
-                string connectionString = ConfigurationManager.ConnectionStrings["RegisterForm.Properties.Settings.Setting"].ConnectionString;
-                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
-                {
-                    using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
+                    name = textName.Text.Trim();
+                    username = textUserName.Text.Trim();
+                    region = textRegion.Text.Trim();
+                    tel = Convert.ToInt32(textTelb.Text.Trim());
+                    job = combJob.SelectedItem.ToString().Trim();
+                    if (name.Length > 40 || username.Length > 40 || region.Length > 40)
                     {
-                        sqlConnection.Open();
-                        sqlCommand.ExecuteNonQuery();
-                        
-                        MessageBox.Show("Information added", "Added", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        textName.Text = "";
-                        textUserName.Text = "";
-                        textRegion.Text = "";
-                        textTelb.Text = "";
-                        combJob.SelectedIndex = 0;
+                        throw new Exception("So Long Information");
+                    }
+
+                    command = $"execute usp_SearchJobId @Name={name},@UserName={username},@Tel={tel},@Region={region},@Job={job}";
+                    string connectionString = ConfigurationManager.ConnectionStrings["RegisterForm.Properties.Settings.Setting"].ConnectionString;
+                    using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+                    {
+                        using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
+                        {
+                            sqlConnection.Open();
+                            sqlCommand.ExecuteNonQuery();
+
+                            MessageBox.Show("Information added", "Added", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            textName.Text = "";
+                            textUserName.Text = "";
+                            textRegion.Text = "";
+                            textTelb.Text = "";
+                            combJob.SelectedIndex = 0;
+                        }
                     }
                 }
-            }
-            catch (Exception ex)
-            {
+                catch (Exception ex)
+                {
 
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
-            
+
+            }
 
         }
 
@@ -107,6 +111,13 @@ namespace RegisterForm
         {
             Form3 form3 = new Form3();
             form3.ShowDialog();
+        }
+
+        private void deleteUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DeleteForm deleteForm = new DeleteForm();
+            RefreshConnection.deleteForm = deleteForm;
+            deleteForm.ShowDialog();
         }
     }
 }

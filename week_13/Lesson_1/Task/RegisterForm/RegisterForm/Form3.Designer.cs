@@ -36,6 +36,7 @@ namespace RegisterForm
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(25, 109);
             this.dataGridView1.Name = "dataGridView1";
@@ -50,7 +51,7 @@ namespace RegisterForm
             this.label1.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(473, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(223, 60);
+            this.label1.Size = new System.Drawing.Size(218, 59);
             this.label1.TabIndex = 1;
             this.label1.Text = "CopyUser";
             // 

@@ -40,10 +40,10 @@ namespace RegisterForm
             this.textTel = new System.Windows.Forms.Label();
             this.textTelb = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.listUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -151,21 +151,13 @@ namespace RegisterForm
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(3, 483);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(1132, 104);
-            this.listBox1.TabIndex = 11;
-            // 
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.listUserToolStripMenuItem,
-            this.copyUserToolStripMenuItem});
+            this.copyUserToolStripMenuItem,
+            this.deleteUserToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1132, 28);
@@ -186,12 +178,18 @@ namespace RegisterForm
             this.copyUserToolStripMenuItem.Text = "CopyUser";
             this.copyUserToolStripMenuItem.Click += new System.EventHandler(this.copyUserToolStripMenuItem_Click);
             // 
+            // deleteUserToolStripMenuItem
+            // 
+            this.deleteUserToolStripMenuItem.Name = "deleteUserToolStripMenuItem";
+            this.deleteUserToolStripMenuItem.Size = new System.Drawing.Size(100, 24);
+            this.deleteUserToolStripMenuItem.Text = "Delete User";
+            this.deleteUserToolStripMenuItem.Click += new System.EventHandler(this.deleteUserToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1132, 576);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.textTel);
             this.Controls.Add(this.textTelb);
@@ -228,10 +226,10 @@ namespace RegisterForm
         private System.Windows.Forms.Label textTel;
         private System.Windows.Forms.TextBox textTelb;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem listUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem copyUserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteUserToolStripMenuItem;
     }
 }
 
