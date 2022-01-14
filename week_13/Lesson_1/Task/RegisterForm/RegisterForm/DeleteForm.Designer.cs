@@ -70,6 +70,7 @@ namespace RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(1034, 301);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);

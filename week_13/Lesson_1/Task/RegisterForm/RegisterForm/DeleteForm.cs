@@ -49,7 +49,7 @@ namespace RegisterForm
                         sqlCommand.ExecuteNonQuery();
 
                         MessageBox.Show("Information delete", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        
+                        RefresDeleteForm();
                     }
                 }
 

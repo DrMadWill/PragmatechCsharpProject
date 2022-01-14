@@ -116,7 +116,6 @@ namespace RegisterForm
         private void deleteUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DeleteForm deleteForm = new DeleteForm();
-            RefreshConnection.deleteForm = deleteForm;
             deleteForm.ShowDialog();
         }
     }

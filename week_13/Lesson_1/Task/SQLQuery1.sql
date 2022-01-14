@@ -45,3 +45,15 @@ Insert into Register.dbo.[User](Name,UserName,Tel,Region,JobId)
 values(@Name,@UserName,@Tel,@Region,(select y.Id from dbo.Job y where y.Name=@Job))
 
 
+Create Function FUNC_MyConcat(@UserName nvarchar(60),@Name nvarchar(60))
+Returns nvarchar(100)
+As
+Begin
+Declare @Resault nvarchar(100)
+Set @Resault = @UserName+' '+ LEFT(@Name,39) 
+return @Resault
+End
+
+select dbo.FUNC_MyConcat('Salam',' dele')
+
+select Id,dbo.FUNC_MyConcat(UserName,Name) as 'SearchName' from  dbo.[User]

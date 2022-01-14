@@ -189,6 +189,7 @@ namespace RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1132, 576);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.textTel);
