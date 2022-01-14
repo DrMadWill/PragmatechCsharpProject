@@ -93,7 +93,7 @@
     - `Developer-File` sayəsində kodlarda istifadə edə biləcəyimiz uyğun **file name** əldə edə bilərik.
     - `DataBases`-dən istifadə edilməyib.
 
-## Register App<a href="https://www.facebook.com/nofel.salahov.5/videos/360212728992193"  >  <img src="/DrMadWill/PragmatechCsharpProject/blob/main/Z_Img/RegisterForm.png?raw=true"  width="180"  align="right"  ></a>
+## Register App<a href="https://www.facebook.com/nofel.salahov.5/videos/360212728992193"  >  <img src="https://i.postimg.cc/HWJHSmJ7/Register-Form.png"  width="180"  align="right"  ></a>
 > Sadə bir register formdur.İlk pəncərdə istənən məlumatları yazaraq useri yaradırıq. List User Buttonu vastəsi ilə bütün userlərin datasını görə bilirik. CopyUser DataBesedə yazılan trigger vastəsi ilə `user` tablelına add və delet olunan zaman bu dəşiklik `CopyUser` tableda da öz əksini tapır. Create və Delete etmək mükündür. Bağlantı ADO.Net vasətəsi ilə edilibdir.
  - [Preview](https://www.facebook.com/nofel.salahov.5/videos/360212728992193)
  - [Code Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_13/Lesson_1/Task)
