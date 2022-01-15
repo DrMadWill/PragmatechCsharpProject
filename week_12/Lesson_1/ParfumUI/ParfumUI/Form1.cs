@@ -51,7 +51,7 @@ namespace ParfumUI
         private void parfumToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Parfum_Function parfum_Function = new Parfum_Function();
-            parfum_Function.parfums = parfum_Function;
+            RefresData.parfum_Function = parfum_Function;
             parfum_Function.ShowDialog();
         }
 

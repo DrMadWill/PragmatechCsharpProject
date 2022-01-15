@@ -14,9 +14,7 @@ namespace ParfumUI
 {
     public partial class BrendAdd : Form
     {
-        public ParfumAdd parfumAdd;
-        public ParfumeUpdate parfumeUpdate;
-        private bool isParfumAdd=false;
+        private bool isParfumAdd=true;
         public BrendAdd(bool isAdd)
         {
             InitializeComponent();
@@ -42,14 +40,15 @@ namespace ParfumUI
                     if (isParfumAdd)
                     {
                         // Added Combo Box Change
-                        parfumAdd.ChangeBrend();
+                        RefresData.parfumAdd.ChangeBrend();
 
                     }
                     else
                     {
                         // Update Combo Box Change
-                        parfumeUpdate.ChangeBrend();
+                        RefresData.parfumeUpdate.ChangeBrend();
                     }
+
 
 
 

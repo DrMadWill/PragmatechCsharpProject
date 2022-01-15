@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ParfumUI.Parfum.Load;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -14,7 +15,6 @@ namespace ParfumUI
 {
     public partial class DeleteParfum : Form
     {
-        public Parfum_Function parfums;
         private Dictionary<string, int> ParfumNameToID;
         string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
 
@@ -28,31 +28,15 @@ namespace ParfumUI
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
-                string command = "select * from SearchHead";
-                using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
-                {
-                    sqlConnection.Open();
-                    using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
-                    {
-                        while (sqlDataReader.Read())
-                        {
-                            // Parfum Load
-                            combSearchName.Items.Add(sqlDataReader[1].ToString().Trim());
-                            ParfumNameToID.Add(sqlDataReader[1].ToString().Trim(), Convert.ToInt32(sqlDataReader[0]));
-                        }
-
-
-                    }
-                }
+                LoadParfumItems.LoadSearchName(sqlConnection, true, combSearchName, ParfumNameToID);
             }
 
-            combSearchName.DropDownStyle = ComboBoxStyle.DropDownList;
-            combSearchName.SelectedIndex = 0;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            DialogResult result = MessageBox.Show("Are you  sure delete?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
 
@@ -67,11 +51,11 @@ namespace ParfumUI
                         // Delete DataBases
                         sqlCommand.ExecuteNonQuery();
 
-                        MessageBox.Show("Information updated", "Update", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Information deleted", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        LoadParfumItems.LoadSearchName(sqlConnection, false, combSearchName, ParfumNameToID);
 
                         // Change DataGridVeiw
-                        parfums.ChangeParfum();
-
+                        RefresData.parfum_Function.ChangeParfum();
 
                     }
                 }

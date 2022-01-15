@@ -83,28 +83,30 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="All.cs">
+    <Compile Include="Parfum\Load\LoadParfumItems.cs" />
+    <Compile Include="RefresData.cs" />
+    <Compile Include="SalePrice\All.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="All.Designer.cs">
+    <Compile Include="SalePrice\All.Designer.cs">
       <DependentUpon>All.cs</DependentUpon>
     </Compile>
-    <Compile Include="BrendAdd.cs">
+    <Compile Include="Parfum\BrendAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BrendAdd.Designer.cs">
+    <Compile Include="Parfum\BrendAdd.Designer.cs">
       <DependentUpon>BrendAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="DeleteParfum.cs">
+    <Compile Include="Parfum\DeleteParfum.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DeleteParfum.Designer.cs">
+    <Compile Include="Parfum\DeleteParfum.Designer.cs">
       <DependentUpon>DeleteParfum.cs</DependentUpon>
     </Compile>
-    <Compile Include="Female.cs">
+    <Compile Include="SalePrice\Female.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Female.Designer.cs">
+    <Compile Include="SalePrice\Female.Designer.cs">
       <DependentUpon>Female.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
@@ -113,16 +115,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Male.cs">
+    <Compile Include="SalePrice\Male.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Male.Designer.cs">
+    <Compile Include="SalePrice\Male.Designer.cs">
       <DependentUpon>Male.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewParfum.cs">
+    <Compile Include="SalePrice\NewParfum.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewParfum.Designer.cs">
+    <Compile Include="SalePrice\NewParfum.Designer.cs">
       <DependentUpon>NewParfum.cs</DependentUpon>
     </Compile>
     <Compile Include="Parfum Function.cs">
@@ -131,16 +133,16 @@
     <Compile Include="Parfum Function.Designer.cs">
       <DependentUpon>Parfum Function.cs</DependentUpon>
     </Compile>
-    <Compile Include="ParfumAdd.cs">
+    <Compile Include="Parfum\ParfumAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ParfumAdd.Designer.cs">
+    <Compile Include="Parfum\ParfumAdd.Designer.cs">
       <DependentUpon>ParfumAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="ParfumeUpdate.cs">
+    <Compile Include="Parfum\ParfumeUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ParfumeUpdate.Designer.cs">
+    <Compile Include="Parfum\ParfumeUpdate.Designer.cs">
       <DependentUpon>ParfumeUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -151,40 +153,40 @@
     <Compile Include="SalePrice.Designer.cs">
       <DependentUpon>SalePrice.cs</DependentUpon>
     </Compile>
-    <Compile Include="Special.cs">
+    <Compile Include="SalePrice\Special.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Special.Designer.cs">
+    <Compile Include="SalePrice\Special.Designer.cs">
       <DependentUpon>Special.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="All.resx">
+    <EmbeddedResource Include="SalePrice\All.resx">
       <DependentUpon>All.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BrendAdd.resx">
+    <EmbeddedResource Include="Parfum\BrendAdd.resx">
       <DependentUpon>BrendAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DeleteParfum.resx">
+    <EmbeddedResource Include="Parfum\DeleteParfum.resx">
       <DependentUpon>DeleteParfum.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Female.resx">
+    <EmbeddedResource Include="SalePrice\Female.resx">
       <DependentUpon>Female.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Male.resx">
+    <EmbeddedResource Include="SalePrice\Male.resx">
       <DependentUpon>Male.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewParfum.resx">
+    <EmbeddedResource Include="SalePrice\NewParfum.resx">
       <DependentUpon>NewParfum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Parfum Function.resx">
       <DependentUpon>Parfum Function.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ParfumAdd.resx">
+    <EmbeddedResource Include="Parfum\ParfumAdd.resx">
       <DependentUpon>ParfumAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ParfumeUpdate.resx">
+    <EmbeddedResource Include="Parfum\ParfumeUpdate.resx">
       <DependentUpon>ParfumeUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -199,7 +201,7 @@
     <EmbeddedResource Include="SalePrice.resx">
       <DependentUpon>SalePrice.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Special.resx">
+    <EmbeddedResource Include="SalePrice\Special.resx">
       <DependentUpon>Special.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

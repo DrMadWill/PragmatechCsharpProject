@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ParfumUI.Parfum.Load;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -14,63 +15,31 @@ namespace ParfumUI
 {
     public partial class ParfumAdd : Form
     {
+        private Dictionary<string, int> BrendId;
+        private Dictionary<string, int> GenderId;
+        private Dictionary<string, int> DensityId;
 
-        public  ParfumAdd parfumAdd_Location;
-        public Parfum_Function parfums;
         public ParfumAdd()
         {
             InitializeComponent();
+            BrendId = new Dictionary<string, int>();
+            GenderId = new Dictionary<string, int>();
+            DensityId = new Dictionary<string, int>();
         }
         string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
         private void ParfumAdd_Load(object sender, EventArgs e)
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
-                string commandBrend = "select Name from Brend";
-                string commandDensity = "select Name from Density";
-                string commandGender = "select Name from Gender";
-                using (SqlCommand sqlCommand = new SqlCommand(commandBrend, sqlConnection))
-                {
-                    sqlConnection.Open();
-                    using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
-                    {
-                        while (sqlDataReader.Read())
-                        {
-                            combBrend.Items.Add(sqlDataReader[0].ToString().Trim()) ;
-                        }
-                    }
-                }
-                using (SqlCommand sqlCommand = new SqlCommand(commandDensity, sqlConnection))
-                {
-                    
-                    using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
-                    {
-                        while (sqlDataReader.Read())
-                        {
-                            combDensity.Items.Add(sqlDataReader[0].ToString().Trim());
-                        }
-                    }
-                }
-                using (SqlCommand sqlCommand = new SqlCommand(commandGender, sqlConnection))
-                {
-    
-                    using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
-                    {
-                        while (sqlDataReader.Read())
-                        {
-                            combGender.Items.Add(sqlDataReader[0].ToString().Trim()) ;
-                        }
-                    }
-                }
+                // Load Parfum Items
+                LoadParfumItems.LoadBrend(sqlConnection, true, combBrend, BrendId);
+                LoadParfumItems.LoadDensity(sqlConnection, false, combDensity, DensityId);
+                LoadParfumItems.LoadGender(sqlConnection, false, combGender, GenderId);
+
+                
             }
-
-            combBrend.DropDownStyle = ComboBoxStyle.DropDownList;
             combBrend.SelectedIndex = 0;
-
-            combDensity.DropDownStyle = ComboBoxStyle.DropDownList;
             combDensity.SelectedIndex = 0;
-
-            combGender.DropDownStyle = ComboBoxStyle.DropDownList;
             combGender.SelectedIndex = 0;
 
 
@@ -101,7 +70,7 @@ namespace ParfumUI
                         MessageBox.Show("Information added", "Add", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                         // Change DataGridView
-                        parfums.ChangeParfum();
+                        RefresData.parfum_Function.ChangeParfum();
                     }
                 }
             }
@@ -114,8 +83,9 @@ namespace ParfumUI
 
         private void button4_Click_1(object sender, EventArgs e)
         {
+            // Brend Add Panel Show
             BrendAdd brend = new BrendAdd(true);
-            brend.parfumAdd = parfumAdd_Location;
+            RefresData.brendAdd = brend;
             brend.ShowDialog();
         }
 
@@ -123,19 +93,8 @@ namespace ParfumUI
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
-                string commandBrend = "select Name from Brend";
-                using (SqlCommand sqlCommand = new SqlCommand(commandBrend, sqlConnection))
-                {
-                    sqlConnection.Open();
-                    using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
-                    {
-                        while (sqlDataReader.Read())
-                        {
-                            combBrend.Items.Add(sqlDataReader[0].ToString().Trim());
-                        }
-                    }
-                }
-
+                // Refres Brend 
+                LoadParfumItems.LoadBrend(sqlConnection, true, combBrend, BrendId);
                 combBrend.SelectedIndex = 0;
             }
         }

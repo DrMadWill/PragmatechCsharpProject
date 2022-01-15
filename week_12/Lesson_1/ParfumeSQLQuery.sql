@@ -314,14 +314,14 @@
 
 
 
-select Parfum.Id 'Id',Parfum.Name 'Name',Brend.Name 'Brend ',Catogory.Name 'Catogory'
-from CatogoryToParfumSeals
-Join ParfumeToPrice on CatogoryToParfumSeals.ParfumeToPriceId=ParfumeToPrice.Id
-Join Parfum on ParfumeToPrice.ParfumId=Parfum.Id
-Join Brend on Parfum.BrendID=Brend.Id
-Join Density on Parfum.DensityId=Density.Id
-Join SealsPrice on ParfumeToPrice.SealsPriceId=SealsPrice.Id
-Join SizeML on SealsPrice.SizeMLId = SizeML.Id
-Join Catogory on CatogoryToParfumSeals.CatogoryId = Catogory.Id
+--select Parfum.Id 'Id',Parfum.Name 'Name',Brend.Name 'Brend ',Catogory.Name 'Catogory'
+--from CatogoryToParfumSeals
+--Join ParfumeToPrice on CatogoryToParfumSeals.ParfumeToPriceId=ParfumeToPrice.Id
+--Join Parfum on ParfumeToPrice.ParfumId=Parfum.Id
+--Join Brend on Parfum.BrendID=Brend.Id
+--Join Density on Parfum.DensityId=Density.Id
+--Join SealsPrice on ParfumeToPrice.SealsPriceId=SealsPrice.Id
+--Join SizeML on SealsPrice.SizeMLId = SizeML.Id
+--Join Catogory on CatogoryToParfumSeals.CatogoryId = Catogory.Id
 
 

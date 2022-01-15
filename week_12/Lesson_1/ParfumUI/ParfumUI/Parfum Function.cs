@@ -15,7 +15,6 @@ namespace ParfumUI
     public partial class Parfum_Function : Form
     {
 
-        public Parfum_Function parfums;
         public Parfum_Function()
         {
             InitializeComponent();
@@ -34,16 +33,14 @@ namespace ParfumUI
         private void button3_Click(object sender, EventArgs e)
         {
             ParfumAdd parfumAdd = new ParfumAdd();
-            parfumAdd.parfumAdd_Location = parfumAdd;
-            parfumAdd.parfums = parfums;
+            RefresData.parfumAdd = parfumAdd;
             parfumAdd.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             ParfumeUpdate parfumeUpdate = new ParfumeUpdate();
-            parfumeUpdate.parfums = parfums;
-            parfumeUpdate.ParfumeUpdate_Location = parfumeUpdate;
+            RefresData.parfumeUpdate = parfumeUpdate;
             parfumeUpdate.ShowDialog();
         }
 
@@ -65,7 +62,6 @@ namespace ParfumUI
         private void button2_Click(object sender, EventArgs e)
         {
             DeleteParfum deleteParfum = new DeleteParfum();
-            deleteParfum.parfums = parfums;
             deleteParfum.ShowDialog();
         }
     }
