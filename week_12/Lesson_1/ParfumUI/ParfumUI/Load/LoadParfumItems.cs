@@ -45,9 +45,32 @@ namespace ParfumUI.Parfum.Load
                 }
                 combBrend.DropDownStyle = ComboBoxStyle.DropDownList;
 
+            }
+        }
+
+        public static void LoadBrend(SqlConnection sqlConnection, bool isConnectionOpen, ComboBox combBrend)
+        {
+            string commandBrend = "select Name from Brend group by (Name)";
+            using (SqlCommand sqlCommand = new SqlCommand(commandBrend, sqlConnection))
+            {
+                // Connection Open Candition
+                ConnectionCadditon(sqlConnection, isConnectionOpen);
+
+                // Clear Item
+                combBrend.Items.Clear();
+                using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                {
+
+                    while (sqlDataReader.Read())
+                    {
+                        combBrend.Items.Add(sqlDataReader[0].ToString().Trim());
+                    }
+                }
+                combBrend.DropDownStyle = ComboBoxStyle.DropDownList;
 
             }
         }
+
 
 
         public static void LoadDensity(SqlConnection sqlConnection, bool isConnectionOpen, ComboBox combDensity, Dictionary<string, int> DensityId)
@@ -76,6 +99,28 @@ namespace ParfumUI.Parfum.Load
             }
         }
 
+        public static void LoadDensity(SqlConnection sqlConnection, bool isConnectionOpen, ComboBox combDensity)
+        {
+            string commandDensity = "select Name from Density";
+            using (SqlCommand sqlCommand = new SqlCommand(commandDensity, sqlConnection))
+            {
+                // Connection Open Candition
+                ConnectionCadditon(sqlConnection, isConnectionOpen);
+
+                // Data Clear
+                combDensity.Items.Clear();
+                using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                {
+                    while (sqlDataReader.Read())
+                    {
+                        combDensity.Items.Add(sqlDataReader[0].ToString().Trim());
+                    }
+                }
+                combDensity.DropDownStyle = ComboBoxStyle.DropDownList;
+
+            }
+        }
+
 
         public static void LoadGender(SqlConnection sqlConnection, bool isConnectionOpen, ComboBox combGender, Dictionary<string, int> GenderId)
         {
@@ -96,6 +141,28 @@ namespace ParfumUI.Parfum.Load
                         combGender.Items.Add(sqlDataReader[0].ToString().Trim());
                         GenderId.Add(sqlDataReader[0].ToString().Trim(), selectIndex);
                         ++selectIndex;
+                    }
+                }
+            }
+            combGender.DropDownStyle = ComboBoxStyle.DropDownList;
+
+        }
+
+        public static void LoadGender(SqlConnection sqlConnection, bool isConnectionOpen, ComboBox combGender)
+        {
+            string commandGender = "select Name from Gender";
+            using (SqlCommand sqlCommand = new SqlCommand(commandGender, sqlConnection))
+            {
+                // Connection Open Candition
+                ConnectionCadditon(sqlConnection, isConnectionOpen);
+
+                // Data Clear
+                combGender.Items.Clear();
+                using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                {
+                    while (sqlDataReader.Read())
+                    {
+                        combGender.Items.Add(sqlDataReader[0].ToString().Trim());
                     }
                 }
             }
@@ -152,6 +219,49 @@ namespace ParfumUI.Parfum.Load
                 combSize.SelectedIndex = 0;
             }
         }
+
+        public static DataTable LoadSalePrice(SqlConnection sqlConnection, bool isConnectOpen, int Id)
+        {
+            string commad = "EXECUTE usp_SelectIdSalePirce " + Id;
+            //Connect Open
+            ConnectionCadditon(sqlConnection, isConnectOpen);
+
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(commad, sqlConnection);
+            DataTable dataTable = new DataTable();
+            sqlDataAdapter.Fill(dataTable);
+            return dataTable;
+        }
+
+        public static void LoadSalePrice(SqlConnection sqlConnection, bool isConnectOpen,ComboBox salePrice,int Id, Dictionary<string, int> SalePriceId)
+        {
+            string commad = "select * from DeleteSalePirceUI y where y.ParfumId=" + Id;
+            using (SqlCommand sqlCommand = new SqlCommand(commad, sqlConnection))
+            {
+                //Connect Open
+                ConnectionCadditon(sqlConnection, isConnectOpen);
+
+                // Data Clear
+                salePrice.Items.Clear();
+                SalePriceId.Clear();
+                using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                {
+                    StringBuilder stringBuilder = new StringBuilder();
+                    stringBuilder.Clear();
+                    while (sqlDataReader.Read())
+                    {
+                        stringBuilder.Append(sqlDataReader[1].ToString().Trim() + "ML / " + sqlDataReader[2].ToString().Trim() + "AZN / " + sqlDataReader[3].ToString().Trim());
+                        salePrice.Items.Add(stringBuilder.ToString());
+                        SalePriceId.Add(stringBuilder.ToString(),Convert.ToInt32(sqlDataReader[0]));
+                        stringBuilder.Clear();
+                        
+                    }
+                }
+
+                salePrice.DropDownStyle = ComboBoxStyle.DropDownList;
+                salePrice.SelectedIndex = 0;
+            }
+        }
+
 
         public static void ConnectionCadditon(SqlConnection sqlConnection, bool isConnectionOpen)
         {

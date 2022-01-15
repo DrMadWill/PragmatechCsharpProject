@@ -148,10 +148,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SalePrice.cs">
+    <Compile Include="SalePriceFolder\DeleteSalePrice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SalePrice.Designer.cs">
+    <Compile Include="SalePriceFolder\DeleteSalePrice.Designer.cs">
+      <DependentUpon>DeleteSalePrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalePriceFolder\SalePrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalePriceFolder\SalePrice.Designer.cs">
       <DependentUpon>SalePrice.cs</DependentUpon>
     </Compile>
     <Compile Include="CatogoryView\Special.cs">
@@ -199,7 +205,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SalePrice.resx">
+    <EmbeddedResource Include="SalePriceFolder\DeleteSalePrice.resx">
+      <DependentUpon>DeleteSalePrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalePriceFolder\SalePrice.resx">
       <DependentUpon>SalePrice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CatogoryView\Special.resx">
@@ -231,5 +240,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

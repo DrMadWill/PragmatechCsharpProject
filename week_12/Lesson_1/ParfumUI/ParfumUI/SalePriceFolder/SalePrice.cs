@@ -56,7 +56,7 @@ namespace ParfumUI
                     SalePriceSave(sqlConnection,Id,size,price,number);
 
                     // Refres datagridwiev
-                    dataGridView1.DataSource = SelectedChangeSalePrice(sqlConnection, false, Id);
+                    dataGridView1.DataSource = LoadParfumItems.LoadSalePrice(sqlConnection, true, Id);
                 }
 
                 
@@ -102,23 +102,12 @@ namespace ParfumUI
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 int Id = ParfumNameToID[combSearchName.SelectedItem.ToString().Trim()];
-                dataGridView1.DataSource = SelectedChangeSalePrice(sqlConnection,true,Id);
+                dataGridView1.DataSource = LoadParfumItems.LoadSalePrice(sqlConnection,true,Id);
             }
 
 
         }
 
-        private DataTable SelectedChangeSalePrice(SqlConnection sqlConnection,bool isConnectOpen, int Id)
-        {
-            string commad = "EXECUTE usp_SelectIdSalePirce " + Id;
-            //Connect Open
-            if(isConnectOpen)
-                sqlConnection.Open();
-
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(commad, sqlConnection);
-            DataTable dataTable = new DataTable();
-            sqlDataAdapter.Fill(dataTable);
-            return dataTable;
-        }
+        
     }
 }

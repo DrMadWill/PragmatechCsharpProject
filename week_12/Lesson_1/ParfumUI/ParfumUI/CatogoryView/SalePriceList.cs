@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ParfumUI.SalePriceFolder;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -21,17 +22,7 @@ namespace ParfumUI
 
         private void All_Load(object sender, EventArgs e)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
-
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
-            {
-                string command = "select * from FullDetailParfum";
-                sqlConnection.Open();
-                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(command, sqlConnection);
-                DataTable dataTable = new DataTable();
-                sqlDataAdapter.Fill(dataTable);
-                dataGridView1.DataSource = dataTable;
-            }
+            ChangeData();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -43,7 +34,23 @@ namespace ParfumUI
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            DeleteSalePrice deleteSalePrice = new DeleteSalePrice();
+            deleteSalePrice.ShowDialog();
+        }
 
+        public void ChangeData()
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
+
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            {
+                string command = "select * from FullDetailParfum";
+                sqlConnection.Open();
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(command, sqlConnection);
+                DataTable dataTable = new DataTable();
+                sqlDataAdapter.Fill(dataTable);
+                dataGridView1.DataSource = dataTable;
+            }
         }
     }
 }

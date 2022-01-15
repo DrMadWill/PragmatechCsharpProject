@@ -32,9 +32,9 @@ namespace ParfumUI
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 // Load Parfum Items
-                LoadParfumItems.LoadBrend(sqlConnection, true, combBrend, BrendId);
-                LoadParfumItems.LoadDensity(sqlConnection, false, combDensity, DensityId);
-                LoadParfumItems.LoadGender(sqlConnection, false, combGender, GenderId);
+                LoadParfumItems.LoadBrend(sqlConnection, true, combBrend);
+                LoadParfumItems.LoadDensity(sqlConnection, false, combDensity);
+                LoadParfumItems.LoadGender(sqlConnection, false, combGender);
 
                 
             }
@@ -96,7 +96,7 @@ namespace ParfumUI
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 // Refres Brend 
-                LoadParfumItems.LoadBrend(sqlConnection, true, combBrend, BrendId);
+                LoadParfumItems.LoadBrend(sqlConnection, true, combBrend);
                 combBrend.SelectedIndex = 0;
             }
         }
