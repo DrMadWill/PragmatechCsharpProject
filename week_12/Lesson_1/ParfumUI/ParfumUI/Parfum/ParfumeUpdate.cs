@@ -64,30 +64,36 @@ namespace ParfumUI
                 string gender = combGender.SelectedItem.ToString().Trim();
                 string density = combDensity.SelectedItem.ToString().Trim();
 
-                string command = $"EXECUTE usp_UpdateParfum @Id={Id},@Name = '{name}',@Image='{image}',@Descriptio = '{decrip}',@Brend = '{brend}', @Gender = '{gender}',@Density ='{density}'";
                 using (SqlConnection sqlConnection = new SqlConnection(connectionString))
                 {
-                    using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
-                    {
-                        sqlConnection.Open();
+                    // Updated Parfum
+                    Parfum.Parfum.UpdateParfum(Id, name, image, decrip, brend, gender, density, sqlConnection);
 
-                        // Change DataBases
-                        sqlCommand.ExecuteNonQuery();
+                    // Change DataGridVeiw
+                    RefresData.parfum_Function.ChangeParfum();
 
-                        MessageBox.Show("Information updated", "Update", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                        // Change DataGridVeiw
-                        RefresData.parfum_Function.ChangeParfum();
-
-
-
-                    }
-                    int indexs = combSearchName.SelectedIndex;
+                    // Brend Refres
+                    int id = ParfumNameToID[combSearchName.SelectedItem.ToString().Trim()];
                     LoadParfumItems.LoadSearchName(sqlConnection, false, combSearchName, ParfumNameToID);
-                    combSearchName.SelectedIndex = indexs;
+                    combSearchName.SelectedItem = SearchName(id);
+
                 }
 
             }
+        }
+
+        private string SearchName(int id)
+        {
+            string serchname = "";
+            foreach (var item in ParfumNameToID)
+            {
+                if (item.Value == id)
+                {
+                    serchname = item.Key;
+                    break;
+                }
+            }
+            return serchname;
         }
 
         private void combSearchName_SelectedIndexChanged(object sender, EventArgs e)

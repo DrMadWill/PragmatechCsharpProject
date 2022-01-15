@@ -48,6 +48,8 @@ namespace ParfumUI
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            // Save Click
             DialogResult result = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
@@ -58,21 +60,21 @@ namespace ParfumUI
                 string gender = combGender.SelectedItem.ToString().Trim();
                 string density = combDensity.SelectedItem.ToString().Trim();
 
-                string command = $"EXECUTE usp_AddParfum @Name = '{name}',@Image='{image}',@Descriptio = '{decrip}',@Brend = '{brend}', @Gender = '{gender}',@Density ='{density}'";
                 using (SqlConnection sqlConnection = new SqlConnection(connectionString))
                 {
-                    using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
-                    {
-                        sqlConnection.Open();
-                        // Add DataBase
-                        sqlCommand.ExecuteNonQuery();
-
-                        MessageBox.Show("Information added", "Add", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                        // Change DataGridView
-                        RefresData.parfum_Function.ChangeParfum();
-                    }
+                    Parfum.Parfum.CreateParfum(name, image, decrip, brend, gender, density, sqlConnection);
                 }
+
+                // Change DataGridView
+                RefresData.parfum_Function.ChangeParfum();
+
+                // Clear Boxs
+                textName.Text = "";
+                textImage.Text ="";
+                textDescription.Text ="";
+                combBrend.SelectedIndex =0;
+                combGender.SelectedIndex = 0;
+                combDensity.SelectedIndex = 0;
             }
         }
 

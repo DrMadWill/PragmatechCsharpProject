@@ -129,6 +129,30 @@ namespace ParfumUI.Parfum.Load
             }
         }
 
+
+        public static void LoadSize(SqlConnection sqlConnection, bool isConnectionOpen, ComboBox combSize)
+        {
+            string commandSize = "select * from Size";
+            using (SqlCommand sqlCommand = new SqlCommand(commandSize, sqlConnection))
+            {
+                // Connection Open Candition
+                ConnectionCadditon(sqlConnection, isConnectionOpen);
+
+                // Data Clear
+                combSize.Items.Clear();
+                using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                {
+                    while (sqlDataReader.Read())
+                    {
+                        combSize.Items.Add(sqlDataReader[1].ToString().Trim());
+                    }
+                }
+
+                combSize.DropDownStyle = ComboBoxStyle.DropDownList;
+                combSize.SelectedIndex = 0;
+            }
+        }
+
         public static void ConnectionCadditon(SqlConnection sqlConnection, bool isConnectionOpen)
         {
             if (isConnectionOpen)

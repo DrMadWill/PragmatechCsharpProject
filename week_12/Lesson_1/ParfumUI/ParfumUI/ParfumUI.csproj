@@ -83,13 +83,14 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Parfum\Load\LoadParfumItems.cs" />
+    <Compile Include="Load\LoadParfumItems.cs" />
+    <Compile Include="Parfum\Parfum.cs" />
     <Compile Include="RefresData.cs" />
-    <Compile Include="SalePrice\All.cs">
+    <Compile Include="CatogoryView\SalePriceList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SalePrice\All.Designer.cs">
-      <DependentUpon>All.cs</DependentUpon>
+    <Compile Include="CatogoryView\SalePriceList.Designer.cs">
+      <DependentUpon>SalePriceList.cs</DependentUpon>
     </Compile>
     <Compile Include="Parfum\BrendAdd.cs">
       <SubType>Form</SubType>
@@ -103,10 +104,10 @@
     <Compile Include="Parfum\DeleteParfum.Designer.cs">
       <DependentUpon>DeleteParfum.cs</DependentUpon>
     </Compile>
-    <Compile Include="SalePrice\Female.cs">
+    <Compile Include="CatogoryView\Female.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SalePrice\Female.Designer.cs">
+    <Compile Include="CatogoryView\Female.Designer.cs">
       <DependentUpon>Female.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
@@ -115,16 +116,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="SalePrice\Male.cs">
+    <Compile Include="CatogoryView\Male.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SalePrice\Male.Designer.cs">
+    <Compile Include="CatogoryView\Male.Designer.cs">
       <DependentUpon>Male.cs</DependentUpon>
     </Compile>
-    <Compile Include="SalePrice\NewParfum.cs">
+    <Compile Include="CatogoryView\NewParfum.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SalePrice\NewParfum.Designer.cs">
+    <Compile Include="CatogoryView\NewParfum.Designer.cs">
       <DependentUpon>NewParfum.cs</DependentUpon>
     </Compile>
     <Compile Include="Parfum Function.cs">
@@ -153,14 +154,14 @@
     <Compile Include="SalePrice.Designer.cs">
       <DependentUpon>SalePrice.cs</DependentUpon>
     </Compile>
-    <Compile Include="SalePrice\Special.cs">
+    <Compile Include="CatogoryView\Special.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SalePrice\Special.Designer.cs">
+    <Compile Include="CatogoryView\Special.Designer.cs">
       <DependentUpon>Special.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SalePrice\All.resx">
-      <DependentUpon>All.cs</DependentUpon>
+    <EmbeddedResource Include="CatogoryView\SalePriceList.resx">
+      <DependentUpon>SalePriceList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Parfum\BrendAdd.resx">
       <DependentUpon>BrendAdd.cs</DependentUpon>
@@ -168,16 +169,16 @@
     <EmbeddedResource Include="Parfum\DeleteParfum.resx">
       <DependentUpon>DeleteParfum.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SalePrice\Female.resx">
+    <EmbeddedResource Include="CatogoryView\Female.resx">
       <DependentUpon>Female.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SalePrice\Male.resx">
+    <EmbeddedResource Include="CatogoryView\Male.resx">
       <DependentUpon>Male.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SalePrice\NewParfum.resx">
+    <EmbeddedResource Include="CatogoryView\NewParfum.resx">
       <DependentUpon>NewParfum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Parfum Function.resx">
@@ -201,7 +202,7 @@
     <EmbeddedResource Include="SalePrice.resx">
       <DependentUpon>SalePrice.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SalePrice\Special.resx">
+    <EmbeddedResource Include="CatogoryView\Special.resx">
       <DependentUpon>Special.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

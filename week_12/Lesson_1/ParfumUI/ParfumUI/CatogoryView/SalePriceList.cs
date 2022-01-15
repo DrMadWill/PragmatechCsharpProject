@@ -33,5 +33,17 @@ namespace ParfumUI
                 dataGridView1.DataSource = dataTable;
             }
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            SalePrice salePrice = new SalePrice();
+            RefresData.salePrice = salePrice;
+            salePrice.ShowDialog();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

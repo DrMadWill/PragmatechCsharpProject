@@ -36,7 +36,6 @@ namespace ParfumUI
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.parfumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.parfumAddToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -100,8 +99,7 @@ namespace ParfumUI
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.parfumToolStripMenuItem,
-            this.parfumAddToolStripMenuItem});
+            this.parfumToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(867, 28);
@@ -114,13 +112,6 @@ namespace ParfumUI
             this.parfumToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
             this.parfumToolStripMenuItem.Text = "Parfum";
             this.parfumToolStripMenuItem.Click += new System.EventHandler(this.parfumToolStripMenuItem_Click);
-            // 
-            // parfumAddToolStripMenuItem
-            // 
-            this.parfumAddToolStripMenuItem.Name = "parfumAddToolStripMenuItem";
-            this.parfumAddToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
-            this.parfumAddToolStripMenuItem.Text = "Sale Price";
-            this.parfumAddToolStripMenuItem.Click += new System.EventHandler(this.parfumAddToolStripMenuItem_Click);
             // 
             // button1
             // 
@@ -163,7 +154,6 @@ namespace ParfumUI
         private System.Windows.Forms.Button btnEksk;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem parfumAddToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem parfumToolStripMenuItem;
         private System.Windows.Forms.Button button1;
     }

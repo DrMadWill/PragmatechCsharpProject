@@ -41,12 +41,6 @@ namespace ParfumUI
             special.ShowDialog();
         }
 
-        private void parfumAddToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            SalePrice salePrice = new SalePrice();
-            salePrice.salePrice = salePrice;
-            salePrice.ShowDialog();
-        }
 
         private void parfumToolStripMenuItem_Click(object sender, EventArgs e)
         {

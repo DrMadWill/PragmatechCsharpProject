@@ -28,6 +28,7 @@ namespace ParfumUI
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
+                // Load Parum Header
                 LoadParfumItems.LoadSearchName(sqlConnection, true, combSearchName, ParfumNameToID);
             }
 
@@ -41,23 +42,15 @@ namespace ParfumUI
             {
 
                 int Id = ParfumNameToID[combSearchName.SelectedItem.ToString()];
-                string command = $"EXECUTE usp_DeleteParfum "+Id;
                 using (SqlConnection sqlConnection = new SqlConnection(connectionString))
                 {
-                    using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
-                    {
-                        sqlConnection.Open();
+                    Parfum.Parfum.DeleteParfum(Id, sqlConnection);
 
-                        // Delete DataBases
-                        sqlCommand.ExecuteNonQuery();
+                    // Refres Search ComboBox
+                    LoadParfumItems.LoadSearchName(sqlConnection, false, combSearchName, ParfumNameToID);
 
-                        MessageBox.Show("Information deleted", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        LoadParfumItems.LoadSearchName(sqlConnection, false, combSearchName, ParfumNameToID);
-
-                        // Change DataGridVeiw
-                        RefresData.parfum_Function.ChangeParfum();
-
-                    }
+                    // Change DataGridVeiw
+                    RefresData.parfum_Function.ChangeParfum();
                 }
             }
         }
