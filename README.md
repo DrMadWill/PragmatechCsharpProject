@@ -107,6 +107,16 @@
     - SQL Join Use
     - Create and Delete Filde
  
+ ## Student Form App<a href="facebook.com/nofel.salahov.5/videos/429265325451686?notif_id=1642208197613887&notif_t=video_processed&ref=notif"  >  <img src="https://i.postimg.cc/1z5gzKPF/student-form.png"  width="180"  align="right"  ></a>
+> Kurs daxilində işlədilən sadə qeydiyyat appdır.Məqsəd CRUD əməliyyatını sadə yolla həyata keçirmək.ADO.NET Connected və Disconnected Modellərində istifadə etmək.Burada StudentId `unique` dir. 
+- [Preview](facebook.com/nofel.salahov.5/videos/429265325451686?notif_id=1642208197613887&notif_t=video_processed&ref=notif)
+- [Code Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_13/Lesson_2/Lesson_Task/Lesson_Task)
+-  **App** xususiyyətləri
+    - ADO.Net Connected Use
+    - ADO.Net Disconnected Use
+    - CRUD Operation Use
+    - SQL View
+
 ## My DataBase Schemas and Query Code
 - [School](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/MyResearch#school-database-schema) 
     - Schemas

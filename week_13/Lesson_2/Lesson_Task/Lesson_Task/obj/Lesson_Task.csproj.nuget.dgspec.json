@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nofel\\source\\repos\\Lesson_Task\\Lesson_Task\\Lesson_Task.csproj": {}
+    "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsharpProject\\week_13\\Lesson_2\\Lesson_Task\\Lesson_Task\\Lesson_Task.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nofel\\source\\repos\\Lesson_Task\\Lesson_Task\\Lesson_Task.csproj": {
+    "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsharpProject\\week_13\\Lesson_2\\Lesson_Task\\Lesson_Task\\Lesson_Task.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nofel\\source\\repos\\Lesson_Task\\Lesson_Task\\Lesson_Task.csproj",
+        "projectUniqueName": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsharpProject\\week_13\\Lesson_2\\Lesson_Task\\Lesson_Task\\Lesson_Task.csproj",
         "projectName": "Lesson_Task",
-        "projectPath": "C:\\Users\\nofel\\source\\repos\\Lesson_Task\\Lesson_Task\\Lesson_Task.csproj",
+        "projectPath": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsharpProject\\week_13\\Lesson_2\\Lesson_Task\\Lesson_Task\\Lesson_Task.csproj",
         "packagesPath": "C:\\Users\\nofel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nofel\\source\\repos\\Lesson_Task\\Lesson_Task\\obj\\",
+        "outputPath": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsharpProject\\week_13\\Lesson_2\\Lesson_Task\\Lesson_Task\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nofel\\AppData\\Roaming\\NuGet\\NuGet.Config",

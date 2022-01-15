@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "taIMMKFdGMPGg8KwgcXRE4D2WZI6f5GlEfICsqyBGc/+AxaIZwyv7dz8cCDKdt6S2YT7SVPEfNq4nEEzXGO96A==",
+  "dgSpecHash": "Sg6KlaegZy4bk8LyHrJVtb6aVI4DT7gyGFUmSzJ1u9QMfCQznemB+k+mhs8WMK/M6zB+aQ7aDAHPDJOSQ5VlsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nofel\\source\\repos\\Lesson_Task\\Lesson_Task\\Lesson_Task.csproj",
+  "projectFilePath": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsharpProject\\week_13\\Lesson_2\\Lesson_Task\\Lesson_Task\\Lesson_Task.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nofel\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\nofel\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

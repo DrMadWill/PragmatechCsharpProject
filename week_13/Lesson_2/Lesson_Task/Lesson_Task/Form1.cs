@@ -14,6 +14,8 @@ namespace Lesson_Task
 {
     public partial class Form1 : Form
     {
+        string connectionString = ConfigurationManager.ConnectionStrings["Lesson_Task.Properties.Settings.Setting"].ConnectionString;
+
         public Form1()
         {
             InitializeComponent();
@@ -21,13 +23,14 @@ namespace Lesson_Task
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            ChangeData();
 
         }
 
+
         private void btnClear_Click(object sender, EventArgs e)
         {
-            textRull.Text = "";
+            textStudentId.Text = "";
             textStName.Text = "";
             textCourse.Text = "";
             textAge.Text = "";
@@ -35,53 +38,63 @@ namespace Lesson_Task
 
         private void btnSeve_Click(object sender, EventArgs e)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["Lesson_Task.Properties.Settings.Setting"].ConnectionString;
-            int rull = Convert.ToInt32(textRull.Text);
-            string stname = textStName.Text;
-            string coruse = textCourse.Text;
-            int age = Convert.ToInt32(textAge.Text);
-           
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            DialogResult result = MessageBox.Show("Are you sure save?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
             {
 
-                string command = $"Insert into Person(Name,RollNumber,Age,Course)values('{stname}',{rull},{age},'{coruse}')";
-                using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
+
+                int rull = Convert.ToInt32(textStudentId.Text);
+                string stname = textStName.Text;
+                string coruse = textCourse.Text;
+                int age = Convert.ToInt32(textAge.Text);
+
+                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
                 {
-                    sqlConnection.Open();
-                    sqlCommand.ExecuteNonQuery();
-                    MessageBox.Show("Information added", "Added", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    string command = $"Insert into Person(Name,StudentId,Age,Course)values('{stname}',{rull},{age},'{coruse}')";
+                    using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
+                    {
+                        sqlConnection.Open();
+                        sqlCommand.ExecuteNonQuery();
+
+                        MessageBox.Show("Information added", "Added", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        ChangeData();
+                    }
                 }
             }
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-
-            string connectionString = ConfigurationManager.ConnectionStrings["Lesson_Task.Properties.Settings.Setting"].ConnectionString;
-            int rull = Convert.ToInt32(textRull.Text);
-            string stname = textStName.Text;
-            string coruse = textCourse.Text;
-            int age = Convert.ToInt32(textAge.Text);
-
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            DialogResult result = MessageBox.Show("Are you sure update?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
             {
 
-                string command = $"Update Person set Name='{stname}',Course='{coruse}',Age={age} where Person.RollNumber={rull}";
-                using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
+                int rull = Convert.ToInt32(textStudentId.Text);
+                string stname = textStName.Text;
+                string coruse = textCourse.Text;
+                int age = Convert.ToInt32(textAge.Text);
+
+                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
                 {
-                    sqlConnection.Open();
-                    sqlCommand.ExecuteNonQuery();
-                    MessageBox.Show("Information updated", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    string command = $"Update Person set Name='{stname}',Course='{coruse}',Age={age} where Person.StudentId={rull}";
+                    using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
+                    {
+                        sqlConnection.Open();
+                        sqlCommand.ExecuteNonQuery();
+                        MessageBox.Show("Information updated", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        ChangeData();
+                    }
                 }
             }
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["Lesson_Task.Properties.Settings.Setting"].ConnectionString;
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
-                string command = "select * from Person where Person.RollNumber=" + textRull.Text;
+                string command = "select * from Person where Person.StudentId=" + textStudentId.Text;
                 using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
                 {
                     sqlConnection.Open();
@@ -100,18 +113,41 @@ namespace Lesson_Task
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["Lesson_Task.Properties.Settings.Setting"].ConnectionString;
-            int rull = Convert.ToInt32(textRull.Text);
+            DialogResult result = MessageBox.Show("Are you sure delete?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                int rull = Convert.ToInt32(textStudentId.Text);
+                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+                {
+
+                    string command = $"delete Person where StudentId={rull}";
+                    using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
+                    {
+                        sqlConnection.Open();
+                        sqlCommand.ExecuteNonQuery();
+                        MessageBox.Show("Information Deleted", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        ChangeData();
+                    }
+                }
+            }
+        }
+
+
+        private void ChangeData()
+        {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
-
-                string command = $"delete Person where RollNumber={rull}";
-                using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
+                // Sql Commad
+                string commad = "select * from People order by StudentId";
+                using (SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(commad, sqlConnection))
                 {
+                    // SQL Connection Open
                     sqlConnection.Open();
-                    sqlCommand.ExecuteNonQuery();
-                    MessageBox.Show("Information Deleted", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    
+                    DataTable dataTable = new DataTable();
+                    sqlDataAdapter.Fill(dataTable);
+
+                    dataGridView1.DataSource = dataTable;
+
                 }
             }
         }
