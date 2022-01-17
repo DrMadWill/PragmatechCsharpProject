@@ -1,4 +1,5 @@
 ﻿using ParfumUI.Parfum.Load;
+using ParfumUI.SalePriceFolder.Volume;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,14 +17,10 @@ namespace ParfumUI
 {
     public partial class SalePrice : Form
     {
-        private Dictionary<string, int> ParfumNameToID;
-
         public SalePrice()
         {
             InitializeComponent();
-            ParfumNameToID = new Dictionary<string, int>();
         }
-
 
         string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
 
@@ -32,8 +29,7 @@ namespace ParfumUI
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
 
-                LoadParfumItems.LoadSearchName(sqlConnection, true, combSearchName, ParfumNameToID);
-
+                LoadParfumItems.LoadSearchName(sqlConnection, true, combSearchName);
                 LoadParfumItems.LoadSize(sqlConnection, false, combSize);
 
             }
@@ -44,7 +40,7 @@ namespace ParfumUI
             DialogResult result = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
-                int Id = ParfumNameToID[combSearchName.SelectedItem.ToString().Trim()] ;
+                int Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
                 int size = Convert.ToInt32(combSize.SelectedItem.ToString().Trim());
                 int price = Convert.ToInt32(textPrice.Text.Trim());
                 int number = Convert.ToInt32(textNumber.Text.Trim());
@@ -56,7 +52,7 @@ namespace ParfumUI
                     SalePriceSave(sqlConnection,Id,size,price,number);
 
                     // Refres datagridwiev
-                    dataGridView1.DataSource = LoadParfumItems.LoadSalePrice(sqlConnection, true, Id);
+                    dataGridView1.DataSource = LoadParfumItems.LoadSalePriceDataTable(sqlConnection, true, Id);
                 }
 
                 
@@ -64,7 +60,6 @@ namespace ParfumUI
 
             }
         }
-
 
 
         // Sale Price Add
@@ -90,19 +85,18 @@ namespace ParfumUI
         }
 
 
-
-
         private void button4_Click(object sender, EventArgs e)
         {
-
+            VolumeAdd volumeAdd = new VolumeAdd();
+            volumeAdd.ShowDialog();
         }
 
         private void combSearchName_SelectedIndexChanged(object sender, EventArgs e)
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
-                int Id = ParfumNameToID[combSearchName.SelectedItem.ToString().Trim()];
-                dataGridView1.DataSource = LoadParfumItems.LoadSalePrice(sqlConnection,true,Id);
+                int Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
+                dataGridView1.DataSource = LoadParfumItems.LoadSalePriceDataTable(sqlConnection,true,Id);
             }
 
 

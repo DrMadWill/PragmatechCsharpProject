@@ -20,7 +20,7 @@ namespace ParfumUI
 
         string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
 
-        private Dictionary<string, int> ParfumNameToID;
+        
         private Dictionary<string, int> BrendId;
         private Dictionary<string, int> GenderId;
         private Dictionary<string, int> DensityId;
@@ -30,7 +30,7 @@ namespace ParfumUI
         public ParfumeUpdate()
         {
             InitializeComponent();
-            ParfumNameToID = new Dictionary<string, int>();
+            
             BrendId = new Dictionary<string, int>();
             GenderId = new Dictionary<string, int>();
             DensityId = new Dictionary<string, int>();
@@ -43,7 +43,7 @@ namespace ParfumUI
                 LoadParfumItems.LoadBrend(sqlConnection, true, combBrend, BrendId);
                 LoadParfumItems.LoadDensity(sqlConnection, false, combDensity, DensityId);
                 LoadParfumItems.LoadGender(sqlConnection, false, combGender, GenderId);
-                LoadParfumItems.LoadSearchName(sqlConnection, false, combSearchName, ParfumNameToID);
+                LoadParfumItems.LoadSearchNameComIndex(sqlConnection, false, combSearchName);
                 ChangeSearchName(sqlConnection, false);
 
             }
@@ -56,7 +56,7 @@ namespace ParfumUI
             DialogResult result = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
-                int Id = ParfumNameToID[combSearchName.SelectedItem.ToString()];
+                int Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
                 string name = textName.Text.Trim();
                 string image = textImage.Text.Trim();
                 string decrip = textDescription.Text.Trim();
@@ -73,27 +73,27 @@ namespace ParfumUI
                     RefresData.parfum_Function.ChangeParfum();
 
                     // Brend Refres
-                    int id = ParfumNameToID[combSearchName.SelectedItem.ToString().Trim()];
-                    LoadParfumItems.LoadSearchName(sqlConnection, false, combSearchName, ParfumNameToID);
-                    combSearchName.SelectedItem = SearchName(id);
+                    int id = ((ParfumHeader)combSearchName.SelectedItem).Id;
+                    LoadParfumItems.LoadSearchNameComIndex(sqlConnection, false, combSearchName);
+                    combSearchName.SelectedIndex = SearchNameIndex(id);
 
                 }
 
             }
         }
 
-        private string SearchName(int id)
+        private int SearchNameIndex(int id)
         {
-            string serchname = "";
-            foreach (var item in ParfumNameToID)
+            int index=0;
+            foreach (var item in combSearchName.Items)
             {
-                if (item.Value == id)
+                if (((ParfumHeader)item).Id == id)
                 {
-                    serchname = item.Key;
+                     index= ((ParfumHeader)item).ComboIndex;
                     break;
                 }
             }
-            return serchname;
+            return index;
         }
 
         private void combSearchName_SelectedIndexChanged(object sender, EventArgs e)
@@ -117,7 +117,7 @@ namespace ParfumUI
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
-                LoadParfumItems.LoadBrend(sqlConnection, true, combBrend, BrendId);
+                LoadParfumItems.LoadBrend(sqlConnection, true, combBrend);
                 combBrend.SelectedIndex = BrendId[brendName];
 
             }
@@ -126,34 +126,11 @@ namespace ParfumUI
 
         // ----------------------------- Load Section
 
-        public void LoadSearchName(SqlConnection sqlConnection, bool isConnectionOpen)
-        {
-            string commandSearch = "select * from SearchHead";
-            using (SqlCommand sqlCommand = new SqlCommand(commandSearch, sqlConnection))
-            {
-                // Connection Open Candition
-                LoadParfumItems.ConnectionCadditon(sqlConnection, isConnectionOpen);
-
-                // Data Clear
-                combSearchName.Items.Clear();
-                ParfumNameToID.Clear();
-                using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
-                {
-                    while (sqlDataReader.Read())
-                    {
-                        combSearchName.Items.Add(sqlDataReader[1].ToString().Trim());
-                        ParfumNameToID.Add(sqlDataReader[1].ToString().Trim(), Convert.ToInt32(sqlDataReader[0]));
-                    }
-                }
-
-                combSearchName.DropDownStyle = ComboBoxStyle.DropDownList;
-                combSearchName.SelectedIndex = 0;
-            }
-        }
+       
 
         public void ChangeSearchName(SqlConnection sqlConnection, bool isConnectionOpen)
         {
-            int Id = ParfumNameToID[combSearchName.SelectedItem.ToString()];
+            int Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
             string command = "select * from MidDetalParfume where Id = " + Id;
 
             using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))

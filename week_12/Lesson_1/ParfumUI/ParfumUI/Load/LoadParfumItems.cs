@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ParfumUI.SalePriceFolder;
+using ParfumUI.SqlModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -196,6 +198,72 @@ namespace ParfumUI.Parfum.Load
             }
         }
 
+        public static void LoadSearchName(SqlConnection sqlConnection, bool isConnectionOpen, ComboBox combSearchName)
+        {
+            string commandSearch = "select * from SearchHead order by Header";
+            using (SqlCommand sqlCommand = new SqlCommand(commandSearch, sqlConnection))
+            {
+
+                // Connection Open Candition
+                LoadParfumItems.ConnectionCadditon(sqlConnection, isConnectionOpen);
+
+                // Data Clear
+                combSearchName.DataSource = null;
+
+                // Collection Create
+                List<ParfumHeader> parfumHeaders = new List<ParfumHeader>();
+
+                // Collection Clear
+                parfumHeaders.Clear();
+                using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                {
+                    while (sqlDataReader.Read())
+                    {
+                        // Collection add
+                        parfumHeaders.Add(new ParfumHeader(Convert.ToInt32(sqlDataReader[0]), sqlDataReader[1].ToString().Trim()));
+                    }
+                }
+                // Data Add
+                combSearchName.DataSource = parfumHeaders;
+                combSearchName.DropDownStyle = ComboBoxStyle.DropDownList;
+                combSearchName.SelectedIndex = 0;
+            }
+        }
+
+        public static void LoadSearchNameComIndex(SqlConnection sqlConnection, bool isConnectionOpen, ComboBox combSearchName)
+        {
+            string commandSearch = "select * from SearchHead order by Header";
+            using (SqlCommand sqlCommand = new SqlCommand(commandSearch, sqlConnection))
+            {
+                // ComboBox Index
+                int comboxIndex = 0;
+
+                // Connection Open Candition
+                LoadParfumItems.ConnectionCadditon(sqlConnection, isConnectionOpen);
+
+                // Data Clear
+                combSearchName.DataSource = null;
+
+                // Collection Create
+                List<ParfumHeader> parfumHeaders = new List<ParfumHeader>();
+
+                // Collection Clear
+                parfumHeaders.Clear();
+                using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                {
+                    while (sqlDataReader.Read())
+                    {
+                        // Collection add
+                        parfumHeaders.Add(new ParfumHeader(Convert.ToInt32(sqlDataReader[0]), sqlDataReader[1].ToString().Trim(), comboxIndex));
+                    }
+                }
+                // Data Add
+                combSearchName.DataSource = parfumHeaders;
+                combSearchName.DropDownStyle = ComboBoxStyle.DropDownList;
+                combSearchName.SelectedIndex = 0;
+            }
+        }
+
 
         public static void LoadSize(SqlConnection sqlConnection, bool isConnectionOpen, ComboBox combSize)
         {
@@ -220,7 +288,9 @@ namespace ParfumUI.Parfum.Load
             }
         }
 
-        public static DataTable LoadSalePrice(SqlConnection sqlConnection, bool isConnectOpen, int Id)
+
+        // Loead Procedure in SQL Server
+        public static DataTable LoadSalePriceDataTable(SqlConnection sqlConnection, bool isConnectOpen, int Id)
         {
             string commad = "EXECUTE usp_SelectIdSalePirce " + Id;
             //Connect Open
@@ -232,7 +302,9 @@ namespace ParfumUI.Parfum.Load
             return dataTable;
         }
 
-        public static void LoadSalePrice(SqlConnection sqlConnection, bool isConnectOpen,ComboBox salePrice,int Id, Dictionary<string, int> SalePriceId)
+
+        // Loead Sale Price Table in SQL Server
+        public static void LoadSalePrice(SqlConnection sqlConnection, bool isConnectOpen, ComboBox salePrice, int Id)
         {
             string commad = "select * from DeleteSalePirceUI y where y.ParfumId=" + Id;
             using (SqlCommand sqlCommand = new SqlCommand(commad, sqlConnection))
@@ -241,22 +313,22 @@ namespace ParfumUI.Parfum.Load
                 ConnectionCadditon(sqlConnection, isConnectOpen);
 
                 // Data Clear
-                salePrice.Items.Clear();
-                SalePriceId.Clear();
+                salePrice.DataSource = null;
+
+                // Create Collection
+                List<SalePriceData> salePriceSqlDatas = new List<SalePriceData>();
+                salePriceSqlDatas.Clear();
                 using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
                 {
-                    StringBuilder stringBuilder = new StringBuilder();
-                    stringBuilder.Clear();
                     while (sqlDataReader.Read())
                     {
-                        stringBuilder.Append(sqlDataReader[1].ToString().Trim() + "ML / " + sqlDataReader[2].ToString().Trim() + "AZN / " + sqlDataReader[3].ToString().Trim());
-                        salePrice.Items.Add(stringBuilder.ToString());
-                        SalePriceId.Add(stringBuilder.ToString(),Convert.ToInt32(sqlDataReader[0]));
-                        stringBuilder.Clear();
-                        
+
+                        salePriceSqlDatas.Add(
+                            new SalePriceData(Convert.ToInt32(sqlDataReader[0]), Convert.ToInt32(sqlDataReader[1]),
+                            Convert.ToInt32(sqlDataReader[2]), Convert.ToInt32(sqlDataReader[3])));
                     }
                 }
-
+                salePrice.DataSource = salePriceSqlDatas;
                 salePrice.DropDownStyle = ComboBoxStyle.DropDownList;
                 salePrice.SelectedIndex = 0;
             }

@@ -29,7 +29,7 @@ namespace ParfumUI
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 // Load Parum Header
-                LoadParfumItems.LoadSearchName(sqlConnection, true, combSearchName, ParfumNameToID);
+                LoadParfumItems.LoadSearchName(sqlConnection, true, combSearchName);
             }
 
             
@@ -41,13 +41,13 @@ namespace ParfumUI
             if (result == DialogResult.Yes)
             {
 
-                int Id = ParfumNameToID[combSearchName.SelectedItem.ToString()];
+                int Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
                 using (SqlConnection sqlConnection = new SqlConnection(connectionString))
                 {
                     Parfum.Parfum.DeleteParfum(Id, sqlConnection);
 
                     // Refres Search ComboBox
-                    LoadParfumItems.LoadSearchName(sqlConnection, false, combSearchName, ParfumNameToID);
+                    LoadParfumItems.LoadSearchName(sqlConnection, false, combSearchName);
 
                     // Change DataGridVeiw
                     RefresData.parfum_Function.ChangeParfum();

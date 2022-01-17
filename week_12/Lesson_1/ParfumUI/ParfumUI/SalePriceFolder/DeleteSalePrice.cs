@@ -15,23 +15,19 @@ namespace ParfumUI.SalePriceFolder
 {
     public partial class DeleteSalePrice : Form
     {
-        private Dictionary<string, int> ParfumNameToID;
-        private Dictionary<string, int> SalePriceId;
         string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
 
         public DeleteSalePrice()
         {
             InitializeComponent();
-            ParfumNameToID = new Dictionary<string, int>();
-            SalePriceId = new Dictionary<string, int>();
         }
 
         private void combSearchName_SelectedIndexChanged(object sender, EventArgs e)
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
-                int Id = ParfumNameToID[combSearchName.SelectedItem.ToString().Trim()];
-                LoadParfumItems.LoadSalePrice(sqlConnection, true, comb, Id, SalePriceId);
+                int Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
+                LoadParfumItems.LoadSalePrice(sqlConnection, true, comb, Id);
             }
 
         }
@@ -39,7 +35,7 @@ namespace ParfumUI.SalePriceFolder
         private void DeleteSalePrice_Load(object sender, EventArgs e)
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
-                LoadParfumItems.LoadSearchName(sqlConnection, true, combSearchName, ParfumNameToID);
+                LoadParfumItems.LoadSearchName(sqlConnection, true, combSearchName);
 
         }
 
@@ -48,7 +44,8 @@ namespace ParfumUI.SalePriceFolder
             DialogResult result = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
-                int saleId = SalePriceId[comb.SelectedItem.ToString().Trim()];
+
+                int saleId = ((SqlModel.SalePriceData)comb.SelectedItem).Id;
                 string commad = "Delete SalePrice where Id ="+saleId;
                 using (SqlConnection sqlConnection = new SqlConnection(connectionString))
                 {
@@ -57,8 +54,8 @@ namespace ParfumUI.SalePriceFolder
                         sqlConnection.Open();
                         sqlCommand.ExecuteNonQuery();
                         MessageBox.Show("Information deleted", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        int Id = ParfumNameToID[combSearchName.SelectedItem.ToString().Trim()];
-                        LoadParfumItems.LoadSalePrice(sqlConnection, false, comb, Id, SalePriceId);
+                        int Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
+                        LoadParfumItems.LoadSalePrice(sqlConnection, false, comb, Id);
                         RefresData.allUI.ChangeData();
                     }
                 }
