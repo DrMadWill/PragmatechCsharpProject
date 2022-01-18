@@ -17,6 +17,8 @@ namespace ParfumUI
 {
     public partial class SalePrice : Form
     {
+
+        DataTable dataTable;
         public SalePrice()
         {
             InitializeComponent();
@@ -47,17 +49,15 @@ namespace ParfumUI
 
                 using (SqlConnection sqlConnection = new SqlConnection(connectionString))
                 {
-
                     // Parfum to Sale Pirce
                     SalePriceSave(sqlConnection,Id,size,price,number);
 
                     // Refres datagridwiev
                     dataGridView1.DataSource = LoadParfumItems.LoadSalePriceDataTable(sqlConnection, true, Id);
+
+
+                    RefresData.salePriceLists.ChangeData();
                 }
-
-                
-
-
             }
         }
 
@@ -65,6 +65,12 @@ namespace ParfumUI
         // Sale Price Add
         private void SalePriceSave(SqlConnection sqlConnection,int Id,int size,int price,int number)
         {
+            if (!IsAdd(size))
+            {
+                MessageBox.Show("Is Already Added");
+                return;
+            }
+
             string commandMain = $"EXECUTE usp_InsertSalePrice @ParfumId= {Id}, @Size={size} ,@Price={price} ,@Number ={number}";
             using (SqlCommand sqlCommand = new SqlCommand(commandMain, sqlConnection))
             {
@@ -96,12 +102,26 @@ namespace ParfumUI
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 int Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
-                dataGridView1.DataSource = LoadParfumItems.LoadSalePriceDataTable(sqlConnection,true,Id);
+                dataTable= LoadParfumItems.LoadSalePriceDataTable(sqlConnection, true, Id);
+                dataGridView1.DataSource = dataTable;
+            }
+        }
+
+        private bool IsAdd(int size)
+        {
+            bool isAdd = true;
+
+            foreach (DataRow row in dataTable.Rows)
+            {
+                if(Convert.ToInt32(row["Size ML"]) == size)
+                {
+                    isAdd = false;
+                }
             }
 
 
+            return isAdd;
         }
-
         
     }
 }

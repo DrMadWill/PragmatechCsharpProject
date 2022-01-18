@@ -16,6 +16,8 @@ namespace ParfumUI
     {
         string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
 
+        DataTable dataTable=null;
+
         public Parfum_Function()
         {
             InitializeComponent();
@@ -27,10 +29,7 @@ namespace ParfumUI
             ChangeParfum();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -51,15 +50,34 @@ namespace ParfumUI
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
+                dataTable=Parfum.Parfum.ReadParfum(sqlConnection);
+
                 // Parfum Data Load 
-                dataGridView1.DataSource = Parfum.Parfum.ReadParfum(sqlConnection);
+                dataGridView1.DataSource = dataTable;
             }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             DeleteParfum deleteParfum = new DeleteParfum();
             deleteParfum.ShowDialog();
+        }
+
+        public bool IsAdd(string name,string brend)
+        {
+            bool isAdd = true;
+            foreach (DataRow row in dataTable.Rows)
+            {
+                if(row["Name"].ToString().Trim()== name)
+                {
+                    if(row["Brend"].ToString().Trim()== brend)
+                    {
+                        isAdd = false;
+                    }
+                }
+            }
+            return isAdd;
         }
     }
 }

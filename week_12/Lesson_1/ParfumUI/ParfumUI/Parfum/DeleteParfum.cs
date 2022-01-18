@@ -15,13 +15,11 @@ namespace ParfumUI
 {
     public partial class DeleteParfum : Form
     {
-        private Dictionary<string, int> ParfumNameToID;
         string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
 
         public DeleteParfum()
         {
             InitializeComponent();
-            ParfumNameToID = new Dictionary<string, int>();
         }
 
         private void DeleteParfum_Load(object sender, EventArgs e)

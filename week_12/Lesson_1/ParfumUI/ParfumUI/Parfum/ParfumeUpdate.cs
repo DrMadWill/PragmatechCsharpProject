@@ -21,33 +21,27 @@ namespace ParfumUI
         string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
 
         
-        private Dictionary<string, int> BrendId;
-        private Dictionary<string, int> GenderId;
-        private Dictionary<string, int> DensityId;
+        private bool isUpdate;
+
+        int comboIndex =0;
 
         string brendName = "";
 
         public ParfumeUpdate()
         {
             InitializeComponent();
-            
-            BrendId = new Dictionary<string, int>();
-            GenderId = new Dictionary<string, int>();
-            DensityId = new Dictionary<string, int>();
         }
 
         private void ParfumeUpdate_Load(object sender, EventArgs e)
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
-                LoadParfumItems.LoadBrend(sqlConnection, true, combBrend, BrendId);
-                LoadParfumItems.LoadDensity(sqlConnection, false, combDensity, DensityId);
-                LoadParfumItems.LoadGender(sqlConnection, false, combGender, GenderId);
+                LoadParfumItems.LoadBrend(sqlConnection, true, combBrend);
+                LoadParfumItems.LoadDensity(sqlConnection, false, combDensity);
+                LoadParfumItems.LoadGender(sqlConnection, false, combGender);
                 LoadParfumItems.LoadSearchNameComIndex(sqlConnection, false, combSearchName);
                 ChangeSearchName(sqlConnection, false);
-
             }
-
 
         }
 
@@ -73,9 +67,11 @@ namespace ParfumUI
                     RefresData.parfum_Function.ChangeParfum();
 
                     // Brend Refres
-                    int id = ((ParfumHeader)combSearchName.SelectedItem).Id;
+                    comboIndex = ((ParfumHeader)combSearchName.SelectedItem).Id;
+                    isUpdate = true;
                     LoadParfumItems.LoadSearchNameComIndex(sqlConnection, false, combSearchName);
-                    combSearchName.SelectedIndex = SearchNameIndex(id);
+                    //Problem
+                    combSearchName.SelectedIndex = SearchNameIndex(comboIndex);
 
                 }
 
@@ -98,7 +94,13 @@ namespace ParfumUI
 
         private void combSearchName_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+
+            // Problem
+            if (isUpdate)
+            {
+                combSearchName.SelectedIndex = SearchNameIndex(comboIndex);
+                isUpdate = false;
+            }
 
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
@@ -118,7 +120,8 @@ namespace ParfumUI
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 LoadParfumItems.LoadBrend(sqlConnection, true, combBrend);
-                combBrend.SelectedIndex = BrendId[brendName];
+                // New Brend Add .Back To This Parfum Brend Name
+                combBrend.SelectedItem = brendName;
 
             }
         }
@@ -130,6 +133,7 @@ namespace ParfumUI
 
         public void ChangeSearchName(SqlConnection sqlConnection, bool isConnectionOpen)
         {
+
             int Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
             string command = "select * from MidDetalParfume where Id = " + Id;
 
@@ -144,18 +148,21 @@ namespace ParfumUI
                         textName.Text = sqlDataReader[1].ToString().Trim();
                         textImage.Text = sqlDataReader[2].ToString();
                         textDescription.Text = sqlDataReader[3].ToString().Trim();
-                        combBrend.SelectedIndex = BrendId[sqlDataReader[4].ToString().Trim()];
+                        combBrend.SelectedItem = sqlDataReader[4].ToString().Trim();
                         // Brend Name Save
                         brendName = sqlDataReader[4].ToString().Trim();
-                        combGender.SelectedIndex = GenderId[sqlDataReader[5].ToString().Trim()];
-                        combDensity.SelectedIndex = DensityId[sqlDataReader[6].ToString().Trim()];
+                        combGender.SelectedItem = sqlDataReader[5].ToString().Trim();
+                        combDensity.SelectedItem = sqlDataReader[6].ToString().Trim();
                     }
                 }
             }
         }
 
-
         
 
     }
+
+
+
+
 }

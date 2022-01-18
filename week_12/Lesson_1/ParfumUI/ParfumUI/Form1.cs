@@ -51,9 +51,10 @@ namespace ParfumUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            All alls = new All();
-            RefresData.allUI = alls;
-            alls.ShowDialog();
+            CatogoryView.SalePriceLists salePriceLists = new CatogoryView.SalePriceLists();
+            RefresData.salePriceLists = salePriceLists;
+            salePriceLists.ShowDialog();
+
         }
     }
 }

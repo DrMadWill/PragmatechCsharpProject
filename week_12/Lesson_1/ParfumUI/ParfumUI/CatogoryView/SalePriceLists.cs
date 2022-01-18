@@ -11,16 +11,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ParfumUI
+
+namespace ParfumUI.CatogoryView
 {
-    public partial class All : Form
+    public partial class SalePriceLists : Form
     {
-        public All()
+        DataTable dataTable = new DataTable();
+
+        public SalePriceLists()
         {
             InitializeComponent();
         }
 
-        private void All_Load(object sender, EventArgs e)
+        private void SalePriceLists_Load(object sender, EventArgs e)
         {
             ChangeData();
         }
@@ -47,10 +50,39 @@ namespace ParfumUI
                 string command = "select * from FullDetailParfum";
                 sqlConnection.Open();
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(command, sqlConnection);
-                DataTable dataTable = new DataTable();
+
                 sqlDataAdapter.Fill(dataTable);
                 dataGridView1.DataSource = dataTable;
             }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            dataGridViewShearch.Rows.Clear();
+            string name = textSearchName.Text.Trim();
+            List<string> lis = new List<string>();
+            foreach (DataRow row in dataTable.Rows)
+            {
+
+                if (row["Name"].ToString().Trim() == name)
+                {
+                    foreach (DataColumn dataColumn in dataTable.Columns)
+                    {
+                        lis.Add(row[dataColumn].ToString());
+
+                    }
+                    dataGridViewShearch.Rows.Add(lis[0],lis[1],lis[2],lis[3],lis[4],lis[5],lis[6],lis[7], lis[8], lis[9]);
+                    lis.Clear();
+                }
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UpdateSalePrice updateSalePrice = new UpdateSalePrice();
+            RefresData.updateSalePrice = updateSalePrice;
+            updateSalePrice.ShowDialog();
         }
     }
 }

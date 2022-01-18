@@ -83,15 +83,15 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CatogoryView\SalePriceLists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatogoryView\SalePriceLists.Designer.cs">
+      <DependentUpon>SalePriceLists.cs</DependentUpon>
+    </Compile>
     <Compile Include="Load\LoadParfumItems.cs" />
     <Compile Include="Parfum\Parfum.cs" />
     <Compile Include="RefresData.cs" />
-    <Compile Include="CatogoryView\SalePriceList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CatogoryView\SalePriceList.Designer.cs">
-      <DependentUpon>SalePriceList.cs</DependentUpon>
-    </Compile>
     <Compile Include="Parfum\BrendAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,16 +166,23 @@
     <Compile Include="CatogoryView\Special.Designer.cs">
       <DependentUpon>Special.cs</DependentUpon>
     </Compile>
+    <Compile Include="SalePriceFolder\UpdateSalePrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalePriceFolder\UpdateSalePrice.Designer.cs">
+      <DependentUpon>UpdateSalePrice.cs</DependentUpon>
+    </Compile>
     <Compile Include="SalePriceFolder\Volume\VolumeAdd.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SalePriceFolder\Volume\VolumeAdd.Designer.cs">
       <DependentUpon>VolumeAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="SqlModel\BrendData.cs" />
     <Compile Include="SqlModel\ParfumHeader.cs" />
     <Compile Include="SqlModel\SalePriceData.cs" />
-    <EmbeddedResource Include="CatogoryView\SalePriceList.resx">
-      <DependentUpon>SalePriceList.cs</DependentUpon>
+    <EmbeddedResource Include="CatogoryView\SalePriceLists.resx">
+      <DependentUpon>SalePriceLists.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Parfum\BrendAdd.resx">
       <DependentUpon>BrendAdd.cs</DependentUpon>
@@ -221,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CatogoryView\Special.resx">
       <DependentUpon>Special.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalePriceFolder\UpdateSalePrice.resx">
+      <DependentUpon>UpdateSalePrice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SalePriceFolder\Volume\VolumeAdd.resx">
       <DependentUpon>VolumeAdd.cs</DependentUpon>

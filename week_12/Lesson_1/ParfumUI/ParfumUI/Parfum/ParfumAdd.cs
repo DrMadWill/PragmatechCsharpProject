@@ -15,16 +15,11 @@ namespace ParfumUI
 {
     public partial class ParfumAdd : Form
     {
-        private Dictionary<string, int> BrendId;
-        private Dictionary<string, int> GenderId;
-        private Dictionary<string, int> DensityId;
-
+        
         public ParfumAdd()
         {
             InitializeComponent();
-            BrendId = new Dictionary<string, int>();
-            GenderId = new Dictionary<string, int>();
-            DensityId = new Dictionary<string, int>();
+            
         }
         string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
         private void ParfumAdd_Load(object sender, EventArgs e)
@@ -37,6 +32,7 @@ namespace ParfumUI
                 LoadParfumItems.LoadGender(sqlConnection, false, combGender);
 
                 
+
             }
             combBrend.SelectedIndex = 0;
             combDensity.SelectedIndex = 0;
@@ -60,6 +56,14 @@ namespace ParfumUI
                 string gender = combGender.SelectedItem.ToString().Trim();
                 string density = combDensity.SelectedItem.ToString().Trim();
 
+
+                if (!RefresData.parfum_Function.IsAdd(name, brend))
+                {
+                    MessageBox.Show("This is Already Added");
+                    return;
+                }
+
+
                 using (SqlConnection sqlConnection = new SqlConnection(connectionString))
                 {
                     Parfum.Parfum.CreateParfum(name, image, decrip, brend, gender, density, sqlConnection);
@@ -78,10 +82,7 @@ namespace ParfumUI
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void button4_Click_1(object sender, EventArgs e)
         {

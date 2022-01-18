@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ParfumUI.CatogoryView;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,9 +23,10 @@ namespace ParfumUI
         // Sale Price 
         public static SalePrice salePrice;
 
-        // All UI
-        public static All allUI;
 
-            
+        // Sale Price List
+        public static SalePriceLists salePriceLists;
+
+        public static SalePriceFolder.UpdateSalePrice updateSalePrice;
     }
 }

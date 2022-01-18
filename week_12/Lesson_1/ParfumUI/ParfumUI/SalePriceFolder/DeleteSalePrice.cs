@@ -56,7 +56,7 @@ namespace ParfumUI.SalePriceFolder
                         MessageBox.Show("Information deleted", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         int Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
                         LoadParfumItems.LoadSalePrice(sqlConnection, false, comb, Id);
-                        RefresData.allUI.ChangeData();
+                        RefresData.salePriceLists.ChangeData();
                     }
                 }
             }

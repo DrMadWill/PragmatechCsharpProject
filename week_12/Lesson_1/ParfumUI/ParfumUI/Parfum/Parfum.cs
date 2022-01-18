@@ -97,5 +97,27 @@ namespace ParfumUI.Parfum
         }
 
 
+        public static bool IsAdd(SqlConnection sqlConnection, string name,string bend)
+        {
+            bool isAdd = false;
+            string commad = "select * from MidDetalParfume where Name in ('Miss Dior') and Brend in ('asd')";
+            using (SqlCommand sqlCommand = new SqlCommand(commad, sqlConnection))
+            {
+                sqlConnection.Open();
+                using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                {
+                    while (sqlDataReader.Read())
+                    {
+
+                    }
+                }
+            }
+
+
+
+            return isAdd;
+        }
+
+
     }
 }
