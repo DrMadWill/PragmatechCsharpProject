@@ -53,7 +53,7 @@ namespace ParfumUI
                     SalePriceSave(sqlConnection,Id,size,price,number);
 
                     // Refres datagridwiev
-                    dataGridView1.DataSource = LoadParfumItems.LoadSalePriceDataTable(sqlConnection, true, Id);
+                    dataGridView1.DataSource = LoadParfumItems.LoadSalePriceDataTable(sqlConnection, false, Id);
 
 
                     RefresData.salePriceLists.ChangeData();

@@ -41,6 +41,7 @@ namespace ParfumUI.SalePriceFolder
             this.comb = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.combSearchName = new System.Windows.Forms.ComboBox();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button4
@@ -114,9 +115,9 @@ namespace ParfumUI.SalePriceFolder
             this.btnUpdate.BackColor = System.Drawing.Color.Orange;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnUpdate.Location = new System.Drawing.Point(27, 444);
+            this.btnUpdate.Location = new System.Drawing.Point(509, 444);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(898, 67);
+            this.btnUpdate.Size = new System.Drawing.Size(416, 67);
             this.btnUpdate.TabIndex = 57;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -162,11 +163,25 @@ namespace ParfumUI.SalePriceFolder
             this.combSearchName.TabIndex = 53;
             this.combSearchName.SelectedIndexChanged += new System.EventHandler(this.combSearchName_SelectedIndexChanged);
             // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.Firebrick;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDelete.Location = new System.Drawing.Point(27, 444);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(433, 67);
+            this.btnDelete.TabIndex = 65;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // UpdateSalePrice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(948, 544);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textNumber);
@@ -201,5 +216,6 @@ namespace ParfumUI.SalePriceFolder
         private System.Windows.Forms.ComboBox comb;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox combSearchName;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

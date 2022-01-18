@@ -198,6 +198,7 @@ namespace ParfumUI.Parfum.Load
 
 
         // Loead Sale Price Table in SQL Server
+
         public static void LoadSalePrice(SqlConnection sqlConnection, bool isConnectOpen, ComboBox salePrice, int Id)
         {
             string commad = "select * from DeleteSalePirceUI y where y.ParfumId=" + Id;
@@ -206,21 +207,32 @@ namespace ParfumUI.Parfum.Load
                 //Connect Open
                 ConnectionCadditon(sqlConnection, isConnectOpen);
 
-                // Data Clear
-                salePrice.Items.Clear();
 
+
+                // Data Clear
+                salePrice.DataSource = null;
+
+
+                List<SalePriceData> salePriceDatas = new List<SalePriceData>();
+                salePriceDatas.Clear();
                 using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
                 {
                     while (sqlDataReader.Read())
                     {
-                        salePrice.Items.Add(sqlDataReader[1].ToString().Trim() + "ML/ " + sqlDataReader[2].ToString().Trim() + "AZN/ " + sqlDataReader[3].ToString().Trim());
+                        salePriceDatas.Add(
+
+                            new SalePriceData(Convert.ToInt32(sqlDataReader[0]), Convert.ToInt32(sqlDataReader[1]), Convert.ToInt32(sqlDataReader[2]), Convert.ToInt32(sqlDataReader[3]))
+
+                            );
                     }
                 }
+
+                salePrice.DataSource = salePriceDatas;
+
                 salePrice.DropDownStyle = ComboBoxStyle.DropDownList;
                 salePrice.SelectedIndex = 0;
             }
         }
-
 
         public static void ConnectionCadditon(SqlConnection sqlConnection, bool isConnectionOpen)
         {

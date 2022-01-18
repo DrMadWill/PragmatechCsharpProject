@@ -13,6 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ParfumUI.SqlModel;
 
 namespace ParfumUI.SalePriceFolder
 {
@@ -50,14 +51,19 @@ namespace ParfumUI.SalePriceFolder
 
         private void SelectedChange()
         {
-            
-            string size = comb.SelectedItem.ToString().Trim().Split('M')[0];
-            string price = comb.SelectedItem.ToString().Split(' ')[1].Split('A')[0];
-            string count = comb.SelectedItem.ToString().Split(' ')[2];
+            try
+            {
+                string size = ((SalePriceData)comb.SelectedItem).Size.ToString();
+                string price = ((SalePriceData)comb.SelectedItem).Price.ToString();
+                string count = ((SalePriceData)comb.SelectedItem).Count.ToString();
+                combSize.SelectedItem = size;
+                textPrice.Text = price;
+                textNumber.Text = count;
+            }
+            catch (Exception ex)
+            {
 
-            combSize.SelectedItem = size;
-            textPrice.Text = price;
-            textNumber.Text = count;
+            }
         }
 
         private void comb_SelectedIndexChanged(object sender, EventArgs e)
@@ -67,8 +73,7 @@ namespace ParfumUI.SalePriceFolder
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            int Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
-            int size = int.Parse(comb.SelectedItem.ToString().Split(' ')[1].Split('A')[0]);
+            int Id = ((SalePriceData)comb.SelectedItem).Id;
             string newsize = combSize.SelectedItem.ToString().Trim();
             string price = textNumber.Text.Trim();
             string count = textNumber.Text.Trim();
@@ -83,7 +88,7 @@ namespace ParfumUI.SalePriceFolder
                         return;
                     }
                 }
-                string commad = $"UPDATE SalePrice set SizeId=(select Id from Size where Size={newsize}),Price={price},number={count} where ParfumId = {Id} and SizeId=(select Id from Size where Size={size}) ";
+                string commad = $"UPDATE SalePrice set SizeId=(select Id from Size where Size={newsize}),Price={price},number={count} where Id = {Id} ";
                 using (SqlCommand sqlCommand =new SqlCommand(commad, sqlConnection))
                 {
                     sqlCommand.ExecuteNonQuery();
@@ -96,6 +101,27 @@ namespace ParfumUI.SalePriceFolder
 
         }
 
-        
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+
+                int saleId = ((SalePriceData)comb.SelectedItem).Id;
+                string commad = "Delete SalePrice where Id =" + saleId;
+                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand sqlCommand = new SqlCommand(commad, sqlConnection))
+                    {
+                        sqlConnection.Open();
+                        sqlCommand.ExecuteNonQuery();
+                        MessageBox.Show("Information deleted", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        int Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
+                        LoadParfumItems.LoadSalePrice(sqlConnection, false, comb, Id);
+                        RefresData.salePriceLists.ChangeData();
+                    }
+                }
+            }
+        }
     }
 }
