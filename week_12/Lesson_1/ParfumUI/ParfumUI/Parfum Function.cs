@@ -58,11 +58,7 @@ namespace ParfumUI
             
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            DeleteParfum deleteParfum = new DeleteParfum();
-            deleteParfum.ShowDialog();
-        }
+       
 
         public bool IsAdd(string name,string brend)
         {

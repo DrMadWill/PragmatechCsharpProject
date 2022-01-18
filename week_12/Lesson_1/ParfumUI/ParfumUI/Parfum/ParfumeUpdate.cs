@@ -39,12 +39,14 @@ namespace ParfumUI
                 LoadParfumItems.LoadBrend(sqlConnection, true, combBrend);
                 LoadParfumItems.LoadDensity(sqlConnection, false, combDensity);
                 LoadParfumItems.LoadGender(sqlConnection, false, combGender);
-                LoadParfumItems.LoadSearchNameComIndex(sqlConnection, false, combSearchName);
+                LoadParfumItems.LoadSearchName(sqlConnection, false, combSearchName);
                 ChangeSearchName(sqlConnection, false);
             }
 
         }
 
+
+        // Update Click
         private void button1_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
@@ -69,7 +71,10 @@ namespace ParfumUI
                     // Brend Refres
                     comboIndex = ((ParfumHeader)combSearchName.SelectedItem).Id;
                     isUpdate = true;
-                    LoadParfumItems.LoadSearchNameComIndex(sqlConnection, false, combSearchName);
+
+                    // Refres Shearch Name
+                    LoadParfumItems.LoadSearchName(sqlConnection, false, combSearchName);
+
                     //Problem
                     combSearchName.SelectedIndex = SearchNameIndex(comboIndex);
 
@@ -133,9 +138,22 @@ namespace ParfumUI
 
         public void ChangeSearchName(SqlConnection sqlConnection, bool isConnectionOpen)
         {
+            int Id =0;
+            string command=null;
+            try
+            {
+                    Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
+                    command = "select * from MidDetalParfume where Id = " + Id;
+            }
+            catch (Exception ex)
+            {
 
-            int Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
-            string command = "select * from MidDetalParfume where Id = " + Id;
+            }
+
+            if (string.IsNullOrEmpty(command))
+            {
+                return;
+            }
 
             using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
             {
@@ -158,8 +176,27 @@ namespace ParfumUI
             }
         }
 
-        
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you  sure delete?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
 
+                int Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
+                
+                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+                {
+
+                    Parfum.Parfum.DeleteParfum(Id, sqlConnection);
+                    
+                    // Refres Search ComboBox
+                    LoadParfumItems.LoadSearchName(sqlConnection, false, combSearchName);
+
+                    // Change DataGridVeiw
+                    RefresData.parfum_Function.ChangeParfum();
+                }
+            }
+        }
     }
 
 

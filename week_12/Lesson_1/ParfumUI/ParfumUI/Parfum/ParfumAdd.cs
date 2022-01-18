@@ -101,5 +101,11 @@ namespace ParfumUI
                 combBrend.SelectedIndex = 0;
             }
         }
+
+        private void btnUpdateDelete_Click(object sender, EventArgs e)
+        {
+            ParfumeUpdate parfumeUpdate = new ParfumeUpdate();
+            parfumeUpdate.ShowDialog();
+        }
     }
 }

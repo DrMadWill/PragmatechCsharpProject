@@ -90,6 +90,12 @@
       <DependentUpon>SalePriceLists.cs</DependentUpon>
     </Compile>
     <Compile Include="Load\LoadParfumItems.cs" />
+    <Compile Include="Parfum\Brend\BrendUpdateDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parfum\Brend\BrendUpdateDelete.Designer.cs">
+      <DependentUpon>BrendUpdateDelete.cs</DependentUpon>
+    </Compile>
     <Compile Include="Parfum\Parfum.cs" />
     <Compile Include="RefresData.cs" />
     <Compile Include="Parfum\Brend\BrendAdd.cs">
@@ -97,12 +103,6 @@
     </Compile>
     <Compile Include="Parfum\Brend\BrendAdd.Designer.cs">
       <DependentUpon>BrendAdd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Parfum\DeleteParfum.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Parfum\DeleteParfum.Designer.cs">
-      <DependentUpon>DeleteParfum.cs</DependentUpon>
     </Compile>
     <Compile Include="CatogoryView\Female.cs">
       <SubType>Form</SubType>
@@ -180,9 +180,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Parfum\Brend\BrendAdd.resx">
       <DependentUpon>BrendAdd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Parfum\DeleteParfum.resx">
-      <DependentUpon>DeleteParfum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CatogoryView\Female.resx">
       <DependentUpon>Female.cs</DependentUpon>
