@@ -1,4 +1,5 @@
-﻿using ParfumUI.Parfum.Load;
+﻿using ParfumUI.Parfum.Brend;
+using ParfumUI.Parfum.Load;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -197,9 +198,31 @@ namespace ParfumUI
                 }
             }
         }
+
+        private void btnUpdateDelete_Click(object sender, EventArgs e)
+        {
+            BrendUpdateDelete brendUpdateDelete = new BrendUpdateDelete(false);
+            brendUpdateDelete.ShowDialog();
+
+        }
+
+        public void DataRefres()
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            {
+               
+
+                // Brend Refres
+                comboIndex = ((ParfumHeader)combSearchName.SelectedItem).Id;
+                isUpdate = true;
+
+                // Refres Shearch Name
+                LoadParfumItems.LoadSearchName(sqlConnection, true, combSearchName);
+
+                //Problem
+                combSearchName.SelectedIndex = SearchNameIndex(comboIndex);
+
+            }
+        }
     }
-
-
-
-
 }

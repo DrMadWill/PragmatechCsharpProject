@@ -46,6 +46,7 @@ namespace ParfumUI
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdateDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button4
@@ -53,7 +54,7 @@ namespace ParfumUI
             this.button4.BackColor = System.Drawing.Color.Teal;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Location = new System.Drawing.Point(845, 472);
+            this.button4.Location = new System.Drawing.Point(476, 446);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(254, 46);
             this.button4.TabIndex = 32;
@@ -65,7 +66,7 @@ namespace ParfumUI
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(841, 311);
+            this.label4.Location = new System.Drawing.Point(773, 311);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 36);
             this.label4.TabIndex = 31;
@@ -75,9 +76,9 @@ namespace ParfumUI
             // 
             this.combBrend.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combBrend.FormattingEnabled = true;
-            this.combBrend.Location = new System.Drawing.Point(847, 373);
+            this.combBrend.Location = new System.Drawing.Point(779, 373);
             this.combBrend.Name = "combBrend";
-            this.combBrend.Size = new System.Drawing.Size(252, 37);
+            this.combBrend.Size = new System.Drawing.Size(338, 37);
             this.combBrend.TabIndex = 30;
             // 
             // label6
@@ -94,7 +95,7 @@ namespace ParfumUI
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(516, 311);
+            this.label5.Location = new System.Drawing.Point(470, 311);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(120, 36);
             this.label5.TabIndex = 27;
@@ -104,7 +105,7 @@ namespace ParfumUI
             // 
             this.combGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combGender.FormattingEnabled = true;
-            this.combGender.Location = new System.Drawing.Point(522, 376);
+            this.combGender.Location = new System.Drawing.Point(476, 376);
             this.combGender.Name = "combGender";
             this.combGender.Size = new System.Drawing.Size(252, 37);
             this.combGender.TabIndex = 26;
@@ -115,7 +116,7 @@ namespace ParfumUI
             this.combDensity.FormattingEnabled = true;
             this.combDensity.Location = new System.Drawing.Point(847, 185);
             this.combDensity.Name = "combDensity";
-            this.combDensity.Size = new System.Drawing.Size(252, 37);
+            this.combDensity.Size = new System.Drawing.Size(270, 37);
             this.combDensity.TabIndex = 25;
             // 
             // textImage
@@ -179,7 +180,7 @@ namespace ParfumUI
             this.combSearchName.FormattingEnabled = true;
             this.combSearchName.Location = new System.Drawing.Point(389, 22);
             this.combSearchName.Name = "combSearchName";
-            this.combSearchName.Size = new System.Drawing.Size(712, 37);
+            this.combSearchName.Size = new System.Drawing.Size(728, 37);
             this.combSearchName.TabIndex = 33;
             this.combSearchName.SelectedIndexChanged += new System.EventHandler(this.combSearchName_SelectedIndexChanged);
             // 
@@ -201,7 +202,7 @@ namespace ParfumUI
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(612, 581);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(489, 86);
+            this.button1.Size = new System.Drawing.Size(505, 86);
             this.button1.TabIndex = 29;
             this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = false;
@@ -221,11 +222,25 @@ namespace ParfumUI
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // btnUpdateDelete
+            // 
+            this.btnUpdateDelete.BackColor = System.Drawing.Color.Orange;
+            this.btnUpdateDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnUpdateDelete.Location = new System.Drawing.Point(779, 436);
+            this.btnUpdateDelete.Name = "btnUpdateDelete";
+            this.btnUpdateDelete.Size = new System.Drawing.Size(338, 56);
+            this.btnUpdateDelete.TabIndex = 36;
+            this.btnUpdateDelete.Text = "Brend Update/Delete";
+            this.btnUpdateDelete.UseVisualStyleBackColor = false;
+            this.btnUpdateDelete.Click += new System.EventHandler(this.btnUpdateDelete_Click);
+            // 
             // ParfumeUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1129, 693);
+            this.ClientSize = new System.Drawing.Size(1145, 693);
+            this.Controls.Add(this.btnUpdateDelete);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.combSearchName);
@@ -270,5 +285,6 @@ namespace ParfumUI
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnUpdateDelete;
     }
 }

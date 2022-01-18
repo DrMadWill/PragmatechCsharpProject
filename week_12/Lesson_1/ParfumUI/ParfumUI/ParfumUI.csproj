@@ -196,6 +196,9 @@
     <EmbeddedResource Include="Parfum Function.resx">
       <DependentUpon>Parfum Function.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Parfum\Brend\BrendUpdateDelete.resx">
+      <DependentUpon>BrendUpdateDelete.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Parfum\ParfumAdd.resx">
       <DependentUpon>ParfumAdd.cs</DependentUpon>
     </EmbeddedResource>

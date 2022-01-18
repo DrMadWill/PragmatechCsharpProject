@@ -40,18 +40,19 @@ namespace ParfumUI
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 138);
+            this.label1.Location = new System.Drawing.Point(10, 104);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(288, 36);
+            this.label1.Size = new System.Drawing.Size(279, 36);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Brend Description :";
+            this.label1.Text = "Brend Description ";
             // 
             // textDescript
             // 
             this.textDescript.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textDescript.Location = new System.Drawing.Point(303, 138);
+            this.textDescript.Location = new System.Drawing.Point(16, 154);
+            this.textDescript.Multiline = true;
             this.textDescript.Name = "textDescript";
-            this.textDescript.Size = new System.Drawing.Size(445, 38);
+            this.textDescript.Size = new System.Drawing.Size(732, 173);
             this.textDescript.TabIndex = 1;
             // 
             // button1
@@ -59,7 +60,7 @@ namespace ParfumUI
             this.button1.BackColor = System.Drawing.Color.Green;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(16, 211);
+            this.button1.Location = new System.Drawing.Point(16, 346);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(732, 60);
             this.button1.TabIndex = 2;
@@ -70,16 +71,16 @@ namespace ParfumUI
             // textName
             // 
             this.textName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textName.Location = new System.Drawing.Point(303, 67);
+            this.textName.Location = new System.Drawing.Point(257, 33);
             this.textName.Name = "textName";
-            this.textName.Size = new System.Drawing.Size(445, 38);
+            this.textName.Size = new System.Drawing.Size(491, 38);
             this.textName.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 67);
+            this.label2.Location = new System.Drawing.Point(10, 33);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(208, 36);
             this.label2.TabIndex = 3;
@@ -89,7 +90,7 @@ namespace ParfumUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 305);
+            this.ClientSize = new System.Drawing.Size(760, 428);
             this.Controls.Add(this.textName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);

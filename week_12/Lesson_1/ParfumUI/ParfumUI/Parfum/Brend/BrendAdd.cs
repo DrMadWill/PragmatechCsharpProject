@@ -15,6 +15,7 @@ namespace ParfumUI
     public partial class BrendAdd : Form
     {
         private bool isParfumAdd=true;
+        string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
         public BrendAdd(bool isAdd)
         {
             InitializeComponent();
@@ -27,7 +28,6 @@ namespace ParfumUI
             string descript = textDescript.Text.Trim();
 
             string command = $"Insert into dbo.Brend(Name,Decription)values('{name}','{descript}')";
-            string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))

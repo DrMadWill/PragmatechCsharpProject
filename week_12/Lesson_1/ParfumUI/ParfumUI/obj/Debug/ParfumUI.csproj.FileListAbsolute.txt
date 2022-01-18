@@ -31,3 +31,4 @@ C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumU
 C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.SalePriceFolder.Volume.VolumeAdd.resources
 C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.CatogoryView.SalePriceLists.resources
 C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.SalePriceFolder.UpdateSalePrice.resources
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.Parfum.Brend.BrendUpdateDelete.resources

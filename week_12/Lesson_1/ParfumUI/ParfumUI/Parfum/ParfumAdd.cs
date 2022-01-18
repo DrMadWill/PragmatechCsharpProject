@@ -1,4 +1,5 @@
-﻿using ParfumUI.Parfum.Load;
+﻿using ParfumUI.Parfum.Brend;
+using ParfumUI.Parfum.Load;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -104,8 +105,8 @@ namespace ParfumUI
 
         private void btnUpdateDelete_Click(object sender, EventArgs e)
         {
-            ParfumeUpdate parfumeUpdate = new ParfumeUpdate();
-            parfumeUpdate.ShowDialog();
+            BrendUpdateDelete brendUpdateDelete = new BrendUpdateDelete(true);
+            brendUpdateDelete.ShowDialog();
         }
     }
 }
