@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using ParfumUI.Parfum.Load;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -62,7 +60,7 @@ namespace ParfumUI.SalePriceFolder
             }
             catch (Exception ex)
             {
-
+                
             }
         }
 
@@ -79,26 +77,30 @@ namespace ParfumUI.SalePriceFolder
             string count = textNumber.Text.Trim();
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
-                DataTable dataTable = LoadParfumItems.LoadSalePriceDataTable(sqlConnection, true, Id);
-                foreach (DataRow row in dataTable.Rows)
+                foreach (var item in comb.Items)
                 {
-                    if(row["Size ML"].ToString().Trim() == newsize)
+                    if(((SalePriceData)item).Size== int.Parse(newsize))
                     {
                         MessageBox.Show("Got this Size", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                 }
+
                 string commad = $"UPDATE SalePrice set SizeId=(select Id from Size where Size={newsize}),Price={price},number={count} where Id = {Id} ";
                 using (SqlCommand sqlCommand =new SqlCommand(commad, sqlConnection))
                 {
+                    sqlConnection.Open();
                     sqlCommand.ExecuteNonQuery();
                     MessageBox.Show("Information update", "Update", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    LoadParfumItems.LoadSalePrice(sqlConnection, false, comb, Id);
+
+                    int index = combSearchName.SelectedIndex;
+                    combSearchName.SelectedIndex = 0;
+                    combSearchName.SelectedIndex = index;
+
+                    // SalePriceList Refres 
+                    RefresData.salePriceLists.ChangeData();
                 }
             }
-
-          
-
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

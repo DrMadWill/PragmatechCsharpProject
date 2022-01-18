@@ -230,7 +230,7 @@ namespace ParfumUI.Parfum.Load
                 salePrice.DataSource = salePriceDatas;
 
                 salePrice.DropDownStyle = ComboBoxStyle.DropDownList;
-                salePrice.SelectedIndex = 0;
+                //salePrice.SelectedIndex = 0;
             }
         }
 

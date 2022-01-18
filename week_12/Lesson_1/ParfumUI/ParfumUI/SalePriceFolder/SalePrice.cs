@@ -18,7 +18,7 @@ namespace ParfumUI
     public partial class SalePrice : Form
     {
 
-        DataTable dataTable;
+        DataTable dataTable = new DataTable();
         public SalePrice()
         {
             InitializeComponent();
@@ -53,7 +53,8 @@ namespace ParfumUI
                     SalePriceSave(sqlConnection,Id,size,price,number);
 
                     // Refres datagridwiev
-                    dataGridView1.DataSource = LoadParfumItems.LoadSalePriceDataTable(sqlConnection, false, Id);
+                    dataTable= LoadParfumItems.LoadSalePriceDataTable(sqlConnection, false, Id);
+                    dataGridView1.DataSource = dataTable;
 
 
                     RefresData.salePriceLists.ChangeData();

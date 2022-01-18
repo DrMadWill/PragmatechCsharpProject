@@ -92,10 +92,10 @@
     <Compile Include="Load\LoadParfumItems.cs" />
     <Compile Include="Parfum\Parfum.cs" />
     <Compile Include="RefresData.cs" />
-    <Compile Include="Parfum\BrendAdd.cs">
+    <Compile Include="Parfum\Brend\BrendAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Parfum\BrendAdd.Designer.cs">
+    <Compile Include="Parfum\Brend\BrendAdd.Designer.cs">
       <DependentUpon>BrendAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Parfum\DeleteParfum.cs">
@@ -148,12 +148,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SalePriceFolder\DeleteSalePrice.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SalePriceFolder\DeleteSalePrice.Designer.cs">
-      <DependentUpon>DeleteSalePrice.cs</DependentUpon>
-    </Compile>
     <Compile Include="SalePriceFolder\SalePrice.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,7 +178,7 @@
     <EmbeddedResource Include="CatogoryView\SalePriceLists.resx">
       <DependentUpon>SalePriceLists.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Parfum\BrendAdd.resx">
+    <EmbeddedResource Include="Parfum\Brend\BrendAdd.resx">
       <DependentUpon>BrendAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Parfum\DeleteParfum.resx">
@@ -220,9 +214,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SalePriceFolder\DeleteSalePrice.resx">
-      <DependentUpon>DeleteSalePrice.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="SalePriceFolder\SalePrice.resx">
       <DependentUpon>SalePrice.cs</DependentUpon>
     </EmbeddedResource>

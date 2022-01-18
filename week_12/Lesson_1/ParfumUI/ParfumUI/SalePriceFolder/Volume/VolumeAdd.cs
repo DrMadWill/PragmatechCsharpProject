@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using ParfumUI.Parfum.Load;
 using ParfumUI.SalePriceFolder.Volume;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;

@@ -33,23 +33,12 @@ namespace ParfumUI.CatogoryView
             this.textSearchName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewShearch = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Image = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Brend = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Density = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Size = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataGridShearch = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewShearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridShearch)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSearch
@@ -88,26 +77,13 @@ namespace ParfumUI.CatogoryView
             this.btnAdd.BackColor = System.Drawing.Color.Green;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAdd.Location = new System.Drawing.Point(668, 363);
+            this.btnAdd.Location = new System.Drawing.Point(801, 363);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(179, 52);
             this.btnAdd.TabIndex = 20;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.DarkRed;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDelete.Location = new System.Drawing.Point(1087, 363);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(168, 52);
-            this.btnDelete.TabIndex = 19;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = false;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // label1
             // 
@@ -127,123 +103,50 @@ namespace ParfumUI.CatogoryView
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1249, 348);
+            this.dataGridView1.Size = new System.Drawing.Size(1249, 413);
             this.dataGridView1.TabIndex = 17;
-            // 
-            // dataGridViewShearch
-            // 
-            this.dataGridViewShearch.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewShearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewShearch.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Id,
-            this.PName,
-            this.Image,
-            this.Description,
-            this.Brend,
-            this.Gender,
-            this.Density,
-            this.Size,
-            this.Price,
-            this.Number});
-            this.dataGridViewShearch.Location = new System.Drawing.Point(21, 86);
-            this.dataGridViewShearch.Name = "dataGridViewShearch";
-            this.dataGridViewShearch.RowHeadersWidth = 51;
-            this.dataGridViewShearch.RowTemplate.Height = 24;
-            this.dataGridViewShearch.Size = new System.Drawing.Size(1234, 242);
-            this.dataGridViewShearch.TabIndex = 25;
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "Id";
-            this.Id.MinimumWidth = 6;
-            this.Id.Name = "Id";
-            // 
-            // PName
-            // 
-            this.PName.HeaderText = "Name";
-            this.PName.MinimumWidth = 6;
-            this.PName.Name = "PName";
-            // 
-            // Image
-            // 
-            this.Image.HeaderText = "Image";
-            this.Image.MinimumWidth = 6;
-            this.Image.Name = "Image";
-            // 
-            // Description
-            // 
-            this.Description.HeaderText = "Description";
-            this.Description.MinimumWidth = 6;
-            this.Description.Name = "Description";
-            // 
-            // Brend
-            // 
-            this.Brend.HeaderText = "Brend";
-            this.Brend.MinimumWidth = 6;
-            this.Brend.Name = "Brend";
-            // 
-            // Gender
-            // 
-            this.Gender.HeaderText = "Gender";
-            this.Gender.MinimumWidth = 6;
-            this.Gender.Name = "Gender";
-            // 
-            // Density
-            // 
-            this.Density.HeaderText = "Density";
-            this.Density.MinimumWidth = 6;
-            this.Density.Name = "Density";
-            // 
-            // Size
-            // 
-            this.Size.HeaderText = "Size";
-            this.Size.MinimumWidth = 6;
-            this.Size.Name = "Size";
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Price";
-            this.Price.MinimumWidth = 6;
-            this.Price.Name = "Price";
-            // 
-            // Number
-            // 
-            this.Number.HeaderText = "Number";
-            this.Number.MinimumWidth = 6;
-            this.Number.Name = "Number";
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Orange;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(879, 363);
+            this.button1.Location = new System.Drawing.Point(1013, 363);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(179, 52);
+            this.button1.Size = new System.Drawing.Size(242, 52);
             this.button1.TabIndex = 26;
-            this.button1.Text = "Update";
+            this.button1.Text = "Update/Delete";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dataGridShearch
+            // 
+            this.dataGridShearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridShearch.Location = new System.Drawing.Point(21, 73);
+            this.dataGridShearch.Name = "dataGridShearch";
+            this.dataGridShearch.RowHeadersWidth = 51;
+            this.dataGridShearch.RowTemplate.Height = 24;
+            this.dataGridShearch.Size = new System.Drawing.Size(1240, 254);
+            this.dataGridShearch.TabIndex = 27;
             // 
             // SalePriceLists
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1280, 787);
+            this.ClientSize = new System.Drawing.Size(1280, 851);
+            this.Controls.Add(this.dataGridShearch);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridViewShearch);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.textSearchName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "SalePriceLists";
             this.Text = "SalePriceLists";
             this.Load += new System.EventHandler(this.SalePriceLists_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewShearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridShearch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,20 +158,9 @@ namespace ParfumUI.CatogoryView
         private System.Windows.Forms.TextBox textSearchName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridViewShearch;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Image;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Brend;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Gender;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Density;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Size;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Number;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridShearch;
     }
 }
