@@ -163,6 +163,7 @@ namespace ParfumUI.CatogoryView
             this.catogoryToolStripMenuItem.Name = "catogoryToolStripMenuItem";
             this.catogoryToolStripMenuItem.Size = new System.Drawing.Size(106, 29);
             this.catogoryToolStripMenuItem.Text = "Catogory";
+            this.catogoryToolStripMenuItem.Click += new System.EventHandler(this.catogoryToolStripMenuItem_Click);
             // 
             // combCatogory
             // 

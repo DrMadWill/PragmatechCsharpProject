@@ -87,34 +87,47 @@ namespace ParfumUI.SalePriceFolder
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            int Id = ((SalePriceData)comb.SelectedItem).Id;
-            string newsize = combSize.SelectedItem.ToString().Trim();
-            string price = textNumber.Text.Trim();
-            string count = textNumber.Text.Trim();
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            DialogResult result = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
             {
-                foreach (var item in comb.Items)
+                int Id = ((SalePriceData)comb.SelectedItem).Id;
+                string newsize = combSize.SelectedItem.ToString().Trim();
+                string price = textPrice.Text.Trim();
+                string count = textNumber.Text.Trim();
+                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
                 {
-                    if(((SalePriceData)item).Size== int.Parse(newsize))
+                    foreach (var item in comb.Items)
                     {
-                        MessageBox.Show("Got this Size", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return;
+                        if (((SalePriceData)item).Size == int.Parse(newsize) && ((SalePriceData)comb.SelectedItem).Id != ((SalePriceData)item).Id)
+                        {
+                            MessageBox.Show("Got this Size", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
                     }
-                }
 
-                string commad = $"UPDATE SalePrice set SizeId=(select Id from Size where Size={newsize}),Price={price},number={count} where Id = {Id} ";
-                using (SqlCommand sqlCommand =new SqlCommand(commad, sqlConnection))
-                {
-                    sqlConnection.Open();
-                    sqlCommand.ExecuteNonQuery();
-                    MessageBox.Show("Information update", "Update", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    string commad = $"UPDATE SalePrice set SizeId=(select Id from Size where Size={newsize}),Price={price},number={count} where Id = {Id} ";
+                    using (SqlCommand sqlCommand = new SqlCommand(commad, sqlConnection))
+                    {
+                        sqlConnection.Open();
+                        sqlCommand.ExecuteNonQuery();
+                        MessageBox.Show("Information update", "Update", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                        // SalePriceList Refres 
+                        RefresData.salePriceLists.ChangeData();
+                    }
+
 
                     int index = combSearchName.SelectedIndex;
-                    combSearchName.SelectedIndex = 0;
-                    combSearchName.SelectedIndex = index;
+                    if (index == 0)
+                    {
+                        combSearchName.SelectedIndex = index+1;
 
-                    // SalePriceList Refres 
-                    RefresData.salePriceLists.ChangeData();
+                    }
+                    else
+                    {
+                        combSearchName.SelectedIndex = index-1;
+                    }
+                    combSearchName.SelectedIndex = index;
                 }
             }
         }
@@ -134,9 +147,18 @@ namespace ParfumUI.SalePriceFolder
                         sqlConnection.Open();
                         sqlCommand.ExecuteNonQuery();
                         MessageBox.Show("Information deleted", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        int Id = combSearchName.SelectedIndex;
-                        combSearchName.SelectedIndex = 0;
-                        combSearchName.SelectedIndex = Id;
+
+                        int index = combSearchName.SelectedIndex;
+                        if (index == 0)
+                        {
+                            combSearchName.SelectedIndex = index + 1;
+                        }
+                        else
+                        {
+                            combSearchName.SelectedIndex = index - 1;
+                        }
+                        combSearchName.SelectedIndex = index;
+
                         RefresData.salePriceLists.ChangeData();
                         
                     }
@@ -148,7 +170,7 @@ namespace ParfumUI.SalePriceFolder
 
         private void LoadSearchName(SqlConnection sqlConnection, bool isConnectionOpen, ComboBox combSearchName)
         {
-            string commandSearch = "select * from DeleteUpdateHeader order by Header";
+            string commandSearch = "SELECT DISTINCT Id,Header FROM DeleteUpdateHeader";
             using (SqlCommand sqlCommand = new SqlCommand(commandSearch, sqlConnection))
             {
                 // ComboBox Index
@@ -171,21 +193,21 @@ namespace ParfumUI.SalePriceFolder
                 {
                     while (sqlDataReader.Read())
                     {
-                        // Collection add
-                        foreach (var item in parfumHeaders)
-                        {
-                            if (item.Id == Convert.ToInt32(sqlDataReader[0]))
-                            {
-                                dubilcateinfo = true;
-                                break;
-                            }
-                        }
+                        //// Collection add
+                        //foreach (var item in parfumHeaders)
+                        //{
+                        //    if (item.Id == Convert.ToInt32(sqlDataReader[0]))
+                        //    {
+                        //        dubilcateinfo = true;
+                        //        break;
+                        //    }
+                        //}
 
-                        if (dubilcateinfo)
-                        {
-                            dubilcateinfo = false;
-                            continue;
-                        }
+                        //if (dubilcateinfo)
+                        //{
+                        //    dubilcateinfo = false;
+                        //    continue;
+                        //}
 
                         parfumHeaders.Add(new ParfumHeader(Convert.ToInt32(sqlDataReader[0]), sqlDataReader[1].ToString().Trim(), comboxIndex));
                         ++comboxIndex;

@@ -164,5 +164,11 @@ namespace ParfumUI.CatogoryView
                 textcatogory.Text = catogory;
             }
         }
+
+        private void catogoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CategoryAdd categoryAdd = new CategoryAdd();
+            categoryAdd.ShowDialog();
+        }
     }
 }

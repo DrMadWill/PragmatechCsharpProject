@@ -83,6 +83,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CatogoryView\CategoryAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatogoryView\CategoryAdd.Designer.cs">
+      <DependentUpon>CategoryAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="CatogoryView\SalePriceLists.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,16 +110,10 @@
     <Compile Include="Parfum\Brend\BrendAdd.Designer.cs">
       <DependentUpon>BrendAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Parfum\Parfum Function.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Parfum Function.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Parfum Function.Designer.cs">
+    <Compile Include="Parfum\Parfum Function.Designer.cs">
       <DependentUpon>Parfum Function.cs</DependentUpon>
     </Compile>
     <Compile Include="Parfum\ParfumAdd.cs">
@@ -151,16 +151,16 @@
     <Compile Include="SqlModel\CatogoryData.cs" />
     <Compile Include="SqlModel\ParfumHeader.cs" />
     <Compile Include="SqlModel\SalePriceData.cs" />
+    <EmbeddedResource Include="CatogoryView\CategoryAdd.resx">
+      <DependentUpon>CategoryAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CatogoryView\SalePriceLists.resx">
       <DependentUpon>SalePriceLists.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Parfum\Brend\BrendAdd.resx">
       <DependentUpon>BrendAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Parfum Function.resx">
+    <EmbeddedResource Include="Parfum\Parfum Function.resx">
       <DependentUpon>Parfum Function.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Parfum\Brend\BrendUpdateDelete.resx">
