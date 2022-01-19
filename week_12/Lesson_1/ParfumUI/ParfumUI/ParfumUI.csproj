@@ -104,29 +104,11 @@
     <Compile Include="Parfum\Brend\BrendAdd.Designer.cs">
       <DependentUpon>BrendAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="CatogoryView\Female.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CatogoryView\Female.Designer.cs">
-      <DependentUpon>Female.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CatogoryView\Male.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CatogoryView\Male.Designer.cs">
-      <DependentUpon>Male.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CatogoryView\NewParfum.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CatogoryView\NewParfum.Designer.cs">
-      <DependentUpon>NewParfum.cs</DependentUpon>
     </Compile>
     <Compile Include="Parfum Function.cs">
       <SubType>Form</SubType>
@@ -154,12 +136,6 @@
     <Compile Include="SalePriceFolder\SalePrice.Designer.cs">
       <DependentUpon>SalePrice.cs</DependentUpon>
     </Compile>
-    <Compile Include="CatogoryView\Special.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CatogoryView\Special.Designer.cs">
-      <DependentUpon>Special.cs</DependentUpon>
-    </Compile>
     <Compile Include="SalePriceFolder\UpdateSalePrice.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,7 +148,7 @@
     <Compile Include="SalePriceFolder\Volume\VolumeAdd.Designer.cs">
       <DependentUpon>VolumeAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="SqlModel\BrendData.cs" />
+    <Compile Include="SqlModel\CatogoryData.cs" />
     <Compile Include="SqlModel\ParfumHeader.cs" />
     <Compile Include="SqlModel\SalePriceData.cs" />
     <EmbeddedResource Include="CatogoryView\SalePriceLists.resx">
@@ -181,17 +157,8 @@
     <EmbeddedResource Include="Parfum\Brend\BrendAdd.resx">
       <DependentUpon>BrendAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CatogoryView\Female.resx">
-      <DependentUpon>Female.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CatogoryView\Male.resx">
-      <DependentUpon>Male.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CatogoryView\NewParfum.resx">
-      <DependentUpon>NewParfum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Parfum Function.resx">
       <DependentUpon>Parfum Function.cs</DependentUpon>
@@ -216,9 +183,6 @@
     </Compile>
     <EmbeddedResource Include="SalePriceFolder\SalePrice.resx">
       <DependentUpon>SalePrice.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CatogoryView\Special.resx">
-      <DependentUpon>Special.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SalePriceFolder\UpdateSalePrice.resx">
       <DependentUpon>UpdateSalePrice.cs</DependentUpon>

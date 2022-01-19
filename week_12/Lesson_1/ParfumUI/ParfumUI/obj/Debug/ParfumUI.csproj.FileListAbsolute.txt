@@ -13,16 +13,12 @@ C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumU
 C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.csproj.AssemblyReference.cache
 C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.Form1.resources
-C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.Male.resources
 C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.Properties.Resources.resources
 C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.csproj.GenerateResource.cache
 C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.csproj.CoreCompileInputs.cache
 C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.csproj.CopyComplete
 C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.exe
 C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.pdb
-C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.Female.resources
-C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.NewParfum.resources
-C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.Special.resources
 C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.ParfumAdd.resources
 C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.Parfum_Function.resources
 C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.BrendAdd.resources

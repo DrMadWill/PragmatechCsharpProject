@@ -97,38 +97,6 @@ namespace ParfumUI.Parfum.Load
             string commandSearch = "select * from SearchHead order by Header";
             using (SqlCommand sqlCommand = new SqlCommand(commandSearch, sqlConnection))
             {
-
-                // Connection Open Candition
-                LoadParfumItems.ConnectionCadditon(sqlConnection, isConnectionOpen);
-
-                // Data Clear
-                combSearchName.DataSource = null;
-
-                // Collection Create
-                List<ParfumHeader> parfumHeaders = new List<ParfumHeader>();
-
-                // Collection Clear
-                parfumHeaders.Clear();
-                using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
-                {
-                    while (sqlDataReader.Read())
-                    {
-                        // Collection add
-                        parfumHeaders.Add(new ParfumHeader(Convert.ToInt32(sqlDataReader[0]), sqlDataReader[1].ToString().Trim()));
-                    }
-                }
-                // Data Add
-                combSearchName.DataSource = parfumHeaders;
-                combSearchName.DropDownStyle = ComboBoxStyle.DropDownList;
-                combSearchName.SelectedIndex = 0;
-            }
-        }
-
-        public static void LoadSearchNameComIndex(SqlConnection sqlConnection, bool isConnectionOpen, ComboBox combSearchName)
-        {
-            string commandSearch = "select * from SearchHead order by Header";
-            using (SqlCommand sqlCommand = new SqlCommand(commandSearch, sqlConnection))
-            {
                 // ComboBox Index
                 int comboxIndex = 0;
 
@@ -158,6 +126,8 @@ namespace ParfumUI.Parfum.Load
                 combSearchName.SelectedIndex = 0;
             }
         }
+
+        
 
 
         public static void LoadSize(SqlConnection sqlConnection, bool isConnectionOpen, ComboBox combSize)

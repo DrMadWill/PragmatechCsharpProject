@@ -49,7 +49,6 @@ namespace ParfumUI
             this.btnKisi.TabIndex = 0;
             this.btnKisi.Text = "Kişi";
             this.btnKisi.UseVisualStyleBackColor = true;
-            this.btnKisi.Click += new System.EventHandler(this.btnKisi_Click);
             // 
             // btnQadin
             // 
@@ -61,7 +60,6 @@ namespace ParfumUI
             this.btnQadin.TabStop = false;
             this.btnQadin.Text = "Qadın";
             this.btnQadin.UseVisualStyleBackColor = true;
-            this.btnQadin.Click += new System.EventHandler(this.btnQadin_Click);
             // 
             // btnYeni
             // 
@@ -72,7 +70,6 @@ namespace ParfumUI
             this.btnYeni.TabIndex = 2;
             this.btnYeni.Text = "Yeni";
             this.btnYeni.UseVisualStyleBackColor = true;
-            this.btnYeni.Click += new System.EventHandler(this.btnYeni_Click);
             // 
             // btnEksk
             // 
@@ -83,7 +80,6 @@ namespace ParfumUI
             this.btnEksk.TabIndex = 3;
             this.btnEksk.Text = "Ekskluziv";
             this.btnEksk.UseVisualStyleBackColor = true;
-            this.btnEksk.Click += new System.EventHandler(this.btnEksk_Click);
             // 
             // label1
             // 

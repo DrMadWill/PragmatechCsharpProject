@@ -51,12 +51,12 @@ namespace ParfumUI
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Teal;
+            this.button4.BackColor = System.Drawing.Color.Green;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Location = new System.Drawing.Point(476, 446);
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.Location = new System.Drawing.Point(476, 436);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(254, 46);
+            this.button4.Size = new System.Drawing.Size(254, 56);
             this.button4.TabIndex = 32;
             this.button4.Text = "Brend Add";
             this.button4.UseVisualStyleBackColor = false;

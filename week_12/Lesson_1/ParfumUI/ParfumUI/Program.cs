@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ParfumUI.CatogoryView;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,9 @@ namespace ParfumUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            SalePriceLists salePriceLists = new SalePriceLists();
+            RefresData.salePriceLists = salePriceLists;
+            Application.Run(salePriceLists);
         }
     }
 }

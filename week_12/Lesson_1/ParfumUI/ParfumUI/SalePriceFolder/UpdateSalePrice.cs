@@ -29,7 +29,7 @@ namespace ParfumUI.SalePriceFolder
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
-                LoadParfumItems.LoadSearchName(sqlConnection, true, combSearchName);
+                LoadSearchName(sqlConnection, true, combSearchName);
 
                 LoadParfumItems.LoadSize(sqlConnection, false, combSize);
                 SelectedChange();
@@ -40,6 +40,22 @@ namespace ParfumUI.SalePriceFolder
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
+                string name = string.Empty;
+                bool isException = false;
+                try
+                {
+                    name = ((ParfumHeader)combSearchName.SelectedItem).Id.ToString();
+                }
+                catch (Exception ex)
+                {
+                    isException = true;
+                }
+
+                if (isException)
+                {
+                    isException = false;
+                    return;
+                }
                 int Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
 
                 LoadParfumItems.LoadSalePrice(sqlConnection, true, comb, Id);
@@ -118,11 +134,68 @@ namespace ParfumUI.SalePriceFolder
                         sqlConnection.Open();
                         sqlCommand.ExecuteNonQuery();
                         MessageBox.Show("Information deleted", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        int Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
-                        LoadParfumItems.LoadSalePrice(sqlConnection, false, comb, Id);
+                        int Id = combSearchName.SelectedIndex;
+                        combSearchName.SelectedIndex = 0;
+                        combSearchName.SelectedIndex = Id;
                         RefresData.salePriceLists.ChangeData();
+                        
+                    }
+                    LoadSearchName(sqlConnection, false, combSearchName);
+                }
+            }
+        }
+
+
+        private void LoadSearchName(SqlConnection sqlConnection, bool isConnectionOpen, ComboBox combSearchName)
+        {
+            string commandSearch = "select * from DeleteUpdateHeader order by Header";
+            using (SqlCommand sqlCommand = new SqlCommand(commandSearch, sqlConnection))
+            {
+                // ComboBox Index
+                int comboxIndex = 0;
+
+                // Connection Open Candition
+                LoadParfumItems.ConnectionCadditon(sqlConnection, isConnectionOpen);
+
+                // Data Clear
+                combSearchName.DataSource = null;
+
+                // Collection Create
+                List<ParfumHeader> parfumHeaders = new List<ParfumHeader>();
+
+                bool dubilcateinfo = false;
+
+                // Collection Clear
+                parfumHeaders.Clear();
+                using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                {
+                    while (sqlDataReader.Read())
+                    {
+                        // Collection add
+                        foreach (var item in parfumHeaders)
+                        {
+                            if (item.Id == Convert.ToInt32(sqlDataReader[0]))
+                            {
+                                dubilcateinfo = true;
+                                break;
+                            }
+                        }
+
+                        if (dubilcateinfo)
+                        {
+                            dubilcateinfo = false;
+                            continue;
+                        }
+
+                        parfumHeaders.Add(new ParfumHeader(Convert.ToInt32(sqlDataReader[0]), sqlDataReader[1].ToString().Trim(), comboxIndex));
+                        ++comboxIndex;
                     }
                 }
+
+                // Data Add
+                combSearchName.DataSource = parfumHeaders.Distinct().ToList();
+                combSearchName.DropDownStyle = ComboBoxStyle.DropDownList;
+                combSearchName.SelectedIndex = 0;
             }
         }
     }

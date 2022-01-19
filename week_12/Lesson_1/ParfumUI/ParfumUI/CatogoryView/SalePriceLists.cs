@@ -19,6 +19,7 @@ namespace ParfumUI.CatogoryView
         DataTable dataTable = new DataTable();
 
         DataTable dataTableShearch = new DataTable();
+        string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
 
         public SalePriceLists()
         {
@@ -27,36 +28,38 @@ namespace ParfumUI.CatogoryView
 
         private void SalePriceLists_Load(object sender, EventArgs e)
         {
+            LoadCatogory();
+
             ChangeData();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            SalePrice salePrice = new SalePrice();
-            RefresData.salePrice = salePrice;
-            salePrice.ShowDialog();
-        }
 
         public void ChangeData()
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
 
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
+                dataGridView1.DataSource = null;
+                dataGridShearch.DataSource = null;
+                dataTable.Rows.Clear();
+                dataTableShearch.Rows.Clear();
+
                 string command = "select * from FullDetailParfum";
                 sqlConnection.Open();
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(command, sqlConnection);
                 sqlDataAdapter.Fill(dataTable);
                 sqlDataAdapter.Fill(dataTableShearch);
                 dataGridView1.DataSource = dataTable;
-                dataGridShearch.Rows.Clear();
+                textcatogory.Text = "All Parfums";
             }
         }
+
+
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
 
-            dataGridShearch.Rows.Clear();
+            dataGridShearch.DataSource =null;
             dataTableShearch.Rows.Clear();
             string name = textSearchName.Text.Trim();
             List<string> lis = new List<string>();
@@ -79,11 +82,87 @@ namespace ParfumUI.CatogoryView
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        
+
+        private void parfumToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Parfum_Function parfum_Function = new Parfum_Function();
+            RefresData.parfum_Function = parfum_Function;
+            parfum_Function.ShowDialog();
+        }
+
+        // Sale Price
+        private void addToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SalePrice salePrice = new SalePrice();
+            RefresData.salePrice = salePrice;
+            salePrice.ShowDialog();
+        }
+
+        private void updateDeleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             UpdateSalePrice updateSalePrice = new UpdateSalePrice();
             RefresData.updateSalePrice = updateSalePrice;
             updateSalePrice.ShowDialog();
+        }
+
+        private void btn_allparfums_Click(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+
+        private void LoadCatogory()
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            {
+                string commandSize = "select * from Catogory";
+                using (SqlCommand sqlCommand = new SqlCommand(commandSize, sqlConnection))
+                {
+                    // Connection Open 
+                    sqlConnection.Open();
+
+                    // Data Clear
+                    combCatogory.Items.Clear();
+                    using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                    {
+                        while (sqlDataReader.Read())
+                        {
+                            combCatogory.Items.Add(sqlDataReader[1].ToString().Trim());
+                        }
+                    }
+                    combCatogory.DropDownStyle = ComboBoxStyle.DropDownList;
+                    combCatogory.SelectedIndex = 0;
+                }
+            }
+        }
+
+        private void combCatogory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ChangeCatogory();
+        }
+
+
+
+        private void ChangeCatogory()
+        {
+            
+            string catogory = combCatogory.SelectedItem.ToString().Trim();
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            {
+                dataGridView1.DataSource = null;
+                dataGridShearch.DataSource = null;
+                dataTable.Rows.Clear();
+                dataTableShearch.Rows.Clear();
+
+                string command = "EXECUTE usp_ShowMeCatogoryParfum "+ catogory;
+                sqlConnection.Open();
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(command, sqlConnection);
+                sqlDataAdapter.Fill(dataTable);
+                sqlDataAdapter.Fill(dataTableShearch);
+                dataGridView1.DataSource = dataTable;
+                textcatogory.Text = catogory;
+            }
         }
     }
 }

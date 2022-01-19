@@ -133,9 +133,6 @@ namespace ParfumUI
         }
 
 
-        // ----------------------------- Load Section
-
-       
 
         public void ChangeSearchName(SqlConnection sqlConnection, bool isConnectionOpen)
         {
@@ -189,7 +186,7 @@ namespace ParfumUI
                 {
 
                     Parfum.Parfum.DeleteParfum(Id, sqlConnection);
-                    
+
                     // Refres Search ComboBox
                     LoadParfumItems.LoadSearchName(sqlConnection, false, combSearchName);
 
@@ -205,6 +202,8 @@ namespace ParfumUI
             brendUpdateDelete.ShowDialog();
 
         }
+
+        
 
         public void DataRefres()
         {

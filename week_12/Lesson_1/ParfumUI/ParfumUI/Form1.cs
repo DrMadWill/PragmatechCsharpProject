@@ -17,29 +17,7 @@ namespace ParfumUI
             InitializeComponent();
         }
 
-        private void btnKisi_Click(object sender, EventArgs e)
-        {
-            Male male = new Male();
-            male.ShowDialog();
-        }
-
-        private void btnQadin_Click(object sender, EventArgs e)
-        {
-            Female female = new Female();
-            female.ShowDialog();
-        }
-
-        private void btnYeni_Click(object sender, EventArgs e)
-        {
-            NewParfum newParfum = new NewParfum();
-            newParfum.ShowDialog();
-        }
-
-        private void btnEksk_Click(object sender, EventArgs e)
-        {
-            Special special = new Special();
-            special.ShowDialog();
-        }
+       
 
 
         private void parfumToolStripMenuItem_Click(object sender, EventArgs e)

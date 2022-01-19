@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ParfumUI.SqlModel
 {
-    public class BrendData
+    public class CatogoryData
     {
         // Sql Data
         private int _id;
@@ -14,19 +14,19 @@ namespace ParfumUI.SqlModel
 
 
         // Sql Data
-        private int _size;
-        public int Size { get { return _size; } }
+        private string _Name;
+        public string Name { get { return _Name; } }
 
         
-        public BrendData(int Id,int size)
+        public CatogoryData(int Id,string name)
         {
             _id = Id;
-            _size = size;
+            _Name = name;
         }
 
         public override string ToString()
         {
-            return $"{Size}";
+            return Name;
         }
     }
 }
