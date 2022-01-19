@@ -28,11 +28,11 @@ namespace ParfumUI.CatogoryView
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 LoadParfumItems.LoadSearchName(sqlConnection, true, combSearchName);
-                LoadCategory(sqlConnection,false);
+                LoadCategoryList(sqlConnection,false);
             }
         }
 
-        private void LoadCategory(SqlConnection sqlConnection,bool isConnection)
+        private void LoadCategoryList(SqlConnection sqlConnection,bool isConnection)
         {
             string commandSize = "select * from Catogory";
             using (SqlCommand sqlCommand = new SqlCommand(commandSize, sqlConnection))
@@ -40,23 +40,64 @@ namespace ParfumUI.CatogoryView
                 // Connection Candition 
                 LoadParfumItems.ConnectionCadditon(sqlConnection, isConnection);
 
+                
+
                 // Data Clear
-                combCategory.Items.Clear();
+                listCategory.Items.Clear();
                 using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
                 {
                     while (sqlDataReader.Read())
                     {
-                        combCategory.Items.Add(sqlDataReader[1].ToString().Trim());
+                        listCategory.Items.Add(sqlDataReader[1].ToString().Trim());
                     }
                 }
-                combCategory.DropDownStyle = ComboBoxStyle.DropDownList;
-                combCategory.SelectedIndex = 0;
+                //combCategory.DropDownStyle = ComboBoxStyle.DropDownList;
+                //combCategory.SelectedIndex = 0;
             }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            string name = "";
+            foreach (var item in listCategory.SelectedItems)
+            {
+                name += (name == "" ? "":" ") + item.ToString(); 
+            }
+            string[] names=name.Replace("ListViewItem: {", "").Replace("}","").Split(' ');
 
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            {
+                // Select iformation
+                
+                int parfumId = ((ParfumHeader)combSearchName.SelectedItem).Id;
+
+
+                string command = "";
+                
+                for (int i = 0; i < names.Length; i++)
+                {
+                    if (string.IsNullOrEmpty(names[0]))
+                    {
+                        return;
+                    }
+                    command = $"EXECUTE usp_InsertCategoryToParfum @ParfumId={parfumId},@Category='{names[i]}'";
+
+                    using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
+                    {
+                        if (i==0)
+                            sqlConnection.Open();
+
+                        // -----------------Information Added DataBases
+                        sqlCommand.ExecuteNonQuery();
+
+                    }
+                }
+
+                MessageBox.Show("Information Added", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                RefresData.salePriceLists.ChangeData();
+            }
         }
+
+
     }
 }

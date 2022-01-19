@@ -170,7 +170,7 @@ namespace ParfumUI.SalePriceFolder
 
         private void LoadSearchName(SqlConnection sqlConnection, bool isConnectionOpen, ComboBox combSearchName)
         {
-            string commandSearch = "SELECT DISTINCT Id,Header FROM DeleteUpdateHeader";
+            string commandSearch = "select * from DeleteHeaders";
             using (SqlCommand sqlCommand = new SqlCommand(commandSearch, sqlConnection))
             {
                 // ComboBox Index
@@ -193,22 +193,6 @@ namespace ParfumUI.SalePriceFolder
                 {
                     while (sqlDataReader.Read())
                     {
-                        //// Collection add
-                        //foreach (var item in parfumHeaders)
-                        //{
-                        //    if (item.Id == Convert.ToInt32(sqlDataReader[0]))
-                        //    {
-                        //        dubilcateinfo = true;
-                        //        break;
-                        //    }
-                        //}
-
-                        //if (dubilcateinfo)
-                        //{
-                        //    dubilcateinfo = false;
-                        //    continue;
-                        //}
-
                         parfumHeaders.Add(new ParfumHeader(Convert.ToInt32(sqlDataReader[0]), sqlDataReader[1].ToString().Trim(), comboxIndex));
                         ++comboxIndex;
                     }

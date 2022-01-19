@@ -89,6 +89,12 @@
     <Compile Include="CatogoryView\CategoryAdd.Designer.cs">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="CatogoryView\CategoryUpdateDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatogoryView\CategoryUpdateDelete.Designer.cs">
+      <DependentUpon>CategoryUpdateDelete.cs</DependentUpon>
+    </Compile>
     <Compile Include="CatogoryView\SalePriceLists.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     <Compile Include="SqlModel\SalePriceData.cs" />
     <EmbeddedResource Include="CatogoryView\CategoryAdd.resx">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatogoryView\CategoryUpdateDelete.resx">
+      <DependentUpon>CategoryUpdateDelete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CatogoryView\SalePriceLists.resx">
       <DependentUpon>SalePriceLists.cs</DependentUpon>

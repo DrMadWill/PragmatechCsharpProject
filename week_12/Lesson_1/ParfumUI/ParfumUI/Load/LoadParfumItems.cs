@@ -212,5 +212,19 @@ namespace ParfumUI.Parfum.Load
             }
         }
 
+
+        public static void DataBasesAdd(SqlConnection sqlConnection,string command)
+        {
+            using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
+            {
+                sqlConnection.Open();
+
+                // -----------------Information Added DataBases
+                sqlCommand.ExecuteNonQuery();
+
+                MessageBox.Show("Information Added", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
     }
 }

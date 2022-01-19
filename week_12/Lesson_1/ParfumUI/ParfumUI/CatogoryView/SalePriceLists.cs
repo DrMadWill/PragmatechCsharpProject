@@ -146,7 +146,7 @@ namespace ParfumUI.CatogoryView
 
         private void ChangeCatogory()
         {
-            
+
             string catogory = combCatogory.SelectedItem.ToString().Trim();
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
@@ -155,7 +155,7 @@ namespace ParfumUI.CatogoryView
                 dataTable.Rows.Clear();
                 dataTableShearch.Rows.Clear();
 
-                string command = "EXECUTE usp_ShowMeCatogoryParfum "+ catogory;
+                string command = "EXECUTE usp_ShowCategoryParfums '" + catogory + "'";
                 sqlConnection.Open();
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(command, sqlConnection);
                 sqlDataAdapter.Fill(dataTable);
@@ -165,10 +165,20 @@ namespace ParfumUI.CatogoryView
             }
         }
 
-        private void catogoryToolStripMenuItem_Click(object sender, EventArgs e)
+        
+
+        private void addToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             CategoryAdd categoryAdd = new CategoryAdd();
             categoryAdd.ShowDialog();
+        }
+
+        
+
+        private void updateDeleteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            CategoryUpdateDelete categoryUpdateDelete = new CategoryUpdateDelete();
+            categoryUpdateDelete.ShowDialog();
         }
     }
 }
