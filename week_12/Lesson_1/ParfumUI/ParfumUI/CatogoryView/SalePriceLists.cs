@@ -144,7 +144,7 @@ namespace ParfumUI.CatogoryView
 
 
 
-        private void ChangeCatogory()
+        public void ChangeCatogory()
         {
 
             string catogory = combCatogory.SelectedItem.ToString().Trim();
@@ -167,18 +167,22 @@ namespace ParfumUI.CatogoryView
 
         
 
-        private void addToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void addToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             CategoryAdd categoryAdd = new CategoryAdd();
             categoryAdd.ShowDialog();
         }
 
-        
-
-        private void updateDeleteToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void removeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CategoryUpdateDelete categoryUpdateDelete = new CategoryUpdateDelete();
             categoryUpdateDelete.ShowDialog();
+        }
+
+        private void createToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CategoryCreate categoryCreate = new CategoryCreate();
+            categoryCreate.ShowDialog();
         }
     }
 }

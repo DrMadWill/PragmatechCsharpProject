@@ -40,8 +40,10 @@ namespace ParfumUI.CatogoryView
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateDeleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.catogoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateDeleteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.sectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.removeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.combCatogory = new System.Windows.Forms.ComboBox();
             this.btn_allparfums = new System.Windows.Forms.Button();
             this.textcatogory = new System.Windows.Forms.Label();
@@ -163,27 +165,43 @@ namespace ParfumUI.CatogoryView
             // 
             this.catogoryToolStripMenuItem.BackColor = System.Drawing.SystemColors.HotTrack;
             this.catogoryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addToolStripMenuItem1,
-            this.updateDeleteToolStripMenuItem1});
+            this.sectionToolStripMenuItem,
+            this.createToolStripMenuItem});
             this.catogoryToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.catogoryToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.catogoryToolStripMenuItem.Name = "catogoryToolStripMenuItem";
             this.catogoryToolStripMenuItem.Size = new System.Drawing.Size(106, 29);
             this.catogoryToolStripMenuItem.Text = "Catogory";
             // 
-            // addToolStripMenuItem1
+            // sectionToolStripMenuItem
             // 
-            this.addToolStripMenuItem1.Name = "addToolStripMenuItem1";
-            this.addToolStripMenuItem1.Size = new System.Drawing.Size(224, 30);
-            this.addToolStripMenuItem1.Text = "Add";
-            this.addToolStripMenuItem1.Click += new System.EventHandler(this.addToolStripMenuItem1_Click);
+            this.sectionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addToolStripMenuItem2,
+            this.removeToolStripMenuItem});
+            this.sectionToolStripMenuItem.Name = "sectionToolStripMenuItem";
+            this.sectionToolStripMenuItem.Size = new System.Drawing.Size(258, 30);
+            this.sectionToolStripMenuItem.Text = "Section";
             // 
-            // updateDeleteToolStripMenuItem1
+            // addToolStripMenuItem2
             // 
-            this.updateDeleteToolStripMenuItem1.Name = "updateDeleteToolStripMenuItem1";
-            this.updateDeleteToolStripMenuItem1.Size = new System.Drawing.Size(224, 30);
-            this.updateDeleteToolStripMenuItem1.Text = "Remove";
-            this.updateDeleteToolStripMenuItem1.Click += new System.EventHandler(this.updateDeleteToolStripMenuItem1_Click);
+            this.addToolStripMenuItem2.Name = "addToolStripMenuItem2";
+            this.addToolStripMenuItem2.Size = new System.Drawing.Size(224, 30);
+            this.addToolStripMenuItem2.Text = "Add";
+            this.addToolStripMenuItem2.Click += new System.EventHandler(this.addToolStripMenuItem2_Click);
+            // 
+            // removeToolStripMenuItem
+            // 
+            this.removeToolStripMenuItem.Name = "removeToolStripMenuItem";
+            this.removeToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
+            this.removeToolStripMenuItem.Text = "Remove";
+            this.removeToolStripMenuItem.Click += new System.EventHandler(this.removeToolStripMenuItem_Click);
+            // 
+            // createToolStripMenuItem
+            // 
+            this.createToolStripMenuItem.Name = "createToolStripMenuItem";
+            this.createToolStripMenuItem.Size = new System.Drawing.Size(258, 30);
+            this.createToolStripMenuItem.Text = "Create and Update";
+            this.createToolStripMenuItem.Click += new System.EventHandler(this.createToolStripMenuItem_Click);
             // 
             // combCatogory
             // 
@@ -278,8 +296,10 @@ namespace ParfumUI.CatogoryView
         private System.Windows.Forms.ComboBox combCatogory;
         private System.Windows.Forms.Button btn_allparfums;
         private System.Windows.Forms.Label textcatogory;
-        private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem updateDeleteToolStripMenuItem1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ToolStripMenuItem sectionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem removeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createToolStripMenuItem;
     }
 }

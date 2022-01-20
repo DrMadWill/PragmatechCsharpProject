@@ -89,11 +89,17 @@
     <Compile Include="CatogoryView\CategoryAdd.Designer.cs">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="CatogoryView\CategoryUpdateDelete.cs">
+    <Compile Include="CatogoryView\CategoryCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatogoryView\CategoryCreate.Designer.cs">
+      <DependentUpon>CategoryCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatogoryView\CategoryRemove.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CatogoryView\CategoryUpdateDelete.Designer.cs">
-      <DependentUpon>CategoryUpdateDelete.cs</DependentUpon>
+      <DependentUpon>CategoryRemove.cs</DependentUpon>
     </Compile>
     <Compile Include="CatogoryView\SalePriceLists.cs">
       <SubType>Form</SubType>
@@ -160,8 +166,11 @@
     <EmbeddedResource Include="CatogoryView\CategoryAdd.resx">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CatogoryView\CategoryCreate.resx">
+      <DependentUpon>CategoryCreate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CatogoryView\CategoryUpdateDelete.resx">
-      <DependentUpon>CategoryUpdateDelete.cs</DependentUpon>
+      <DependentUpon>CategoryRemove.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CatogoryView\SalePriceLists.resx">
       <DependentUpon>SalePriceLists.cs</DependentUpon>

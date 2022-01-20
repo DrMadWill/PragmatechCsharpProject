@@ -21,11 +21,10 @@ namespace ParfumUI.CatogoryView
             InitializeComponent();
         }
 
-        string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
 
         private void CategoryAdd_Load(object sender, EventArgs e)
         {
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
             {
                 LoadParfumItems.LoadSearchName(sqlConnection, true, combSearchName);
                 LoadCategoryList(sqlConnection,false);
@@ -58,43 +57,47 @@ namespace ParfumUI.CatogoryView
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            string name = "";
-            foreach (var item in listCategory.SelectedItems)
+
+            if (LoadParfumItems.IsAreYouSure())
             {
-                name += (name == "" ? "":" ") + item.ToString(); 
-            }
-            string[] names=name.Replace("ListViewItem: {", "").Replace("}","").Split(' ');
-
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
-            {
-                // Select iformation
-                
-                int parfumId = ((ParfumHeader)combSearchName.SelectedItem).Id;
-
-
-                string command = "";
-                
-                for (int i = 0; i < names.Length; i++)
+                string name = "";
+                foreach (var item in listCategory.SelectedItems)
                 {
-                    if (string.IsNullOrEmpty(names[0]))
-                    {
-                        return;
-                    }
-                    command = $"EXECUTE usp_InsertCategoryToParfum @ParfumId={parfumId},@Category='{names[i]}'";
-
-                    using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
-                    {
-                        if (i==0)
-                            sqlConnection.Open();
-
-                        // -----------------Information Added DataBases
-                        sqlCommand.ExecuteNonQuery();
-
-                    }
+                    name += (name == "" ? "" : " ") + item.ToString();
                 }
+                string[] names = name.Replace("ListViewItem: {", "").Replace("}", "").Split(' ');
 
-                MessageBox.Show("Information Added", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                RefresData.salePriceLists.ChangeData();
+                using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
+                {
+                    // Select iformation
+
+                    int parfumId = ((ParfumHeader)combSearchName.SelectedItem).Id;
+
+
+                    string command = "";
+
+                    for (int i = 0; i < names.Length; i++)
+                    {
+                        if (string.IsNullOrEmpty(names[0]))
+                        {
+                            return;
+                        }
+                        command = $"EXECUTE usp_InsertCategoryToParfum @ParfumId={parfumId},@Category='{names[i]}'";
+
+                        using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
+                        {
+                            if (i == 0)
+                                sqlConnection.Open();
+
+                            // -----------------Information Added DataBases
+                            sqlCommand.ExecuteNonQuery();
+
+                        }
+                    }
+
+                    MessageBox.Show("Information Added", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    RefresData.salePriceLists.ChangeData();
+                }
             }
         }
 

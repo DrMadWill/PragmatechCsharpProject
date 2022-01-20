@@ -21,6 +21,11 @@ namespace ParfumUI.Parfum.Load
         
         // ----------------------------- Load Section
 
+        private static string _connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
+
+        public static string connectionString { get { return _connectionString; } }
+
+
         public static void LoadBrend(SqlConnection sqlConnection, bool isConnectionOpen, ComboBox combBrend)
         {
             string commandBrend = "select Name from Brend group by (Name)";
@@ -213,6 +218,29 @@ namespace ParfumUI.Parfum.Load
         }
 
 
+        public static void LoadCategory(SqlConnection sqlConnection, bool isConnection, ComboBox combCategory)
+        {
+            string commandSize = "select * from Catogory";
+            using (SqlCommand sqlCommand = new SqlCommand(commandSize, sqlConnection))
+            {
+                // Connection Candition 
+                LoadParfumItems.ConnectionCadditon(sqlConnection, isConnection);
+
+                // Data Clear
+                combCategory.Items.Clear();
+                using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                {
+                    while (sqlDataReader.Read())
+                    {
+                        combCategory.Items.Add(sqlDataReader[1].ToString().Trim());
+                    }
+                }
+                combCategory.DropDownStyle = ComboBoxStyle.DropDownList;
+                combCategory.SelectedIndex = 0;
+            }
+        }
+
+
         public static void DataBasesAdd(SqlConnection sqlConnection,string command)
         {
             using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
@@ -226,5 +254,29 @@ namespace ParfumUI.Parfum.Load
             }
         }
 
+        public static void DataBasesUpdate(SqlConnection sqlConnection, string command)
+        {
+            using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
+            {
+                sqlConnection.Open();
+
+                // -----------------Information Added DataBases
+                sqlCommand.ExecuteNonQuery();
+
+                MessageBox.Show("Information Updated", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+
+        public static bool IsAreYouSure()
+        {
+            bool isSure = false;
+            DialogResult result = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                isSure = true;
+            }
+            return isSure;
+        }
     }
 }
