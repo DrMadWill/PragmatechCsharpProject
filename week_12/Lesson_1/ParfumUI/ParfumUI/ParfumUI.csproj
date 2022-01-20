@@ -163,6 +163,18 @@
     <Compile Include="SqlModel\CatogoryData.cs" />
     <Compile Include="SqlModel\ParfumHeader.cs" />
     <Compile Include="SqlModel\SalePriceData.cs" />
+    <Compile Include="Users\UserActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\UserActivity.Designer.cs">
+      <DependentUpon>UserActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserActivityMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\UserActivityMonitor.Designer.cs">
+      <DependentUpon>UserActivityMonitor.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CatogoryView\CategoryAdd.resx">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +220,12 @@
     <EmbeddedResource Include="SalePriceFolder\Volume\VolumeAdd.resx">
       <DependentUpon>VolumeAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Users\UserActivity.resx">
+      <DependentUpon>UserActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\UserActivityMonitor.resx">
+      <DependentUpon>UserActivityMonitor.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -234,6 +252,8 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="asdd\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

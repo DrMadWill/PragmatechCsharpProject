@@ -1,4 +1,5 @@
 ﻿using ParfumUI.SalePriceFolder;
+using ParfumUI.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -112,7 +113,7 @@ namespace ParfumUI.CatogoryView
         }
 
 
-        private void LoadCatogory()
+        public void LoadCatogory()
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
@@ -183,6 +184,18 @@ namespace ParfumUI.CatogoryView
         {
             CategoryCreate categoryCreate = new CategoryCreate();
             categoryCreate.ShowDialog();
+        }
+
+        private void userActivityToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserActivity userActivity = new UserActivity();
+            userActivity.ShowDialog();
+        }
+
+        private void acivityToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserActivityMonitor userActivityMonitor = new UserActivityMonitor();
+            userActivityMonitor.ShowDialog();
         }
     }
 }

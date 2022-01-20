@@ -40,12 +40,15 @@ namespace ParfumUI.CatogoryView
                 {
                     string command =$"insert into Catogory(Name) values('{newname}')";
                     // Create Info
-                    LoadParfumItems.DataBasesAdd(sqlConnection, command);
+                    LoadParfumItems.DataBases(sqlConnection, command);
+
+                    // Messenge go
+                    LoadParfumItems.MessengeCreate();
 
                     //Refres Data
                     CategoryChange();
 
-                    RefresData.salePriceLists.ChangeCatogory();
+                    RefresData.salePriceLists.LoadCatogory();
                 }
             }
         }
@@ -61,12 +64,14 @@ namespace ParfumUI.CatogoryView
                     string command = $"Update Catogory set Name='{newname}' where Name='{oldname}'";
 
                     // Update Info
-                    LoadParfumItems.DataBasesUpdate(sqlConnection, command);
+                    LoadParfumItems.DataBases(sqlConnection, command);
+
+                    LoadParfumItems.MessengeUpdate();
 
                     //Refres Data
                     CategoryChange();
 
-                    RefresData.salePriceLists.ChangeCatogory();
+                    RefresData.salePriceLists.LoadCatogory();
                 }
             }
         }

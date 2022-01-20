@@ -241,7 +241,8 @@ namespace ParfumUI.Parfum.Load
         }
 
 
-        public static void DataBasesAdd(SqlConnection sqlConnection,string command)
+        //--------------------------------- Data Bese
+        public static void DataBases(SqlConnection sqlConnection, string command)
         {
             using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
             {
@@ -249,24 +250,63 @@ namespace ParfumUI.Parfum.Load
 
                 // -----------------Information Added DataBases
                 sqlCommand.ExecuteNonQuery();
-
-                MessageBox.Show("Information Added", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
-        public static void DataBasesUpdate(SqlConnection sqlConnection, string command)
+        // ------------------ Messengae Team 
+
+        public static void MessengeWarning(string name)
+        {
+            MessageBox.Show("Information "+name, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+
+        public static void MessengeCreate()
+        {
+            MessageBox.Show("Information Created", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+        public static void MessengeUpdate()
+        {
+            MessageBox.Show("Information Update", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+        public static void MessengeDelete()
+        {
+            MessageBox.Show("Information Delete", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+
+        // ------------------ Database Load
+        public static DataTable DataBeseRead(SqlConnection sqlConnection,string command,bool isConnection)
+        {
+            ConnectionCadditon(sqlConnection, isConnection);
+
+            // ----------------Parfum Read Databese
+
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(command, sqlConnection);
+            DataTable dataTable = new DataTable();
+            sqlDataAdapter.Fill(dataTable);
+            return dataTable;
+        }
+
+        public static void LoadItem(SqlConnection sqlConnection,string command, bool isConnectionOpen, ComboBox combobox)
         {
             using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
             {
-                sqlConnection.Open();
+                // Connection Open Candition
+                ConnectionCadditon(sqlConnection, isConnectionOpen);
 
-                // -----------------Information Added DataBases
-                sqlCommand.ExecuteNonQuery();
-
-                MessageBox.Show("Information Updated", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                // Data Clear
+                combobox.Items.Clear();
+                using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                {
+                    while (sqlDataReader.Read())
+                    {
+                        combobox.Items.Add(sqlDataReader[0].ToString().Trim());
+                    }
+                }
             }
+            combobox.DropDownStyle = ComboBoxStyle.DropDownList;
         }
-
 
         public static bool IsAreYouSure()
         {
