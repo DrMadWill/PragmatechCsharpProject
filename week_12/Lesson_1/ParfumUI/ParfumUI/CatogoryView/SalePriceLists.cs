@@ -1,4 +1,5 @@
-﻿using ParfumUI.SalePriceFolder;
+﻿using ParfumUI.Parfum.Load;
+using ParfumUI.SalePriceFolder;
 using ParfumUI.Users;
 using System;
 using System.Collections.Generic;
@@ -38,7 +39,7 @@ namespace ParfumUI.CatogoryView
         public void ChangeData()
         {
 
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
             {
                 dataGridView1.DataSource = null;
                 dataGridShearch.DataSource = null;
@@ -67,7 +68,7 @@ namespace ParfumUI.CatogoryView
             foreach (DataRow row in dataTable.Rows)
             {
 
-                if ( row["Name"].ToString().Trim().Contains(name) )
+                if ( row["Name"].ToString().Trim().ToLower().Contains(name.ToLower()))
                 {
                     foreach (DataColumn dataColumn in dataTable.Columns)
                     {
@@ -80,7 +81,6 @@ namespace ParfumUI.CatogoryView
 
             }
             dataGridShearch.DataSource = dataTableShearch;
-            
         }
 
         
@@ -115,7 +115,7 @@ namespace ParfumUI.CatogoryView
 
         public void LoadCatogory()
         {
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
             {
                 string commandSize = "select * from Catogory";
                 using (SqlCommand sqlCommand = new SqlCommand(commandSize, sqlConnection))
@@ -197,5 +197,13 @@ namespace ParfumUI.CatogoryView
             UserActivityMonitor userActivityMonitor = new UserActivityMonitor();
             userActivityMonitor.ShowDialog();
         }
+
+        private void saleAddToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserSaleMonitor userSaleMonitor = new UserSaleMonitor();
+            userSaleMonitor.ShowDialog();
+        }
+
+        
     }
 }

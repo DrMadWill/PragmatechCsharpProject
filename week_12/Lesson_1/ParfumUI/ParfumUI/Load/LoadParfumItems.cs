@@ -253,6 +253,18 @@ namespace ParfumUI.Parfum.Load
             }
         }
 
+        public static void DataBases(SqlConnection sqlConnection, string command,bool isConnect)
+        {
+            using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
+            {
+                // Connection Cadition
+                ConnectionCadditon(sqlConnection, isConnect);
+
+                // -----------------Information Added DataBases
+                sqlCommand.ExecuteNonQuery();
+            }
+        }
+
         // ------------------ Messengae Team 
 
         public static void MessengeWarning(string name)
@@ -308,10 +320,59 @@ namespace ParfumUI.Parfum.Load
             combobox.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
+
+        public static void UpdateLoadSearchName(SqlConnection sqlConnection, bool isConnectionOpen, ComboBox combSearchName)
+        {
+            string commandSearch = "select * from DeleteHeaders";
+            using (SqlCommand sqlCommand = new SqlCommand(commandSearch, sqlConnection))
+            {
+                // ComboBox Index
+                int comboxIndex = 0;
+
+                // Connection Open Candition
+                LoadParfumItems.ConnectionCadditon(sqlConnection, isConnectionOpen);
+
+                // Data Clear
+                combSearchName.DataSource = null;
+
+                // Collection Create
+                List<ParfumHeader> parfumHeaders = new List<ParfumHeader>();
+
+                bool dubilcateinfo = false;
+
+                // Collection Clear
+                parfumHeaders.Clear();
+                using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                {
+                    while (sqlDataReader.Read())
+                    {
+                        parfumHeaders.Add(new ParfumHeader(Convert.ToInt32(sqlDataReader[0]), sqlDataReader[1].ToString().Trim(), comboxIndex));
+                        ++comboxIndex;
+                    }
+                }
+
+                // Data Add
+                combSearchName.DataSource = parfumHeaders.ToList();
+                combSearchName.DropDownStyle = ComboBoxStyle.DropDownList;
+                combSearchName.SelectedIndex = 0;
+            }
+        }
+
         public static bool IsAreYouSure()
         {
             bool isSure = false;
             DialogResult result = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                isSure = true;
+            }
+            return isSure;
+        }
+
+        public static bool IsAreYouSure(string name)
+        {
+            bool isSure = false;
+            DialogResult result = MessageBox.Show($"Are you sure {name} ?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
                 isSure = true;

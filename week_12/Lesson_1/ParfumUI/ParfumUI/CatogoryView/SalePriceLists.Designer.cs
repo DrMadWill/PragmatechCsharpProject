@@ -46,11 +46,12 @@ namespace ParfumUI.CatogoryView
             this.createToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userActivityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acivityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saleAddToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.combCatogory = new System.Windows.Forms.ComboBox();
             this.btn_allparfums = new System.Windows.Forms.Button();
             this.textcatogory = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.acivityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridShearch)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -61,7 +62,7 @@ namespace ParfumUI.CatogoryView
             this.btnSearch.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSearch.Location = new System.Drawing.Point(1279, 53);
+            this.btnSearch.Location = new System.Drawing.Point(1357, 50);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(168, 46);
             this.btnSearch.TabIndex = 24;
@@ -111,7 +112,7 @@ namespace ParfumUI.CatogoryView
             this.dataGridShearch.Name = "dataGridShearch";
             this.dataGridShearch.RowHeadersWidth = 51;
             this.dataGridShearch.RowTemplate.Height = 24;
-            this.dataGridShearch.Size = new System.Drawing.Size(1435, 219);
+            this.dataGridShearch.Size = new System.Drawing.Size(1513, 219);
             this.dataGridShearch.TabIndex = 27;
             // 
             // menuStrip1
@@ -125,7 +126,7 @@ namespace ParfumUI.CatogoryView
             this.userToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1459, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1538, 33);
             this.menuStrip1.TabIndex = 28;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -211,7 +212,8 @@ namespace ParfumUI.CatogoryView
             // 
             this.userToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.userActivityToolStripMenuItem,
-            this.acivityToolStripMenuItem});
+            this.acivityToolStripMenuItem,
+            this.saleAddToolStripMenuItem});
             this.userToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
             this.userToolStripMenuItem.Size = new System.Drawing.Size(64, 29);
@@ -220,9 +222,23 @@ namespace ParfumUI.CatogoryView
             // userActivityToolStripMenuItem
             // 
             this.userActivityToolStripMenuItem.Name = "userActivityToolStripMenuItem";
-            this.userActivityToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
+            this.userActivityToolStripMenuItem.Size = new System.Drawing.Size(197, 30);
             this.userActivityToolStripMenuItem.Text = "Login Users";
             this.userActivityToolStripMenuItem.Click += new System.EventHandler(this.userActivityToolStripMenuItem_Click);
+            // 
+            // acivityToolStripMenuItem
+            // 
+            this.acivityToolStripMenuItem.Name = "acivityToolStripMenuItem";
+            this.acivityToolStripMenuItem.Size = new System.Drawing.Size(197, 30);
+            this.acivityToolStripMenuItem.Text = "Sale Acivity";
+            this.acivityToolStripMenuItem.Click += new System.EventHandler(this.acivityToolStripMenuItem_Click);
+            // 
+            // saleAddToolStripMenuItem
+            // 
+            this.saleAddToolStripMenuItem.Name = "saleAddToolStripMenuItem";
+            this.saleAddToolStripMenuItem.Size = new System.Drawing.Size(197, 30);
+            this.saleAddToolStripMenuItem.Text = "Sale Add";
+            this.saleAddToolStripMenuItem.Click += new System.EventHandler(this.saleAddToolStripMenuItem_Click);
             // 
             // combCatogory
             // 
@@ -241,7 +257,7 @@ namespace ParfumUI.CatogoryView
             this.btn_allparfums.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btn_allparfums.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_allparfums.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_allparfums.Location = new System.Drawing.Point(1215, 339);
+            this.btn_allparfums.Location = new System.Drawing.Point(1293, 335);
             this.btn_allparfums.Name = "btn_allparfums";
             this.btn_allparfums.Size = new System.Drawing.Size(232, 46);
             this.btn_allparfums.TabIndex = 30;
@@ -254,7 +270,7 @@ namespace ParfumUI.CatogoryView
             this.textcatogory.AutoSize = true;
             this.textcatogory.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textcatogory.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textcatogory.Location = new System.Drawing.Point(754, 339);
+            this.textcatogory.Location = new System.Drawing.Point(811, 335);
             this.textcatogory.Name = "textcatogory";
             this.textcatogory.Size = new System.Drawing.Size(191, 46);
             this.textcatogory.TabIndex = 31;
@@ -262,28 +278,22 @@ namespace ParfumUI.CatogoryView
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 391);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1435, 403);
+            this.dataGridView1.Size = new System.Drawing.Size(1513, 403);
             this.dataGridView1.TabIndex = 32;
-            // 
-            // acivityToolStripMenuItem
-            // 
-            this.acivityToolStripMenuItem.Name = "acivityToolStripMenuItem";
-            this.acivityToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
-            this.acivityToolStripMenuItem.Text = "Acivity";
-            this.acivityToolStripMenuItem.Click += new System.EventHandler(this.acivityToolStripMenuItem_Click);
             // 
             // SalePriceLists
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(1459, 806);
+            this.ClientSize = new System.Drawing.Size(1538, 806);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textcatogory);
             this.Controls.Add(this.btn_allparfums);
@@ -332,5 +342,6 @@ namespace ParfumUI.CatogoryView
         private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem userActivityToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acivityToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saleAddToolStripMenuItem;
     }
 }

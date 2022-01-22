@@ -32,3 +32,5 @@ C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumU
 C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.CatogoryView.CategoryCreate.resources
 C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.Users.UserActivity.resources
 C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.Users.UserActivityMonitor.resources
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.Users.UserSaleMonitor.resources
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\week_12\Lesson_1\ParfumUI\ParfumUI\obj\Debug\ParfumUI.Users.Form1.resources

@@ -163,6 +163,12 @@
     <Compile Include="SqlModel\CatogoryData.cs" />
     <Compile Include="SqlModel\ParfumHeader.cs" />
     <Compile Include="SqlModel\SalePriceData.cs" />
+    <Compile Include="Users\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Users\UserActivity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,12 @@
     </Compile>
     <Compile Include="Users\UserActivityMonitor.Designer.cs">
       <DependentUpon>UserActivityMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserSaleMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\UserSaleMonitor.Designer.cs">
+      <DependentUpon>UserSaleMonitor.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="CatogoryView\CategoryAdd.resx">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
@@ -220,11 +232,17 @@
     <EmbeddedResource Include="SalePriceFolder\Volume\VolumeAdd.resx">
       <DependentUpon>VolumeAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Users\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Users\UserActivity.resx">
       <DependentUpon>UserActivity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\UserActivityMonitor.resx">
       <DependentUpon>UserActivityMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\UserSaleMonitor.resx">
+      <DependentUpon>UserSaleMonitor.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -29,7 +29,7 @@ namespace ParfumUI.SalePriceFolder
         {
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
-                LoadSearchName(sqlConnection, true, combSearchName);
+                LoadParfumItems.UpdateLoadSearchName(sqlConnection, true, combSearchName);
 
                 LoadParfumItems.LoadSize(sqlConnection, false, combSize);
                 SelectedChange();
@@ -162,47 +162,10 @@ namespace ParfumUI.SalePriceFolder
                         RefresData.salePriceLists.ChangeData();
                         
                     }
-                    LoadSearchName(sqlConnection, false, combSearchName);
+                    LoadParfumItems.UpdateLoadSearchName(sqlConnection, false, combSearchName);
                 }
             }
         }
 
-
-        private void LoadSearchName(SqlConnection sqlConnection, bool isConnectionOpen, ComboBox combSearchName)
-        {
-            string commandSearch = "select * from DeleteHeaders";
-            using (SqlCommand sqlCommand = new SqlCommand(commandSearch, sqlConnection))
-            {
-                // ComboBox Index
-                int comboxIndex = 0;
-
-                // Connection Open Candition
-                LoadParfumItems.ConnectionCadditon(sqlConnection, isConnectionOpen);
-
-                // Data Clear
-                combSearchName.DataSource = null;
-
-                // Collection Create
-                List<ParfumHeader> parfumHeaders = new List<ParfumHeader>();
-
-                bool dubilcateinfo = false;
-
-                // Collection Clear
-                parfumHeaders.Clear();
-                using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
-                {
-                    while (sqlDataReader.Read())
-                    {
-                        parfumHeaders.Add(new ParfumHeader(Convert.ToInt32(sqlDataReader[0]), sqlDataReader[1].ToString().Trim(), comboxIndex));
-                        ++comboxIndex;
-                    }
-                }
-
-                // Data Add
-                combSearchName.DataSource = parfumHeaders.Distinct().ToList();
-                combSearchName.DropDownStyle = ComboBoxStyle.DropDownList;
-                combSearchName.SelectedIndex = 0;
-            }
-        }
     }
 }

@@ -46,7 +46,7 @@ namespace ParfumUI.SalePriceFolder
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Teal;
+            this.button4.BackColor = System.Drawing.SystemColors.HotTrack;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(183, 344);
             this.button4.Name = "button4";
@@ -112,7 +112,7 @@ namespace ParfumUI.SalePriceFolder
             // 
             // btnUpdate
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.Orange;
+            this.btnUpdate.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnUpdate.Location = new System.Drawing.Point(509, 444);
@@ -165,7 +165,7 @@ namespace ParfumUI.SalePriceFolder
             // 
             // btnDelete
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.Firebrick;
+            this.btnDelete.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnDelete.Location = new System.Drawing.Point(27, 444);
@@ -180,6 +180,7 @@ namespace ParfumUI.SalePriceFolder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(948, 544);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.button4);
