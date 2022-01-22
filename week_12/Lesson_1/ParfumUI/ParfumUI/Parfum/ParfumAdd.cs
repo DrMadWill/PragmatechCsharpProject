@@ -47,8 +47,7 @@ namespace ParfumUI
         {
 
             // Save Click
-            DialogResult result = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (result == DialogResult.Yes)
+            if (LoadParfumItems.IsAreYouSure("Created"))
             {
                 string name = textName.Text.Trim();
                 string image = textImage.Text.Trim();
@@ -60,7 +59,7 @@ namespace ParfumUI
 
                 if (!RefresData.parfum_Function.IsAdd(name, brend))
                 {
-                    MessageBox.Show("This is Already Added");
+                    LoadParfumItems.MessengeWarning("This is Already Added");
                     return;
                 }
 
@@ -85,13 +84,7 @@ namespace ParfumUI
 
         
 
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-            // Brend Add Panel Show
-            BrendAdd brend = new BrendAdd(true);
-            RefresData.brendAdd = brend;
-            brend.ShowDialog();
-        }
+        
 
         public void ChangeBrend()
         {
@@ -103,10 +96,6 @@ namespace ParfumUI
             }
         }
 
-        private void btnUpdateDelete_Click(object sender, EventArgs e)
-        {
-            BrendUpdateDelete brendUpdateDelete = new BrendUpdateDelete(true);
-            brendUpdateDelete.ShowDialog();
-        }
+        
     }
 }

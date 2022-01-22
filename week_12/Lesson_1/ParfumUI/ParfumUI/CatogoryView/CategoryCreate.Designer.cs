@@ -50,6 +50,8 @@ namespace ParfumUI.CatogoryView
             // 
             // combCategory
             // 
+            this.combCategory.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.combCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combCategory.FormattingEnabled = true;
             this.combCategory.Location = new System.Drawing.Point(191, 32);
@@ -59,13 +61,14 @@ namespace ParfumUI.CatogoryView
             // 
             // btnUpdate
             // 
+            this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnUpdate.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnUpdate.Location = new System.Drawing.Point(396, 222);
+            this.btnUpdate.Location = new System.Drawing.Point(394, 222);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(378, 63);
+            this.btnUpdate.Size = new System.Drawing.Size(394, 63);
             this.btnUpdate.TabIndex = 68;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -73,6 +76,7 @@ namespace ParfumUI.CatogoryView
             // 
             // btnCreate
             // 
+            this.btnCreate.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnCreate.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnCreate.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -98,10 +102,12 @@ namespace ParfumUI.CatogoryView
             // 
             // textNewCategrory
             // 
+            this.textNewCategrory.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textNewCategrory.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textNewCategrory.Location = new System.Drawing.Point(278, 135);
             this.textNewCategrory.Name = "textNewCategrory";
-            this.textNewCategrory.Size = new System.Drawing.Size(496, 38);
+            this.textNewCategrory.Size = new System.Drawing.Size(510, 38);
             this.textNewCategrory.TabIndex = 71;
             // 
             // CategoryCreate

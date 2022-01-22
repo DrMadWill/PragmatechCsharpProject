@@ -27,6 +27,5 @@ namespace ParfumUI
         // Sale Price List
         public static SalePriceLists salePriceLists;
 
-        public static SalePriceFolder.UpdateSalePrice updateSalePrice;
     }
 }

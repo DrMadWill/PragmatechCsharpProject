@@ -37,8 +37,9 @@ namespace ParfumUI.Users
                 string commandUsers = "select FullName from ActiveUserTable";
                 LoadParfumItems.LoadItem(sqlConnection, commandUsers, false, combUser);
 
-                
-                
+
+                string commands = "select * from SaleDetailParfum where PriceId=1";
+                table = LoadParfumItems.DataBeseRead(sqlConnection, commands, false);
 
 
             }
@@ -59,7 +60,6 @@ namespace ParfumUI.Users
                 string command = "select * from SaleDetailParfum";
 
                 dataTableShearch = LoadParfumItems.DataBeseRead(sqlConnection, command, true);
-                table= LoadParfumItems.DataBeseRead(sqlConnection, command, false);
                 dataGridViewShearch.DataSource = dataTableShearch;
                 textcatogory.Text = "All Parfums";
 
@@ -81,7 +81,7 @@ namespace ParfumUI.Users
                 // Databses Info add
                 string command = "EXECUTE usp_SaleShowCategoryParfums '" + catogory + "'";
                 dataTableShearch= LoadParfumItems.DataBeseRead(sqlConnection, command, true);
-
+               
                 dataGridViewShearch.DataSource = dataTableShearch;
                 textcatogory.Text = catogory;
             }
@@ -164,7 +164,16 @@ namespace ParfumUI.Users
                     foreach (DataGridViewRow row in dataGridViewSales.Rows)
                     {
                         PriceId = row.Cells["PriceId"].Value.ToString().Trim();
-                        count = int.Parse(row.Cells["SaleCount"].Value.ToString().Trim());
+                        try
+                        {
+                            count = int.Parse(row.Cells["SaleCount"].Value.ToString().Trim());
+
+                        }
+                        catch (Exception err)
+                        {
+                            LoadParfumItems.MessengeWarning("PLease Count Add.");
+                            return;
+                        }
                         basecount = int.Parse(row.Cells["BaseCount"].Value.ToString().Trim());
                         price = int.Parse(row.Cells["ParfumPrice"].Value.ToString().Trim());
                         parfumname = row.Cells["ParfumN"].Value.ToString().Trim();
@@ -216,31 +225,19 @@ namespace ParfumUI.Users
         {
             string shrearchname = textSearchName.Text.Trim().ToLower();
             string loadnames = "";
-
-            //foreach (DataGridViewRow row in dataGridViewShearch.Rows)
-            //{
-            //    loadnames = row.Cells["Name"].Value.ToString().Trim().ToLower();
-            //    if (loadnames.Contains(shrearchname))
-            //    {
-                    
-            //    }
-            //    else
-            //        dataGridViewSales.Rows.Remove(row);
-
-            //}
-
+            table.Rows.Clear();
+            List<int> indexs = new List<int>();
             foreach (DataRow row in dataTableShearch.Rows)
             {
                 loadnames = row["Name"].ToString().Trim().ToLower();
                 if (loadnames.Contains(shrearchname))
                 {
+                    table.Rows.Add(row.ItemArray);
 
                 }
-                else
-                    table.Rows.Remove(row);
-
             }
 
+            dataGridViewShearch.DataSource = table;
         }
     }
 }

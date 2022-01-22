@@ -17,7 +17,7 @@ namespace ParfumUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            SalePriceLists salePriceLists = new SalePriceLists();
+            SalePriceLists salePriceLists = new SalePriceLists("MadWill");
             RefresData.salePriceLists = salePriceLists;
             Application.Run(salePriceLists);
         }

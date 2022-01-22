@@ -98,7 +98,7 @@
     <Compile Include="CatogoryView\CategoryRemove.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CatogoryView\CategoryUpdateDelete.Designer.cs">
+    <Compile Include="CatogoryView\CategoryRemove.Designer.cs">
       <DependentUpon>CategoryRemove.cs</DependentUpon>
     </Compile>
     <Compile Include="CatogoryView\SalePriceLists.cs">
@@ -106,6 +106,12 @@
     </Compile>
     <Compile Include="CatogoryView\SalePriceLists.Designer.cs">
       <DependentUpon>SalePriceLists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Load\LoadParfumItems.cs" />
     <Compile Include="Parfum\Brend\BrendUpdateDelete.cs">
@@ -148,12 +154,6 @@
     <Compile Include="SalePriceFolder\SalePrice.Designer.cs">
       <DependentUpon>SalePrice.cs</DependentUpon>
     </Compile>
-    <Compile Include="SalePriceFolder\UpdateSalePrice.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SalePriceFolder\UpdateSalePrice.Designer.cs">
-      <DependentUpon>UpdateSalePrice.cs</DependentUpon>
-    </Compile>
     <Compile Include="SalePriceFolder\Volume\VolumeAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,12 +163,6 @@
     <Compile Include="SqlModel\CatogoryData.cs" />
     <Compile Include="SqlModel\ParfumHeader.cs" />
     <Compile Include="SqlModel\SalePriceData.cs" />
-    <Compile Include="Users\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Users\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Users\UserActivity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,11 +187,14 @@
     <EmbeddedResource Include="CatogoryView\CategoryCreate.resx">
       <DependentUpon>CategoryCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CatogoryView\CategoryUpdateDelete.resx">
+    <EmbeddedResource Include="CatogoryView\CategoryRemove.resx">
       <DependentUpon>CategoryRemove.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CatogoryView\SalePriceLists.resx">
       <DependentUpon>SalePriceLists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Parfum\Brend\BrendAdd.resx">
       <DependentUpon>BrendAdd.cs</DependentUpon>
@@ -226,14 +223,8 @@
     <EmbeddedResource Include="SalePriceFolder\SalePrice.resx">
       <DependentUpon>SalePrice.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SalePriceFolder\UpdateSalePrice.resx">
-      <DependentUpon>UpdateSalePrice.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="SalePriceFolder\Volume\VolumeAdd.resx">
       <DependentUpon>VolumeAdd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Users\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\UserActivity.resx">
       <DependentUpon>UserActivity.cs</DependentUpon>
@@ -271,7 +262,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="asdd\" />
+    <Folder Include="CatogoryView\NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,5 @@
-﻿using ParfumUI.Parfum.Load;
+﻿using ParfumUI.Parfum.Brend;
+using ParfumUI.Parfum.Load;
 using ParfumUI.SalePriceFolder;
 using ParfumUI.Users;
 using System;
@@ -22,17 +23,31 @@ namespace ParfumUI.CatogoryView
 
         DataTable dataTableShearch = new DataTable();
         string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
+        private string _username;
+        public string UserName { get { return _username; } }
 
-        public SalePriceLists()
+        
+        public SalePriceLists(string admin_name)
         {
             InitializeComponent();
+            _username = admin_name;
+
         }
 
         private void SalePriceLists_Load(object sender, EventArgs e)
         {
+            textUser.Text = UserName;
             LoadCatogory();
-
             ChangeData();
+            using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
+            {
+                string command = "select Count(*) from ParfumLoginUsers";
+                using (SqlCommand sqlCommand = new SqlCommand(command,sqlConnection))
+                {
+                    sqlConnection.Open();
+                   textLogin.Text="Login Access : "+ sqlCommand.ExecuteScalar().ToString();
+                }
+            }
         }
 
 
@@ -50,9 +65,12 @@ namespace ParfumUI.CatogoryView
                 sqlConnection.Open();
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(command, sqlConnection);
                 sqlDataAdapter.Fill(dataTable);
-                sqlDataAdapter.Fill(dataTableShearch);
                 dataGridView1.DataSource = dataTable;
                 textcatogory.Text = "All Parfums";
+
+                string commands = "select * from FullDetailParfum where Id=1";
+                dataTableShearch = LoadParfumItems.DataBeseRead(sqlConnection, commands, false);
+                
             }
         }
 
@@ -100,12 +118,6 @@ namespace ParfumUI.CatogoryView
             salePrice.ShowDialog();
         }
 
-        private void updateDeleteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            UpdateSalePrice updateSalePrice = new UpdateSalePrice();
-            RefresData.updateSalePrice = updateSalePrice;
-            updateSalePrice.ShowDialog();
-        }
 
         private void btn_allparfums_Click(object sender, EventArgs e)
         {
@@ -154,19 +166,16 @@ namespace ParfumUI.CatogoryView
                 dataGridView1.DataSource = null;
                 dataGridShearch.DataSource = null;
                 dataTable.Rows.Clear();
-                dataTableShearch.Rows.Clear();
 
                 string command = "EXECUTE usp_ShowCategoryParfums '" + catogory + "'";
                 sqlConnection.Open();
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(command, sqlConnection);
                 sqlDataAdapter.Fill(dataTable);
-                sqlDataAdapter.Fill(dataTableShearch);
                 dataGridView1.DataSource = dataTable;
                 textcatogory.Text = catogory;
             }
         }
 
-        
 
         private void addToolStripMenuItem2_Click(object sender, EventArgs e)
         {
@@ -176,8 +185,10 @@ namespace ParfumUI.CatogoryView
 
         private void removeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CategoryUpdateDelete categoryUpdateDelete = new CategoryUpdateDelete();
-            categoryUpdateDelete.ShowDialog();
+            CategoryRemove categoryRemove = new CategoryRemove();
+            categoryRemove.ShowDialog();
+            //CategoryUpdateDelete categoryUpdateDelete = new CategoryUpdateDelete();
+            //categoryUpdateDelete.ShowDialog();
         }
 
         private void createToolStripMenuItem_Click(object sender, EventArgs e)
@@ -204,6 +215,17 @@ namespace ParfumUI.CatogoryView
             userSaleMonitor.ShowDialog();
         }
 
-        
+       
+        private void addToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            BrendAdd brendAdd = new BrendAdd();
+            brendAdd.ShowDialog();
+        }
+
+        private void editToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            BrendUpdateDelete brendUpdate = new BrendUpdateDelete();
+            brendUpdate.ShowDialog();
+        }
     }
 }

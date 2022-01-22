@@ -33,7 +33,7 @@ namespace ParfumUI.CatogoryView
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            if (LoadParfumItems.IsAreYouSure())
+            if (LoadParfumItems.IsAreYouSure("Create"))
             {
                 string newname = textNewCategrory.Text.Trim();
                 using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
@@ -43,7 +43,7 @@ namespace ParfumUI.CatogoryView
                     LoadParfumItems.DataBases(sqlConnection, command);
 
                     // Messenge go
-                    LoadParfumItems.MessengeCreate();
+                    LoadParfumItems.MessengeWarning("Created");
 
                     //Refres Data
                     CategoryChange();
@@ -55,7 +55,7 @@ namespace ParfumUI.CatogoryView
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (LoadParfumItems.IsAreYouSure())
+            if (LoadParfumItems.IsAreYouSure("Create"))
             {
                 string oldname = combCategory.SelectedItem.ToString().Trim(); 
                 string newname = textNewCategrory.Text.Trim();
@@ -66,7 +66,7 @@ namespace ParfumUI.CatogoryView
                     // Update Info
                     LoadParfumItems.DataBases(sqlConnection, command);
 
-                    LoadParfumItems.MessengeUpdate();
+                    LoadParfumItems.MessengeWarning("Updated.");
 
                     //Refres Data
                     CategoryChange();

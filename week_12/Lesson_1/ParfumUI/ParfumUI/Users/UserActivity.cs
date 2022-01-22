@@ -41,7 +41,7 @@ namespace ParfumUI.Users
                 // Login User Data
                 string commandLogin = "select * from ParfumLoginUsers";
                 dataGridViewLoginUser.DataSource = LoadParfumItems.DataBeseRead(sqlConnection, commandLogin, false);
-                labelLoginUserCount.Text = dataGridViewLoginUser.Rows.Count.ToString();
+                labelLoginUserCount.Text ="User Login :" + dataGridViewLoginUser.Rows.Count.ToString();
 
             }
         }
@@ -130,7 +130,7 @@ namespace ParfumUI.Users
                 {
                     string command = $"insert into Parfume.dbo.Users(FullName,[Password],IsUser,IsEmployee,IsActive)values('{fullname}','{password}',{user},{isEmploye},{isActive})";
                     LoadParfumItems.DataBases(sqlConnection, command);
-                    LoadParfumItems.MessengeCreate();
+                    LoadParfumItems.MessengeWarning("Created");
                     ChangeData();
                     ClearData();
                 }

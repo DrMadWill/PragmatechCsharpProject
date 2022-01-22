@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ParfumUI.Parfum.Load;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -14,7 +15,6 @@ namespace ParfumUI
 {
     public partial class Parfum_Function : Form
     {
-        string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
 
         DataTable dataTable=null;
 
@@ -48,10 +48,11 @@ namespace ParfumUI
 
         public void ChangeParfum()
         {
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
             {
-                dataTable=Parfum.Parfum.ReadParfum(sqlConnection);
-
+                //dataTable=Parfum.Parfum.ReadParfum(sqlConnection);
+                string command = "select * from MidDetalParfume";
+                dataTable = LoadParfumItems.DataBeseRead(sqlConnection, command, true);
                 // Parfum Data Load 
                 dataGridView1.DataSource = dataTable;
             }

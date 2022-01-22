@@ -40,6 +40,7 @@ namespace ParfumUI
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(10, 104);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(279, 36);
@@ -48,21 +49,25 @@ namespace ParfumUI
             // 
             // textDescript
             // 
+            this.textDescript.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textDescript.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDescript.Location = new System.Drawing.Point(16, 154);
             this.textDescript.Multiline = true;
             this.textDescript.Name = "textDescript";
-            this.textDescript.Size = new System.Drawing.Size(732, 173);
+            this.textDescript.Size = new System.Drawing.Size(880, 304);
             this.textDescript.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Green;
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(16, 346);
+            this.button1.Location = new System.Drawing.Point(16, 477);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(732, 60);
+            this.button1.Size = new System.Drawing.Size(876, 60);
             this.button1.TabIndex = 2;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = false;
@@ -70,16 +75,19 @@ namespace ParfumUI
             // 
             // textName
             // 
+            this.textName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textName.Location = new System.Drawing.Point(257, 33);
             this.textName.Name = "textName";
-            this.textName.Size = new System.Drawing.Size(491, 38);
+            this.textName.Size = new System.Drawing.Size(639, 38);
             this.textName.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(10, 33);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(208, 36);
@@ -90,15 +98,16 @@ namespace ParfumUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 428);
+            this.BackColor = System.Drawing.SystemColors.Highlight;
+            this.ClientSize = new System.Drawing.Size(904, 555);
             this.Controls.Add(this.textName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textDescript);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Name = "BrendAdd";
             this.Text = "BrendAdd";
-            this.Load += new System.EventHandler(this.BrendAdd_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

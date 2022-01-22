@@ -17,10 +17,6 @@ namespace ParfumUI
 {
     public partial class ParfumeUpdate : Form
     {
-
-
-        string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
-
         
         private bool isUpdate;
 
@@ -35,7 +31,7 @@ namespace ParfumUI
 
         private void ParfumeUpdate_Load(object sender, EventArgs e)
         {
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
             {
                 LoadParfumItems.LoadBrend(sqlConnection, true, combBrend);
                 LoadParfumItems.LoadDensity(sqlConnection, false, combDensity);
@@ -50,8 +46,7 @@ namespace ParfumUI
         // Update Click
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Are you sure?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (result == DialogResult.Yes)
+            if (LoadParfumItems.IsAreYouSure("Update"))
             {
                 int Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
                 string name = textName.Text.Trim();
@@ -61,7 +56,7 @@ namespace ParfumUI
                 string gender = combGender.SelectedItem.ToString().Trim();
                 string density = combDensity.SelectedItem.ToString().Trim();
 
-                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+                using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
                 {
                     // Updated Parfum
                     Parfum.Parfum.UpdateParfum(Id, name, image, decrip, brend, gender, density, sqlConnection);
@@ -76,9 +71,12 @@ namespace ParfumUI
                     // Refres Shearch Name
                     LoadParfumItems.LoadSearchName(sqlConnection, false, combSearchName);
 
+                    // Refres Data
+                    RefresData.salePriceLists.ChangeData();
+
                     //Problem
                     combSearchName.SelectedIndex = SearchNameIndex(comboIndex);
-
+                    LoadParfumItems.MessengeWarning("Parfum Updated");
                 }
 
             }
@@ -108,22 +106,17 @@ namespace ParfumUI
                 isUpdate = false;
             }
 
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
             {
                 ChangeSearchName(sqlConnection, true);
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            BrendAdd brendAdd = new BrendAdd(false);
-            brendAdd.ShowDialog();
-        }
-
+       
 
         public void ChangeBrend()
         {
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
             {
                 LoadParfumItems.LoadBrend(sqlConnection, true, combBrend);
                 // New Brend Add .Back To This Parfum Brend Name
@@ -176,13 +169,12 @@ namespace ParfumUI
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Are you  sure delete?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (result == DialogResult.Yes)
+            if (LoadParfumItems.IsAreYouSure("Delete? if this parfum deleted connectid sales deleted!"))
             {
 
                 int Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
                 
-                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+                using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
                 {
 
                     Parfum.Parfum.DeleteParfum(Id, sqlConnection);
@@ -192,22 +184,19 @@ namespace ParfumUI
 
                     // Change DataGridVeiw
                     RefresData.parfum_Function.ChangeParfum();
+                    RefresData.salePriceLists.ChangeData();
                 }
+                LoadParfumItems.MessengeWarning("Deleted");
             }
         }
 
-        private void btnUpdateDelete_Click(object sender, EventArgs e)
-        {
-            BrendUpdateDelete brendUpdateDelete = new BrendUpdateDelete(false);
-            brendUpdateDelete.ShowDialog();
-
-        }
+        
 
         
 
         public void DataRefres()
         {
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
             {
                
 

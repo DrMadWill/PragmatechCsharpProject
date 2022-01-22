@@ -39,7 +39,6 @@ namespace ParfumUI.CatogoryView
                 // Connection Candition 
                 LoadParfumItems.ConnectionCadditon(sqlConnection, isConnection);
 
-                
 
                 // Data Clear
                 listCategory.Items.Clear();
@@ -58,7 +57,7 @@ namespace ParfumUI.CatogoryView
         private void btnSave_Click(object sender, EventArgs e)
         {
 
-            if (LoadParfumItems.IsAreYouSure())
+            if (LoadParfumItems.IsAreYouSure("Add"))
             {
                 string name = "";
                 foreach (var item in listCategory.SelectedItems)
@@ -82,6 +81,7 @@ namespace ParfumUI.CatogoryView
                         {
                             return;
                         }
+
                         command = $"EXECUTE usp_InsertCategoryToParfum @ParfumId={parfumId},@Category='{names[i]}'";
 
                         using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
@@ -89,13 +89,13 @@ namespace ParfumUI.CatogoryView
                             if (i == 0)
                                 sqlConnection.Open();
 
-                            // -----------------Information Added DataBases
+                            //-----------------Information Added DataBases
                             sqlCommand.ExecuteNonQuery();
 
                         }
                     }
 
-                    MessageBox.Show("Information Added", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    LoadParfumItems.MessengeWarning("Added.");
                     RefresData.salePriceLists.ChangeData();
                 }
             }

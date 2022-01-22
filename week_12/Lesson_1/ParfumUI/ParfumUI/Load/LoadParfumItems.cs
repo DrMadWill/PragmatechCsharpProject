@@ -18,7 +18,6 @@ namespace ParfumUI.Parfum.Load
     public static class LoadParfumItems
     {
 
-        
         // ----------------------------- Load Section
 
         private static string _connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
@@ -273,19 +272,7 @@ namespace ParfumUI.Parfum.Load
         }
 
 
-        public static void MessengeCreate()
-        {
-            MessageBox.Show("Information Created", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        }
-        public static void MessengeUpdate()
-        {
-            MessageBox.Show("Information Update", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        }
-        public static void MessengeDelete()
-        {
-            MessageBox.Show("Information Delete", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        }
-
+        
 
         // ------------------ Database Load
         public static DataTable DataBeseRead(SqlConnection sqlConnection,string command,bool isConnection)
@@ -338,7 +325,7 @@ namespace ParfumUI.Parfum.Load
                 // Collection Create
                 List<ParfumHeader> parfumHeaders = new List<ParfumHeader>();
 
-                bool dubilcateinfo = false;
+                
 
                 // Collection Clear
                 parfumHeaders.Clear();

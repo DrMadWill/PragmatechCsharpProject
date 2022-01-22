@@ -9,59 +9,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ParfumUI.Parfum.Load;
 
 namespace ParfumUI
 {
     public partial class BrendAdd : Form
     {
-        private bool isParfumAdd=true;
-        string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
-        public BrendAdd(bool isAdd)
+        public BrendAdd()
         {
             InitializeComponent();
-            isParfumAdd = isAdd;
         }
 
+        // Brend Add Click
         private void button1_Click(object sender, EventArgs e)
         {
+            if (LoadParfumItems.IsAreYouSure("Create"))
+            {
+
             string name = textName.Text.Trim();
             string descript = textDescript.Text.Trim();
 
             string command = $"Insert into dbo.Brend(Name,Decription)values('{name}','{descript}')";
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
             {
-                using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
-                {
-                    sqlConnection.Open();
-
-                    // Add DataBases
-                    sqlCommand.ExecuteNonQuery();
-                    
-                    if (isParfumAdd)
-                    {
-                        // Added Combo Box Change
-                        RefresData.parfumAdd.ChangeBrend();
-
-                    }
-                    else
-                    {
-                        // Update Combo Box Change
-                        RefresData.parfumeUpdate.ChangeBrend();
-                    }
-
-
-
-
-                    MessageBox.Show("Information added", "Add", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    textName.Text = "";
-                    textDescript.Text="";
-                }
+                LoadParfumItems.DataBases(sqlConnection, command);
             }
-        }
-
-        private void BrendAdd_Load(object sender, EventArgs e)
-        {
-
+            LoadParfumItems.MessengeWarning("Created");
+            textName.Text = "";
+            textDescript.Text = "";
+            }
         }
     }
 }
