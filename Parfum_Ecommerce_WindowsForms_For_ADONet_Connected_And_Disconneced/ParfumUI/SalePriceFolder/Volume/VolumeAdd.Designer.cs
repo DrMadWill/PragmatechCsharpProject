@@ -38,6 +38,7 @@ namespace ParfumUI.SalePriceFolder.Volume
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(27, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 32);
@@ -54,7 +55,7 @@ namespace ParfumUI.SalePriceFolder.Volume
             // 
             // btnVolumeAdd
             // 
-            this.btnVolumeAdd.BackColor = System.Drawing.Color.Green;
+            this.btnVolumeAdd.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnVolumeAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolumeAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnVolumeAdd.Location = new System.Drawing.Point(33, 123);
@@ -69,12 +70,14 @@ namespace ParfumUI.SalePriceFolder.Volume
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(401, 221);
             this.Controls.Add(this.btnVolumeAdd);
             this.Controls.Add(this.textVolume);
             this.Controls.Add(this.label1);
             this.Name = "VolumeAdd";
             this.Text = "VolumeAdd";
+            this.Load += new System.EventHandler(this.VolumeAdd_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

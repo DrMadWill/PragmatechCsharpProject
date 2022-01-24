@@ -23,7 +23,6 @@ namespace ParfumUI.Users
 
         DataTable table = new DataTable();
 
-        DataGridView gridView = new DataGridView();
 
         DataTable dataTableShearch = new DataTable();
 
@@ -34,8 +33,25 @@ namespace ParfumUI.Users
                 string command = "select Name from Catogory";
                 LoadParfumItems.LoadItem(sqlConnection, command, true, combCatogory);
 
-                string commandUsers = "select FullName from ActiveUserTable";
-                LoadParfumItems.LoadItem(sqlConnection, commandUsers, false, combUser);
+                string commandItem = "select distinct FullName,IsActive from SaleActivitysIsUser";
+                using (SqlCommand sqlCommand = new SqlCommand(commandItem, sqlConnection))
+                {
+                    // Data Clear
+                    combUser.Items.Clear();
+                    using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                    {
+                        while (sqlDataReader.Read())
+                        {
+
+                            if (Convert.ToBoolean(sqlDataReader[1]))
+                            {
+                                combUser.Items.Add(sqlDataReader[0].ToString().Trim() + "-User");
+                            }
+                            else
+                                combUser.Items.Add(sqlDataReader[0].ToString().Trim() + "-Employee");
+                        }
+                    }
+                }
 
 
                 string commands = "select * from SaleDetailParfum where PriceId=1";
@@ -44,6 +60,7 @@ namespace ParfumUI.Users
 
             }
             combUser.SelectedIndex = 0;
+            combUser.DropDownStyle = ComboBoxStyle.DropDownList;
             combCatogory.SelectedIndex = 0;
 
             ChangeData();
@@ -107,7 +124,6 @@ namespace ParfumUI.Users
                 string id = dataGridViewShearch.Rows[e.RowIndex].Cells["Id"].Value.ToString();
                 string PriceId = dataGridViewShearch.Rows[e.RowIndex].Cells["PriceId"].Value.ToString();
                 string Name = dataGridViewShearch.Rows[e.RowIndex].Cells["Name"].Value.ToString();
-                string Image = dataGridViewShearch.Rows[e.RowIndex].Cells["Image"].Value.ToString();
                 string Description = dataGridViewShearch.Rows[e.RowIndex].Cells["Description"].Value.ToString();
                 string Brend = dataGridViewShearch.Rows[e.RowIndex].Cells["Brend"].Value.ToString();
                 string Gender = dataGridViewShearch.Rows[e.RowIndex].Cells["Gender"].Value.ToString();
@@ -126,7 +142,7 @@ namespace ParfumUI.Users
                         return;
                     }
                 }
-                dataGridViewSales.Rows.Add(id, PriceId, Name, Image, Description, Brend, Gender, Density, Size,price, Number, "");
+                dataGridViewSales.Rows.Add(id, PriceId, Name, Description, Brend, Gender, Density, Size,price, Number, "");
 
                 
             }
@@ -147,7 +163,7 @@ namespace ParfumUI.Users
                 string PriceId = "";
                 string command = "";
 
-                string UserName = combUser.SelectedItem.ToString();
+                string UserName = combUser.SelectedItem.ToString().Trim().Split('-')[0];
                 string time = dateTimeSale.Value.ToString("yyyy-MM-dd");
                 int count = 0;
                 int basecount = 0;

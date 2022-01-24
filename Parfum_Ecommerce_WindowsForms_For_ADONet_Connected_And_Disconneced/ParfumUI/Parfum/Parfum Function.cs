@@ -6,6 +6,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -50,10 +51,8 @@ namespace ParfumUI
         {
             using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
             {
-                //dataTable=Parfum.Parfum.ReadParfum(sqlConnection);
                 string command = "select * from MidDetalParfume";
                 dataTable = LoadParfumItems.DataBeseRead(sqlConnection, command, true);
-                // Parfum Data Load 
                 dataGridView1.DataSource = dataTable;
             }
             
@@ -75,6 +74,49 @@ namespace ParfumUI
                 }
             }
             return isAdd;
+        }
+
+        private void btnRefres_Click(object sender, EventArgs e)
+        {
+            ChangeParfum();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string shearch = textSearchName.Text.Trim();
+            using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
+            {
+                string command = $"select * from MidDetalParfume where Name Like '%{shearch}%'";
+                dataGridView1.DataSource = LoadParfumItems.DataBeseRead(sqlConnection, command, true);
+                labelGriidViewName.Text = "Search Parfum Resault";
+            }
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+
+                string Id = dataGridView1.Rows[e.RowIndex].Cells["Id"].Value.ToString();
+                pictureBox1.Image = null;
+                using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
+                {
+                    string command = $"select Image from Parfume where Id=" + Id;
+                    using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
+                    {
+                        sqlConnection.Open();
+                        if (!string.IsNullOrEmpty(sqlCommand.ExecuteScalar().ToString()))
+                        {
+                            byte[] imgloc = (byte[])sqlCommand.ExecuteScalar();
+                            MemoryStream memory = new MemoryStream(imgloc);
+                            Image ret = Image.FromStream(memory);
+                            pictureBox1.Image = ret;
+                            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                        }
+                    }
+                }
+            }
         }
     }
 }

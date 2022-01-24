@@ -34,6 +34,9 @@ namespace ParfumUI.CatogoryView
             this.combSearchName = new System.Windows.Forms.ComboBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.listCategory = new System.Windows.Forms.ListView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -66,19 +69,21 @@ namespace ParfumUI.CatogoryView
             this.combSearchName.FormattingEnabled = true;
             this.combSearchName.Location = new System.Drawing.Point(328, 29);
             this.combSearchName.Name = "combSearchName";
-            this.combSearchName.Size = new System.Drawing.Size(597, 37);
+            this.combSearchName.Size = new System.Drawing.Size(479, 37);
             this.combSearchName.TabIndex = 57;
+            this.combSearchName.SelectedIndexChanged += new System.EventHandler(this.combSearchName_SelectedIndexChanged);
             // 
             // btnSave
             // 
-            this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSave.Location = new System.Drawing.Point(27, 320);
+            this.btnSave.Location = new System.Drawing.Point(13, 557);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(898, 63);
+            this.btnSave.Size = new System.Drawing.Size(794, 63);
             this.btnSave.TabIndex = 61;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -97,17 +102,44 @@ namespace ParfumUI.CatogoryView
             this.listCategory.Location = new System.Drawing.Point(328, 105);
             this.listCategory.Margin = new System.Windows.Forms.Padding(7);
             this.listCategory.Name = "listCategory";
-            this.listCategory.Size = new System.Drawing.Size(597, 171);
+            this.listCategory.Size = new System.Drawing.Size(479, 442);
             this.listCategory.TabIndex = 62;
             this.listCategory.UseCompatibleStateImageBehavior = false;
             this.listCategory.View = System.Windows.Forms.View.List;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Category});
+            this.dataGridView1.Location = new System.Drawing.Point(820, 12);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(300, 621);
+            this.dataGridView1.TabIndex = 64;
+            // 
+            // Category
+            // 
+            this.Category.HeaderText = "Category";
+            this.Category.MinimumWidth = 6;
+            this.Category.Name = "Category";
+            this.Category.ReadOnly = true;
             // 
             // CategoryAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(948, 408);
+            this.ClientSize = new System.Drawing.Size(1132, 645);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.listCategory);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label1);
@@ -116,6 +148,7 @@ namespace ParfumUI.CatogoryView
             this.Name = "CategoryAdd";
             this.Text = "CategoryAdd";
             this.Load += new System.EventHandler(this.CategoryAdd_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,5 +161,7 @@ namespace ParfumUI.CatogoryView
         private System.Windows.Forms.ComboBox combSearchName;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ListView listCategory;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Category;
     }
 }

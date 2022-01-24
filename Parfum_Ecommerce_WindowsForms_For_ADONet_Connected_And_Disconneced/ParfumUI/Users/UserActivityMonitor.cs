@@ -31,8 +31,26 @@ namespace ParfumUI.Users
                 string command = "select * from SaleActivityMonitor";
                 dataGridShearch.DataSource = LoadParfumItems.DataBeseRead(sqlConnection, command, true);
 
-                string commandItem = "select distinct FullName from SaleActivitys";
-                LoadParfumItems.LoadItem(sqlConnection, commandItem, false, combUser);
+                string commandItem = "select distinct FullName,IsActive from SaleActivitysIsUser";
+                using (SqlCommand sqlCommand = new SqlCommand(commandItem, sqlConnection))
+                {
+                    // Data Clear
+                    combUser.Items.Clear();
+                    using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                    {
+                        while (sqlDataReader.Read())
+                        {
+                            
+                            if (Convert.ToBoolean(sqlDataReader[1]))
+                            {
+                                combUser.Items.Add(sqlDataReader[0].ToString().Trim() + "-User");
+                            }
+                            else
+                                combUser.Items.Add(sqlDataReader[0].ToString().Trim() + "-Employee");
+                        }
+                    }
+                }
+                combUser.DropDownStyle = ComboBoxStyle.DropDownList;
                 combUser.SelectedIndex = 0;
             }
         }
@@ -41,7 +59,7 @@ namespace ParfumUI.Users
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            string userName = combUser.SelectedItem.ToString();
+            string userName = combUser.SelectedItem.ToString().Trim().Split('-')[0];
             string startTime = dateStartTime.Value.ToString("yyyy-MM-dd");
             string lasttime =  dateLastTime.Value.ToString("yyyy-MM-dd");
 
@@ -58,7 +76,6 @@ namespace ParfumUI.Users
                 string id = dataGridShearch.Rows[e.RowIndex].Cells["SaleId"].Value.ToString();
                 string PriceId = dataGridShearch.Rows[e.RowIndex].Cells["FullName"].Value.ToString();
                 string Name = dataGridShearch.Rows[e.RowIndex].Cells["Name"].Value.ToString();
-                string Image = dataGridShearch.Rows[e.RowIndex].Cells["Image"].Value.ToString();
                 string Brend = dataGridShearch.Rows[e.RowIndex].Cells["Brend"].Value.ToString();
                 string Gender = dataGridShearch.Rows[e.RowIndex].Cells["Gender"].Value.ToString();
                 string Density = dataGridShearch.Rows[e.RowIndex].Cells["Density"].Value.ToString();
@@ -79,7 +96,7 @@ namespace ParfumUI.Users
                         return;
                     }
                 }
-                dataGridViewDelete.Rows.Add(id, PriceId, Name, Image, Brend, Gender, Density, Size, price, Number, total,date);
+                dataGridViewDelete.Rows.Add(id, PriceId, Name, Brend, Gender, Density, Size, price, Number, total,date);
 
 
             }

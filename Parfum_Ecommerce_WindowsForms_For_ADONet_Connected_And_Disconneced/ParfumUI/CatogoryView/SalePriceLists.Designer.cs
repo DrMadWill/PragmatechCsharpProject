@@ -34,8 +34,18 @@ namespace ParfumUI.CatogoryView
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridShearch = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.parfumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createAndEditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.brendToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -126,6 +136,16 @@ namespace ParfumUI.CatogoryView
             this.dataGridShearch.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridShearch.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridShearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridShearch.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column10});
             this.dataGridShearch.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridShearch.Location = new System.Drawing.Point(12, 55);
             this.dataGridShearch.Name = "dataGridShearch";
@@ -134,6 +154,69 @@ namespace ParfumUI.CatogoryView
             this.dataGridShearch.RowTemplate.Height = 24;
             this.dataGridShearch.Size = new System.Drawing.Size(1513, 235);
             this.dataGridShearch.TabIndex = 27;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Id";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Name";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Decription";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Brend";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Gender";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Density";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Size";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Price";
+            this.Column9.MinimumWidth = 6;
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Number";
+            this.Column10.MinimumWidth = 6;
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
             // 
             // menuStrip1
             // 
@@ -154,13 +237,20 @@ namespace ParfumUI.CatogoryView
             // 
             this.parfumToolStripMenuItem.BackColor = System.Drawing.SystemColors.HotTrack;
             this.parfumToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.createAndEditToolStripMenuItem,
             this.brendToolStripMenuItem1});
             this.parfumToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.parfumToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.parfumToolStripMenuItem.Name = "parfumToolStripMenuItem";
             this.parfumToolStripMenuItem.Size = new System.Drawing.Size(88, 29);
             this.parfumToolStripMenuItem.Text = "Parfum";
-            this.parfumToolStripMenuItem.Click += new System.EventHandler(this.parfumToolStripMenuItem_Click);
+            // 
+            // createAndEditToolStripMenuItem
+            // 
+            this.createAndEditToolStripMenuItem.Name = "createAndEditToolStripMenuItem";
+            this.createAndEditToolStripMenuItem.Size = new System.Drawing.Size(229, 30);
+            this.createAndEditToolStripMenuItem.Text = "Create and Edit";
+            this.createAndEditToolStripMenuItem.Click += new System.EventHandler(this.createAndEditToolStripMenuItem_Click);
             // 
             // brendToolStripMenuItem1
             // 
@@ -168,20 +258,20 @@ namespace ParfumUI.CatogoryView
             this.addToolStripMenuItem3,
             this.editToolStripMenuItem1});
             this.brendToolStripMenuItem1.Name = "brendToolStripMenuItem1";
-            this.brendToolStripMenuItem1.Size = new System.Drawing.Size(224, 30);
+            this.brendToolStripMenuItem1.Size = new System.Drawing.Size(229, 30);
             this.brendToolStripMenuItem1.Text = "Brend";
             // 
             // addToolStripMenuItem3
             // 
             this.addToolStripMenuItem3.Name = "addToolStripMenuItem3";
-            this.addToolStripMenuItem3.Size = new System.Drawing.Size(224, 30);
+            this.addToolStripMenuItem3.Size = new System.Drawing.Size(133, 30);
             this.addToolStripMenuItem3.Text = "Add";
             this.addToolStripMenuItem3.Click += new System.EventHandler(this.addToolStripMenuItem3_Click);
             // 
             // editToolStripMenuItem1
             // 
             this.editToolStripMenuItem1.Name = "editToolStripMenuItem1";
-            this.editToolStripMenuItem1.Size = new System.Drawing.Size(224, 30);
+            this.editToolStripMenuItem1.Size = new System.Drawing.Size(133, 30);
             this.editToolStripMenuItem1.Text = "Edit";
             this.editToolStripMenuItem1.Click += new System.EventHandler(this.editToolStripMenuItem1_Click);
             // 
@@ -252,6 +342,7 @@ namespace ParfumUI.CatogoryView
             this.acivityToolStripMenuItem,
             this.saleAddToolStripMenuItem});
             this.userToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
             this.userToolStripMenuItem.Size = new System.Drawing.Size(64, 29);
             this.userToolStripMenuItem.Text = "User";
@@ -259,21 +350,21 @@ namespace ParfumUI.CatogoryView
             // userActivityToolStripMenuItem
             // 
             this.userActivityToolStripMenuItem.Name = "userActivityToolStripMenuItem";
-            this.userActivityToolStripMenuItem.Size = new System.Drawing.Size(197, 30);
+            this.userActivityToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.userActivityToolStripMenuItem.Text = "Login Users";
             this.userActivityToolStripMenuItem.Click += new System.EventHandler(this.userActivityToolStripMenuItem_Click);
             // 
             // acivityToolStripMenuItem
             // 
             this.acivityToolStripMenuItem.Name = "acivityToolStripMenuItem";
-            this.acivityToolStripMenuItem.Size = new System.Drawing.Size(197, 30);
+            this.acivityToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.acivityToolStripMenuItem.Text = "Sale Acivity";
             this.acivityToolStripMenuItem.Click += new System.EventHandler(this.acivityToolStripMenuItem_Click);
             // 
             // saleAddToolStripMenuItem
             // 
             this.saleAddToolStripMenuItem.Name = "saleAddToolStripMenuItem";
-            this.saleAddToolStripMenuItem.Size = new System.Drawing.Size(197, 30);
+            this.saleAddToolStripMenuItem.Size = new System.Drawing.Size(224, 30);
             this.saleAddToolStripMenuItem.Text = "Sale Add";
             this.saleAddToolStripMenuItem.Click += new System.EventHandler(this.saleAddToolStripMenuItem_Click);
             // 
@@ -342,6 +433,7 @@ namespace ParfumUI.CatogoryView
             this.panel1.Controls.Add(this.textSearchName);
             this.panel1.Controls.Add(this.dataGridShearch);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel1.Location = new System.Drawing.Point(0, 33);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1538, 296);
@@ -364,6 +456,7 @@ namespace ParfumUI.CatogoryView
             // 
             this.textLogin.AutoSize = true;
             this.textLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textLogin.Location = new System.Drawing.Point(1264, 4);
             this.textLogin.Name = "textLogin";
             this.textLogin.Size = new System.Drawing.Size(168, 29);
@@ -374,6 +467,7 @@ namespace ParfumUI.CatogoryView
             // 
             this.textUser.AutoSize = true;
             this.textUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textUser.Location = new System.Drawing.Point(1089, 4);
             this.textUser.Name = "textUser";
             this.textUser.Size = new System.Drawing.Size(68, 29);
@@ -440,5 +534,15 @@ namespace ParfumUI.CatogoryView
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem1;
         private System.Windows.Forms.Label textLogin;
         private System.Windows.Forms.Label textUser;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.ToolStripMenuItem createAndEditToolStripMenuItem;
     }
 }

@@ -41,11 +41,10 @@ namespace ParfumUI.Users
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.dataGridViewDelete = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SaleId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PriceId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ParfumN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,7 +53,6 @@ namespace ParfumUI.Users
             this.BaseCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SaleCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridShearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDelete)).BeginInit();
             this.panel1.SuspendLayout();
@@ -206,8 +204,6 @@ namespace ParfumUI.Users
             this.SaleId,
             this.PriceId,
             this.ParfumN,
-            this.Column1,
-            this.Column2,
             this.Column3,
             this.Column4,
             this.Column5,
@@ -224,6 +220,22 @@ namespace ParfumUI.Users
             this.dataGridViewDelete.Size = new System.Drawing.Size(1504, 307);
             this.dataGridViewDelete.TabIndex = 66;
             this.dataGridViewDelete.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDelete_CellDoubleClick);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnSearch);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.combUser);
+            this.panel1.Controls.Add(this.dateLastTime);
+            this.panel1.Controls.Add(this.dateStartTime);
+            this.panel1.Controls.Add(this.dataGridShearch);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1528, 445);
+            this.panel1.TabIndex = 67;
             // 
             // SaleId
             // 
@@ -245,20 +257,6 @@ namespace ParfumUI.Users
             this.ParfumN.MinimumWidth = 6;
             this.ParfumN.Name = "ParfumN";
             this.ParfumN.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Image";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Description";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
@@ -316,22 +314,6 @@ namespace ParfumUI.Users
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnSearch);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.combUser);
-            this.panel1.Controls.Add(this.dateLastTime);
-            this.panel1.Controls.Add(this.dateStartTime);
-            this.panel1.Controls.Add(this.dataGridShearch);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1528, 445);
-            this.panel1.TabIndex = 67;
-            // 
             // UserActivityMonitor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -369,11 +351,10 @@ namespace ParfumUI.Users
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.DataGridView dataGridViewDelete;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridViewTextBoxColumn SaleId;
         private System.Windows.Forms.DataGridViewTextBoxColumn PriceId;
         private System.Windows.Forms.DataGridViewTextBoxColumn ParfumN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
@@ -382,6 +363,5 @@ namespace ParfumUI.Users
         private System.Windows.Forms.DataGridViewTextBoxColumn BaseCount;
         private System.Windows.Forms.DataGridViewTextBoxColumn SaleCount;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.Panel panel1;
     }
 }

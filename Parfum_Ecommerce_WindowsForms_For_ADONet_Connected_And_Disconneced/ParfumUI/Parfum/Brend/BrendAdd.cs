@@ -39,5 +39,10 @@ namespace ParfumUI
             textDescript.Text = "";
             }
         }
+
+        private void BrendAdd_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

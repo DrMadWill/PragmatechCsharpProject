@@ -21,8 +21,6 @@ namespace ParfumUI.CatogoryView
     {
         DataTable dataTable = new DataTable();
 
-        DataTable dataTableShearch = new DataTable();
-        string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
         private string _username;
         public string UserName { get { return _username; } }
 
@@ -47,6 +45,8 @@ namespace ParfumUI.CatogoryView
                     sqlConnection.Open();
                    textLogin.Text="Login Access : "+ sqlCommand.ExecuteScalar().ToString();
                 }
+
+                
             }
         }
 
@@ -56,21 +56,19 @@ namespace ParfumUI.CatogoryView
 
             using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
             {
+
+                
                 dataGridView1.DataSource = null;
                 dataGridShearch.DataSource = null;
                 dataTable.Rows.Clear();
-                dataTableShearch.Rows.Clear();
-
                 string command = "select * from FullDetailParfum";
                 sqlConnection.Open();
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(command, sqlConnection);
                 sqlDataAdapter.Fill(dataTable);
+                
+
                 dataGridView1.DataSource = dataTable;
                 textcatogory.Text = "All Parfums";
-
-                string commands = "select * from FullDetailParfum where Id=1";
-                dataTableShearch = LoadParfumItems.DataBeseRead(sqlConnection, commands, false);
-                
             }
         }
 
@@ -80,8 +78,8 @@ namespace ParfumUI.CatogoryView
         {
 
             dataGridShearch.DataSource =null;
-            dataTableShearch.Rows.Clear();
             string name = textSearchName.Text.Trim();
+
             List<string> lis = new List<string>();
             foreach (DataRow row in dataTable.Rows)
             {
@@ -93,22 +91,17 @@ namespace ParfumUI.CatogoryView
                         lis.Add(row[dataColumn].ToString());
                     }
                     //Table add
-                    dataTableShearch.Rows.Add(lis[0], lis[1], lis[2], lis[3], lis[4], lis[5], lis[6], lis[7], lis[8], lis[9]);
+                    dataGridShearch.Rows.Add(lis[0], lis[1], lis[2].ToString(), lis[3], lis[4], lis[5], lis[6], lis[7], lis[8]);
                     lis.Clear();
                 }
 
             }
-            dataGridShearch.DataSource = dataTableShearch;
+           
         }
 
         
 
-        private void parfumToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Parfum_Function parfum_Function = new Parfum_Function();
-            RefresData.parfum_Function = parfum_Function;
-            parfum_Function.ShowDialog();
-        }
+        
 
         // Sale Price
         private void addToolStripMenuItem_Click(object sender, EventArgs e)
@@ -161,7 +154,7 @@ namespace ParfumUI.CatogoryView
         {
 
             string catogory = combCatogory.SelectedItem.ToString().Trim();
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
             {
                 dataGridView1.DataSource = null;
                 dataGridShearch.DataSource = null;
@@ -187,8 +180,7 @@ namespace ParfumUI.CatogoryView
         {
             CategoryRemove categoryRemove = new CategoryRemove();
             categoryRemove.ShowDialog();
-            //CategoryUpdateDelete categoryUpdateDelete = new CategoryUpdateDelete();
-            //categoryUpdateDelete.ShowDialog();
+            
         }
 
         private void createToolStripMenuItem_Click(object sender, EventArgs e)
@@ -226,6 +218,13 @@ namespace ParfumUI.CatogoryView
         {
             BrendUpdateDelete brendUpdate = new BrendUpdateDelete();
             brendUpdate.ShowDialog();
+        }
+
+        private void createAndEditToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Parfum_Function parfum_Function = new Parfum_Function();
+            RefresData.parfum_Function = parfum_Function;
+            parfum_Function.ShowDialog();
         }
     }
 }

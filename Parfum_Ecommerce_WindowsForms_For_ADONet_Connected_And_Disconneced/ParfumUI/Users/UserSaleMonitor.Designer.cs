@@ -40,10 +40,14 @@ namespace ParfumUI.Users
             this.combUser = new System.Windows.Forms.ComboBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.dataGridViewSales = new System.Windows.Forms.DataGridView();
+            this.dateTimeSale = new System.Windows.Forms.DateTimePicker();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.textSearchName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.ParfumId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PriceId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ParfumN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,11 +56,6 @@ namespace ParfumUI.Users
             this.ParfumPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BaseCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SaleCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateTimeSale = new System.Windows.Forms.DateTimePicker();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.textSearchName = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewShearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSales)).BeginInit();
             this.panel1.SuspendLayout();
@@ -207,7 +206,6 @@ namespace ParfumUI.Users
             this.ParfumId,
             this.PriceId,
             this.ParfumN,
-            this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
@@ -223,78 +221,6 @@ namespace ParfumUI.Users
             this.dataGridViewSales.Size = new System.Drawing.Size(1515, 319);
             this.dataGridViewSales.TabIndex = 47;
             this.dataGridViewSales.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSales_CellDoubleClick);
-            // 
-            // ParfumId
-            // 
-            this.ParfumId.HeaderText = "Id";
-            this.ParfumId.MinimumWidth = 6;
-            this.ParfumId.Name = "ParfumId";
-            // 
-            // PriceId
-            // 
-            this.PriceId.HeaderText = "PriceId";
-            this.PriceId.MinimumWidth = 6;
-            this.PriceId.Name = "PriceId";
-            // 
-            // ParfumN
-            // 
-            this.ParfumN.HeaderText = "Name";
-            this.ParfumN.MinimumWidth = 6;
-            this.ParfumN.Name = "ParfumN";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Image";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Description";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Brend";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Gender";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Density";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Size";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            // 
-            // ParfumPrice
-            // 
-            this.ParfumPrice.HeaderText = "Price";
-            this.ParfumPrice.MinimumWidth = 6;
-            this.ParfumPrice.Name = "ParfumPrice";
-            // 
-            // BaseCount
-            // 
-            this.BaseCount.HeaderText = "Base Count";
-            this.BaseCount.MinimumWidth = 6;
-            this.BaseCount.Name = "BaseCount";
-            // 
-            // SaleCount
-            // 
-            this.SaleCount.HeaderText = "SaleCount";
-            this.SaleCount.MinimumWidth = 6;
-            this.SaleCount.Name = "SaleCount";
             // 
             // dateTimeSale
             // 
@@ -357,6 +283,72 @@ namespace ParfumUI.Users
             this.panel1.Size = new System.Drawing.Size(1540, 427);
             this.panel1.TabIndex = 58;
             // 
+            // ParfumId
+            // 
+            this.ParfumId.HeaderText = "Id";
+            this.ParfumId.MinimumWidth = 6;
+            this.ParfumId.Name = "ParfumId";
+            // 
+            // PriceId
+            // 
+            this.PriceId.HeaderText = "PriceId";
+            this.PriceId.MinimumWidth = 6;
+            this.PriceId.Name = "PriceId";
+            // 
+            // ParfumN
+            // 
+            this.ParfumN.HeaderText = "Name";
+            this.ParfumN.MinimumWidth = 6;
+            this.ParfumN.Name = "ParfumN";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Description";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Brend";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Gender";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Density";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Size";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            // 
+            // ParfumPrice
+            // 
+            this.ParfumPrice.HeaderText = "Price";
+            this.ParfumPrice.MinimumWidth = 6;
+            this.ParfumPrice.Name = "ParfumPrice";
+            // 
+            // BaseCount
+            // 
+            this.BaseCount.HeaderText = "Base Count";
+            this.BaseCount.MinimumWidth = 6;
+            this.BaseCount.Name = "BaseCount";
+            // 
+            // SaleCount
+            // 
+            this.SaleCount.HeaderText = "SaleCount";
+            this.SaleCount.MinimumWidth = 6;
+            this.SaleCount.Name = "SaleCount";
+            // 
             // UserSaleMonitor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -396,10 +388,14 @@ namespace ParfumUI.Users
         private System.Windows.Forms.ComboBox combUser;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.DataGridView dataGridViewSales;
+        private System.Windows.Forms.DateTimePicker dateTimeSale;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox textSearchName;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ParfumId;
         private System.Windows.Forms.DataGridViewTextBoxColumn PriceId;
         private System.Windows.Forms.DataGridViewTextBoxColumn ParfumN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
@@ -408,10 +404,5 @@ namespace ParfumUI.Users
         private System.Windows.Forms.DataGridViewTextBoxColumn ParfumPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn BaseCount;
         private System.Windows.Forms.DataGridViewTextBoxColumn SaleCount;
-        private System.Windows.Forms.DateTimePicker dateTimeSale;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.TextBox textSearchName;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel1;
     }
 }

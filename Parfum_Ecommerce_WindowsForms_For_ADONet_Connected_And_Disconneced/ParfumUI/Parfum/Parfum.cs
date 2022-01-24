@@ -6,6 +6,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,7 +42,7 @@ namespace ParfumUI.Parfum
             else
             {
                 // Sql Commad
-                string command = $"EXECUTE usp_UpdateParfum @Id={Id},@Name = '{name}',@Image='{image}',@Descriptio = '{decription}',@Brend = '{brend}', @Gender = '{gender}',@Density ='{density}'";
+                string command = $"EXECUTE usp_UpdateParfum @Id={Id},@Name = '{name}',@Image ={image},@Descriptio = '{decription}',@Brend = '{brend}', @Gender = '{gender}',@Density ='{density}'";
                 using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
                 {
                     sqlConnection.Open();
@@ -64,10 +65,14 @@ namespace ParfumUI.Parfum
             }
             else
             {
+
                 // Sql Commad
-                string command = $"EXECUTE usp_AddParfum @Name = '{name}',@Image='{image}',@Descriptio = '{description}',@Brend = '{brend}', @Gender = '{gender}',@Density ='{density}'";
+                string command = $"EXECUTE usp_AddParfum @Name = '{name}',@Image=@IM,@Descriptio = '{description}',@Brend = '{brend}', @Gender = '{gender}',@Density ='{density}'";
                 using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
                 {
+
+                    byte[] imageData = File.ReadAllBytes(@image);
+                    sqlCommand.Parameters.AddWithValue("@IM", imageData);
                     sqlConnection.Open();
                     //-------------------Parfum Add DataBase
                     sqlCommand.ExecuteNonQuery();

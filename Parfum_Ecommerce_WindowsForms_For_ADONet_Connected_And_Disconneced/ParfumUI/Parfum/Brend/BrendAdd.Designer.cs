@@ -108,6 +108,7 @@ namespace ParfumUI
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Name = "BrendAdd";
             this.Text = "BrendAdd";
+            this.Load += new System.EventHandler(this.BrendAdd_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

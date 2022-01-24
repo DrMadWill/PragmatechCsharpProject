@@ -39,7 +39,6 @@ namespace ParfumUI.CatogoryView
                 // Connection Candition 
                 LoadParfumItems.ConnectionCadditon(sqlConnection, isConnection);
 
-
                 // Data Clear
                 listCategory.Items.Clear();
                 using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
@@ -49,8 +48,7 @@ namespace ParfumUI.CatogoryView
                         listCategory.Items.Add(sqlDataReader[1].ToString().Trim());
                     }
                 }
-                //combCategory.DropDownStyle = ComboBoxStyle.DropDownList;
-                //combCategory.SelectedIndex = 0;
+                
             }
         }
 
@@ -65,6 +63,8 @@ namespace ParfumUI.CatogoryView
                     name += (name == "" ? "" : " ") + item.ToString();
                 }
                 string[] names = name.Replace("ListViewItem: {", "").Replace("}", "").Split(' ');
+                bool isFrist = true;
+                bool isAdded = false;
 
                 using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
                 {
@@ -82,12 +82,31 @@ namespace ParfumUI.CatogoryView
                             return;
                         }
 
+                        foreach (DataGridViewRow row in dataGridView1.Rows)
+                        {
+                            if (row.Cells["Category"].Value.ToString().Trim() == names[i])
+                            {
+                                isAdded = true;
+                                break;
+                            }
+                        }
+
+                        if (isAdded)
+                        {
+                            isAdded = false;
+                            continue;
+                        }
+
                         command = $"EXECUTE usp_InsertCategoryToParfum @ParfumId={parfumId},@Category='{names[i]}'";
 
                         using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
                         {
-                            if (i == 0)
+                            if (isFrist)
+                            {
+                                isFrist = false;
                                 sqlConnection.Open();
+
+                            }
 
                             //-----------------Information Added DataBases
                             sqlCommand.ExecuteNonQuery();
@@ -101,6 +120,29 @@ namespace ParfumUI.CatogoryView
             }
         }
 
+        private void combSearchName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
+            string command = "select Name from CategoryListParfum where ParfumId=" + Id;
+            using (SqlConnection sql = new SqlConnection(LoadParfumItems.connectionString))
+            {
+                using (SqlCommand sqlCommand = new SqlCommand(command, sql))
+                {
+                    // Connection Open Candition
+                    sql.Open();
+                    // Data Clear
+                    dataGridView1.Rows.Clear();
+                    using (SqlDataReader sqlDataReader = sqlCommand.ExecuteReader())
+                    {
+                        while (sqlDataReader.Read())
+                        {
+                            dataGridView1.Rows.Add(sqlDataReader[0].ToString().Trim());
+                        }
+                    }
+                }
+            }
 
+
+        }
     }
 }

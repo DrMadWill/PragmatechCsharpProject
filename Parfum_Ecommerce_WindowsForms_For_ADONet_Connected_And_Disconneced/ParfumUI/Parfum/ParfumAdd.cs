@@ -22,10 +22,9 @@ namespace ParfumUI
             InitializeComponent();
             
         }
-        string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
         private void ParfumAdd_Load(object sender, EventArgs e)
         {
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
             {
                 // Load Parfum Items
                 LoadParfumItems.LoadBrend(sqlConnection, true, combBrend);
@@ -45,12 +44,12 @@ namespace ParfumUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
             // Save Click
             if (LoadParfumItems.IsAreYouSure("Created"))
             {
                 string name = textName.Text.Trim();
-                string image = textImage.Text.Trim();
+                string image =  @textImage.Text.Trim();
                 string decrip = textDescription.Text.Trim();
                 string brend = combBrend.SelectedItem.ToString().Trim();
                 string gender = combGender.SelectedItem.ToString().Trim();
@@ -63,10 +62,11 @@ namespace ParfumUI
                     return;
                 }
 
+                
 
-                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+                using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
                 {
-                    Parfum.Parfum.CreateParfum(name, image, decrip, brend, gender, density, sqlConnection);
+                    Parfum.Parfum.CreateParfum(name,image,decrip, brend, gender, density, sqlConnection);
                 }
 
                 // Change DataGridView
@@ -74,7 +74,6 @@ namespace ParfumUI
 
                 // Clear Boxs
                 textName.Text = "";
-                textImage.Text ="";
                 textDescription.Text ="";
                 combBrend.SelectedIndex =0;
                 combGender.SelectedIndex = 0;
@@ -88,7 +87,7 @@ namespace ParfumUI
 
         public void ChangeBrend()
         {
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
             {
                 // Refres Brend 
                 LoadParfumItems.LoadBrend(sqlConnection, true, combBrend);
@@ -96,6 +95,19 @@ namespace ParfumUI
             }
         }
 
-        
+        private void btnImg_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog = openFileDialog1.ShowDialog();
+            if(dialog == DialogResult.OK)
+            {
+                string image = openFileDialog1.FileName;
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox1.Load(image);
+                textImage.Text = image;
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+
+
+        }
     }
 }

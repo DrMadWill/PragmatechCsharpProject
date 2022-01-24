@@ -20,13 +20,12 @@ namespace ParfumUI.SalePriceFolder.Volume
         {
             InitializeComponent();
         }
-        string connectionString = ConfigurationManager.ConnectionStrings["ParfumUI.Properties.Settings.Setting"].ConnectionString;
 
 
         private void btnVolumeAdd_Click(object sender, EventArgs e)
         {
             int volume = Convert.ToInt32(textVolume.Text.Trim());
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
             {
                 VolumeAddItem(sqlConnection, volume);
             }
@@ -43,6 +42,11 @@ namespace ParfumUI.SalePriceFolder.Volume
                 MessageBox.Show("Information added", "Add", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 textVolume.Text = "";
             }
+        }
+
+        private void VolumeAdd_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

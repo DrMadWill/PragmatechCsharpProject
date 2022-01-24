@@ -7,6 +7,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -59,7 +60,7 @@ namespace ParfumUI
                 using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
                 {
                     // Updated Parfum
-                    Parfum.Parfum.UpdateParfum(Id, name, image, decrip, brend, gender, density, sqlConnection);
+                    Parfum.Parfum.UpdateParfum(Id, name,image, decrip, brend, gender, density, sqlConnection);
 
                     // Change DataGridVeiw
                     RefresData.parfum_Function.ChangeParfum();
@@ -110,6 +111,8 @@ namespace ParfumUI
             {
                 ChangeSearchName(sqlConnection, true);
             }
+
+            
         }
 
        
@@ -119,7 +122,6 @@ namespace ParfumUI
             using (SqlConnection sqlConnection = new SqlConnection(LoadParfumItems.connectionString))
             {
                 LoadParfumItems.LoadBrend(sqlConnection, true, combBrend);
-                // New Brend Add .Back To This Parfum Brend Name
                 combBrend.SelectedItem = brendName;
 
             }
@@ -134,7 +136,7 @@ namespace ParfumUI
             try
             {
                     Id = ((ParfumHeader)combSearchName.SelectedItem).Id;
-                    command = "select * from MidDetalParfume where Id = " + Id;
+                    command = "select * from MidDetalParfumeForUpdate where Id = " + Id;
             }
             catch (Exception ex)
             {
@@ -145,7 +147,7 @@ namespace ParfumUI
             {
                 return;
             }
-
+            byte[] img;
             using (SqlCommand sqlCommand = new SqlCommand(command, sqlConnection))
             {
                 // Connection Open Candition
@@ -154,17 +156,34 @@ namespace ParfumUI
                 {
                     while (sqlDataReader.Read())
                     {
+
+                        pictureBox1.Image = null;
                         textName.Text = sqlDataReader[1].ToString().Trim();
-                        textImage.Text = sqlDataReader[2].ToString();
+                        textImage.Text = "----";
+                        
                         textDescription.Text = sqlDataReader[3].ToString().Trim();
                         combBrend.SelectedItem = sqlDataReader[4].ToString().Trim();
                         // Brend Name Save
                         brendName = sqlDataReader[4].ToString().Trim();
                         combGender.SelectedItem = sqlDataReader[5].ToString().Trim();
                         combDensity.SelectedItem = sqlDataReader[6].ToString().Trim();
+                        if (!string.IsNullOrEmpty(sqlDataReader[2].ToString()))
+                        {
+                            img = (byte[])sqlDataReader[2];
+                            MemoryStream memory = new MemoryStream(img);
+                            Image ret = Image.FromStream(memory);
+                            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                            pictureBox1.Image = ret;
+                        }
+                       
+
                     }
                 }
             }
+           
+           
+            
+
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -210,6 +229,18 @@ namespace ParfumUI
                 //Problem
                 combSearchName.SelectedIndex = SearchNameIndex(comboIndex);
 
+            }
+        }
+
+        private void btnImg_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog = openFileDialog1.ShowDialog();
+            if (dialog == DialogResult.OK)
+            {
+                string image = openFileDialog1.FileName;
+                pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox1.Load(image);
+                textImage.Text = image;
             }
         }
     }
