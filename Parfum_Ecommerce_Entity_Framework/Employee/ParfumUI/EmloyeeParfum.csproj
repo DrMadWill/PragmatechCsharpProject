@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E4DF72EE-A6B8-4DA8-B219-F1928B25AFAE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ParfumUI</RootNamespace>
+    <AssemblyName>ParfumUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.6.0.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.3\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.6.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Permissions.6.0.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CatogoryView\CategoryAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatogoryView\CategoryAdd.Designer.cs">
+      <DependentUpon>CategoryAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatogoryView\CategoryRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatogoryView\CategoryRemove.Designer.cs">
+      <DependentUpon>CategoryRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatogoryView\SalePriceLists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatogoryView\SalePriceLists.Designer.cs">
+      <DependentUpon>SalePriceLists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ParfumMessenge.cs" />
+    <Compile Include="DataModelMsSql\ActiveUserTable.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\Brend.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\CategoryListParfum.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\CategoryToParfum.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\Catogory.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\DeleteHeader.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\DeleteSalePirceUI.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\DeleteUpdateCategoryToParfum.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\DeleteUpdateHeader.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\Density.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\FullDetailParfum.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\Gender.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\MidDetalParfume.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\MidDetalParfumeForUpdate.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\ParfumDBFirstModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ParfumDBFirstModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\ParfumDBFirstModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\ParfumDBFirstModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ParfumDBFirstModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\Parfume.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\ParfumLoginUser.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\Sale.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\SaleActivity.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\SaleActivity1.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\SaleActivityMonitor.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\SaleActivitysIsUser.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\SaleDetailParfum.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\SalePirceUI.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\SalePrice.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\SearchHead.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\Size.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\sp_helpdiagrams_Result.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\sysdiagram.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\User.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\usp_SaleShowCategoryParfums_Result.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\usp_SelectIdSalePirce_Result.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModelMsSql\usp_ShowCategoryParfums_Result.cs">
+      <DependentUpon>ParfumDBFirstModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Load\LoadCommonData.cs" />
+    <Compile Include="ParfumHeader.cs" />
+    <Compile Include="RefresData.cs" />
+    <Compile Include="Parfum\Brend\BrendAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parfum\Brend\BrendAdd.Designer.cs">
+      <DependentUpon>BrendAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parfum\Parfum Function.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parfum\Parfum Function.Designer.cs">
+      <DependentUpon>Parfum Function.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parfum\ParfumeUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parfum\ParfumeUpdate.Designer.cs">
+      <DependentUpon>ParfumeUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalePriceFolder\SalePrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalePriceFolder\SalePrice.Designer.cs">
+      <DependentUpon>SalePrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalePriceFolder\Volume\VolumeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalePriceFolder\Volume\VolumeAdd.Designer.cs">
+      <DependentUpon>VolumeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SinginParfum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SinginParfum.Designer.cs">
+      <DependentUpon>SinginParfum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingUpParfum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingUpParfum.Designer.cs">
+      <DependentUpon>SingUpParfum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Cryptography.cs" />
+    <Compile Include="Users\UserActivityMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\UserActivityMonitor.Designer.cs">
+      <DependentUpon>UserActivityMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\UserSaleMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\UserSaleMonitor.Designer.cs">
+      <DependentUpon>UserSaleMonitor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CatogoryView\CategoryAdd.resx">
+      <DependentUpon>CategoryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatogoryView\CategoryRemove.resx">
+      <DependentUpon>CategoryRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatogoryView\SalePriceLists.resx">
+      <DependentUpon>SalePriceLists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parfum\Brend\BrendAdd.resx">
+      <DependentUpon>BrendAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parfum\Parfum Function.resx">
+      <DependentUpon>Parfum Function.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parfum\ParfumeUpdate.resx">
+      <DependentUpon>ParfumeUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SalePriceFolder\SalePrice.resx">
+      <DependentUpon>SalePrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalePriceFolder\Volume\VolumeAdd.resx">
+      <DependentUpon>VolumeAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SinginParfum.resx">
+      <DependentUpon>SinginParfum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingUpParfum.resx">
+      <DependentUpon>SingUpParfum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\UserActivityMonitor.resx">
+      <DependentUpon>UserActivityMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\UserSaleMonitor.resx">
+      <DependentUpon>UserSaleMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="DataModelMsSql\ParfumDBFirstModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ParfumDBFirstModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DataModelMsSql\ParfumDBFirstModel.edmx.diagram">
+      <DependentUpon>ParfumDBFirstModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DataModelMsSql\ParfumDBFirstModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ParfumDBFirstModel.edmx</DependentUpon>
+      <LastGenOutput>ParfumDBFirstModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataModelMsSql\ParfumDBFirstModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ParfumDBFirstModel.edmx</DependentUpon>
+      <LastGenOutput>ParfumDBFirstModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

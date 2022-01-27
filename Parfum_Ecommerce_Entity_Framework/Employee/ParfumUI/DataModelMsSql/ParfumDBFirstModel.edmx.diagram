@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="170e0da037384f91a617395df51a675f" Name="Diagram1">
+        <EntityTypeShape EntityType="ParfumeModel.Brend" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.CategoryToParfum" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.Catogory" Width="1.5" PointX="3" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.Density" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.Gender" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.Parfume" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.Sale" Width="1.5" PointX="7.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.SalePrice" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.Size" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.sysdiagram" Width="1.5" PointX="7.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.User" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.ActiveUserTable" Width="1.5" PointX="7.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.CategoryListParfum" Width="1.5" PointX="9.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.DeleteHeader" Width="1.5" PointX="9.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.DeleteSalePirceUI" Width="1.5" PointX="9.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.DeleteUpdateCategoryToParfum" Width="1.5" PointX="9.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.DeleteUpdateHeader" Width="1.5" PointX="5.75" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.FullDetailParfum" Width="1.5" PointX="11.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.MidDetalParfume" Width="1.5" PointX="11.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.MidDetalParfumeForUpdate" Width="1.5" PointX="11.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.ParfumLoginUser" Width="1.5" PointX="11.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.SaleActivity" Width="1.5" PointX="7.75" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.SaleActivityMonitor" Width="1.5" PointX="13.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.SaleActivity1" Width="1.5" PointX="0.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.SaleActivitysIsUser" Width="1.5" PointX="2.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.SaleDetailParfum" Width="1.5" PointX="13.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.SalePirceUI" Width="1.5" PointX="4.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParfumeModel.SearchHead" Width="1.5" PointX="13.75" PointY="10" IsExpanded="true" />
+        <AssociationConnector Association="ParfumeModel.FK_Parfume_Brend" ManuallyRouted="false" />
+        <AssociationConnector Association="ParfumeModel.FK__CategoryT__Categ__0E6E26BF" ManuallyRouted="false" />
+        <AssociationConnector Association="ParfumeModel.FK_CategoryToParfum_Parfume" ManuallyRouted="false" />
+        <AssociationConnector Association="ParfumeModel.FK_Parfume_Density" ManuallyRouted="false" />
+        <AssociationConnector Association="ParfumeModel.FK_Parfume_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="ParfumeModel.FK_SalePrice_Parfume" ManuallyRouted="false" />
+        <AssociationConnector Association="ParfumeModel.FK_Sale_SalePrice" ManuallyRouted="false" />
+        <AssociationConnector Association="ParfumeModel.FK_Sale_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="ParfumeModel.FK_SalePrice_Size" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
