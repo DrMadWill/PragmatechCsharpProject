@@ -494,3 +494,7 @@
 
 ## Lesson(13/2) => ADO NET Connected and Disconnected model,Creating an Entity Data Model,DbContext in Entity Framework 6,Linq-to-Entities Query<img src="https://i.postimg.cc/Yq427q36/sql-database-icon-logo-design-ui-ux-app-orange-inscription-shadow-96841969-modified.png" alt="sql" align="right" width="40" height="40"/>
 ***
+- Lesson
+    - [My Documatation ADO.Net ](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_13#adonet)
+
+

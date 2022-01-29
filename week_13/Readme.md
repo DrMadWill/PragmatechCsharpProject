@@ -47,4 +47,19 @@ Nəticə almaq üçün :
 2. `ExecuteReader`- Datanı oxuyur.Select-də istifadə edirik.
 3. `ExecuteScalar`- 1 row 1 column qaytarır, bunu skalyar ifadələrdə istifadə edə bilərik məs: select count(*)
 
+### Disconnected
+> `databese`ə connection açılan zaman qoşularaq lazimi məlumatları ram ötürür və ya ram qəbul edir və connection bağlayır. İşin sürətliliyi baximindan effectivdir.
 
+```c#
+
+
+    using (SqlConnection connection = new SqlConnection(connectionString))
+    {
+        SqlDataAdapter adapter = new SqlDataAdapte(queryString,connection);
+        DataTable table = new DataTable();
+        // Table write databese information
+        adapter.Fill(table);
+        dataGridView = table;
+    }
+
+```
