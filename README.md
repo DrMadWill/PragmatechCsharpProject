@@ -496,5 +496,6 @@
 ***
 - Lesson
     - [My Documatation ADO.Net ](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_13#adonet)
+    - [My Documatation ADO.Net ](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_13#adonet)
 
 
