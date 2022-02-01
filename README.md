@@ -498,6 +498,12 @@
     - [My Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_13#adonet)
 
 
+## Lesson(13/2) => Parfum Ecommerce Windows Forms Version App Equipment <img src="Z_Img/PrfumEcommerce.png" alt="sql" align="right" width="40" height="40"/>
+***
+- App
+    - [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/Parfum_Ecommerce_WindowsForms#parfum-ecommerce-winodows-forms-version)
+    - [My Documatation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/Parfum_Ecommerce_WindowsForms#parfum-ecommerce-winodows-forms-version)
+
 
 
 ## Lesson(14/2) => NET Core Overview,aspnet-core-environment-setup,first-aspnet-core-application,aspnet-core-application-project-structure,wwwroot,program.cs,startup,middleware<img src="Z_Img/net.png" alt="Asp.Net" align="right" width="40" height="40"/>
