@@ -39,6 +39,21 @@ namespace ParfolioWebSiteView.Models
        };
         // Work Image
         public static List<PartfolioImageDetails> Testimonials() => testimonials;
+
+
+
+
+        private static List<PartfolioService> partfolioServices = new List<PartfolioService>()
+        {
+            new PartfolioService(){title="Web Design",ClassName="bi bi-briefcase" },
+            new PartfolioService(){title="Web Development",ClassName="bi bi-card-checklist" },
+            new PartfolioService(){title="Photography",ClassName="bi bi-bar-chart" },
+            new PartfolioService(){title="Responsive Design",ClassName="bi bi-binoculars" },
+            new PartfolioService(){title="Graphic Design",ClassName="bi bi-brightness-high" },
+            new PartfolioService(){title="Marketing Services",ClassName="bi bi-calendar4-week" }
+        };
+
+        public static List<PartfolioService> PartfolioServices() => partfolioServices;
     }
 
     public class PartfolioImageDetails
@@ -46,5 +61,12 @@ namespace ParfolioWebSiteView.Models
         public int Id{ get; set; }
         public string title { get; set; }
         public string location { get; set; }
+    }
+
+
+    public class PartfolioService
+    {
+        public string title { get; set; }
+        public string ClassName { get; set; }
     }
 }

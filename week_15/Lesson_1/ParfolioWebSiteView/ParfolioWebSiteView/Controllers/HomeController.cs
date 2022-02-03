@@ -23,6 +23,7 @@ namespace ParfolioWebSiteView.Controllers
             ViewBag.ImageData = PartfolioImages.AllImage();
             ViewBag.WorkImage = PartfolioImages.WorkImage();
             ViewBag.Testimonials = PartfolioImages.Testimonials();
+            ViewBag.PartfolioServices = PartfolioImages.PartfolioServices();
             return View();
         }
 

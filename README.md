@@ -519,5 +519,5 @@ Task
     ```
         Bir book list yaradin kitabin adi ve sekli olsun. Viewda istediyin front numunesine tetbiq edin
     ```
-- [Solution]()
-- [My Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_14#aspnet-core-mvc)
+- [Solution](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_15/Lesson_1/ParfolioWebSiteView/ParfolioWebSiteView)
+- [My Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_15#views)
