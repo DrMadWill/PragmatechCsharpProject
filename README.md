@@ -510,3 +510,14 @@
 ***
 Lesson 
 - [My Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_14#aspnet-core-mvc)
+
+
+## Lesson(14/2) => Portfolio Web Site (Image data class)<img src="Z_Img/net.png" alt="Asp.Net" align="right" width="40" height="40"/>
+***
+Task 
+- Content
+    ```
+        Bir book list yaradin kitabin adi ve sekli olsun. Viewda istediyin front numunesine tetbiq edin
+    ```
+- [Solution]()
+- [My Documentation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_14#aspnet-core-mvc)
