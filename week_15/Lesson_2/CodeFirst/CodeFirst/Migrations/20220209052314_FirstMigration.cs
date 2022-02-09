@@ -2,7 +2,7 @@
 
 namespace CodeFirst.Migrations
 {
-    public partial class AddUserTable : Migration
+    public partial class FirstMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -60,6 +60,19 @@ namespace CodeFirst.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "SizeMLs",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Size = table.Column<double>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_SizeMLs", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Users",
                 columns: table => new
                 {
@@ -76,6 +89,28 @@ namespace CodeFirst.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Users", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "SalePrices",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ParfumId = table.Column<int>(nullable: false),
+                    Price = table.Column<double>(nullable: false),
+                    Count = table.Column<int>(nullable: false),
+                    SizeMLId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_SalePrices", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_SalePrices_SizeMLs_SizeMLId",
+                        column: x => x.SizeMLId,
+                        principalTable: "SizeMLs",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
@@ -103,6 +138,17 @@ namespace CodeFirst.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
+                name: "IX_SalePrices_SizeMLId",
+                table: "SalePrices",
+                column: "SizeMLId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SizeMLs_Size",
+                table: "SizeMLs",
+                column: "Size",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Users_Email",
                 table: "Users",
                 column: "Email",
@@ -124,7 +170,13 @@ namespace CodeFirst.Migrations
                 name: "Genders");
 
             migrationBuilder.DropTable(
+                name: "SalePrices");
+
+            migrationBuilder.DropTable(
                 name: "Users");
+
+            migrationBuilder.DropTable(
+                name: "SizeMLs");
         }
     }
 }

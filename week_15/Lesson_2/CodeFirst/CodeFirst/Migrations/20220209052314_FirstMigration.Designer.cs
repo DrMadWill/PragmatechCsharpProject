@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CodeFirst.Migrations
 {
     [DbContext(typeof(ParfumCnotex))]
-    [Migration("20220206010132_AddUserTableProblem")]
-    partial class AddUserTableProblem
+    [Migration("20220209052314_FirstMigration")]
+    partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -103,6 +103,50 @@ namespace CodeFirst.Migrations
                     b.ToTable("Genders");
                 });
 
+            modelBuilder.Entity("CodeFirst.Models.SalePrice", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("Count")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ParfumId")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<int>("SizeMLId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SizeMLId");
+
+                    b.ToTable("SalePrices");
+                });
+
+            modelBuilder.Entity("CodeFirst.Models.SizeML", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<double>("Size")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Size")
+                        .IsUnique();
+
+                    b.ToTable("SizeMLs");
+                });
+
             modelBuilder.Entity("CodeFirst.Models.User", b =>
                 {
                     b.Property<int>("Id")
@@ -143,6 +187,15 @@ namespace CodeFirst.Migrations
                         .IsUnique();
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("CodeFirst.Models.SalePrice", b =>
+                {
+                    b.HasOne("CodeFirst.Models.SizeML", "SizeML")
+                        .WithMany("SalePrices")
+                        .HasForeignKey("SizeMLId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

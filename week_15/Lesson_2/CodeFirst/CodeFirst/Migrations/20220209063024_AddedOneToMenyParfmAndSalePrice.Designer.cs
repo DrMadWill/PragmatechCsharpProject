@@ -3,14 +3,16 @@ using CodeFirst.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CodeFirst.Migrations
 {
     [DbContext(typeof(ParfumCnotex))]
-    partial class ParfumCnotexModelSnapshot : ModelSnapshot
+    [Migration("20220209063024_AddedOneToMenyParfmAndSalePrice")]
+    partial class AddedOneToMenyParfmAndSalePrice
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -59,21 +61,6 @@ namespace CodeFirst.Migrations
                         .IsUnique();
 
                     b.ToTable("Categories");
-                });
-
-            modelBuilder.Entity("CodeFirst.Models.CategoryToParfum", b =>
-                {
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ParfumId")
-                        .HasColumnType("int");
-
-                    b.HasKey("CategoryId", "ParfumId");
-
-                    b.HasIndex("ParfumId");
-
-                    b.ToTable("CategoryToParfums");
                 });
 
             modelBuilder.Entity("CodeFirst.Models.Density", b =>
@@ -242,21 +229,6 @@ namespace CodeFirst.Migrations
                         .IsUnique();
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("CodeFirst.Models.CategoryToParfum", b =>
-                {
-                    b.HasOne("CodeFirst.Models.Category", "Category")
-                        .WithMany("CategoryToParfums")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("CodeFirst.Models.Parfum", "Parfum")
-                        .WithMany("CategoryToParfums")
-                        .HasForeignKey("ParfumId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("CodeFirst.Models.Parfum", b =>

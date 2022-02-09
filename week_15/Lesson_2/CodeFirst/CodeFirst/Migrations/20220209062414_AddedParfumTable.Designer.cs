@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CodeFirst.Migrations
 {
     [DbContext(typeof(ParfumCnotex))]
-    [Migration("20220206005721_AddUserTable")]
-    partial class AddUserTable
+    [Migration("20220209062414_AddedParfumTable")]
+    partial class AddedParfumTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -103,6 +103,90 @@ namespace CodeFirst.Migrations
                     b.ToTable("Genders");
                 });
 
+            modelBuilder.Entity("CodeFirst.Models.Parfum", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("BrendId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DensityId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("GenderId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BrendId");
+
+                    b.HasIndex("DensityId");
+
+                    b.HasIndex("GenderId");
+
+                    b.HasIndex("Name")
+                        .IsUnique()
+                        .HasFilter("[Name] IS NOT NULL");
+
+                    b.ToTable("Parfums");
+                });
+
+            modelBuilder.Entity("CodeFirst.Models.SalePrice", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("Count")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ParfumId")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<int>("SizeMLId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SizeMLId");
+
+                    b.ToTable("SalePrices");
+                });
+
+            modelBuilder.Entity("CodeFirst.Models.SizeML", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<double>("Size")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Size")
+                        .IsUnique();
+
+                    b.ToTable("SizeMLs");
+                });
+
             modelBuilder.Entity("CodeFirst.Models.User", b =>
                 {
                     b.Property<int>("Id")
@@ -143,6 +227,36 @@ namespace CodeFirst.Migrations
                         .IsUnique();
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("CodeFirst.Models.Parfum", b =>
+                {
+                    b.HasOne("CodeFirst.Models.Brend", "Brend")
+                        .WithMany("Parfums")
+                        .HasForeignKey("BrendId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CodeFirst.Models.Density", "Density")
+                        .WithMany("Parfums")
+                        .HasForeignKey("DensityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CodeFirst.Models.Gender", "Gender")
+                        .WithMany("Parfums")
+                        .HasForeignKey("GenderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("CodeFirst.Models.SalePrice", b =>
+                {
+                    b.HasOne("CodeFirst.Models.SizeML", "SizeML")
+                        .WithMany("SalePrices")
+                        .HasForeignKey("SizeMLId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

@@ -16,7 +16,7 @@ namespace CodeFirst
         {
             Console.WriteLine("Hello World!");
             //AddCategory("Womens2");
-            GetAllCategores();
+            //GetAllCategores();
             //UpdateCategory("Womens", "Men");
             //RemoveCategory("Womens2");
 

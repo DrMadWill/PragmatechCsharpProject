@@ -42,6 +42,7 @@ namespace CodeFirst.Models
         public string Name { get; set; }
 
         public string Description { get; set; }
+        public List<Parfum> Parfums { get; set; }
     }
 
     public class Gender
@@ -51,6 +52,7 @@ namespace CodeFirst.Models
         [MaxLength(100)]
         [Required]
         public string Name { get; set; }
+        public List<Parfum> Parfums { get; set; }
     }
 
     public class Density
@@ -60,6 +62,7 @@ namespace CodeFirst.Models
         [MaxLength(100)]
         [Required]
         public string Name { get; set; }
+        public List<Parfum> Parfums { get; set; }
     }
 
     public class Category
@@ -69,6 +72,7 @@ namespace CodeFirst.Models
         [MaxLength(150)]
         [Required]
         public string Name { get; set; }
+        public List<CategoryToParfum> CategoryToParfums { get; set; }
     }
 
     public class ParfumCnotex : DbContext
@@ -82,6 +86,14 @@ namespace CodeFirst.Models
         public DbSet<Category> Categories { get; set; }
 
         public DbSet<Density> Densities { get; set; }
+
+        public DbSet<SizeML> SizeMLs { get; set; }
+
+        public DbSet<SalePrice> SalePrices { get; set; }
+
+        public DbSet<CategoryToParfum> CategoryToParfums { get; set; }
+
+        public DbSet<Parfum> Parfums { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -104,6 +116,27 @@ namespace CodeFirst.Models
             builder.Entity<User>()
                .HasIndex(u => u.Email)
                .IsUnique();
+
+            builder.Entity<SizeML>()
+                .HasIndex(u => u.Size)
+                .IsUnique();
+
+            builder.Entity<Parfum>()
+                .HasIndex(t => t.Name)
+                .IsUnique();
+
+            builder.Entity<CategoryToParfum>()
+                .HasKey(t => new { t.CategoryId, t.ParfumId });
+
+            builder.Entity<CategoryToParfum>()
+                .HasOne(cp => cp.Category)
+                .WithMany(c => c.CategoryToParfums)
+                .HasForeignKey(c => c.CategoryId);
+
+            builder.Entity<CategoryToParfum>()
+                .HasOne(cp => cp.Parfum)
+                .WithMany(p => p.CategoryToParfums)
+                .HasForeignKey(p => p.ParfumId);
         }
 
         public static readonly ILoggerFactory factory
@@ -122,4 +155,76 @@ namespace CodeFirst.Models
         }
 
     }
+
+    public class SizeML
+    {
+        [Key]
+        public int Id { get; set; }
+
+        public double Size { get; set; }
+        public List<SalePrice> SalePrices { get; set; }
+
+    }
+
+
+    public class SalePrice
+    {
+        [Key]
+        public int Id { get; set; }
+
+
+        public Parfum Parfum { get; set; }
+        public int ParfumId { get; set; }
+
+        public double Price { get; set; }
+
+        public int Count { get; set; }
+
+
+        // Size ML One To Many
+        public SizeML SizeML { get; set; }
+
+        public int SizeMLId { get; set; }
+
+    }
+
+
+    public class Parfum
+    {
+        [Key]
+        public int Id { get; set; }
+
+        public string Name { get; set; }
+
+        public string Image { get; set; }
+
+        public string Description { get; set; }
+
+        public Brend Brend { get; set; }
+        public int BrendId { get; set; }
+
+
+        public Gender Gender { get; set; }
+        public int GenderId { get; set; }
+
+
+        public Density Density { get; set; }
+        public int DensityId { get; set; }
+
+
+        public List<SalePrice> SalePrices { get; set; }
+
+        public List<CategoryToParfum> CategoryToParfums { get; set; }
+    }
+
+    public class CategoryToParfum
+    {
+        public int ParfumId { get; set; }
+        public Parfum Parfum { get; set; }
+
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
+
+    }
+
 }
