@@ -1,0 +1,14 @@
+C:\Users\nofel\source\repos\FindWord\FindWord\bin\Debug\netcoreapp3.1\FindWord.exe
+C:\Users\nofel\source\repos\FindWord\FindWord\bin\Debug\netcoreapp3.1\FindWord.deps.json
+C:\Users\nofel\source\repos\FindWord\FindWord\bin\Debug\netcoreapp3.1\FindWord.runtimeconfig.json
+C:\Users\nofel\source\repos\FindWord\FindWord\bin\Debug\netcoreapp3.1\FindWord.runtimeconfig.dev.json
+C:\Users\nofel\source\repos\FindWord\FindWord\bin\Debug\netcoreapp3.1\FindWord.dll
+C:\Users\nofel\source\repos\FindWord\FindWord\bin\Debug\netcoreapp3.1\FindWord.pdb
+C:\Users\nofel\source\repos\FindWord\FindWord\obj\Debug\netcoreapp3.1\FindWord.csproj.AssemblyReference.cache
+C:\Users\nofel\source\repos\FindWord\FindWord\obj\Debug\netcoreapp3.1\FindWord.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\source\repos\FindWord\FindWord\obj\Debug\netcoreapp3.1\FindWord.AssemblyInfoInputs.cache
+C:\Users\nofel\source\repos\FindWord\FindWord\obj\Debug\netcoreapp3.1\FindWord.AssemblyInfo.cs
+C:\Users\nofel\source\repos\FindWord\FindWord\obj\Debug\netcoreapp3.1\FindWord.csproj.CoreCompileInputs.cache
+C:\Users\nofel\source\repos\FindWord\FindWord\obj\Debug\netcoreapp3.1\FindWord.dll
+C:\Users\nofel\source\repos\FindWord\FindWord\obj\Debug\netcoreapp3.1\FindWord.pdb
+C:\Users\nofel\source\repos\FindWord\FindWord\obj\Debug\netcoreapp3.1\FindWord.genruntimeconfig.cache

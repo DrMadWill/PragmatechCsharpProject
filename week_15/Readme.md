@@ -139,8 +139,10 @@
     }
 ```
 
-- Convention 
-- Data annotations(Qadağalar)
-- Fluent Api(Table əlaqələri)
+> Aşağı doğru ardıcıllıqla biri digərinin qaydalarını əzə bilir.
+> - Convention 
+> - Data annotations(Qadağalar)
+> - Fluent Api(Table əlaqələri)
+
 
 

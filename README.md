@@ -524,5 +524,5 @@ Task
 
 ## Lesson(15/2) => Code First <img src="Z_Img/net.png" alt="Asp.Net" align="right" width="40" height="40"/>
 ***
-- [Code]()
-- [Documantation]()
+- [Code](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_15/Lesson_2/CodeFirst)
+- [Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_15#entity-framwork-code-first)
