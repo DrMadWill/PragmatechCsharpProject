@@ -1,36 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 
-namespace FindWord
+namespace FindWordGameApp
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            //Action action = new Action(Hello);
-
-            //setTimeout(action, 3000);
-
-            Hello();
-
-
-        }
-
-
-        public static void Hello()
-        {
-            GenerateWord find = new GenerateWord();
-            //Console.WriteLine(find.RenderWords()[71]);
-            foreach (var item in find.RadomSelectWords(3,3))
-            {
-                Console.WriteLine(item);
-            }
-        }
-
-        
-    }
-
+    
     public class GenerateWord
     {
         private string _words = "You can gain experience, if you are careful to " +
@@ -54,7 +31,7 @@ namespace FindWord
             return wordscollection;
         }
 
-        public List<string> RadomSelectWords(int wordcount,int wordnumber)
+        public List<string> RadomSelectWords(int wordcount, int wordnumber)
         {
             // Select Word
             List<string> words = new List<string>();
@@ -66,7 +43,7 @@ namespace FindWord
                     if (i == 0)
                         word += RenderWords()[item];
                     else
-                        word += "," + RenderWords()[item+i];
+                        word += "," + RenderWords()[item + i];
 
                 }
                 words.Add(word);
@@ -76,17 +53,7 @@ namespace FindWord
             return words;
         }
 
-        public static void setTimeout(Action TheAction, int Timeout)
-        {
-            Thread t = new Thread(
-                () =>
-                {
-                    Thread.Sleep(Timeout);
-                    TheAction.Invoke();
-                }
-            );
-            t.Start();
-        }
+        
 
         public List<int> SelectIndexs(int wordcount, int wordnumber)
         {
@@ -111,27 +78,22 @@ namespace FindWord
         {
             // Generet Random Nummber
             Random rnd = new Random();
-            int number = rnd.Next(0, RenderWords().Count- count);
+            int number = rnd.Next(0, RenderWords().Count - count);
             return number;
         }
     }
 
     public class User
     {
-        
-        public int CommonGameWords { get; set; }
+        public int CommonGameCount { get; set; }
 
         public int TrueWords { get; set; }
         public int FalseWords { get; set; }
 
-        public List<UserFalseWord> userFalseWords = new List<UserFalseWord>();
-        private int Score { get; set; }
+        public List<string> userFalseWords = new List<string>();
+
+        public int Score { get; set; } = 0;
     }
 
-    public class UserFalseWord
-    {
-        public string FalseWord;
-        public string TrueWord;
-    }
-
+  
 }

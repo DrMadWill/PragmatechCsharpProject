@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nofel\\source\\repos\\FindWord\\FindWord\\FindWord.csproj": {}
+    "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsharpProject\\MyResearch\\CSharp\\FindWord\\FindWord\\FindWord.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nofel\\source\\repos\\FindWord\\FindWord\\FindWord.csproj": {
+    "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsharpProject\\MyResearch\\CSharp\\FindWord\\FindWord\\FindWord.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nofel\\source\\repos\\FindWord\\FindWord\\FindWord.csproj",
+        "projectUniqueName": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsharpProject\\MyResearch\\CSharp\\FindWord\\FindWord\\FindWord.csproj",
         "projectName": "FindWord",
-        "projectPath": "C:\\Users\\nofel\\source\\repos\\FindWord\\FindWord\\FindWord.csproj",
+        "projectPath": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsharpProject\\MyResearch\\CSharp\\FindWord\\FindWord\\FindWord.csproj",
         "packagesPath": "C:\\Users\\nofel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nofel\\source\\repos\\FindWord\\FindWord\\obj\\",
+        "outputPath": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsharpProject\\MyResearch\\CSharp\\FindWord\\FindWord\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nofel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }
