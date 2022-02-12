@@ -1,0 +1,14 @@
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\WordGameAppAnVirtualCard\VirtualCard\VirtualCard\obj\Debug\netcoreapp3.1\VirtualCard.csproj.AssemblyReference.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\WordGameAppAnVirtualCard\VirtualCard\VirtualCard\obj\Debug\netcoreapp3.1\VirtualCard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\WordGameAppAnVirtualCard\VirtualCard\VirtualCard\obj\Debug\netcoreapp3.1\VirtualCard.AssemblyInfoInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\WordGameAppAnVirtualCard\VirtualCard\VirtualCard\obj\Debug\netcoreapp3.1\VirtualCard.AssemblyInfo.cs
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\WordGameAppAnVirtualCard\VirtualCard\VirtualCard\obj\Debug\netcoreapp3.1\VirtualCard.csproj.CoreCompileInputs.cache
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\WordGameAppAnVirtualCard\VirtualCard\VirtualCard\bin\Debug\netcoreapp3.1\VirtualCard.exe
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\WordGameAppAnVirtualCard\VirtualCard\VirtualCard\bin\Debug\netcoreapp3.1\VirtualCard.deps.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\WordGameAppAnVirtualCard\VirtualCard\VirtualCard\bin\Debug\netcoreapp3.1\VirtualCard.runtimeconfig.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\WordGameAppAnVirtualCard\VirtualCard\VirtualCard\bin\Debug\netcoreapp3.1\VirtualCard.runtimeconfig.dev.json
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\WordGameAppAnVirtualCard\VirtualCard\VirtualCard\bin\Debug\netcoreapp3.1\VirtualCard.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\WordGameAppAnVirtualCard\VirtualCard\VirtualCard\bin\Debug\netcoreapp3.1\VirtualCard.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\WordGameAppAnVirtualCard\VirtualCard\VirtualCard\obj\Debug\netcoreapp3.1\VirtualCard.dll
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\WordGameAppAnVirtualCard\VirtualCard\VirtualCard\obj\Debug\netcoreapp3.1\VirtualCard.pdb
+C:\Users\nofel\OneDrive\Desktop\PragmatechCsharpProject\WordGameAppAnVirtualCard\VirtualCard\VirtualCard\obj\Debug\netcoreapp3.1\VirtualCard.genruntimeconfig.cache
