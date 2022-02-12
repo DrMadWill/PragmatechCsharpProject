@@ -21,8 +21,8 @@ namespace VirtualCard
             card.CreateVirualCard(500);
             card.CreateVirualCard(500);
             card.CreateVirualCard(500);
-            long id = long.Parse(Console.ReadLine());
-            card.RemoveVirtualCard(id);
+            //long id = long.Parse(Console.ReadLine());
+            card.RemoveVirtualCard();
 
             card.ShowData();
 

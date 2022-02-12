@@ -70,7 +70,7 @@ namespace VirtualCard
                     + random.Next(10000000, 99999999).ToString());
                 
 
-                if (!IsUsingId(cardId))
+                if (IsUsingId(cardId))
                     goto NotUsibleId;
 
                 this.TakeMoney(amount);
@@ -85,12 +85,12 @@ namespace VirtualCard
 
         private bool IsUsingId(long cardId)
         {
-            bool isUsibleId = true;
+            bool isUsibleId = false;
             foreach (var item in virtualCards)
             {
                 if (item.Id == cardId)
                 {
-                    isUsibleId = false;
+                    isUsibleId = true;
                     break;
                 }
             }
@@ -115,32 +115,51 @@ namespace VirtualCard
 
         
 
-        public void RemoveVirtualCard(long Id)
+        public void RemoveVirtualCard(long cardId)
         {
-            if (IsUsingId(Id))
+
+            if (IsUsingId(cardId))
             {
-                var card = virtualCards.Find(dr => dr.Id == Id);
+                var card = virtualCards.Find(dr => dr.Id == cardId);
                 this.AddMoney(card.Amount);
                 card.ShowData();
                 virtualCards.Remove(card);
-                Console.WriteLine("\n Virtual CardCreated");
-
+                Console.WriteLine("\n Virtual Removed");
             }
             else
                 Console.WriteLine("This Card Not Found");
         }
+        public void RemoveVirtualCard()
+        {
+            VirtualCardShowData();
+            Console.WriteLine(" Select Virtual Card Name Id ");
+            Console.Write("Card Name Id: ");
+            int cardnameId = int.Parse(Console.ReadLine());
+            var card = virtualCards.Find(dr => dr.NameId == cardnameId);
+            if (card != null)
+            {
+                RemoveVirtualCard(card.Id);
+            }
+
+        }
 
         public override void ShowData()
         {
+            Console.WriteLine("\n\n================= Show All Card Data =====================");
+
             Console.WriteLine($"\nCard Number: {this.Id} ");
             Console.WriteLine($"Card Amount: {this.Amount} " + $"/ Card Last Using Date : {this.LastUsingTime.ToShortDateString()}");
-            Console.WriteLine("================= Virtual Card =====================");
+            VirtualCardShowData();
+        }
 
+        public void VirtualCardShowData()
+        {
+            Console.WriteLine("\n================= Virtual Card =====================");
             int count = 1;
             foreach (var item in virtualCards)
             {
-                
-                Console.WriteLine($"--------------- Virtual Card {count} -------------------");
+
+                Console.WriteLine($"--------------- Virtual Card Name Id:{item.NameId} -------------------");
                 Console.WriteLine($" >>>>>>>>>> Card Number: {item.Id} ");
                 Console.WriteLine($" >>>>>>>>>> Card Amount: {item.Amount} " + $"/ Card Last Using Date : {item.LastUsingTime.ToShortDateString()}");
                 ++count;
@@ -154,11 +173,21 @@ namespace VirtualCard
     
     public class VirtualCard :Card
     {
+        
+        
 
-       
         private static long _minAmount =200;
         public static long MinAmount { get { return _minAmount; } }
-        public VirtualCard(long id, long amount, DateTime lastUsingTime) : base(id, amount, lastUsingTime) { }
+        private static long _totla = 0;
+
+        private long _nameId = 0;
+        public long NameId { get { return _nameId; } }
+
+        public VirtualCard(long id, long amount, DateTime lastUsingTime) : base(id, amount, lastUsingTime)
+        {
+            ++_totla;
+           this._nameId = _totla;
+        }
 
         public override void ShowData()
         {
