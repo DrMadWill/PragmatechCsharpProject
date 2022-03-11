@@ -535,5 +535,5 @@ Task
 
 ## Lesson(18/1) => aspnetcore-identity ASP.NET Core - Identity Overview <img src="Z_Img/net.png" alt="Asp.Net" align="right" width="40" height="40"/>
 ***
-- [Code]
-- [My Documantation]
+- [Code](https://github.com/DrMadWill/PortfolioDotNetCore/tree/main/Portfolio_Back_End/ParfolioWebSiteView/Models) (Portfolio,PorfolioDetails)
+- [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_18#identity-on-aspnet-core)
