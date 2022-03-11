@@ -530,4 +530,10 @@ Task
 ## Lesson(17/1) => One to One relation Code First <img src="Z_Img/net.png" alt="Asp.Net" align="right" width="40" height="40"/>
 ***
 - [Code](https://github.com/DrMadWill/PortfolioDotNetCore/tree/main/Portfolio_Back_End/ParfolioWebSiteView/Models) (Portfolio,PorfolioDetails)
-- [My Documantation]()
+- [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_17#code-first-one-to-one)
+
+
+## Lesson(18/1) => aspnetcore-identity ASP.NET Core - Identity Overview <img src="Z_Img/net.png" alt="Asp.Net" align="right" width="40" height="40"/>
+***
+- [Code]
+- [My Documantation]
