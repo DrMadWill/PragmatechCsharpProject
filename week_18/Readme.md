@@ -45,6 +45,34 @@
 
 
 
+## Controller Section
+```cs
+    public class AccountController : Controller
+    {
+
+        private readonly PorfolioDbContext dbContext;
+        private readonly UserManager<User> userManager;
+        private readonly RoleManager<IdentityRole> roleManager;
+        private readonly SignInManager<User> signInManager;
+
+        
+        public AccountController(PorfolioDbContext _dbContext, UserManager<User> _userManager,
+                RoleManager<IdentityRole> _roleManager, SignInManager<User> _signInManager)
+        {
+            dbContext = _dbContext;
+            userManager = _userManager;
+            roleManager = _roleManager;
+            signInManager = _signInManager;
+        }
+    }
+
+```
+
+## Role CRUD
+- [Portfolio](https://github.com/DrMadWill/PortfolioDotNetCore/blob/main/Portfolio_Back_End/ParfolioWebSiteView/Areas/Admin/Controllers/RoleController.cs)
+
+
+
 
 
 
