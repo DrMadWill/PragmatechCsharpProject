@@ -72,6 +72,8 @@
 - [Portfolio](https://github.com/DrMadWill/PortfolioDotNetCore/blob/main/Portfolio_Back_End/ParfolioWebSiteView/Areas/Admin/Controllers/RoleController.cs)
 
 
+## Antiforgerytoken
+> Eyni bir `form`dan **database ardıcıl `Submit`** göndərilməsinin qarşısını alır. Əgər biz eyni `form`dan ardıcıl `Submit` göndərə biliriksə bu bizdə **Cross-Site Request Forgery (CSRF)** təhlükəsizlik porblemiz olduğunu göstərir. 
 
 
 

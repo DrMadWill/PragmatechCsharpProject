@@ -535,5 +535,19 @@ Task
 
 ## Lesson(18/1) => aspnetcore-identity ASP.NET Core - Identity Overview <img src="Z_Img/net.png" alt="Asp.Net" align="right" width="40" height="40"/>
 ***
-- [Code](https://github.com/DrMadWill/PortfolioDotNetCore/tree/main/Portfolio_Back_End/ParfolioWebSiteView/Models) (Portfolio,PorfolioDetails)
+- Task 
+ ```
+    Create One To One Relation
+ ```
+- [Code](https://github.com/DrMadWill/PortfolioDotNetCore/tree/main/Portfolio_Back_End/ParfolioWebSiteView/Models) (Task=> Portfolio,PorfolioDetails Table Models)
 - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_18#identity-on-aspnet-core)
+
+## Lesson(18/2) => Registration and login functionality Antiforgerytoken <img src="Z_Img/net.png" alt="Asp.Net" align="right" width="40" height="40"/>
+***
+- Task 
+ ```
+    User Role sistemi viewdan elcatan olsun. Usere rol vermek. Role adlarinin crudu.
+ ```
+- [Code](https://github.com/DrMadWill/PortfolioDotNetCore/blob/main/Portfolio_Back_End/ParfolioWebSiteView/Areas/Admin/Controllers/AccountController.cs) (Task=> Account,Role Controller)
+- [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_18#Antiforgerytoken)
+
