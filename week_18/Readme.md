@@ -76,7 +76,18 @@
 > Eyni bir `form`dan **database ardıcıl `Submit`** göndərilməsinin qarşısını alır. Əgər biz eyni `form`dan ardıcıl `Submit` göndərə biliriksə bu bizdə **Cross-Site Request Forgery (CSRF)** təhlükəsizlik porblemiz olduğunu göstərir. 
 
 
+## Login User _Leyout
+```cs
+@inject Microsoft.AspNetCore.Identity.UserManager<User> userManager;
 
+@{
+    User user = null;
+    if (User.Identity.IsAuthenticated)
+    {
+        user = userManager.Users.FirstOrDefault(x => x.UserName == User.Identity.Name);
+    }
+}
+```
 
 
 
