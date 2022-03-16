@@ -558,6 +558,6 @@ Task
  ```
     Qeydiyyat zamani usere tesdiqleme mesaji getsin (emaile).Eger user tesdiqlemese sisteme daxil ola bilmesin
  ```
-- [Code]()
-- [My Documantation]()
+- [Code](https://github.com/DrMadWill/PortfolioDotNetCore/blob/main/Portfolio_Back_End/ParfolioWebSiteView/Controllers/SigninController.cs)
+- [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_19#forget-password-using-email-service)
 

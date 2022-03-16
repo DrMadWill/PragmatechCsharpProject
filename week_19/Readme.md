@@ -61,7 +61,52 @@ services.AddScoped<IEmailService, EmailServices>();
 
             return Redirect("/");
         }
+
+        [HttpGet]
+        public IActionResult ResetPassword(string token,string email)
+        {
+            if(string.IsNullOrEmpty(token) || string.IsNullOrEmpty(email)) return Redirect("/System/Error404");
+            ResetPasswordVM resetPassword = new ResetPasswordVM
+            {
+                Token = token,
+                Email = email
+            };
+            return View(resetPassword);
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ResetPassword(ResetPasswordVM resetPassword)
+        {
+            if (!ModelState.IsValid) return View(resetPassword);
+
+            // Check User 
+            var user = await userManager.FindByEmailAsync(resetPassword.Email);
+            if (user == null) return Redirect("/System/Error404"); 
+
+            // Ckeck Password Usable
+            var passwordValidator = new PasswordValidator<User>();
+            var result = await passwordValidator.ValidateAsync(userManager, null, resetPassword.Password);
+            if (!result.Succeeded)
+            {
+                ModelState.AddModelError("Password", result.Errors.First().Description);
+                return View(resetPassword);
+            }
+
+            var resault = await userManager.ResetPasswordAsync(user, resetPassword.Token, resetPassword.Password);
+
+            if (resault.Succeeded)
+            {
+                return Redirect("/");
+            }
+            ModelState.AddModelError("Password", "We Have Some Problem");
+            return View(resetPassword);
+        }
 ```
+
+
+
 ## Email Active
 > - Create your gmail and active [Forwarding and POP/IMAP](https://mail.google.com/mail/u/0/?ogbl#settings/fwdandpop)
 > and [Security](https://myaccount.google.com/u/2/lesssecureapps) 
@@ -99,12 +144,14 @@ services.AddScoped<IEmailService, EmailServices>();
             //Send Email
             var smtp = new SmtpClient();
             smtp.Connect("smtp.gmail.com",587, SecureSocketOptions.StartTls);
-            smtp.Authenticate("[YourEmail]", "YourPassword");
+            smtp.Authenticate("[YourEmail]", "[YourPassword]");
             smtp.Send(email);
             smtp.Disconnect(true);
         }
     }
 ```
+
+[Link Project]()
 
 
 
