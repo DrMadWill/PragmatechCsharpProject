@@ -551,3 +551,13 @@ Task
 - [Code](https://github.com/DrMadWill/PortfolioDotNetCore/blob/main/Portfolio_Back_End/ParfolioWebSiteView/Areas/Admin/Controllers/AccountController.cs) (Task=> Account,Role Controller)
 - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_18#Antiforgerytoken)
 
+
+## Lesson(19/1) => Email Service and Forget Password <img src="Z_Img/net.png" alt="Asp.Net" align="right" width="40" height="40"/>
+***
+- Task 
+ ```
+    Qeydiyyat zamani usere tesdiqleme mesaji getsin (emaile).Eger user tesdiqlemese sisteme daxil ola bilmesin
+ ```
+- [Code]()
+- [My Documantation]()
+
