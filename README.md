@@ -560,4 +560,14 @@ Task
  ```
 - [Code](https://github.com/DrMadWill/PortfolioDotNetCore/blob/main/Portfolio_Back_End/ParfolioWebSiteView/Controllers/SigninController.cs)
 - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_19#forget-password-using-email-service)
+## Lesson(19/2) => Basic JavaScript <img src="Z_Img/net.png" alt="Asp.Net" align="right" width="40" height="40"/>
+- Repeat JavaScript
+
+## Lesson(20/1) => Fetch Api <img src="Z_Img/net.png" alt="Asp.Net" align="right" width="40" height="40"/>
+***
+- Task 
+ ```
+    Namaz api ile teqvimden secilen tarixe uygun sag terefde vaxtlarin cixmasi
+ ```
+- [Task](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/UsingFetchApi_PayerTimeForBaku)
 
