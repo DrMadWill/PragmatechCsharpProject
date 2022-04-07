@@ -562,8 +562,11 @@ Task
 - [My Documantation](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/week_19#forget-password-using-email-service)
 ## Lesson(19/2) => Basic JavaScript <img src="Z_Img/net.png" alt="Asp.Net" align="right" width="40" height="40"/>
 - Repeat JavaScript
+## Lesson(20/2) => JavaScript Repeat<img src="Z_Img/net.png" alt="Asp.Net" align="right" width="40" height="40"/>
+***
+- [Documatation](https://github.com/DrMadWill/JavaScript#learning-javascript)
 
-## Lesson(20/1) => Fetch Api <img src="Z_Img/net.png" alt="Asp.Net" align="right" width="40" height="40"/>
+## Lesson(20/2) => Fetch Api <img src="Z_Img/net.png" alt="Asp.Net" align="right" width="40" height="40"/>
 ***
 - Task 
  ```
@@ -571,3 +574,11 @@ Task
  ```
 - [Task](https://github.com/DrMadWill/PragmatechCsharpProject/tree/main/UsingFetchApi_PayerTimeForBaku)
 
+## Lesson(21/1) => Basket, localStorage <img src="Z_Img/net.png" alt="Asp.Net" align="right" width="40" height="40"/>
+***
+- Task 
+```
+ dersde yazdigimizda localstorage vasitesile getirilmis datalari(basket sehifesinde) many to many(productToUsers) table-na daxil etmek. Eger adam login olmayibsa auth olmasini yoxlayin ve login sehifesine gonderin. UserId ve productId LAZIM OLACAQ SIZE 3cu table-a data daxil etdikde
+```
+
+- [Solved](https://github.com/DrMadWill/PortfolioDotNetCore/tree/Task)

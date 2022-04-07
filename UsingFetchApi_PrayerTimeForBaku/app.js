@@ -10,8 +10,6 @@ class Data{
         .then(res=>{dateTime=res})
 
         let html = ""
-        
-
         for(var i in dateTime){
             html+=`
             <tr>
