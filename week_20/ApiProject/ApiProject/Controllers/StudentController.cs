@@ -1,4 +1,6 @@
 ﻿using ApiProject.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +13,7 @@ namespace ApiProject.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class StudentController : ControllerBase
     {
         private readonly ApiSchoolDbContext _dbContext;
@@ -23,7 +26,7 @@ namespace ApiProject.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _dbContext.Students.ToListAsync());
+            return Ok(await _dbContext.Students.Include(x=>x.Group).ToListAsync());
         }
 
         [HttpGet("{id}")]

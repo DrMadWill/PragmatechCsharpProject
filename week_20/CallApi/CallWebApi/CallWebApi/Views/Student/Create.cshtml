@@ -1,0 +1,23 @@
+﻿@model Student
+<form class="container mt-3" method="post">
+    <div class="form-group">
+        <label asp-for="FullName">Full Name</label>
+        <input type="text" class="form-control" asp-for="FullName" aria-describedby="emailHelp" placeholder="Enter email">
+        <span asp-validation-for="Email" class="text-danger form-text text-muted"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email">Email address</label>
+        <input type="email" class="form-control" asp-for="Email" aria-describedby="emailHelp" placeholder="Enter email">
+        <span asp-validation-for="Email" class="text-danger form-text text-muted"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="GroupId">Example select</label>
+        <select class="form-control"asp-for="GroupId">
+            @foreach (var item in ((List<Group>)ViewBag.Groups))
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

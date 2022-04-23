@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+  </head>
+  <body>
+    
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">First name</label>
+        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Last name</label>
+        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+     
+      <div class="col-md-6">
+        <label for="validationCustom03" class="form-label">City</label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+          Please provide a valid city.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom04" class="form-label">State</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Choose...</option>
+          <option>...</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a valid state.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          Please provide a valid zip.
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+    </form>
+
+    <div class="container mt-3 pt-2">
+        <div class="card">
+            <div class="card-body">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="student-tab" data-toggle="tab" href="#student" role="tab" aria-controls="student" aria-selected="true">Student</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="group-tab" data-toggle="tab" href="#group" role="tab" aria-controls="group" aria-selected="false">Group</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="teacher-tab" data-toggle="tab" href="#teacher" role="tab" aria-controls="teacher" aria-selected="false">Teacher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="class-tab" data-toggle="tab" href="#class" role="tab" aria-controls="class" aria-selected="false">Class</a>
+                    </li>
+                </ul>
+                <div class="tab-content mt-3" id="myTabContent">
+                    <div class="tab-pane fade show active" id="student" role="tabpanel" aria-labelledby="student-tab">
+                        <div class="card">
+                            <div class="card-body">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="nav-get-tab" data-toggle="tab" href="#nav-get" role="tab" aria-controls="nav-get" aria-selected="true">Get</a>
+                                        <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Create</a>
+                                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Update</a>
+                                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Delete</a>
+                                    </div>
+                                </nav>
+                                <div class="tab-content mt-3" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-get" role="tabpanel" aria-labelledby="nav-get-tab">
+                                        <div class="row">
+                                            <div class="col-3"> 
+                                                <button class="btn alll btn-success">Show All Data</button>
+                                            </div>
+                                            <div class="col-9 res-get-container">
+                                                <div class="card" style="width:18rem;">
+                                                  <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="...">
+                                                  <div class="card-body">
+                                                    <h5 class="card-title">FullName</h5>
+                                                    <h6 class="card-subtitle mb-2 text-muted ">Email</h6>
+                                                    <p class="card-text">Group</p>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nostrum porro architecto saepe iste adipisci praesentium, voluptates unde natus sit optio, incidunt est, nulla explicabo asperiores laborum hic aliquam quos consequuntur? Blanditiis quaerat soluta non accusamus dolores doloremque, quos architecto libero vero magnam possimus modi fugit? Porro laboriosam pariatur magnam.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nostrum porro architecto saepe iste adipisci praesentium, voluptates unde natus sit optio, incidunt est, nulla explicabo asperiores laborum hic aliquam quos consequuntur? Blanditiis quaerat soluta non accusamus dolores doloremque, quos architecto libero vero magnam possimus modi fugit? Porro laboriosam pariatur magnam.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nostrum porro architecto saepe iste adipisci praesentium, voluptates unde natus sit optio, incidunt est, nulla explicabo asperiores laborum hic aliquam quos consequuntur? Blanditiis quaerat soluta non accusamus dolores doloremque, quos architecto libero vero magnam possimus modi fugit? Porro laboriosam pariatur magnam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="group" role="tabpanel" aria-labelledby="group-tab">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta soluta doloribus, ullam, ut obcaecati laboriosam eos, officia dolores voluptatum quas impedit placeat cumque animi quos odio quibusdam voluptatibus magnam minima facilis necessitatibus libero! Error velit veritatis veniam ipsa? Reiciendis quas qui neque atque repudiandae quidem incidunt, a consectetur ipsam impedit.</p>
+                    </div>
+                    <div class="tab-pane fade" id="teacher" role="tabpanel" aria-labelledby="teacher-tab">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta soluta doloribus, ullam, ut obcaecati laboriosam eos, officia dolores voluptatum quas impedit placeat cumque animi quos odio quibusdam voluptatibus magnam minima facilis necessitatibus libero! Error velit veritatis veniam ipsa? Reiciendis quas qui neque atque repudiandae quidem incidunt, a consectetur ipsam impedit.</p>
+                    </div>
+                    <div class="tab-pane fade" id="class" role="tabpanel" aria-labelledby="class-tab">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta soluta doloribus, ullam, ut obcaecati laboriosam eos, officia dolores voluptatum quas impedit placeat cumque animi quos odio quibusdam voluptatibus magnam minima facilis necessitatibus libero! Error velit veritatis veniam ipsa? Reiciendis quas qui neque atque repudiandae quidem incidunt, a consectetur ipsam impedit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <script>
+        $(".alll").click(function(){
+            $.ajax({
+                url: `https://localhost:44327/api/Student`,
+                crossDomain: true,
+                type: 'GET',
+                success: (response) => {
+                    if (response.hasOwnProperty('status') && response.status === 404) {
+                        console.log("error")
+                    } else {
+                        console.log(response)
+                    }
+                }
+            });
+        })
+    </script>
+    
+
+
+
+    
+    <!-- Bootstrap JavaScript Libraries -->
+   
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "T6DNiTHa3ZvUKNdc/4iiQaz6qjErrDGO4URDiohz8/oim1j3i8MiyoSfw5+js/NUDjWfS88/bKbdEuOHXc1++g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nofel\\OneDrive\\Desktop\\PragmatechCsharpProject\\week_20\\CallApi\\CallWebApi\\CallWebApi\\CallWebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nofel\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

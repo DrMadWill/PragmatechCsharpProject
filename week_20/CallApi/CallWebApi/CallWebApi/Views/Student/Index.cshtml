@@ -1,0 +1,33 @@
+﻿
+@model IList<Student>
+
+<a href="/Student/Create" class="container mt-3 btn btn-block btn-success"> Add Student </a>
+
+<div class="container mt-3">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Group</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td scope="row">@item.FullName</td>
+                    <td>@item.Email</td>
+                    <td>@item.Group.Name</td>
+                    <td>
+                        <a href="/Student/Update/@item.Id" class="btn btn-primary">Edit</a>
+                        <a href="/Student/Delete/@item.Id" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
